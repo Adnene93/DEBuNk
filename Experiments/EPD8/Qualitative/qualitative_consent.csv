@@ -1,0 +1,33 @@
+ind	context	g1	g2	|subgroup(context)|	|subgroup(g1)|	|subgroup(g2)|	|ratings(c,g1,g2)|	ref_sim	pattern_sim	quality
+1	['8.70.03.03 2013 discharge'] 	PPE 	GUE/NGL 	137	263	60	33664	0.43	0.85	0.41
+2	['7.40 -'] 	PPE 	GUE/NGL 	76	263	60	17315	0.43	0.84	0.41
+3	['7.10.04 External borders crossing and controls, visas'] 	S&D 	ECR 	60	211	103	13861	0.49	0.97	0.48
+4	['6.20 Common commercial policy in general', '6.40 Relations with third countries'] 	S&D 	ECR 	40	211	103	9137	0.49	0.93	0.44
+5	['6.20.03 Bilateral economic and trade agreements and relations'] 	S&D 	ECR 	185	211	103	43162	0.49	0.90	0.41
+6	['6.10.02 Common security and defence policy; WEU, NATO'] 	GUE/NGL 	ENF 	80	60	48	6613	0.42	0.85	0.43
+7	['4 Economic, social and territorial cohesion', '8.70 Budget of the Union'] 	EFDD 	ECR 	47	54	103	4582	0.45	0.86	0.42
+8	['4 Economic, social and territorial cohesion', '8.70 Budget of the Union'] 	GUE/NGL 	ALDE 	47	60	98	4662	0.52	0.94	0.42
+9	['4 Economic, social and territorial cohesion', '8.70 Budget of the Union'] 	PPE 	GUE/NGL 	47	263	60	10871	0.43	0.94	0.50
+10	['4 Economic, social and territorial cohesion', '6.20.02 Export/import control, trade defence'] 	ECR 	ALDE 	49	103	98	6146	0.59	1.00	0.41
+11	"[""4.60.06 Consumers' economic and legal interests""] "	S&D 	ECR 	39	211	103	9102	0.49	0.92	0.43
+12	['4.40.01 European area for education, training and lifelong learning'] 	PPE 	EFDD 	35	263	54	7019	0.31	0.80	0.49
+13	['4.15.05 Industrial restructuring, job losses, redundancies, relocations, Globalisation Adjustment Fund (EGF)'] 	EFDD 	ECR 	47	54	103	4577	0.45	0.88	0.44
+14	['4.15.05 Industrial restructuring, job losses, redundancies, relocations, Globalisation Adjustment Fund (EGF)'] 	GUE/NGL 	ALDE 	47	60	98	4666	0.52	0.96	0.44
+15	['4.15.05 Industrial restructuring, job losses, redundancies, relocations, Globalisation Adjustment Fund (EGF)'] 	PPE 	GUE/NGL 	47	263	60	10868	0.43	0.96	0.53
+16	['4.10.06 People with disabilities'] 	NI 	ALDE 	37	63	98	2509	0.33	0.84	0.51
+17	['4.10.06 People with disabilities'] 	PPE 	NI 	37	263	63	6774	0.37	0.78	0.42
+18	['4.10.04 Gender equality'] 	GUE/NGL 	ALDE 	133	60	98	13498	0.52	0.96	0.45
+19	['3 -', '8.70 Budget of the Union'] 	GUE/NGL 	* 	58	60	958	37502	0.57	0.97	0.40
+20	['3 -', '8 State and evolution of the Union'] 	ENF 	* 	42	48	958	27191	0.29	0.69	0.40
+21	['3 -', '8 State and evolution of the Union'] 	PPE 	GUE/NGL 	67	263	60	15449	0.43	0.87	0.43
+22	['3.40 Industrial policy', '4.15 Employment policy, action to combat unemployment'] 	ENF 	* 	36	48	958	23303	0.29	0.72	0.43
+23	['3.40.06 Electronics, electrotechnical industries, ICT, robotics'] 	PPE 	GUE/NGL 	40	263	60	8863	0.43	0.85	0.42
+24	['3.10 Agricultural policy and economies', '6.20 Common commercial policy in general'] 	ECR 	ALDE 	55	103	98	6847	0.59	1.00	0.41
+25	['2.50.08 Financial services, financial reporting and auditing', '2.50.10 Financial supervision'] 	S&D 	ECR 	35	211	103	8139	0.49	0.91	0.42
+26	['2.50.03 Securities and financial markets, stock exchange, CIUTS, investments', '2.50.08 Financial services, financial reporting and auditing'] 	S&D 	ECR 	37	211	103	8620	0.49	0.92	0.43
+27	['2.40 Free movement of services, freedom to provide', '4 Economic, social and territorial cohesion'] 	NI 	ALDE 	49	63	98	3326	0.33	0.79	0.45
+28	['2.40 Free movement of services, freedom to provide', '4 Economic, social and territorial cohesion'] 	PPE 	NI 	49	263	63	9124	0.37	0.79	0.42
+29	['2.10.03 Standardisation, EC standards and trademark, certification, compliance', '4 Economic, social and territorial cohesion'] 	NI 	ALDE 	50	63	98	3551	0.33	0.81	0.48
+30	['1 European citizenship', '8 State and evolution of the Union'] 	S&D 	EFDD 	35	211	54	7088	0.29	0.71	0.42
+31	['1 European citizenship', '7.30 Police, judicial and customs cooperation in general'] 	S&D 	ECR 	39	211	103	9182	0.49	0.95	0.46
+32	['1.20.09 Protection of privacy and data protection', '7 Area of freedom, security and justice'] 	ECR 	* 	39	103	958	25189	0.57	0.97	0.40

@@ -1,0 +1,1 @@
+pypy ..//..//..//DSC_Project//main.py ..//parliament.json -r parliament_sampling.csv --sampling_algorithm DSC+SamplingPeers+RandomWalk --nb_attr_desc_obj 10 --nb_attr_desc_ind 10 --sigma_obj 40 --sigma_ind 10 --timebudget 0.005 0.01 0.02 0.05 0.1 0.15 0.2 0.25 0.3 0.35 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1 1.2 --nrwc 30 --oneExecutionTest --exhaustiveDoneYet -v

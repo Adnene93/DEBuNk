@@ -1,0 +1,130 @@
+id_user	age	sexe	region	sizeOfPop
+001	20	Men	ALL	0
+002	20	Women	ALL	0
+003	60	Men	ALL	0
+004	60	Women	ALL	0
+005	20	9	ALL	0
+006	0	Men	Régions et Départements d'outre-mer 	358322
+007	0	Men	Île-de-France	1600951
+008	0	Men	Bourgogne-Franche-Comté	336738
+009	0	Men	Hauts-de-France	812740
+010	0	Men	Grand Est	670207
+011	0	Men	Nouvelle Aquitaine	676003
+012	0	Men	Auvergne-Rhône-Alpes	1001868
+013	0	Men	Provence-Alpes-Côted'Azur-Corse	619992
+014	0	Men	ALL	0
+015	0	Women	Régions et Départements d'outre-mer 	346504
+016	0	Women	Île-de-France	1543364
+017	0	Women	Hauts-de-France	774654
+018	0	Women	Grand Est	636404
+019	0	Women	Nouvelle Aquitaine	641037
+020	0	Women	Auvergne-Rhône-Alpes	954639
+021	0	Women	Provence-Alpes-Côted'Azur-Corse	588855
+022	0	Women	ALL	0
+023	20	Men	Régions et Départements d'outre-mer 	496630
+024	20	Men	Île-de-France	3231974
+025	20	Men	Centre-Val-de-Loire	618640
+026	20	Men	Bourgogne-Franche-Comté	683638
+027	20	Men	Normandie	812239
+028	20	Men	Hauts-de-France	1524430
+029	20	Men	Grand Est	1418738
+030	20	Men	Pays de la Loire	916592
+031	20	Men	Bretagne	808458
+032	20	Men	Nouvelle Aquitaine	1423338
+033	20	Men	Occitanie	1414142
+034	20	Men	Auvergne-Rhône-Alpes	1996472
+035	20	Men	Provence-Alpes-Côted'Azur-Corse	1286304
+036	20	Women	Régions et Départements d'outre-mer 	567794
+037	20	Women	Île-de-France	3403087
+038	20	Women	Centre-Val-de-Loire	631201
+039	20	Women	Bourgogne-Franche-Comté	683349
+040	20	Women	Normandie	826998
+041	20	Women	Hauts-de-France	1545270
+042	20	Women	Grand Est	1425225
+043	20	Women	Pays de la Loire	918650
+044	20	Women	Bretagne	799749
+045	20	Women	Nouvelle Aquitaine	1458802
+046	20	Women	Occitanie	1459241
+047	20	Women	Auvergne-Rhône-Alpes	2019710
+048	20	Women	Provence-Alpes-Côted'Azur-Corse	1350586
+049	60	Men	Régions et Départements d'outre-mer 	156856
+050	60	Men	Île-de-France	1033458
+051	60	Men	Centre-Val-de-Loire	319584
+052	60	Men	Bourgogne-Franche-Comté	354614
+053	60	Men	Normandie	387787
+054	60	Men	Hauts-de-France	590675
+055	60	Men	Grand Est	621885
+056	60	Men	Pays de la Loire	420659
+057	60	Men	Bretagne	396302
+058	60	Men	Nouvelle Aquitaine	769284
+059	60	Men	Occitanie	721621
+060	60	Men	Auvergne-Rhône-Alpes	868486
+061	60	Men	Provence-Alpes-Côted'Azur-Corse	662312
+062	60	Women	Régions et Départements d'outre-mer 	195121
+063	60	Women	Île-de-France	1329968
+064	60	Women	Centre-Val-de-Loire	398282
+065	60	Women	Bourgogne-Franche-Comté	444249
+066	60	Women	Normandie	498003
+067	60	Women	Hauts-de-France	782540
+068	60	Women	Grand Est	785845
+069	60	Women	Pays de la Loire	535069
+070	60	Women	Bretagne	513933
+071	60	Women	Nouvelle Aquitaine	974632
+072	60	Women	Occitanie	901803
+073	60	Women	Auvergne-Rhône-Alpes	1099477
+074	60	Women	Provence-Alpes-Côted'Azur-Corse	846497
+075	99	Men	Nouvelle Aquitaine	0
+076	99	Men	Provence-Alpes-Côted'Azur-Corse	0
+077	99	Men	ALL	0
+078	99	Women	ALL	0
+079	99	9	ALL	0
+080	0	Women	Centre-Val-de-Loire	302282
+081	0	Women	Bourgogne-Franche-Comté	317562
+082	0	Women	Normandie	398994
+083	0	Women	Pays de la Loire	465938
+084	0	Women	Bretagne	386167
+085	0	Women	Occitanie	650859
+086	99	Men	Occitanie	0
+087	0	Men	Centre-Val-de-Loire	317015
+088	0	Men	Normandie	419226
+089	0	Men	Pays de la Loire	487074
+090	0	Men	Bretagne	405732
+091	0	Men	Occitanie	682500
+092	99	Women	Occitanie	0
+093	0	9	ALL	0
+094	99	Women	Nouvelle Aquitaine	0
+095	99	Women	Provence-Alpes-Côted'Azur-Corse	0
+096	99	9	Île-de-France	0
+097	99	9	Occitanie	0
+098	99	9	Provence-Alpes-Côted'Azur-Corse	0
+099	60	9	ALL	0
+100	99	9	Régions et Départements d'outre-mer 	0
+101	20	Women	ALL	0
+102	99	9	Nouvelle Aquitaine	0
+103	60	Men	ALL	0
+104	99	9	Auvergne-Rhône-Alpes	0
+105	99	Men	Île-de-France	0
+106	99	Men	Centre-Val-de-Loire	0
+107	99	9	Grand Est	0
+108	99	Men	Auvergne-Rhône-Alpes	0
+109	20	Men	ALL	0
+110	99	9	Normandie	0
+111	99	9	Hauts-de-France	0
+112	99	9	Pays de la Loire	0
+113	0	Men	ALL	0
+114	0	Women	ALL	0
+115	60	Women	ALL	0
+116	99	Men	Bourgogne-Franche-Comté	0
+117	99	Men	Hauts-de-France	0
+118	99	Men	Grand Est	0
+119	99	Men	Pays de la Loire	0
+120	99	Women	Île-de-France	0
+121	99	Women	Centre-Val-de-Loire	0
+122	99	Women	Bourgogne-Franche-Comté	0
+123	99	Women	Hauts-de-France	0
+124	99	Women	Grand Est	0
+125	99	Women	Auvergne-Rhône-Alpes	0
+126	99	9	Centre-Val-de-Loire	0
+127	99	9	Bourgogne-Franche-Comté	0
+128	99	9	Bretagne	0
+129	99	Women	Pays de la Loire	0

@@ -1,0 +1,40 @@
+{
+	"objects_file":"..//Data//items.csv",
+	"individuals_file":"..//Data//users.csv",
+	"reviews_file":"..//Data//reviews.csv",
+	"delimiter":"\t",
+
+	"nb_objects":50000,
+	"nb_individuals":5000,
+
+	"arrayHeader":["tags"],
+	"numericHeader":["boites","size_of_population","sizeOfPop"],
+	"vector_of_outcome":["boites","size_of_population"],
+	"ponderation_attribute":"boites",
+	"description_attributes_objects":[["tags", "themes"]],
+	"description_attributes_individuals":[["sexe", "simple"],["region", "simple"],["age", "simple"]],
+
+	"threshold_objects":5,
+	"threshold_individuals":1,
+	"threshold_quality":0.5,
+	
+
+	"aggregation_measure":"MEDICAMENTS",
+	"similarity_measure":"similarity_candidates",
+	"quality_measure":"DISAGR_SUMDIFF",
+	"algorithm":"DSC+CLOSED+UB2",
+	"timebudget":3600,
+	
+
+	"objects_scope":[
+	],
+	"individuals_1_scope":[
+		{"dimensionName":"sexe","outSet":["9"]},{"dimensionName":"region","outSet":["ALL"]},{"dimensionName":"age","outSet":["99"]}
+	],
+	"individuals_2_scope":[
+		{"dimensionName":"sexe","outSet":["9"]},{"dimensionName":"region","outSet":["ALL"]},{"dimensionName":"age","outSet":["99"]}
+	],
+
+	"symmetry":false,
+	"results_destination":".//results.csv"
+}

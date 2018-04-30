@@ -1,0 +1,10 @@
+pypy ..//..//..//DSC_Project//main.py ..//movielens.json -p performance_nb_entities.csv --algos DSC+CLOSED+UB2 --nb_attr_desc_obj 3 --nb_attr_desc_ind 3 --nb_obj 100 250 500 750 1000 1500 1750 --nb_items_desc_ind 30 --nb_items_desc_obj 200 --timebudget 36000 -v;
+pypy ..//..//..//DSC_Project//main.py ..//movielens.json -p performance_nb_individuals.csv --algos DSC+CLOSED+UB2 --nb_attr_desc_obj 3 --nb_attr_desc_ind 3 --nb_obj 2000 --nb_ind 100 250 500 750 1000 --nb_items_desc_ind 30 --nb_items_desc_obj 200 --timebudget 36000 -v;
+pypy ..//..//..//DSC_Project//main.py ..//movielens.json -p performance_nb_items_entities.csv --algos DSC+CLOSED+UB2 --nb_attr_desc_obj 3 --nb_attr_desc_ind 3 --nb_obj 1750 --nb_ind 1000 --nb_items_desc_ind 30 --nb_items_desc_obj 50 100 150 175 200 --timebudget 36000 -v;
+pypy ..//..//..//DSC_Project//main.py ..//movielens.json -p performance_nb_items_individuals.csv --algos DSC+CLOSED+UB2 --nb_attr_desc_obj 3 --nb_attr_desc_ind 3 --nb_obj 1750 --nb_ind 1000 --nb_items_desc_ind 5 10 15 20 30 --nb_items_desc_obj 200 --timebudget 36000 -v;
+
+pypy ..//..//..//DSC_Project//main.py ..//movielens.json -p performance_sigma_entities.csv --algos DSC+CLOSED+UB2 --nb_attr_desc_obj 3 --nb_attr_desc_ind 3 --nb_obj 2000 --nb_ind 1000 --nb_items_desc_ind 30 --nb_items_desc_obj 200 --sigma_obj 5 10 25 50 100 200 --sigma_ind 50 --sigma_qual 0.2 --timebudget 36000 -v;
+pypy ..//..//..//DSC_Project//main.py ..//movielens.json -p performance_sigma_individuals.csv --algos DSC+CLOSED+UB2 --nb_attr_desc_obj 3 --nb_attr_desc_ind 3 --nb_obj 1750 --nb_ind 1000 --nb_items_desc_ind 30 --nb_items_desc_obj 200 --sigma_obj 8 --sigma_ind 10 25 50 100 250  --timebudget 36000 -v;
+pypy ..//..//..//DSC_Project//main.py ..//movielens.json -p performance_sigma_varphi.csv --algos DSC+CLOSED+UB2 --nb_attr_desc_obj 3 --nb_attr_desc_ind 3 --nb_obj 1750 --nb_ind 1000 --nb_items_desc_ind 30 --nb_items_desc_obj 200 --sigma_obj 8 --sigma_ind 50 --sigma_qual 0.05 0.1 0.15 0.2 0.25 0.3 --quality_measure DISAGR_SUMDIFF AGR_SUMDIFF --timebudget 36000 -v;
+
+

@@ -1,0 +1,1 @@
+pypy ..//..//..//DSC_Project//main.py ..//movielens.json -r movielens_sampling_2.csv --sampling_algorithm DSC+SamplingPeers+RandomWalk --nb_obj 10000 --nb_ind 10000 --nb_attr_desc_obj 10 --nb_attr_desc_ind 10 --sigma_obj 5 --sigma_ind 10 --sigma_qual 0.25 --timebudget 0.05 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.2 --nrwc 2 --oneExecutionTest --exhaustiveDoneYet -v ;

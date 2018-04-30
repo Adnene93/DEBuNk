@@ -1,0 +1,2 @@
+python ..//..//..//DSC_Project//main.py ./parliamentQual_dissent.json -q qualitative_dissent.csv --algos DSC+CLOSED+UB2 --sigma_obj 35 --sigma_ind 1 --sigma_qual 0.5 --nb_attr_desc_obj 1 --nb_attr_desc_ind 3 --timebudget 3600 --quality_measure DISAGR_SUMDIFF --verbose
+pause

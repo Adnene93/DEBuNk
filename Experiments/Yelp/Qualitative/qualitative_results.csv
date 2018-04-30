@@ -1,0 +1,23 @@
+ind	context	g1	g2	|subgroup(context)|	|subgroup(g1)|	|subgroup(g2)|	|ratings(c,g1,g2)|	ref_sim	pattern_sim	quality
+1	['22.34.05 Nurseries & Gardening', '22.34.07 Hardware Stores'] OH 	newcomer small 	middler small 	10	2	2	21	0.78	0.37	0.41
+2	['11.59.01 Apartments', '11.59.18 University Housing'] AZ 	newcomer medium 	middler large 	14	2	2	30	0.78	0.38	0.40
+3	['11.55 Plumbing'] PA 	* large 	newcomer * 	12	6	6	29	0.79	0.35	0.44
+4	['11.51 Movers', '12 Hotels & Travel', '14 Local Services'] * 	newcomer medium 	middler small 	10	2	2	20	0.78	0.37	0.41
+5	['11.51 Movers', '12 Hotels & Travel'] AZ 	newcomer medium 	middler small 	10	2	2	20	0.78	0.36	0.42
+6	['10.64 Retirement Homes'] * 	newcomer medium 	middler small 	10	2	2	20	0.78	0.37	0.40
+7	['10.55.50 Urologists'] * 	* small 	middler large 	10	6	2	30	0.79	0.36	0.43
+8	['10.55.21 Internal Medicine'] NV 	senior medium 	middler large 	15	2	2	39	0.81	0.38	0.43
+9	['10.55 Doctors'] NC 	senior medium 	newcomer medium 	13	2	2	27	0.77	0.32	0.45
+10	['10.17.01 Diagnostic Imaging', '10.55 Doctors'] NV 	senior medium 	newcomer small 	10	2	2	20	0.76	0.30	0.46
+11	['10.08 Cannabis Clinics'] AZ 	senior small 	senior medium 	10	2	2	20	0.77	0.36	0.41
+12	['10 Health & Medical'] QC 	* small 	senior medium 	11	6	2	25	0.79	0.39	0.40
+13	['08 Financial Services', '22 Shopping'] AZ 	* large 	newcomer * 	12	6	6	30	0.79	0.39	0.40
+14	['03 Automotive', '22.06 Battery Stores', '22.21 Electronics'] * 	newcomer * 	middler small 	11	6	2	22	0.79	0.31	0.48
+15	['03 Automotive', '14.38 IT Services & Computer Repair', '22.21 Electronics'] * 	newcomer * 	middler small 	11	6	2	24	0.79	0.36	0.43
+16	['03 Automotive', '14.22 Electronics Repair', '22.21 Electronics'] * 	newcomer * 	middler small 	11	6	2	23	0.79	0.34	0.45
+17	['03 Automotive', '14.22 Electronics Repair', '22.06 Battery Stores', '22.21 Electronics'] * 	newcomer * 	middler * 	10	6	6	43	0.80	0.40	0.40
+18	['03 Automotive', '14.22 Electronics Repair', '22.06 Battery Stores', '22.21 Electronics'] * 	* medium 	newcomer * 	10	6	6	29	0.82	0.39	0.43
+19	['03.49 Truck Rental', '11 Home Services'] AZ 	* small 	newcomer medium 	10	6	2	26	0.78	0.38	0.41
+20	['03.10 Auto Repair', '03.15 Car Dealers'] PA 	* large 	newcomer medium 	12	6	2	26	0.78	0.34	0.44
+21	['03.09 Auto Parts & Supplies', '22.06 Battery Stores'] * 	newcomer small 	middler small 	10	2	2	20	0.78	0.31	0.47
+22	['03.09 Auto Parts & Supplies', '03.15 Car Dealers'] NC 	senior small 	middler large 	11	2	2	29	0.77	0.35	0.41

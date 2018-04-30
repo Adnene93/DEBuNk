@@ -1,0 +1,2 @@
+python ..//..//..//DSC_Project//main.py ./yelp.json -q qualitative_results.csv --algos DSC+CLOSED+UB2  --sigma_obj 10 --sigma_ind 1 --sigma_qual 0.4 --nb_attr_desc_obj 2 --nb_attr_desc_ind 3 --timebudget 36000 --nb_obj 200000 --nb_ind 200 --verbose
+pause

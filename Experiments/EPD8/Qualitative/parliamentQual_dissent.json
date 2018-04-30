@@ -1,0 +1,38 @@
+{
+	"objects_file":"..//Data//items.csv",
+	"individuals_file":"..//Data//users.csv",
+	"reviews_file":"..//Data//reviews.csv",
+	"delimiter":"\t",
+
+	"nb_objects":5000,
+	"nb_individuals":5000,
+
+	"arrayHeader":["PROCEDURE_SUBJECT","LANGUAGES"],
+	"numericHeader":["VOTE_DATE","GEOSIZE","POP16","POP16_PERCENTAGE","GDP_BILLIONS","NB_SEATS_IN_EU","EU_MEMBER_SINCE"],
+	"vector_of_outcome":null,
+	"ponderation_attribute":null,
+	"description_attributes_objects":[["PROCEDURE_SUBJECT", "themes"],["VOTE_DATE","numeric"],["COMMITTEE","simple"]],
+	"description_attributes_individuals":[["EU_MEMBER_SINCE", "numeric"],["COUNTRY", "simple"]],
+	"description_attributes_individuals_OLD":[["EU_MEMBER_SINCE", "numeric"],["SCHENGEN_MEMBER", "simple"],["COUNTRY", "simple"],["GROUPE_ID", "simple"],["NATIONAL_PARTY", "simple"]],
+
+	"threshold_objects":40,
+	"threshold_individuals":10,
+	"threshold_quality":0.75,
+	
+
+	"aggregation_measure":"VECTOR_VALUES",
+	"similarity_measure":"MAAD",
+	"quality_measure":"DISAGR_SUMDIFF",
+	"algorithm":"DSC+CLOSED+UB2",
+	"timebudget":86400,
+	
+
+	"objects_scope":[
+	],
+	"individuals_1_scope":[
+	],
+	"individuals_2_scope":[
+	],
+
+	"results_destination":".//results.csv"
+}

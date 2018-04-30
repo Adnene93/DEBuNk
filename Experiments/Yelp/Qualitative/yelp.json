@@ -1,0 +1,38 @@
+{
+	"objects_file":"..//Data//items.csv",
+	"individuals_file":"..//Data//users.csv",
+	"reviews_file":"..//Data//reviews.csv",
+	"delimiter":"\t",
+
+	"nb_objects":5000000,
+	"nb_individuals":500000,
+
+	"arrayHeader":["categories","full_outcomes"],
+	"numericHeader":["stars","nb_users"],
+	"vector_of_outcome":["stars","nb_users","full_outcomes"],
+	"ponderation_attribute":null,
+	"description_attributes_objects":[["categories", "themes"],["state","simple"]],
+	"description_attributes_objects_OLD":[["categories", "themes"],["state","simple"]],
+	"description_attributes_individuals":[["seniority", "simple"],["friends_network", "simple"]],
+	"description_attributes_individuals_OLD":[["seniority", "simple"],["elite", "simple"],["friends_network", "simple"]],		
+	"threshold_objects":5,
+	"threshold_individuals":1,
+	"threshold_quality":0.5,
+	
+
+	"aggregation_measure":"AVGRATINGS_PONDERATION",
+	"similarity_measure":"AVG_YELP",
+	"quality_measure":"DISAGR_SUMDIFF",
+	"algorithm":"DSC+CLOSED+UB2",
+	"timebudget":3600,
+	
+
+	"objects_scope":[
+	],
+	"individuals_1_scope":[
+	],
+	"individuals_2_scope":[
+	],
+
+	"results_destination":".//results.csv"
+}

@@ -1,0 +1,10 @@
+ind	context	g1	g2	|subgroup(context)|	|subgroup(g1)|	|subgroup(g2)|	|ratings(c,g1,g2)|	ref_sim	pattern_sim	quality
+1	['7 Documentary'] [1996.0, 1997.0] 	executive 	artist 	8	32	28	24	0.77	0.36	0.41
+2	['5 Comedy', '8 Drama'] [1987.0, 1993.0] 	healthcare 	artist 	5	16	28	28	0.73	0.30	0.42
+3	['5 Comedy', '8 Drama'] [1987.0, 1993.0] 	scientist 	healthcare 	5	31	16	19	0.77	0.37	0.40
+4	['5 Comedy'] [1991.0, 1991.0] 	student 	healthcare 	5	196	16	40	0.74	0.33	0.41
+5	['4 Children'] [1997.0, 1997.0] 	lawyer 	executive 	5	12	32	27	0.80	0.38	0.42
+6	['11 Horror', '5 Comedy'] [1986.0, 1994.0] 	student 	healthcare 	6	196	16	106	0.74	0.33	0.42
+7	['11 Horror', '5 Comedy'] [1981.0, 1994.0] 	retired 	healthcare 	5	14	16	12	0.77	0.35	0.42
+8	['11 Horror', '5 Comedy'] [1974.0, 1993.0] 	retired 	healthcare 	5	14	16	16	0.77	0.36	0.41
+9	['11 Horror'] [1984.0, 1993.0] 	retired 	healthcare 	5	14	16	13	0.77	0.33	0.45

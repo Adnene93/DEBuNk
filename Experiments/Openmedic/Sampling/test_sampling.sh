@@ -1,0 +1,1 @@
+pypy ..//..//..//DSC_Project//main.py ..//openmedic.json -r sampling_openmedic.csv --sampling_algorithm DSC+SamplingPeers+RandomWalk  --nb_attr_desc_obj 3 --nb_attr_desc_ind 3 --nb_obj 15000 --nb_ind 80 --sigma_obj 5 --sigma_ind 1 --sigma_qual 10. --quality_measure RATIO --timebudget 0.025 0.05 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.2 --nrwc 30 --oneExecutionTest -v ;
