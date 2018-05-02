@@ -50,7 +50,7 @@ Once the configuration file is defined it can be executed using the command belo
 python .//DSC_Project//main.py <configuration file path> -q <results set path>
 ```
 
-Other options are available which enable the modification of the parameters specified in the configuration file. All these elements are specified in the documentation of the main script. For more informations please run:
+Other options are available which enable the modification of the parameters specified in the configuration file. All these elements are specified in the documentation of the main script. For more information about the available options please run:
 
 ```
 python .//DSC_Project//main.py -h
