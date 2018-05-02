@@ -4,9 +4,12 @@ This repository contains the materials concerning the paper in review: A Generic
 2. **Experiments**: all experiments depicting the quantitative and qualitative ```DEBuNk``` as well as the set of scripts used to generate the experiments.
 
 Below we give the method overview. Note that ```DEBuNk``` stands for Discovering Exceptional Behavior patterNs.
+  &nbsp;
 ![](Figures/overallApproach.png)
 >The method depicted in the figure above describe a generic framework which enables discovering exceptional pairwise behavior patterns by finding groups of individuals that unexpectedly behave under a specific context. The method considers any data describing individuals who give outcomes (actions, opinion) over a collection of entities (Berhavioral Data, examples cover Ratings data, voting data, monitoring data ...).  ```DEBuNk``` returns a collection of patterns of the form (c,u1,u2) which depict two confronted groups of individuals (u1,u2) for which we observe an exceptional change of pairwise behavior (inter-agreement) under the context (c) describing a subset of entities, this compared to the usual pairwise behavior observed over the whole set of entities. In a nutshell, ```DEBuNk``` starts by forming groups of individuals ___(1)___ by enumerating conditions/restrictions on the description attributes of individuals. Next, it computes the global pairiwse behavior model which describe the usual pairwise behavior between the two groups ___(2)___. Subsequently, subsets of entities are formed by enumerating conditions/restrictions (contexts) on the descriptive attributes of entities ___(3)___. The yielded subset of entities  is used to compute a contextual pairwise behavior model ___(4)___ which is eventually compared ___(5)___ to the global one. If an "important" deviation is observed (exceeds some user-defined threshold) than the pattern is considered in the results set.
-
+ 
+  &nbsp;
+  
 ### Qualitative experiments 
 In order to launch the algorithm ```DEBuNk``` to read a behavioral dataset and returns a set of relevant behavior patterns, a configuration file need to be specified to the method which structure is given below:  
 
@@ -58,3 +61,9 @@ python .//DSC_Project//main.py -h
 
 The script allows also to launch performance experiments, examples of such commands for each benchmark dataset are given in the experiments directory. 
 
+### Version
+1.0.0
+
+  
+### Corresponding Authors
+For additional informations please contact us: BELFODIL Adnene `adnene.belfodil@gmail.com`, BELFODIL Aimene `aimene.belfodil@gmail.com`
