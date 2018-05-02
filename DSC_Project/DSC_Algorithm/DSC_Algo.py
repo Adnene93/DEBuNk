@@ -1440,7 +1440,7 @@ def DSC_exiting_point(interesting_patterns,all_users_to_items_outcomes,items_met
 	k=1
 	already_seen=None
 	to_write=[]
-	WRITE_MORE_DETAILS=True
+	WRITE_MORE_DETAILS=False
 	COMPUTE_REF=True
 	#TAKE_INTO_ACCOUNT_INFOS=False
 	DRAW_FIGURES=True
