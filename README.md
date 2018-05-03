@@ -66,4 +66,4 @@ The script allows also to launch performance experiments, examples of such comma
 
   
 ### Corresponding Authors
-For additional informations please contact us: BELFODIL Adnene `adnene.belfodil@gmail.com`, BELFODIL Aimene `aimene.belfodil@gmail.com`
+For additional informations please contact: BELFODIL Adnene `adnene.belfodil@gmail.com`
