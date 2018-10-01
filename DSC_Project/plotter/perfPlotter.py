@@ -526,7 +526,7 @@ def plot_bars_vector_many_populations_openmedic(dict_vectors,exportPath,order_of
 
 	#ax.set_ylabel('Ratio',fontsize=42)
 	ax.set_ylabel('Ratio   ',fontsize=42)
-	ax.set_xlabel('- -',fontsize=42)
+	ax.set_xlabel(title_for_this,fontsize=42)
 
 
 

@@ -1,0 +1,12 @@
+minWeight:2
+minWraccPerEdge:200.
+usedModel:config
+inputFilePath:.//ComparingWithExistingAlgorithms//ComparingWithExistingAlgorithms001//TEST_COSMIC.csv
+outputFolderPath:.//ComparingWithExistingAlgorithms//ComparingWithExistingAlgorithms001//results
+postProcessing:jaccardSummary
+redundancyThreshold:0.01
+minVertexSize:8
+minEdgeSize:10
+minWracc:5.
+minLift:5.
+measure:lift

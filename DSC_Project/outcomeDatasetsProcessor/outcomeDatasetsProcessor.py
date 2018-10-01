@@ -35,6 +35,7 @@ def process_outcome_dataset(itemsfile,usersfile,outcomesfile,numeric_attrs=[],ar
 		items,items_header,users,users_header,outcomes,outcomes_header,items_id,users_id,outcome_attrs,position_attr,outcomes_processed,considered_items,users1,users2,(considered_items_ids),(considered_users_1_ids),(considered_users_2_ids),(considered_users_ids)=process_outcome_dataset.CACHE
 	else:
 		items,items_header=readCSVwithHeader(itemsfile,numberHeader=numeric_attrs,arrayHeader=array_attrs,selectedHeader=None,delimiter=delimiter)
+
 		users,users_header=readCSVwithHeader(usersfile,numberHeader=numeric_attrs,arrayHeader=array_attrs,selectedHeader=None,delimiter=delimiter)
 		outcomes,outcomes_header=readCSVwithHeader(outcomesfile,numberHeader=numeric_attrs,arrayHeader=array_attrs,selectedHeader=None,delimiter=delimiter)	
 		items_id=items_header[0]
@@ -42,7 +43,7 @@ def process_outcome_dataset(itemsfile,usersfile,outcomesfile,numeric_attrs=[],ar
 		
 		outcome_attrs=outcome_attrs if outcome_attrs is not None else [outcomes_header[2]]
 		position_attr=outcome_attrs[0]
-		outcomes_processed=outcome_representation_in_reviews(outcomes,position_attr,outcome_attrs,method_aggregation_outcome)
+		outcomes_processed,vector_of_action=outcome_representation_in_reviews(outcomes,position_attr,outcome_attrs,method_aggregation_outcome)
 		
 		considered_items=filter_pipeline_obj(items, itemsScope)[0]
 		users1=filter_pipeline_obj(users, users_1_Scope)[0]
@@ -89,7 +90,9 @@ def process_outcome_dataset(itemsfile,usersfile,outcomesfile,numeric_attrs=[],ar
 			if u_id_rev not in all_users_to_items_outcomes:
 				all_users_to_items_outcomes[u_id_rev]={}
 			all_users_to_items_outcomes[u_id_rev][v_id_rev]=pos_rev
-			if FULL_OUTCOME_CONSIDERED: outcomes_considered_append({items_id:v_id_rev,users_id:u_id_rev,position_attr:pos_rev})
+			if FULL_OUTCOME_CONSIDERED: 
+				outcomes_considered_append({items_id:v_id_rev,users_id:u_id_rev,position_attr:pos_rev})
+			
 			nb_outcome_considered+=1
 
 	considered_users_1_sorted=sorted(users1,key=itemgetter(users_id))
@@ -288,9 +291,10 @@ def process_outcome_dataset(itemsfile,usersfile,outcomesfile,numeric_attrs=[],ar
 
 
 
-	REPLACING_IDS=True
+	REPLACING_IDS=False
 	if REPLACING_IDS:
 		ind_to_dict_items={i:x[items_id] for i,x in enumerate(considered_items_sorted)}
+
 		dict_to_ind_items={v:k for k,v in ind_to_dict_items.iteritems()}
 		considered_items_sorted=[dict([(items_id,dict_to_ind_items[x[items_id]])]+[(k,v) for k,v in x.items() if k !=  items_id]) for x in considered_items_sorted] 
 		
@@ -306,9 +310,12 @@ def process_outcome_dataset(itemsfile,usersfile,outcomesfile,numeric_attrs=[],ar
 		
 		items_metadata={row[items_id]:row for row in considered_items_sorted}
 		users_metadata={dict_to_ind_users[u]:dict([(users_id,dict_to_ind_users[x[users_id]])]+[(k,v) for k,v in x.items() if k !=  users_id]) for u,x in users_metadata.iteritems()}
-
-
-	return items_metadata,users_metadata,all_users_to_items_outcomes,outcomes_considered,items_id,users_id,considered_items_sorted,considered_users_1_sorted,considered_users_2_sorted,nb_outcome_considered
+	else:
+		items_metadata={row[items_id]:row for row in considered_items_sorted}
+	# print vector_of_action
+	# raw_input('**************')
+	
+	return items_metadata,users_metadata,all_users_to_items_outcomes,outcomes_considered,items_id,users_id,considered_items_sorted,considered_users_1_sorted,considered_users_2_sorted,nb_outcome_considered,vector_of_action
 
 
 

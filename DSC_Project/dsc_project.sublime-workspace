@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"air",
+				"airport_destination"
+			],
+			[
+				"matr",
+				"matrix_by_e"
+			],
+			[
+				"fr",
+				"frenchdeputies_metadata"
+			],
+			[
+				"mep",
+				"mep_id"
+			],
+			[
+				"so",
+				"sorted_users"
+			],
+			[
 				"conf",
 				"CONFIGURATION"
 			],
@@ -494,36 +514,16 @@
 			[
 				"pat",
 				"pattern_matrix"
-			],
-			[
-				"pr",
-				"pruning"
-			],
-			[
-				"to",
-				"to_ret"
-			],
-			[
-				"u1_",
-				"u1_p"
-			],
-			[
-				"v_",
-				"v_ids_pattern"
-			],
-			[
-				"st",
-				"started"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "/C/Users/Adnene/Desktop/ContentCheckSVN/Rapports et comptes rendus/Papers/Journal-Flashpoints - Final/biblio.bib",
+			"file": "/C/Users/Adnene/Desktop/ANR/Journal-Flashpoints - Extension Fact-Checking/biblio.bib",
 			"settings":
 			{
-				"buffer_size": 29635,
+				"buffer_size": 33798,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -538,27 +538,63 @@
 			}
 		},
 		{
-			"file": "Alpha_Algorithm/ALPHA.py",
+			"file": "DSC_Algorithm/DSC_Algo.py",
 			"settings":
 			{
-				"buffer_size": 27212,
+				"buffer_size": 147914,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/Adnene/Desktop/DSCNEW/TestingAlpha/parliamentQual.json",
+			"file": "/C/Users/Adnene/Desktop/DSCNEW/Tests_for_Journal/EPD8NEW/Qualitative - Te7rach/qualitative.bat",
 			"settings":
 			{
-				"buffer_size": 1140,
+				"buffer_size": 507,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "DSC_Algorithm/DSC_Algo.py",
+			"file": "/C/Users/Adnene/Desktop/DSCNEW/Tests_for_Journal/EPD8NEW/Qualitative - Te7rach/parliamentQual.json",
 			"settings":
 			{
-				"buffer_size": 147616,
+				"buffer_size": 1405,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Alpha_Algorithm/ALPHA.py",
+			"settings":
+			{
+				"buffer_size": 49883,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Adnene/Desktop/AlphaKripendorfAndBootstraping/AlphaKripendorfAndBootstraping.py",
+			"settings":
+			{
+				"buffer_size": 444,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Adnene/Desktop/Parltrack DATA/TreatInPeace.py",
+			"settings":
+			{
+				"buffer_size": 19750,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "clusters/hierarchicalClustering.py",
+			"settings":
+			{
+				"buffer_size": 4446,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -571,15 +607,6 @@
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
-		},
-		{
-			"file": "/C/Users/Adnene/Desktop/DiscretizeAndMine/plotbeauty.bat",
-			"settings":
-			{
-				"buffer_size": 1166,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
 		}
 	],
 	"build_system": "",
@@ -589,10 +616,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 104.0,
-		"last_filter": "install ",
+		"height": 219.0,
+		"last_filter": "Package Control: re",
 		"selected_items":
 		[
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
 			[
 				"install ",
 				"Package Control: Install Package"
@@ -634,139 +665,146 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Adnene/Desktop/DSCNEW/DSC_Project",
-		"/C/Users/Adnene/Desktop/DSCNEW/DSC_Project/measures"
+		"/C/Users/Adnene/Desktop/DSCNEW/DSC_Project/Alpha_Algorithm",
+		"/C/Users/Adnene/Desktop/DSCNEW/DSC_Project/clusters",
+		"/C/Users/Adnene/Desktop/DSCNEW/DSC_Project/DSC_Algorithm",
+		"/C/Users/Adnene/Desktop/DSCNEW/DSC_Project/enumerator",
+		"/C/Users/Adnene/Desktop/DSCNEW/DSC_Project/heatmap",
+		"/C/Users/Adnene/Desktop/DSCNEW/DSC_Project/measures",
+		"/C/Users/Adnene/Desktop/DSCNEW/DSC_Project/outcomeDatasetsProcessor",
+		"/C/Users/Adnene/Desktop/DSCNEW/DSC_Project/plotter",
+		"/C/Users/Adnene/Desktop/DSCNEW/DSC_Project/util"
 	],
 	"file_history":
 	[
-		"/C/Users/Adnene/Desktop/Allel Hadjali",
-		"/C/Users/Adnene/Desktop/DSCNEW/Datasets/EPD8NEW/users.csv",
+		"/C/Users/Adnene/Desktop/test.py",
+		"/C/Users/Adnene/Desktop/test.pyc",
+		"/C/Users/Adnene/Desktop/AlphaKripendorfAndBootstraping/AlphaKripendorfAndBootstraping.py",
+		"/C/Users/Adnene/Desktop/REVIEWING/ECML-PKDD-18.xml",
+		"/C/Users/Adnene/Desktop/references.bib",
+		"/C/Users/Adnene/AppData/Local/Temp/7zE46479D07/references.bib",
+		"/C/Users/Adnene/Desktop/anes_flights/flightToGraph.py",
+		"/C/Users/Adnene/Desktop/anes_flights/graph_flight_threshold_200.json",
+		"/C/Users/Adnene/Desktop/anes_flights/graph_flight_threshold_100.json",
+		"/C/Users/Adnene/Desktop/anes_flights/graph_flight_threshold_50.json",
+		"/C/Users/Adnene/Desktop/anes_flights/graph_flight_50.json",
+		"/C/Users/Adnene/Downloads/airports.csv",
+		"/C/Users/Adnene/Desktop/anes_flights/flights500.csv",
+		"/C/Users/Adnene/Desktop/anes_flights/flights.csv",
+		"/C/Users/Adnene/Desktop/DSCNEW/Datasets/EPD8/users.csv",
+		"/C/Users/Adnene/Desktop/DSCNEW/Tests_for_Journal/EPD8NEW/Qualitative - Te7rach/qualitative_results_choosed_dissent-S&DCountries.csv",
+		"/C/Users/Adnene/Desktop/DSCNEW/Tests_for_Journal/EPD8NEW/Qualitative - Te7rach/qualitative_results_choosed_dissent.csv",
+		"/C/Users/Adnene/Desktop/DSCNEW/Tests_for_Journal/EPD8NEW/Qualitative - Te7rach/DetailedResults/0030_INFOS.csv",
+		"/C/Users/Adnene/Desktop/DSCNEW/Tests_for_Journal/EPD8NEW/Qualitative - Te7rach/DetailedResults/0049_INFOS.csv",
+		"/C/Users/Adnene/Desktop/DSCNEW/Tests_for_Journal/EPD8NEW/Qualitative - Te7rach/DetailedResults/0053_INFOS.csv",
+		"/C/Users/Adnene/Desktop/DSCNEW/Tests_for_Journal/EPD8NEW/Qualitative - Te7rach/DetailedResults/0002_INFOS.csv",
+		"/C/Users/Adnene/Desktop/DSCNEW/Tests_for_Journal/EPD8NEW/DataDEDUP/users.csv",
+		"/C/Users/Adnene/Desktop/DSCNEW/Datasets/EPD8DEDUP/items.csv",
 		"/C/Users/Adnene/Desktop/DSCNEW/TestingAlpha/qualitative_results_choosed_dissent.csv",
-		"/C/Users/Adnene/Desktop/DSCNEW/TestingAlpha/qualitative_results_choosed_dissent - Copy.csv",
+		"/C/Users/Adnene/Desktop/DSCNEW/TestingAlpha/qualitative.bat",
+		"/C/Users/Adnene/Desktop/AlphaKripendorfAndBootstraping/AlphaKripendorfAndBootstraping.tex",
+		"/C/Users/Adnene/AppData/Local/Temp/7zO8B35B6C3/voteview_rollcalls.metadata.json",
+		"/C/Users/Adnene/Downloads/S114desc.csv",
+		"/C/Users/Adnene/Desktop/DSCNEW/Datasets/EPD8DEDUP/users.csv",
+		"/C/Users/Adnene/AppData/Local/Temp/7zO0B24D1D1/mep_rcv_vote.csv",
+		"/C/Users/Adnene/AppData/Local/Temp/7zO0B211F62/action_info.csv",
+		"/C/Users/Adnene/AppData/Local/Temp/7zO0B2FB281/mep_info.json",
+		"/C/Users/Adnene/AppData/Local/Temp/7zO0B2199C1/mep_rcv_vote.csv",
+		"/C/Users/Adnene/AppData/Local/Temp/7zO0B2EC2F1/retweets.csv",
+		"/C/Users/Adnene/Desktop/DSCNEW/TestingAlpha/parliamentQual.json",
+		"/C/Users/Adnene/Desktop/DSCNEW/DSC_Project/heatmap/heatmap.py",
+		"/C/Users/Adnene/Desktop/DSCNEW/Tests_for_Journal/EPD8NEW/Qualitative - Te7rach/parliamentQual.json",
+		"/C/Users/Adnene/Desktop/DSCNEW/Tests_for_Journal/EPD8NEW/Qualitative - Te7rach/qualitative.bat",
 		"/C/Users/Adnene/Desktop/DiscretizeAndMine/plotter/plotter.py",
+		"/C/Users/Adnene/Desktop/DiscretizeAndMine/plotter/perfPlotter.py",
+		"/C/Users/Adnene/Desktop/DEBuNk/README.md",
+		"/C/Users/Adnene/Desktop/DSCNEW/Datasets/EPD8NEW/users.csv",
+		"/C/Users/Adnene/Desktop/DSCNEW/Tests/EPD8NEW/Qualitative/parliament.json",
+		"/C/Users/Adnene/Desktop/DSCNEW/DSC_Project/enumerator/enumerator_attribute_complex_couple.py",
+		"/C/Users/Adnene/Desktop/DSCNEW/Tests_for_Journal/Openmedic/openmedic.json",
+		"/C/Users/Adnene/Desktop/DSCNEW/Tests_for_Journal/EPD8NEW/Qualitative/qualitative2.bat",
+		"/C/Users/Adnene/Desktop/DSCNEW/TestingAlpha/parliamentQual2.json",
+		"/C/Users/Adnene/Desktop/AnesThales/CodeSource/processus complet.txt",
+		"/C/Users/Adnene/Desktop/AnesThales/CodeSource/DossierMilan/default/resultsMilan_lift/results.json",
+		"/C/Users/Adnene/Desktop/AnesThales/CodeSource/DossierMilan/resultsMilan/results.json",
+		"/C/Users/Adnene/Desktop/Parltrack DATA/GeneratedData/EPD8/users.csv",
+		"/C/Users/Adnene/Desktop/Parltrack DATA/exportsToCSV.sh",
+		"/C/Users/Adnene/Desktop/ContentCheckSVN/Rapports et comptes rendus/Papers/Journal-Flashpoints - Final/biblio.bib",
+		"/C/Users/Adnene/Desktop/DiscretizeAndMine/plotbeauty.bat",
+		"/C/Users/Adnene/Desktop/vagrant-contentCheck/DSC/graphbuilder/simConsole.py",
+		"/C/Users/Adnene/Desktop/DSCNEW/TestingAlpha/Figures/matrix_512.csv",
+		"/C/Users/Adnene/Desktop/DSCNEW/TestingAlpha/Figures/matrix_48.csv",
+		"/C/Users/Adnene/Desktop/vagrant-contentCheck/DSC/graphbuilder/hierarchicalClustering.py",
+		"/C/Users/Adnene/Desktop/vagrant-contentCheck/DSCNEW/DSC_Project/plotter/plotter.py",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Yelp/Qualitative/yelp.json",
+		"/C/Users/Adnene/Desktop/RefineAndMine/RefineAndMine/README.md",
+		"/C/Users/Adnene/Desktop/DEBuNk/DSC_Project/DSC_Algorithm/DSC_Algo.py",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/EPD8/Qualitative/qualitativeConsent.bat",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/EPD8/parliament.json",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Openmedic/PerformanceForScaling/figures.bat",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/EPD8/Qualitative/qualitativeDissent.bat",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Yelp/Qualitative/qualitative.bat",
+		"/C/Users/Adnene/Desktop/DEBuNk/DSC_Project/plotter/perfPlotter.py",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Openmedic/Qualitative/qualitative.bat",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Yelp/Qualitative/qualitative - Copy.bat",
+		"/C/Users/Adnene/Desktop/DSCNEW/Tests_for_Journal/EPD8NEW/Qualitative/parliamentQual.json",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/EPD8/Qualitative/parliamentQual.json",
+		"/C/Users/Adnene/Desktop/DSCNEW/DSC_Project/plotter/perfPlotter.py",
+		"/C/Users/Adnene/Desktop/DSCNEW/DSC_Project/dsc_project.sublime-project",
+		"/C/Users/Adnene/Desktop/DSCNEW/Tests_for_Journal/Yelp/Qual/yelpTEST.json",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/EPD8/Qualitative/qualitative.bat",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Yelp/HMTvsItemsets/yelp.json",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Yelp/HMTvsItemsets/Performance.sh",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Yelp/Qualitative/qualitative_results.csv",
+		"/C/Users/Adnene/Desktop/DSCNEW/DSC_Project/main.py",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Movielens/Qualitative/qualitative.bat",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Movielens/Qualitative/qualitative_results2.csv",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Movielens/Qualitative/qualitative_results.csv",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Movielens/PerformanceForScaling/performance.sh",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Movielens/PerformanceForComparison/Performance.sh",
+		"/C/Users/Adnene/Desktop/DSCNEW/DSC_Project/DSC_Algorithm/DSC_Algo.py",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Openmedic/Qualitative/qualitative_results_choosed.csv",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Openmedic/Qualitative/openmedicQual.json",
+		"/C/Users/Adnene/Desktop/ContentCheckSVN/Rapports et comptes rendus/Papers/Journal-Flashpoints - Final/figures/intervaltree_example_c.tex",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Openmedic/PerformanceForComparison/Figures.bat",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Openmedic/PerformanceForComparison/performance.sh",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Openmedic/PerformanceForScaling/performance.sh",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Openmedic/SamplingRatio/test_sampling.sh",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Movielens/Qualitative/movielens.json",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Movielens/PerformanceForComparison/Figures.bat",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Movielens/PerformanceForComparison/graphs.bat",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Movielens/PerformanceForScaling/figures.bat",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Movielens/Sampling/test_sampling.sh",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Yelp/Qualitative/qualitative_results_choosed_3.csv",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Yelp/Qualitative/yelpTEST.json",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Yelp/Qualitative/qualitative_results_choosed_3_FULL.csv",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/EPD8/PerformanceComparison/Figures.bat",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Yelp/PerformanceForComparison/Figures.bat",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Yelp/PerformanceForComparison/performance.bat",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/EPD8/HMTvsItemsets/performance.sh",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/EPD8/HMTvsItemsets/Figures.bat",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Yelp/HMTvsItemsets/fig.bat",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Yelp/HMTvsItemsets/performance.sh",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Yelp/Sampling/test_sampling.sh",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Yelp/PerformanceScaling/figures.bat",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/Yelp/PerformanceScaling/performance.sh",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/EPD8/Qualitative/qualitative_consent.bat",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/EPD8/Qualitative/parliamentQual_Consent.json",
+		"/C/Users/Adnene/Desktop/DSCNEW/Tests_for_Journal/EPD8NEW/PerformanceHMTvsItemsets/FULL_performance_HMT_ITEMSET.csv",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/EPD8/PerformanceComparison/performance.bat",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/EPD8/PerformanceComparison/stats.bat",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/EPD8/Sampling/sampling.sh",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/EPD8/Sampling (NewPonderation)/sampling.sh",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/EPD8/Sampling (NewPonderation)/parliament_sampling.csv",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/EPD8/PerformanceForScaling/figures.bat",
+		"/C/Users/Adnene/Desktop/DEBuNk/Experiments/EPD8/PerformanceForScaling/performance.sh",
+		"/C/Users/Adnene/Desktop/Allel Hadjali",
+		"/C/Users/Adnene/Desktop/DSCNEW/TestingAlpha/qualitative_results_choosed_dissent - Copy.csv",
 		"/C/Users/Adnene/Desktop/Flashpoint/filelist.txt",
 		"/C/Users/Adnene/Desktop/Flashpoint/script_jpg_to_pdf.py",
-		"/C/Users/Adnene/Desktop/DSCNEW/DSC_Project/dsc_project.sublime-project",
 		"/C/Users/Adnene/Desktop/DiscretizeAndMine/util/util.py",
 		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/parseMCTSResults.py",
-		"/C/Users/Adnene/Desktop/DSCNEW/TestingAlpha/qualitative.bat",
-		"/C/Users/Adnene/Desktop/DSCNEW/TestingAlpha/qualitative2.bat",
-		"/C/Users/Adnene/Desktop/DSCNEW/Datasets/MustaphaDataset/transformer.py",
-		"/C/Users/Adnene/Desktop/DSCNEW/TestingAlpha/parliamentQual2.json",
-		"/C/Users/Adnene/Desktop/DSCNEW/TestingAlpha/qualitative_results_choosed_dissent2.csv",
-		"/C/Users/Adnene/Desktop/DSCNEW/Tests_for_Journal/EPD8NEW/Sampling (NewPonderation)/sampling.sh",
-		"/C/Users/Adnene/Desktop/DSCNEW/TestingAlpha/parliamentQual.json",
-		"/C/Users/Adnene/Desktop/DSCNEW/Tests_for_Journal/EPD8NEW/Qualitative/qualitative.bat",
-		"/C/Users/Adnene/Desktop/DSCNEW/DSC_Project/main.py",
-		"/C/Users/Adnene/Desktop/DSCNEW/Datasets/EPD8NEW/items.csv",
-		"/C/Users/Adnene/Desktop/DSCNEW/Datasets/OpenMedic/users.csv",
-		"/C/Users/Adnene/Desktop/DEBuNk/README.md",
-		"/C/Users/Adnene/Desktop/RefineAndMine/RefineAndMine/README.md",
-		"/C/Users/Adnene/Desktop/ContentCheckSVN/Rapports et comptes rendus/Papers/Journal-Flashpoints - Final/sections/problemDefinition.tex",
-		"/C/Users/Adnene/Desktop/DSCNEW/Tests_for_Journal/EPD8NEW/Sampling (NewPonderation)/parliament_sampling.csv",
-		"/C/Users/Adnene/Desktop/TOSUBMIT/Flash points Discovering Exceptional Pairwise Behavior in Vote or Rating Data/sections/aknowledgement.tex",
-		"/C/Users/Adnene/Desktop/PerformanceXP/Movielens/script.sh",
-		"/C/Users/Adnene/Desktop/PerformanceXP/Movielens/nb_items.json",
-		"/C/Users/Adnene/Desktop/numba/test.py",
-		"/C/Users/Adnene/Desktop/REVIEWING/AAAI-18-3.xml",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/mainINTBITSET.py",
-		"/C/Users/Adnene/Desktop/RefineAndMine/RefineAndMine/Experiments/Q2XP/Q2FIG.bat",
-		"/C/Users/Adnene/Desktop/RefineAndMine/RefineAndMine/Experiments/Q2XP/Q2.sh",
-		"/C/Users/Adnene/Desktop/RefineAndMine/RefineAndMine/Experiments/Q2XP/Q1.sh",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q2/Q2.sh",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q1/Q1FIG.bat",
-		"/C/Users/Adnene/Desktop/ContentCheckSVN/Rapports et comptes rendus/Papers/Journal-Flashpoints - Final/sections/evaluation.tex",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/TEST/Q3Revisited/Q3.bat",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q3/Q3FIG.bat",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/plotbeauty.bat",
-		"/C/Users/Adnene/Desktop/DiscoveringSimilarityChanges/README.md",
-		"/C/Users/Adnene/Desktop/RefineAndMine/RefineAndMine/Experiments/Q1XP/Q1.sh",
-		"/C/Users/Adnene/Desktop/RefineAndMine/RefineAndMine/RefineAndMine/main.py",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q1/Q1.sh",
-		"/C/Users/Adnene/Desktop/RefineAndMine/RefineAndMine/Experiments/Q1XP/Q1FIG.bat",
-		"/C/Users/Adnene/Desktop/StreamAggregateBimedia (POC - Vagrant Configured VM with source code)/README.md",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/DatasetsConsidered.xlsx",
-		"/C/Users/Adnene/Desktop/matplotlibrc",
-		"/C/Program Files/Anaconda2/Lib/site-packages/matplotlib/mpl-data/matplotlibrc",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q2/BREAST_6_4.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q2/Q2FIG.bat",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q3-Lighter/GLASS_2_1.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q3-Lighter/HABERMAN_3_2.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q3-Lighter/Haberman_3_2_MCTS.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q3-Lighter/Haberman_2_2_MCTS.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q3-Lighter/HABERMAN_2_2.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q3-Lighter/Glass_4_1_MCTS.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q3-Lighter/GLASS_4_1.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q3-Lighter/Glass_2_1_MCTS.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q3-Lighter/Credita_2_+_MCTS.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q3-Lighter/CREDITA_2_+.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q3-Lighter/Abalone_2_M_MCTS.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q3-Lighter/ABALONE_2_M.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/TESTS - Aggregation.bat",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/TEST/Q3Revisited/HABERMAN_2_2.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/TEST/Q3/Q3.bat",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q3/HABERMAN_3_2.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q3/Haberman_3_2_MCTS.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q3/HABERMAN_2_2.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q3/Haberman_2_2_MCTS.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q3/GLASS_4_1.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q3/Glass_4_1_MCTS.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q3/GLASS_2_1.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q3/Glass_2_1_MCTS.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q3/CREDITA_2_+.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q3/Credita_2_+_MCTS.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q3/ABALONE_2_M.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q3/Abalone_2_M_MCTS.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/Final_Test_From_Machine/Q1/GLASS_04_1.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/TEST/Q3/CREDITA_2_+.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/TEST/Q3/Q3FIG.bat",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/results/Haberman_3_2/Aggergation.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/TEST/Q3/ABALONE_2_M.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/results/Abalone_2_M/Aggergation.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/results/Credita_2_+/Aggergation.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/TESTS.bat",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/results/Haberman_2_2/Aggergation.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/MCTS4DM.jar",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/STATS.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/TEST/Q3/HABERMAN_3_2.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/TEST/Q3/HABERMAN_2_2.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/TEST/Q3/Haberman_3_2MCTS.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/results/Haberman2_2MCTS.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/results/Haberman_3_2/resXP1523485197771/info.log",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/TEST/Q3/GLASS_2_1.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/TestingsScripts/haberman_3_2/haberman_3_2_50.conf",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/TEST/Q3/Haberman2_2MCTS.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/TEST/Q1/Q1FIG.bat",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/TestingsScripts/haberman_2_2/haberman_2_2_100.conf",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/TestingsScripts/abalone_2_M/abalone_2_M_EXECUTIONNAME.conf",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/TestingsScripts/credita_2_+/credita_2_+_EXECUTIONNAME.conf",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/generate_confs.py",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/CREATE_FILE_CONFIG.bat",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/TestingsScripts/haberman_3_2/haberman_3_2_100.conf",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/TestingsScripts/haberman_2_2/haberman_2_2_EXECUTIONNAME.conf",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/TestingsScripts/glass_2_1/glass_2_1_EXECUTIONNAME.conf",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/TestingsScripts/glass_4_1/glass_4_1_EXECUTIONNAME.conf",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/TestingsScripts/haberman_3_2/haberman_3_2_EXECUTIONNAME.conf",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/TestingsScripts/haberman_2_2/haberman_2_2_100000.conf",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/TestingsScripts/haberman_2_2/haberman_2_2.conf",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/TestingsScripts/haberman_2_2/haberman_2_2_1.conf",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/TestingsScripts/haberman_2_2/haberman_2_2_100_1.conf",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/TestingsScripts/haberman_2_2/haberman_2_2_100_2.conf",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/results/Glass_2_1/resXP1523464974955/info.log",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/results/Glass_4_1/resXP1523464840396/info.log",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/parseMCTSResults.py",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/TestingsScripts/abalone_2_M/filename.txt",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/datasets/Credita_2_+/properties.csv",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/GenerateDataPlot.jar",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/TestingsScripts/credita_2_+/filename.txt",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/TestingsScripts/glass_2_1/filename.txt",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/TestingsScripts/glass_2_1/glass_2_1_75000.conf",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/TestingsScripts/glass_4_1/glass_4_1_75000.conf",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/TestingsScripts/glass_4_1/glass_4_1_100000.conf",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/TestingsScripts/glass_4_1/glass_4_1_50000.conf",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/TestingsScripts/glass_4_1/glass_4_1_40000.conf",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/TestingsScripts/glass_4_1/glass_4_1_30000.conf",
-		"/C/Users/Adnene/Desktop/DiscretizeAndMine/MCTS4DM-master/TestingsScripts/glass_4_1/glass_4_1_20000.conf"
+		"/C/Users/Adnene/Desktop/DSCNEW/TestingAlpha/qualitative2.bat"
 	],
 	"find":
 	{
@@ -774,7 +812,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
 		]
@@ -784,134 +822,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"Atzmuller",
-			"Exceptional contextual subgraph mining",
-			"Local Subgroup Discovery for Eliciting and ",
-			"Local subg",
-			"compute_reliability",
-			"nb_votes_casted_by_outcome_sums",
-			"compute_reliability",
-			"compute_cohesion",
-			"build_vector",
-			"compute_cohesion",
-			"compute_cohes",
-			"compute_cohesion",
-			"print e",
-			"compute_cohesion",
-			"compute_reliability",
-			"compute_cohesion",
+			"compute_reliability_with_bootstraping_KILEM_GWET_BLB",
+			"all_parents_tag_exclusive",
+			"enumerator_attribute_complex",
+			"plot_timeseries",
+			"True",
+			"Alpha_Entry_Point",
+			"Vlachos",
+			"vlachos2014fact",
+			"compute_reliability_with_bootstraping",
+			"your",
+			"you",
+			"your",
+			"ioana",
+			"from_airports",
+			"direct_construction_graph",
+			"row",
+			"writeJSON",
+			"airport_destination",
+			"airport_origin",
+			"d[0]",
+			" ",
+			"France",
+			"Front national",
+			"Bleu marine",
+			"Front nat",
+			"marine le pen",
+			"marine",
+			"**0.5",
+			"returned_sorted",
+			"compute_reliability_with_bootstraping_KILEM_GWET_BLB",
+			"returned_sorted",
+			" ",
+			"old_calculation",
+			"compute_reliability_with_bootstraping",
+			"choice",
+			"compute_reliability_with_bootstraping_KILEM_GWET",
+			"PROFILING",
+			"cProfile",
+			" ",
+			"expected",
+			"constituted_sample_unit",
+			"compute_reliability_with_bootstraping_KILEM_GWET",
+			"compute_reliability_with_bootstraping",
 			"coincidence_matrix",
+			"random_unit_couples_proba.items()",
+			"compute_reliability_with_bootstraping",
+			"enumerator_complex_cbo_init_new_config",
+			"DSC_exiting_point",
+			"cProfile",
+			"compute_reliability_with_bootstraping",
+			"hierarchicalClusteringFromDataset",
+			"from heatmap.heatmap import generateHeatMap",
+			"generateHeatmap",
+			"heatmap",
+			"compute_reliability_with_bootstraping",
+			"disagreement_observed",
+			"k",
+			"random_unit_couples_proba['SUM']",
+			"compute_reliability_with_bootstraping",
+			"values()",
+			"coincidence_matrix",
+			"randinit",
+			"randint",
+			"compute_reliability_with_bootstraping",
+			"compute_reliability",
+			"coincidence_matrix",
+			"bootstrap",
+			"coincidence_matrix",
+			"compute_reliability",
+			"coincidence_matrix",
+			"compute_reliability",
+			"unicodedata",
+			"reorganize_similarly",
+			"unicodedata",
+			"NAME_FULL",
+			"similarity_dictionnary",
+			"reorganize_similarly",
+			"generateHeatMap",
+			"reorganize_similarly",
+			"getInnerMatrix",
+			"reorganize_similarly",
+			"cp_matrice_pattern",
+			"sim_matrix",
+			"compute_reliability",
+			"legend",
+			"False",
+			"True",
+			"unicodedata",
+			"False",
+			"is_U1_EQUAL_TO_U2",
+			"enumerator_pair_of_users_optimized_dfs",
+			"compute_reliability",
+			"expected",
+			"compute_reliability",
+			"87\t",
+			"Meps_data_separated_deputies",
+			"EPD8",
+			"UserID",
+			"'\n",
+			"compute_reliability",
+			"52\t",
+			"compute_reliability",
+			"EFDD",
+			"generateHeatMap",
 			"compute_cohesion",
-			"0.96",
-			"compute_cohesion",
 			"compute_reliability",
-			"elem[2]",
-			"compute_cohesion",
-			"compute_relia",
-			"agreement ",
-			"items_set",
-			"coincidence_matrix",
-			"compute_cohesion",
-			"coincidence_matrix",
-			"similarity_vector_MAAD",
-			"AIT",
-			"coincidence_matrix",
-			"outcome",
-			"pdf_cat",
-			"compute_reliability",
-			"compute_reliability_numeric",
-			"compute_reliability",
-			"coincidence_matrix",
-			"new_matrix",
-			"(nb_votes_casted_by_outcome_sums[c_1]*nb_votes_casted_by_outcome_sums[c_2])/(float(sum(nb_votes_casted_by_outcome_sums.values()))-1)",
-			"compute_reliability_numeric",
-			"coincidence_matrix",
-			"[e][0]",
-			"compute_reliability",
-			"coincidence_matrix",
-			"compute_reliability",
-			"main_1",
-			"DSC_input_config_alpha",
+			"1.-",
+			"heatmap",
+			"transformMatricFromDictToList",
+			"heatmap",
+			"utf-8",
+			"similarity_dictionnary",
 			"writeCSVwithHeader",
 			"DSC_input_config_alpha",
-			"Alpha_Entry_Point",
-			"cigarettes",
-			"DSC_input_config_alpha",
-			"Alpha_Entry_Point",
-			"main_1",
-			"qual",
-			"quak",
-			"DSC_input_config",
-			"main_2",
-			"main_1",
-			"Alpha_Entry_Point",
-			"main_1",
-			"debug",
-			"main_1",
-			"main_2",
+			"drawDendrogramme",
+			"applyHierarchiqueClusteringFromDataset",
+			"hierarchicalClusteringFromDataset",
+			"drawDendrogramme",
+			"sim_matrix_array",
 			"main",
-			"alpha",
-			"similarity_vector_ranking_averaging_majority",
-			"wrobel",
-			"An Algorithm",
-			"An algorithm",
-			"python ..//..//mainINTBITSET.py",
-			"..//..//mainINTBITSET.py",
-			"linear_corr",
-			"ev",
-			"str(animate.STEP).zfill(2)",
-			"str(animate.STEP)",
-			"SHOW_DISCRETIZATIONS_LINE",
-			"0.9",
-			"1.1",
-			"min(min(positive_array[:,1]),min(negative_array[:,1]))",
-			"max(max(positive_array[:,0]),max(negative_array[:,0]))",
-			"min(min(positive_array[:,0]),min(negative_array[:,0]))",
-			"ax_1.clear",
-			"0",
-			"max",
-			"positive_array",
-			"1",
-			"positive_array",
-			"print",
-			"plot_patterns",
-			"HABERMAN",
-			"HABERMAN_2_1",
-			"title_for_figure",
-			"plot_patterns",
-			"destinationCSVFile",
-			"title_for_figure",
-			"plot_timeseries",
-			"HABERMAN",
-			"pdf_cat",
-			"plotter",
-			"plot",
-			"pdf_cat",
-			"output_stream",
-			"pdf_cat",
-			"backend_pdf",
-			"fig",
-			"backend_pdf",
-			"plt.title",
-			"title",
-			"ax_2",
-			"X_SCALE_BARS",
-			"STEP",
-			"plt.savefig(save_in)",
-			"60",
-			"ani.",
-			"animate.",
-			"algo_discretization",
-			"legend",
-			"similarity_between_patterns_set_new",
-			"recall",
-			"similarity_between_patterns_set_globaility",
-			"similarity_between_patterns_set_globaility_new",
-			"similarity_between_patterns_set_globaility",
-			"similarity_between_patterns_set_globaility_new",
-			"exhaustive_sets",
-			"similarity_between_patterns_set_globaility",
-			"compute_crispiness"
+			"similarityMatrix",
+			"getInnerMatrix",
+			"similarity_dictionnary",
+			"nb",
+			"similarity_dictionnary",
+			"similarity_vector_measure_dcs",
+			"heatmap",
+			"enumerator_complex_cbo_init_new_config"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -953,37 +991,35 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 6,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/C/Users/Adnene/Desktop/ContentCheckSVN/Rapports et comptes rendus/Papers/Journal-Flashpoints - Final/biblio.bib",
+					"file": "/C/Users/Adnene/Desktop/ANR/Journal-Flashpoints - Extension Fact-Checking/biblio.bib",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 29635,
+						"buffer_size": 33798,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4789,
-								4839
+								29949,
+								29968
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LaTeX/Bibtex.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/LaTeX/Bibtex.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1513.0,
+						"translation.y": 13309.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -999,8 +1035,8 @@
 						"selection":
 						[
 							[
-								18186,
-								18186
+								40855,
+								40855
 							]
 						],
 						"settings":
@@ -1020,67 +1056,84 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4010.0,
+						"translation.y": 9919.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "DSC_Algorithm/DSC_Algo.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 147914,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								66573,
+								66573
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 21033.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "Alpha_Algorithm/ALPHA.py",
+					"buffer": 3,
+					"file": "/C/Users/Adnene/Desktop/DSCNEW/Tests_for_Journal/EPD8NEW/Qualitative - Te7rach/qualitative.bat",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 27212,
+						"buffer_size": 507,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								14546,
-								14577
+								507,
+								507
 							]
 						],
 						"settings":
 						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".",
-									"selector": "source.python - string - constant.numeric"
-								}
-							],
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Batch File/Batch File.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 5648.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "/C/Users/Adnene/Desktop/DSCNEW/TestingAlpha/parliamentQual.json",
+					"buffer": 4,
+					"file": "/C/Users/Adnene/Desktop/DSCNEW/Tests_for_Journal/EPD8NEW/Qualitative - Te7rach/parliamentQual.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1140,
+						"buffer_size": 1405,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								469,
+								486
 							]
 						],
 						"settings":
@@ -1096,20 +1149,60 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "DSC_Algorithm/DSC_Algo.py",
+					"buffer": 5,
+					"file": "Alpha_Algorithm/ALPHA.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 147616,
+						"buffer_size": 49883,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								50160,
-								50160
+								16123,
+								16123
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 6204.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/Users/Adnene/Desktop/AlphaKripendorfAndBootstraping/AlphaKripendorfAndBootstraping.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 444,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11,
+								11
 							]
 						],
 						"settings":
@@ -1118,14 +1211,73 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 15720.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 7,
+					"file": "/C/Users/Adnene/Desktop/Parltrack DATA/TreatInPeace.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19750,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4989,
+								4991
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1886.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "clusters/hierarchicalClustering.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4446,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2838,
+								2839
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 825.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
 					"file": "outcomeDatasetsProcessor/outcomeDatasetsProcessor.py",
 					"semi_transient": false,
 					"settings":
@@ -1137,8 +1289,8 @@
 						"selection":
 						[
 							[
-								1934,
-								1934
+								83,
+								96
 							]
 						],
 						"settings":
@@ -1150,35 +1302,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/C/Users/Adnene/Desktop/DiscretizeAndMine/plotbeauty.bat",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1166,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1166,
-								1166
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Batch File/Batch File.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -1186,7 +1310,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 22.0
+		"height": 23.0
 	},
 	"input":
 	{
@@ -1223,7 +1347,7 @@
 	"project": "dsc_project.sublime-project",
 	"replace":
 	{
-		"height": 40.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":

@@ -163,8 +163,8 @@ def generateHeatMap(dataset,destination,color='RdYlGn',vmin=None,vmax=None,organ
     xlabels= header_new#header[:]
     ylabels=rower_new#rower
     
-    ax.set_xticklabels(xlabels, minor=False,fontsize=70)
-    ax.set_yticklabels(ylabels, minor=False,fontsize=70)
+    ax.set_xticklabels(xlabels, minor=False,fontsize=15)
+    ax.set_yticklabels(ylabels, minor=False,fontsize=15)
 
     plt.xticks(rotation=90)
     plt.yticks(rotation=0)
@@ -193,7 +193,8 @@ def generateHeatMap(dataset,destination,color='RdYlGn',vmin=None,vmax=None,organ
     #fig.tight_layout()
     if only_heatmap: 
         plt.tight_layout()
-    plt.savefig(destination,dpi=100)
+    plt.savefig(destination,dpi=300)
+    #print 'hello !!!!!!!'
     fig.clf()
     plt.clf()
     plt.gcf().clear()

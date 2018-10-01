@@ -277,6 +277,25 @@ def main_1(debug):
 #TODO - add the script allowing to draw graphs
 
 
+def pattern_printer_one(pattern,types_attributes,names_attributes=[]):
+
+	s=''
+	for k in range(len(pattern)):
+		if types_attributes[k]=='simple':
+			if len(pattern[k])>1:
+				if True:
+					s= '*'
+				else:
+					s= str(pattern[k])
+			else:
+				s+= str(pattern[k][0])
+		elif types_attributes[k] in {'themes','hmt'}:
+
+			s= printer_hmt(pattern[k])#str(pattern[k])+' '
+		else:
+			s= pattern[k]
+	return s
+
 
 def main_2():
 	parser = argparse.ArgumentParser(description='DSC-XPs')
@@ -299,6 +318,9 @@ def main_2():
 	parser.add_argument('--nb_items_desc_ind',metavar='nb_items_desc_ind', nargs='*',help='vary the number of description attributes (by Items) over individuals',type=int)
 
 	parser.add_argument('--hmt_to_itemset',action='store_true',help='Consider all HMT To Be Itemsets') #args.hmt_to_itemset
+
+	parser.add_argument('--export_support',action='store_true',help='add a qualitiative file containing supports')
+
 
 	parser.add_argument('--algos',metavar='algos', nargs='*',help='vary the algorithms used in experiments',type=str)
 	parser.add_argument('--sampling_algorithm',metavar='sampling_algorithm', nargs='*',help='sampling algorithm',type=str)
@@ -451,9 +473,37 @@ def main_2():
 		for k,v in DSC_input_config.stats.iteritems():
 			print k,'\t',v
 
+		if args.export_support:
+			resulting_file,resulting_file_header=readCSVwithHeader(json_config['results_destination'],numberHeader=['ref_sim','pattern_sim','quality'])
+			print 'exporting supports of each pattern'
+			to_save=[]
+			ii=0
+			for eup,eup_ext,e_u_p_ext_bitset in returned:
+				context_extent=eup_ext[0]
+				d1_extent=eup_ext[1]
+				d2_extent=eup_ext[2]
+				#to_save.append({'context':sorted(eup[0][0])[1:],'g_1':sorted(eup[1][0])[1:],'g_2':sorted(eup[2][0])[1:],'context_extent':sorted(context_extent),'g_1_extent':sorted(d1_extent),'g_2_extent':sorted(d2_extent),'sim_ref':resulting_file[ii]['ref_sim'],'sim_context':resulting_file[ii]['pattern_sim'],'quality':resulting_file[ii]['quality']})
+				# print eup
+				# raw_input('**************')
+
+				context_desc=sorted(pattern_printer_one([z],[json_config['description_attributes_objects'][ind][1]]) for ind,z in enumerate(eup[0]))
+				g1_desc=sorted(pattern_printer_one([z],[json_config['description_attributes_individuals'][ind][1]]) for ind,z in enumerate(eup[1]))
+				g2_desc=sorted(pattern_printer_one([z],[json_config['description_attributes_individuals'][ind][1]]) for ind,z in enumerate(eup[2]))
+				
+				context_desc=filter(lambda x: x!='*',context_desc)
+				g1_desc=filter(lambda x: x!='*',g1_desc)
+				g2_desc=filter(lambda x: x!='*',g2_desc)
+				to_save.append({'context':context_desc,'g_1':g1_desc,'g_2':g2_desc,'context_extent':sorted(context_extent),'g_1_extent':sorted(d1_extent),'g_2_extent':sorted(d2_extent),'sim_ref':resulting_file[ii]['ref_sim'],'sim_context':resulting_file[ii]['pattern_sim'],'quality':resulting_file[ii]['quality']})
+				
+				#to_save.append({'context':sorted(z[0] for z in eup[0]),'g_1':sorted(z[0] for z in eup[1]),'g_2':sorted(z[0] for z in eup[2]),'context_extent':sorted(context_extent),'g_1_extent':sorted(d1_extent),'g_2_extent':sorted(d2_extent),'sim_ref':resulting_file[ii]['ref_sim'],'sim_context':resulting_file[ii]['pattern_sim'],'quality':resulting_file[ii]['quality']})
+				ii+=1
+			filename, file_extension = splitext(json_config['results_destination'])
+
+			
+			#print 'ahdhaheqsdaze'
+			writeCSVwithHeader(to_save,filename+'_EXTENTS'+file_extension,selectedHeader=['context','g_1','g_2','context_extent','g_1_extent','g_2_extent','sim_ref','sim_context','quality'],flagWriteHeader=True)
 
 		if FIGURES_FOR_RESULTS:
-			
 			
 
 

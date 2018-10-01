@@ -7,8 +7,10 @@ from math import sqrt
 #from numba import jit
 
 def outcome_representation_in_reviews(dataset,position_attribute,vector_of_outcome=None,method_aggregation_outcome='VECTOR_VALUES'): #[vector_of_outcome=['attr1,'attr2]]
+    vector_of_actions=None
     if vector_of_outcome is None or method_aggregation_outcome=='VECTOR_VALUES':
         vector_of_outcome=None
+
         vector_of_actions=tuple(sorted(set(x[position_attribute] for x in dataset)))  
         #print 'possible Outcomes are : ', vector_of_actions
         
@@ -20,9 +22,13 @@ def outcome_representation_in_reviews(dataset,position_attribute,vector_of_outco
         else :
             vector_of_actions=vector_of_outcome
             x[position_attribute]={f:x[f] for f in vector_of_actions}
+        
+        
         x[position_attribute]=tuple([x[position_attribute].get(pos,0.) for pos in vector_of_actions])
+        # print x[position_attribute]
+        # raw_input('....')
             
-    return dataset 
+    return dataset,vector_of_actions
 
 
 
