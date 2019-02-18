@@ -1,8 +1,8 @@
 # DEBuNk
-This repository contains the materials concerning the paper in review: Identifying when Pairs of Groups Go Against their Usual Likeness. It contains:
+This repository contains the materials concerning the paper in review: Identifying exceptional (dis)agreement between groups. It contains:
 1. **DSC_Project**: includes all the scripts of the framework.
 2. **Experiments**: all experiments reporting the quantitative and qualitative ```DEBuNk``` as well as the set of scripts used to generate the experiments.
-3. **Synthetic**: all files and code-sources used to experiments ```DEBuNk``` and baseline approaches over Artificially generated behavioral data (To re-launch experiements please donwload pysubgroup ```pip install pysubgroup``` before using ```Launch_Comparative_Experiments.bat``` and ```Launch_Noise_Robustness_Experiments.bat```).
+3. **Synthetic**: all files and code-sources used to experiments ```DEBuNk``` and baseline approaches over Artificially generated behavioral data (To re-launch experiements please donwload pysubgroup ```pip install pysubgroup``` before using ```Launch_Comparative_Experiments.bat``` and ```Launch_Noise_Robustness_Experiments.bat```). Contains also results of comparison against DSC (Belfodil, A., Cazalens, S., Lamarre, P., & Plantevit, M. (2017, September). Flash points: Discovering exceptional pairwise behaviors in vote or rating data. In ECML/PKDD'17 (pp. 442-458)).
 
 Below we give the method overview. Note that ```DEBuNk``` stands for Discovering Exceptional Behavior patterNs.
   &nbsp;
