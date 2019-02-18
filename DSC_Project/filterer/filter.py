@@ -314,7 +314,8 @@ def contain_themes_obj_old(obj,dimensionName,valueInCondition): #the dimension v
 
 def contain_themes_obj(obj,dimensionName,valueInCondition): #the dimension value is an array - \forall b in set_b \exist a in set_a verify(a,b)      
     s1=set([x for x in valueInCondition if len(x)>0])
-    
+    #print s1
+    s1=set(x[:x.index(' ')] for x in s1)
 #     s2_arr=[]
 #     s2_arr_extend=s2_arr.extend
 #     #s2=set()

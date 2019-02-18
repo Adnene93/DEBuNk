@@ -1,0 +1,1510 @@
+id	label
+	whole
+01	Active Life
+01.01	Airsoft
+01.02	Amateur Sports Teams
+01.03	Amusement Parks
+01.04	Aquariums
+01.05	Archery
+01.06	ATV Rentals/Tours
+01.07	Badminton
+01.08	Baseball Fields
+01.09	Basketball Courts
+01.10	Bathing Area
+01.11	Batting Cages
+01.12	Beach Equipment Rentals
+01.13	Beaches
+01.14	Beach Volleyball
+01.15	Bicycle Paths
+01.16	Bike Parking
+01.17	Bike Rentals
+01.18	Boating
+01.19	Bobsledding
+01.20	Bocce Ball
+01.21	Bowling
+01.22	Bubble Soccer
+01.23	Bungee Jumping
+01.24	Carousels
+01.25	Challenge Courses
+01.26	Climbing
+01.27	Cycling Classes
+01.28	Day Camps
+01.29	Disc Golf
+01.30	Diving
+01.30.01	Free Diving
+01.30.02	Scuba Diving
+01.31	Escape Games
+01.32	Experiences
+01.33	Fencing Clubs
+01.34	Fishing
+01.35	Fitness & Instruction
+01.35.01	Aerial Fitness
+01.35.02	Barre Classes
+01.35.03	Boot Camps
+01.35.04	Boxing
+01.35.05	Cardio Classes
+01.35.06	Dance Studios
+01.35.07	EMS Training
+01.35.08	Golf Lessons
+01.35.09	Gyms
+01.35.09.01	Circuit Training Gyms
+01.35.09.02	Interval Training Gyms
+01.35.10	Trainers
+01.35.11	Martial Arts
+01.35.11.01	Brazilian Jiu-jitsu
+01.35.11.02	Chinese Martial Arts
+01.35.11.03	Karate
+01.35.11.04	Kickboxing
+01.35.11.05	Muay Thai
+01.35.11.06	Taekwondo
+01.35.12	Meditation Centers
+01.35.13	Pilates
+01.35.14	Qi Gong
+01.35.15	Self-defense Classes
+01.35.16	Swimming Lessons/Schools
+01.35.17	Tai Chi
+01.35.18	Yoga
+01.36	Flyboarding
+01.37	Soccer
+01.38	Gliding
+01.39	Go Karts
+01.40	Golf
+01.41	Gun/Rifle Ranges
+01.42	Gymnastics
+01.43	Handball
+01.44	Hang Gliding
+01.45	Hiking
+01.46	Horseback Riding
+01.47	Horse Racing
+01.48	Hot Air Balloons
+01.49	Indoor Playcentre
+01.50	Jet Skis
+01.51	Kids Activities
+01.52	Kiteboarding
+01.53	Lakes
+01.54	Laser Tag
+01.55	Lawn Bowling
+01.56	Leisure Centers
+01.57	Mini Golf
+01.58	Mountain Biking
+01.59	Nudist
+01.60	Paddleboarding
+01.61	Paintball
+01.62	Parasailing
+01.63	Parks
+01.63.01	Dog Parks
+01.63.02	Skate Parks
+01.64	Playgrounds
+01.65	Public Plazas
+01.66	Races & Competitions
+01.67	Racing Experience
+01.68	Rafting/Kayaking
+01.69	Recreation Centers
+01.70	Rock Climbing
+01.71	Sailing
+01.72	Scavenger Hunts
+01.73	Scooter Rentals
+01.74	Senior Centers
+01.75	Skating Rinks
+01.76	Skiing
+01.77	Skydiving
+01.78	Sledding
+01.79	Snorkeling
+01.80	Sport Equipment Hire
+01.81	Sports Clubs
+01.82	Squash
+01.83	Summer Camps
+01.84	Surfing
+01.85	Surf Lifesaving
+01.86	Swimming Pools
+01.87	Tennis
+01.88	Trampoline Parks
+01.89	Tubing
+01.90	Volleyball
+01.91	Water Parks
+01.92	Wildlife Hunting Ranges
+01.93	Ziplining
+01.94	Zoos
+01.94.01	Petting Zoos
+01.95	Zorbing
+02	Arts & Entertainment
+02.01	Arcades
+02.02	Betting Centers
+02.03	Bingo Halls
+02.04	Cabaret
+02.05	Casinos
+02.06	Castles
+02.07	Choirs
+02.08	Country Clubs
+02.09	Cultural Center
+02.10	Farms
+02.10.01	Attraction Farms
+02.10.02	Pick Your Own Farms
+02.10.03	Ranches
+02.11	Festivals
+02.11.01	Fun Fair
+02.11.02	General Festivals
+02.11.03	Trade Fairs
+02.11.04	Christmas Markets
+02.12	Art Galleries
+02.13	Botanical Gardens
+02.14	Haunted Houses
+02.15	Jazz & Blues
+02.16	LAN Centers
+02.17	Mah Jong Halls
+02.18	Marching Bands
+02.19	Cinema
+02.19.01	Drive-In Theater
+02.19.02	Outdoor Movies
+02.20	Museums
+02.20.01	Art Museums
+02.20.02	Children's Museums
+02.21	Music Venues
+02.22	Observatories
+02.23	Opera & Ballet
+02.24	Pachinko
+02.25	Paint & Sip
+02.26	Planetarium
+02.27	Psychics & Astrologers
+02.27.01	Psychic Mediums
+02.28	Race Tracks
+02.29	Rodeo
+02.30	Social Clubs
+02.30.01	Veterans Organizations
+02.31	Professional Sports Teams
+02.32	Stadiums & Arenas
+02.33	Street Art
+02.34	Studio Taping
+02.35	Tablao Flamenco
+02.36	Performing Arts
+02.37	Ticket Sales
+02.38	Wineries
+02.38.01	Wine Tasting Room
+03	Automotive
+03.01	Aircraft Dealers
+03.02	Aircraft Repairs
+03.03	Auto Detailing
+03.04	Auto Customization
+03.05	Car Inspectors
+03.06	Auto Electric Services
+03.07	Auto Glass Services
+03.07.01	Car Window Tinting
+03.08	Auto Loan Providers
+03.09	Auto Parts & Supplies
+03.10	Auto Repair
+03.10.01	DIY Auto Shop
+03.11	Auto Security
+03.12	Auto Upholstery
+03.13	Boat Dealers
+03.14	Body Shops
+03.15	Car Dealers
+03.16	Car Auctions
+03.17	Car Brokers
+03.18	Car Buyers
+03.19	Car Share Services
+03.20	Car Wash
+03.21	EV Charging Stations
+03.22	Fuel Docks
+03.23	Gas Stations
+03.24	Hybrid Car Repair
+03.25	Interlock Systems
+03.26	Marinas
+03.27	Mobile Dent Repair
+03.28	Mobility Equipment Sales & Services
+03.29	Motorsport Vehicle Dealers
+03.30	Motorcycle Dealers
+03.31	Motorcycle Repair
+03.32	Motorsport Vehicle Repairs
+03.33	Oil Change Stations
+03.34	Parking
+03.35	Registration Services
+03.36	Roadside Assistance
+03.37	RV Dealers
+03.38	RV Repair
+03.39	Service Stations
+03.40	Gas & Service Stations
+03.41	Smog Check Stations
+03.42	Car Stereo Installation
+03.43	Tires
+03.44	Towing
+03.45	Trailer Dealers
+03.46	Trailer Rental
+03.47	Trailer Repair
+03.48	Transmission Repair
+03.49	Truck Rental
+03.50	Commercial Truck Dealers
+03.51	Commercial Truck Repair
+03.52	Used Car Dealers
+03.53	Vehicle Shipping
+03.54	Vehicle Wraps
+03.55	Wheel & Rim Repair
+03.56	Windshield Installation & Repair
+04	Beauty & Spas
+04.01	Acne Treatment
+04.02	Barbers
+04.03	Cosmetics & Beauty Supply
+04.04	Erotic Massage
+04.05	Eyebrow Services
+04.06	Eyelash Service
+04.07	Hair Salons
+04.07.01	Blow Dry/Out Services
+04.07.02	Hair Extensions
+04.07.03	Hair Stylists
+04.07.04	Men's Hair Salons
+04.08	Hair Extensions
+04.09	Hair Loss Centers
+04.10	Hair Removal
+04.10.01	Laser Hair Removal
+04.10.02	Sugaring
+04.10.03	Threading Services
+04.10.04	Waxing
+04.11	Hot Springs
+04.12	Makeup Artists
+04.13	Massage
+04.14	Medical Spas
+04.15	Nail Salons
+04.15.01	Nail Technicians
+04.16	Perfume
+04.17	Permanent Makeup
+04.18	Piercing
+04.19	Rolfing
+04.20	Skin Care
+04.21	Day Spas
+04.22	Tanning
+04.22.01	Spray Tanning
+04.22.02	Tanning Beds
+04.23	Tattoo
+04.24	Teeth Whitening
+05	Bicycles
+05.01	Bike Associations
+05.02	Bike Repair
+05.03	Bike Shop
+05.04	Special Bikes
+06	Education
+06.01	Adult Education
+06.02	Art Classes
+06.03	College Counseling
+06.04	Colleges & Universities
+06.05	Educational Services
+06.06	Elementary Schools
+06.07	Middle Schools & High Schools
+06.08	Montessori Schools
+06.09	Preschools
+06.10	Private Schools
+06.11	Private Tutors
+06.12	Religious Schools
+06.13	Special Education
+06.14	Specialty Schools
+06.14.01	Art Schools
+06.14.02	Bartending Schools
+06.14.03	Cheerleading
+06.14.04	Childbirth Education
+06.14.05	Circus Schools
+06.14.06	Cooking Schools
+06.14.07	Cosmetology Schools
+06.14.08	CPR Classes
+06.14.09	Dance Schools
+06.14.10	Drama Schools
+06.14.11	Driving Schools
+06.14.12	DUI Schools
+06.14.13	Firearm Training
+06.14.14	First Aid Classes
+06.14.15	Flight Instruction
+06.14.16	Food Safety Training
+06.14.17	Language Schools
+06.14.18	Massage Schools
+06.14.19	Nursing Schools
+06.14.20	Parenting Classes
+06.14.21	Pole Dancing Classes
+06.14.22	Samba Schools
+06.14.23	Ski Schools
+06.14.24	Surf Schools
+06.14.25	Swimming Lessons/Schools
+06.14.26	Traffic Schools
+06.14.27	Vocational & Technical School
+06.15	Tasting Classes
+06.15.01	Cheese Tasting Classes
+06.15.02	Wine Tasting Classes
+06.16	Test Preparation
+06.17	Tutoring Centers
+06.18	Waldorf Schools
+07	Event Planning & Services
+07.01	Bartenders
+07.02	Boat Charters
+07.03	Caricatures
+07.04	Caterers
+07.05	Clowns
+07.06	DJs
+07.07	Party & Event Planning
+07.08	Face Painting
+07.09	Game Truck Rental
+07.10	Golf Cart Rentals
+07.11	Henna Artists
+07.12	Hotels
+07.12.01	Agriturismi
+07.12.02	Mountain Huts
+07.12.03	Pensions
+07.12.04	Residences
+07.12.05	Rest Stops
+07.12.06	Ryokan
+07.13	Magicians
+07.14	Mohels
+07.15	Musicians
+07.16	Officiants
+07.17	Party Bike Rentals
+07.18	Party Bus Rentals
+07.19	Party Characters
+07.20	Party Equipment Rentals
+07.20.01	Bounce House Rentals
+07.21	Party Supplies
+07.22	Personal Chefs
+07.23	Photo Booth Rentals
+07.24	Photographers
+07.24.01	Boudoir Photography
+07.24.02	Event Photography
+07.24.03	Session Photography
+07.25	Silent Disco
+07.26	Sommelier Services
+07.27	Cards & Stationery
+07.28	Team Building Activities
+07.29	Trivia Hosts
+07.30	Valet Services
+07.31	Venues & Event Spaces
+07.32	Videographers
+07.33	Wedding Planning
+07.34	Wedding Chapels
+08	Financial Services
+08.01	Banks & Credit Unions
+08.02	Business Financing
+08.03	Currency Exchange
+08.04	Debt Relief Services
+08.05	Financial Advising
+08.06	Installment Loans
+08.07	Insurance
+08.07.01	Auto Insurance
+08.07.02	Home & Rental Insurance
+08.07.03	Life Insurance
+08.08	Investing
+08.09	Mortgage Lenders
+08.10	Check Cashing/Pay-day Loans
+08.11	Tax Services
+08.12	Title Loans
+09	Food
+09.01	Acai Bowls
+09.02	Backshop
+09.03	Bagels
+09.04	Bakeries
+09.05	Beer, Wine & Spirits
+09.06	Bento
+09.07	Beverage Store
+09.08	Breweries
+09.09	Bubble Tea
+09.10	Butcher
+09.11	Patisserie/Cake Shop
+09.12	Chimney Cakes
+09.13	Churros
+09.14	Cideries
+09.15	Coffee & Tea
+09.16	Coffee Roasteries
+09.17	Coffee & Tea Supplies
+09.18	Convenience Stores
+09.19	CSA
+09.20	Cupcakes
+09.21	Custom Cakes
+09.22	Delicatessen
+09.23	Desserts
+09.24	Distilleries
+09.25	Do-It-Yourself Food
+09.26	Donairs
+09.27	Donuts
+09.28	Parent Cafes
+09.29	Empanadas
+09.30	Ethic Grocery
+09.31	Farmers Market
+09.32	Fishmonger
+09.33	Food Delivery Services
+09.34	Food Trucks
+09.35	Friterie
+09.36	Gelato
+09.37	Mulled Wine
+09.38	Specialty Food
+09.38.01	Candy Stores
+09.38.02	Cheese Shops
+09.38.03	Chocolatiers & Shops
+09.38.04	Dagashi
+09.38.05	Dried Fruit
+09.38.06	Frozen Food
+09.38.07	Health Markets
+09.38.08	Herbs & Spices
+09.38.09	Macarons
+09.38.10	Fruits & Veggies
+09.38.11	Meat Shops
+09.38.12	Olive Oil
+09.38.13	Pasta Shops
+09.38.14	Popcorn Shops
+09.38.15	Seafood Markets
+09.38.16	Tofu Shops
+09.39	Grocery
+09.40	Hawker Centre
+09.41	Honey
+09.42	Ice Cream & Frozen Yogurt
+09.43	Imported Food
+09.44	Internet Cafes
+09.45	International Grocery
+09.46	Japanese Sweets
+09.46.01	Taiyaki
+09.47	Juice Bars & Smoothies
+09.48	Kiosk
+09.49	Kombucha
+09.50	Milkshake Bars
+09.51	Nasi Lemak
+09.52	Organic Stores
+09.53	Panzerotti
+09.54	Piadina
+09.55	Poke
+09.56	Pretzels
+09.57	Salumerie
+09.58	Shaved Ice
+09.59	Shaved Snow
+09.60	Smokehouse
+09.61	Street Vendors
+09.62	Sugar Shacks
+09.63	Tea Rooms
+09.64	Torshi
+09.65	Tortillas
+09.66	Water Stores
+09.67	Wineries
+09.67.01	Wine Tasting Room
+09.68	Zapiekanka
+10	Health & Medical
+10.01	Acupuncture
+10.02	Animal Assisted Therapy
+10.03	Assisted Living Facilities
+10.04	Ayurveda
+10.05	Behavior Analysts
+10.06	Blood & Plasma Donation Centers
+10.07	Counseling & Mental Health
+10.07.01	Psychoanalysts
+10.07.02	Psychologists
+10.07.03	Psychotherapists
+10.07.04	Sex Therapists
+10.07.05	Sophrologists
+10.07.06	Sports Psychologists
+10.08	Cannabis Clinics
+10.08.01	Cannabis Tours
+10.09	Cannabis Collective
+10.10	Medical Cannabis Referrals
+10.11	Chiropractors
+10.12	Colonics
+10.13	Concierge Medicine
+10.14	Cryotherapy
+10.15	Dental Hygienists
+10.15.01	Storefront Clinics
+10.15.02	Mobile Clinics
+10.16	Dentists
+10.16.01	Cosmetic Dentists
+10.16.02	Endodontists
+10.16.03	General Dentistry
+10.16.04	Oral Surgeons
+10.16.05	Orthodontists
+10.16.06	Pediatric Dentists
+10.16.07	Periodontists
+10.17	Diagnostic Services
+10.17.01	Diagnostic Imaging
+10.17.02	Laboratory Testing
+10.18	Dialysis Clinics
+10.19	Dietitians
+10.20	Doulas
+10.21	Emergency Rooms
+10.22	Float Spa
+10.23	Habilitative Services
+10.24	Halfway Houses
+10.25	Halotherapy
+10.26	Health Insurance Offices
+10.27	Hearing Aids
+10.28	Hearing Aid Providers
+10.29	Herbal Shops
+10.30	Home Health Care
+10.31	Hospice
+10.32	Hospitals
+10.33	Hydrotherapy
+10.34	Hypnosis/Hypnotherapy
+10.35	IV Hydration
+10.36	Lactation Services
+10.37	Laser Eye Surgery/Lasik
+10.38	Lice Services
+10.39	Massage Therapy
+10.40	Medical Centers
+10.40.01	Bulk Billing
+10.40.02	Osteopaths
+10.40.03	Walk-in Clinics
+10.41	Medical Foot Care
+10.42	Medical Spas
+10.43	Medical Transportation
+10.44	Midwives
+10.45	Nurse Practitioner
+10.46	Nutritionists
+10.47	Occupational Therapy
+10.48	Optometrists
+10.49	Organ & Tissue Donor Services
+10.50	Orthotics
+10.51	Oxygen Bars
+10.52	Personal Care Services
+10.53	Pharmacy
+10.54	Physical Therapy
+10.55	Doctors
+10.55.01	Addiction Medicine
+10.55.02	Allergists
+10.55.03	Anesthesiologists
+10.55.04	Audiologist
+10.55.05	Cardiologists
+10.55.06	Cosmetic Surgeons
+10.55.07	Dermatologists
+10.55.08	Ear Nose & Throat
+10.55.09	Emergency Medicine
+10.55.10	Endocrinologists
+10.55.11	Family Practice
+10.55.12	Fertility
+10.55.13	Gastroenterologist
+10.55.14	Geneticists
+10.55.15	Gerontologists
+10.55.16	Hepatologists
+10.55.17	Homeopathic
+10.55.18	Hospitalists
+10.55.19	Immunodermatologists
+10.55.20	Infectious Disease Specialists
+10.55.21	Internal Medicine
+10.55.22	Naturopathic/Holistic
+10.55.23	Nephrologists
+10.55.24	Neurologist
+10.55.25	Neuropathologists
+10.55.26	Neurotologists
+10.55.27	Obstetricians & Gynecologists
+10.55.28	Oncologist
+10.55.29	Ophthalmologists
+10.55.30	Orthopedists
+10.55.31	Osteopathic Physicians
+10.55.32	Otologists
+10.55.33	Pain Management
+10.55.34	Pathologists
+10.55.35	Pediatricians
+10.55.36	Phlebologists
+10.55.37	Podiatrists
+10.55.38	Preventive Medicine
+10.55.39	Proctologists
+10.55.40	Psychiatrists
+10.55.41	Pulmonologist
+10.55.42	Radiologists
+10.55.43	Rheumatologists
+10.55.44	Spine Surgeons
+10.55.45	Sports Medicine
+10.55.46	Surgeons
+10.55.47	Tattoo Removal
+10.55.48	Toxicologists
+10.55.49	Undersea/Hyperbaric Medicine
+10.55.50	Urologists
+10.55.51	Vascular Medicine
+10.56	Placenta Encapsulations
+10.57	Prenatal/Perinatal Care
+10.58	Prosthetics
+10.59	Prosthodontists
+10.60	Psychotechnical Tests
+10.61	Reflexology
+10.62	Rehabilitation Center
+10.63	Reiki
+10.64	Retirement Homes
+10.65	Saunas
+10.66	Skilled Nursing
+10.67	Sleep Specialists
+10.68	Speech Therapists
+10.69	Sperm Clinic
+10.70	Traditional Chinese Medicine
+10.70.01	Tui Na
+10.71	Urgent Care
+10.72	Weight Loss Centers
+11	Home Services
+11.01	Artificial Turf
+11.02	Shades & Blinds
+11.03	Building Supplies
+11.04	Cabinetry
+11.05	Carpenters
+11.06	Carpeting
+11.07	Carpet Installation
+11.08	Childproofing
+11.09	Chimney Sweeps
+11.10	Contractors
+11.11	Countertop Installation
+11.12	Damage Restoration
+11.13	Decks & Railing
+11.14	Demolition Services
+11.15	Door Sales/Installation
+11.16	Drywall Installation & Repair
+11.17	Electricians
+11.18	Excavation Services
+11.19	Fences & Gates
+11.20	Fireplace Services
+11.21	Fire Protection Services
+11.22	Firewood
+11.23	Flooring
+11.24	Foundation Repair
+11.25	Furniture Assembly
+11.26	Garage Door Services
+11.27	Gardeners
+11.28	Glass & Mirrors
+11.29	Gutter Services
+11.30	Handyman
+11.31	Home Inspectors
+11.32	Home Organization
+11.33	Home Automation
+11.34	Home Cleaning
+11.35	Home Energy Auditors
+11.36	Home Network Installation
+11.37	Home Theatre Installation
+11.38	Home Window Tinting
+11.39	House Sitters
+11.40	Heating & Air Conditioning/HVAC
+11.41	Insulation Installation
+11.42	Interior Design
+11.43	Irrigation
+11.44	Internet Service Providers
+11.45	Landscape Architects
+11.46	Landscaping
+11.47	Lighting Fixtures & Equipment
+11.48	Keys & Locksmiths
+11.49	Masonry/Concrete
+11.50	Mobile Home Repair
+11.51	Movers
+11.52	Packing Services
+11.53	Painters
+11.54	Patio Coverings
+11.55	Plumbing
+11.55.01	Backflow Services
+11.56	Pool Cleaners
+11.57	Pool & Hot Tub Service
+11.58	Pressure Washers
+11.59	Real Estate
+11.59.01	Apartments
+11.59.02	Art Space Rentals
+11.59.03	Commercial Real Estate
+11.59.04	Condominiums
+11.59.05	Estate Liquidation
+11.59.06	Home Developers
+11.59.07	Homeowner Association
+11.59.08	Home Staging
+11.59.09	Housing Cooperatives
+11.59.10	Kitchen Incubators
+11.59.11	Mobile Home Dealers
+11.59.12	Mobile Home Parks
+11.59.13	Mortgage Brokers
+11.59.14	Property Management
+11.59.15	Real Estate Agents
+11.59.16	Real Estate Services
+11.59.16.01	Real Estate Photography
+11.59.16.02	Land Surveying
+11.59.17	Shared Office Spaces
+11.59.18	University Housing
+11.60	Refinishing Services
+11.61	Roofing
+11.62	Roof Inspectors
+11.63	Sauna Installation & Repair
+11.64	Holiday Decorating Services
+11.65	Security Systems
+11.66	Shutters
+11.67	Solar Installation
+11.68	Solar Panel Cleaning
+11.69	Structural Engineers
+11.70	Stucco Services
+11.71	Television Service Providers
+11.72	Tiling
+11.73	Tree Services
+11.74	Utilities
+11.75	Vinyl Siding
+11.76	Wallpapering
+11.77	Water Heater Installation/Repair
+11.78	Waterproofing
+11.79	Water Purification Services
+11.80	Windows Installation
+11.81	Window Washing
+12	Hotels & Travel
+12.01	Airports
+12.01.01	Airport Terminals
+12.02	Bed & Breakfast
+12.03	Campgrounds
+12.04	Car Rental
+12.05	Guest Houses
+12.06	Health Retreats
+12.07	Hostels
+12.08	Hotels
+12.08.01	Agriturismi
+12.08.02	Mountain Huts
+12.08.03	Pensions
+12.08.04	Residences
+12.08.05	Rest Stops
+12.08.06	Ryokan
+12.09	Motorcycle Rental
+12.10	Resorts
+12.11	RV Parks
+12.12	RV Rental
+12.13	Ski Resorts
+12.14	Tours
+12.14.01	Aerial Tours
+12.14.02	Architectural Tours
+12.14.03	Art Tours
+12.14.04	Beer Tours
+12.14.05	Boat Tours
+12.14.06	Bus Tours
+12.14.07	Food Tours
+12.14.08	Historical Tours
+12.14.09	Scooter Tours
+12.14.10	Walking Tours
+12.14.11	Whale Watching Tours
+12.14.12	Wine Tours
+12.15	Train Stations
+12.16	Transportation
+12.16.01	Airlines
+12.16.02	Airport Shuttles
+12.16.03	Bike Sharing
+12.16.04	Buses
+12.16.05	Bus Stations
+12.16.06	Cable Cars
+12.16.07	Dolmus Station
+12.16.08	Ferries
+12.16.09	Limos
+12.16.10	Metro Stations
+12.16.11	Pedicabs
+12.16.12	Private Jet Charter
+12.16.13	Public Transportation
+12.16.14	Shared Taxis
+12.16.15	Taxis
+12.16.16	Town Car Service
+12.16.17	Trains
+12.16.18	Water Taxis
+12.17	Travel Services
+12.17.01	Luggage Storage
+12.17.02	Passport & Visa Services
+12.17.03	Travel Agents
+12.17.04	Visitor Centers
+12.18	Vacation Rentals
+12.19	Vacation Rental Agents
+13	Local Flavor
+13.01	Parklets
+13.02	Public Art
+13.03	Unofficial Yelp Events
+13.04	Yelp Events
+14	Local Services
+14.01	3D Printing
+14.02	Adoption Services
+14.03	Air Duct Cleaning
+14.04	Appraisal Services
+14.05	Art Restoration
+14.06	Awnings
+14.07	Bail Bondsmen
+14.08	Bike Repair/Maintenance
+14.09	Bookbinding
+14.10	Bus Rental
+14.11	Calligraphy
+14.12	Carpet Cleaning
+14.13	Child Care & Day Care
+14.14	Clock Repair
+14.15	Community Book Box
+14.16	Community Gardens
+14.17	Printing Services
+14.18	Couriers & Delivery Services
+14.19	Crane Services
+14.20	Dry Cleaning & Laundry
+14.21	Elder Care Planning
+14.22	Electronics Repair
+14.23	Engraving
+14.24	Environmental Abatement
+14.25	Environmental Testing
+14.26	Farm Equipment Repair
+14.27	Fingerprinting
+14.28	Forestry
+14.29	Funeral Services & Cemeteries
+14.29.01	Cremation Services
+14.29.02	Mortuary Services
+14.30	Furniture Repair
+14.31	Generator Installation/Repair
+14.32	Gestorias
+14.33	Hazardous Waste Disposal
+14.34	Appliances & Repair
+14.35	Hydro-jetting
+14.36	Ice Delivery
+14.37	Internet Booths & Calling Centers
+14.38	IT Services & Computer Repair
+14.38.01	Data Recovery
+14.38.02	Mobile Phone Repair
+14.38.03	Telecommunications
+14.39	Jewelry Repair
+14.40	Junk Removal & Hauling
+14.40.01	Dumpster Rental
+14.41	Junkyards
+14.42	Knife Sharpening
+14.43	Laundry Services
+14.43.01	Dry Cleaning
+14.43.02	Laundromat
+14.44	Machine & Tool Rental
+14.45	Machine Shops
+14.46	Mailbox Centers
+14.47	Metal Fabricators
+14.48	Musical Instrument Services
+14.48.01	Guitar Stores
+14.48.02	Piano Services
+14.48.03	Piano Stores
+14.49	Nanny Services
+14.50	Community Service/Non-Profit
+14.50.01	Food Banks
+14.50.02	Homeless Shelters
+14.51	Notaries
+14.52	Pest Control
+14.53	Powder Coating
+14.54	Propane
+14.55	Record Labels
+14.56	Recording & Rehearsal Studios
+14.57	Recycling Center
+14.58	Furniture Rental
+14.59	Furniture Reupholstery
+14.60	Sandblasting
+14.61	Screen Printing/T-Shirt Printing
+14.62	Screen Printing
+14.63	Self Storage
+14.64	Septic Services
+14.65	Sewing & Alterations
+14.66	Shipping Centers
+14.67	Shoe Repair
+14.68	Shoe Shine
+14.69	Snow Removal
+14.70	Snuggle Services
+14.71	TV Mounting
+14.72	Watch Repair
+14.73	Water Delivery
+14.74	Well Drilling
+14.75	Wildlife Control
+14.76	Youth Club
+15	Mass Media
+15.01	Print Media
+15.02	Radio Stations
+15.03	Television Stations
+16	Nightlife
+16.01	Adult Entertainment
+16.02	Bar Crawl
+16.03	Bars
+16.03.01	Absinthe Bars
+16.03.02	Airport Lounges
+16.03.03	Beach Bars
+16.03.04	Beer Bar
+16.03.05	Champagne Bars
+16.03.06	Cocktail Bars
+16.03.07	Dive Bars
+16.03.08	Drive-Thru Bars
+16.03.09	Gay Bars
+16.03.10	Hookah Bars
+16.03.11	Hotel bar
+16.03.12	Irish Pub
+16.03.13	Lounges
+16.03.14	Pubs
+16.03.15	Pulquerias
+16.03.16	Sake Bars
+16.03.17	Speakeasies
+16.03.18	Sports Bars
+16.03.19	Tabac
+16.03.20	Tiki Bars
+16.03.21	Vermouth Bars
+16.03.22	Whiskey Bars
+16.03.23	Wine Bars
+16.04	Beer Gardens
+16.05	Club Crawl
+16.06	Coffeeshops
+16.07	Comedy Clubs
+16.08	Country Dance Halls
+16.09	Dance Clubs
+16.10	Dance Restaurants
+16.11	Fasil Music
+16.12	Jazz & Blues
+16.13	Karaoke
+16.14	Music Venues
+16.15	Piano Bars
+16.16	Pool Halls
+17	Pets
+17.01	Animal Shelters
+17.02	Horse Boarding
+17.03	Pet Adoption
+17.04	Pet Services
+17.04.01	Holistic Animal Care
+17.04.02	Animal Physical Therapy
+17.04.03	Aquarium Services
+17.04.04	Dog Walkers
+17.04.05	Emergency Pet Hospital
+17.04.06	Farriers
+17.04.07	Pet Groomers
+17.04.08	Pet Boarding/Pet Sitting
+17.04.09	Pet Training
+17.04.10	Pet Breeders
+17.04.11	Pet Cremation Services
+17.04.12	Pet Hospice
+17.04.13	Pet Insurance
+17.04.14	Pet Photography
+17.04.15	Pet Transportation
+17.05	Pet Stores
+17.05.01	Bird Shops
+17.05.02	Local Fish Stores
+17.05.03	Reptile Shops
+17.06	Veterinarians
+18	Professional Services
+18.01	Accountants
+18.02	Advertising
+18.03	Architects
+18.04	Billing Services
+18.05	Boat Repair
+18.06	Bookkeepers
+18.07	Business Consulting
+18.08	Career Counseling
+18.09	Commissioned Artists
+18.10	Customs Brokers
+18.11	Digitizing Services
+18.12	Duplication Services
+18.13	Editorial Services
+18.14	Employment Agencies
+18.15	Feng Shui
+18.16	Graphic Design
+18.17	Indoor Landscaping
+18.18	Internet Service Providers
+18.19	Lawyers
+18.19.01	Bankruptcy Law
+18.19.02	Business Law
+18.19.03	Contract Law
+18.19.04	Criminal Defense Law
+18.19.05	Disability Law
+18.19.06	Divorce & Family Law
+18.19.07	DUI Law
+18.19.08	Employment Law
+18.19.09	Entertainment Law
+18.19.10	Estate Planning Law
+18.19.10.01	Wills, Trusts, & Probates
+18.19.11	General Litigation
+18.19.12	Immigration Law
+18.19.13	IP & Internet Law
+18.19.14	Medical Law
+18.19.15	Personal Injury Law
+18.19.16	Real Estate Law
+18.19.17	Social Security Law
+18.19.18	Tax Law
+18.19.19	Traffic Ticketing Law
+18.19.20	Workers Compensation Law
+18.20	Legal Services
+18.20.01	Court Reporters
+18.20.02	Process Servers
+18.21	Life Coach
+18.22	Marketing
+18.23	Matchmakers
+18.24	Mediators
+18.25	Music Production Services
+18.26	Office Cleaning
+18.27	Patent Law
+18.28	Payroll Services
+18.29	Personal Assistants
+18.30	Private Investigation
+18.31	Product Design
+18.32	Public Relations
+18.33	Security Services
+18.34	Shredding Services
+18.35	Signmaking
+18.36	Software Development
+18.37	Talent Agencies
+18.38	Taxidermy
+18.39	Tenant and Eviction Law
+18.40	Translation Services
+18.41	Video/Film Production
+18.42	Web Design
+18.43	Wholesalers
+18.43.01	Restaurant Supplies
+19	Public Services & Government
+19.01	Authorized Postal Representative
+19.02	Civic Center
+19.03	Community Centers
+19.04	Courthouses
+19.05	Departments of Motor Vehicles
+19.06	Embassy
+19.07	Fire Departments
+19.08	Landmarks & Historical Buildings
+19.09	Libraries
+19.10	Municipality
+19.11	Police Departments
+19.12	Post Offices
+19.13	Registry Office
+19.14	Tax Office
+19.15	Town Hall
+20	Religious Organizations
+20.01	Afro-Brazilian
+20.02	Buddhist Temples
+20.03	Churches
+20.04	Hindu Temples
+20.05	Mosques
+20.06	Shrines
+20.07	Spiritism
+20.08	Synagogues
+20.09	Taoist Temples
+21	Restaurants
+21.01	Afghan
+21.02	African
+21.02.01	Senegalese
+21.02.02	South African
+21.03	Andalusian
+21.04	Arabian
+21.04.01	Arab Pizza
+21.05	Argentine
+21.06	Armenian
+21.07	Asian Fusion
+21.08	Asturian
+21.09	Australian
+21.10	Austrian
+21.100	Kurdish
+21.101	Laos
+21.102	Laotian
+21.103	Latin American
+21.103.01	Colombian
+21.103.02	Salvadoran
+21.103.03	Venezuelan
+21.104	Lyonnais
+21.105	Malaysian
+21.105.01	Mamak
+21.105.02	Nyonya
+21.106	Meatballs
+21.107	Mediterranean
+21.107.01	Falafel
+21.108	Mexican
+21.108.01	Eastern Mexican
+21.108.02	Jaliscan
+21.108.03	Northern Mexican
+21.108.04	Oaxacan
+21.108.05	Pueblan
+21.108.06	Tacos
+21.108.07	Tamales
+21.108.08	Yucatan
+21.109	Middle Eastern
+21.109.01	Egyptian
+21.109.02	Lebanese
+21.11	Baguettes
+21.110	Milk Bars
+21.111	Modern Australian
+21.112	Modern European
+21.113	Mongolian
+21.114	Moroccan
+21.115	American (New)
+21.116	Canadian (New)
+21.117	New Mexican Cuisine
+21.118	New Zealand
+21.119	Nicaraguan
+21.12	Bangladeshi
+21.120	Night Food
+21.121	Nikkei
+21.122	Noodles
+21.123	Norcinerie
+21.124	Traditional Norwegian
+21.125	Open Sandwiches
+21.126	Oriental
+21.127	Pakistani
+21.128	Pan Asian
+21.129	Parma
+21.13	Basque
+21.130	Persian/Iranian
+21.131	Peruvian
+21.132	PF/Comercial
+21.133	Pita
+21.134	Pizza
+21.135	Polish
+21.135.01	Pierogis
+21.136	Pop-Up Restaurants
+21.137	Portuguese
+21.137.01	Alentejo
+21.137.02	Algarve
+21.137.03	Azores
+21.137.04	Beira
+21.137.05	Fado Houses
+21.137.06	Madeira
+21.137.07	Minho
+21.137.08	Ribatejo
+21.137.09	Tras-os-Montes
+21.138	Potatoes
+21.139	Poutineries
+21.14	Bavarian
+21.140	Pub Food
+21.141	Live/Raw Food
+21.142	Rice
+21.143	Romanian
+21.144	Rotisserie Chicken
+21.145	Rumanian
+21.146	Russian
+21.147	Salad
+21.148	Sandwiches
+21.149	Scandinavian
+21.15	Barbeque
+21.150	Schnitzel
+21.151	Scottish
+21.152	Seafood
+21.153	Serbo Croatian
+21.154	Signature Cuisine
+21.155	Singaporean
+21.156	Slovakian
+21.157	Soul Food
+21.158	Soup
+21.159	Southern
+21.16	Beer Garden
+21.160	Spanish
+21.160.01	Arroceria / Paella
+21.161	Sri Lankan
+21.162	Steakhouses
+21.163	French Southwest
+21.164	Supper Clubs
+21.165	Sushi Bars
+21.166	Swabian
+21.167	Swedish
+21.168	Swiss Food
+21.169	Syrian
+21.17	Beer Hall
+21.170	Tabernas
+21.171	Taiwanese
+21.172	Tapas Bars
+21.173	Tapas/Small Plates
+21.174	Tavola Calda
+21.175	Tex-Mex
+21.176	Thai
+21.177	American (Traditional)
+21.178	Traditional Swedish
+21.179	Trattorie
+21.18	Beisl
+21.180	Turkish
+21.180.01	Chee Kufta
+21.180.02	Gozleme
+21.180.03	Homemade Food
+21.180.04	Lahmacun
+21.180.05	Ottoman Cuisine
+21.180.06	Turkish Ravioli
+21.181	Ukrainian
+21.182	Uzbek
+21.183	Vegan
+21.184	Vegetarian
+21.185	Venison
+21.186	Vietnamese
+21.187	Waffles
+21.188	Wok
+21.189	Wraps
+21.19	Belgian
+21.19.01	Flemish
+21.190	Yugoslav
+21.20	Bistros
+21.21	Black Sea
+21.22	Brasseries
+21.23	Brazilian
+21.23.01	Brazilian Empanadas
+21.23.02	Central Brazilian
+21.23.03	Northeastern Brazilian
+21.23.04	Northern Brazilian
+21.23.05	Rodizios
+21.24	Breakfast & Brunch
+21.25	British
+21.26	Buffets
+21.27	Bulgarian
+21.28	Burgers
+21.29	Burmese
+21.30	Cafes
+21.30.01	Themed Cafes
+21.31	Cafeteria
+21.32	Cajun/Creole
+21.33	Cambodian
+21.34	Canteen
+21.35	Caribbean
+21.35.01	Dominican
+21.35.02	Haitian
+21.35.03	Puerto Rican
+21.35.04	Trinidadian
+21.36	Catalan
+21.37	Cheesesteaks
+21.38	Chicken Wings
+21.39	Chicken Shop
+21.40	Chilean
+21.41	Chinese
+21.41.01	Cantonese
+21.41.02	Congee
+21.41.03	Dim Sum
+21.41.04	Fuzhou
+21.41.05	Hainan
+21.41.06	Hakka
+21.41.07	Henghwa
+21.41.08	Hokkien
+21.41.09	Hunan
+21.41.10	Pekinese
+21.41.11	Shanghainese
+21.41.12	Szechuan
+21.41.13	Teochew
+21.42	Comfort Food
+21.43	Corsican
+21.44	Creperies
+21.45	Cuban
+21.46	Curry Sausage
+21.47	Cypriot
+21.48	Czech
+21.49	Czech/Slovakian
+21.50	Danish
+21.51	Delis
+21.52	Diners
+21.53	Dinner Theater
+21.54	Dumplings
+21.55	Eastern European
+21.56	Parent Cafes
+21.57	Ethiopian
+21.58	Filipino
+21.59	Fischbroetchen
+21.60	Fish & Chips
+21.61	Flatbread
+21.62	Fondue
+21.63	Food Court
+21.64	Food Stands
+21.65	Freiduria
+21.66	French
+21.66.01	Alsatian
+21.66.02	Auvergnat
+21.66.03	Berrichon
+21.66.04	Bourguignon
+21.66.05	Mauritius
+21.66.06	Nicoise
+21.66.07	Provencal
+21.66.08	Reunion
+21.67	Galician
+21.68	Game Meat
+21.69	Gastropubs
+21.70	Georgian
+21.71	German
+21.71.01	Baden
+21.71.02	Eastern German
+21.71.03	Hessian
+21.71.04	Northern German
+21.71.05	Palatine
+21.71.06	Rhinelandian
+21.72	Giblets
+21.73	Gluten-Free
+21.74	Greek
+21.75	Guamanian
+21.76	Halal
+21.77	Hawaiian
+21.78	Heuriger
+21.79	Himalayan/Nepalese
+21.80	Hong Kong Style Cafe
+21.81	Honduran
+21.82	Hot Dogs
+21.83	Fast Food
+21.84	Hot Pot
+21.85	Hungarian
+21.86	Iberian
+21.87	Indonesian
+21.88	Indian
+21.89	International
+21.90	Irish
+21.91	Island Pub
+21.92	Israeli
+21.93	Italian
+21.93.01	Abruzzese
+21.93.02	Altoatesine
+21.93.03	Apulian
+21.93.04	Calabrian
+21.93.05	Cucina campana
+21.93.06	Emilian
+21.93.07	Friulan
+21.93.08	Ligurian
+21.93.09	Lumbard
+21.93.10	Napoletana
+21.93.11	Piemonte
+21.93.12	Roman
+21.93.13	Sardinian
+21.93.14	Sicilian
+21.93.15	Tuscan
+21.93.16	Venetian
+21.94	Japanese
+21.94.01	Blowfish
+21.94.02	Conveyor Belt Sushi
+21.94.03	Donburi
+21.94.03.01	Gyudon
+21.94.03.02	Oyakodon
+21.94.04	Hand Rolls
+21.94.05	Horumon
+21.94.06	Izakaya
+21.94.07	Japanese Curry
+21.94.08	Kaiseki
+21.94.09	Kushikatsu
+21.94.10	Oden
+21.94.11	Okinawan
+21.94.12	Okonomiyaki
+21.94.13	Onigiri
+21.94.14	Ramen
+21.94.15	Robatayaki
+21.94.16	Soba
+21.94.17	Sukiyaki
+21.94.18	Takoyaki
+21.94.19	Tempura
+21.94.20	Teppanyaki
+21.94.21	Tonkatsu
+21.94.22	Udon
+21.94.23	Unagi
+21.94.24	Western Style Japanese Food
+21.94.25	Yakiniku
+21.94.26	Yakitori
+21.95	Jewish
+21.96	Kebab
+21.97	Kopitiam
+21.98	Korean
+21.99	Kosher
+22	Shopping
+22.01	Adult
+22.02	Antiques
+22.03	Arts & Crafts
+22.03.01	Art Supplies
+22.03.02	Ateliers
+22.03.03	Cooking Classes
+22.03.04	Costumes
+22.03.05	Embroidery & Crochet
+22.03.06	Fabric Stores
+22.03.07	Framing
+22.03.08	Paint-Your-Own Pottery
+22.03.09	Cards & Stationery
+22.04	Auction Houses
+22.05	Baby Gear & Furniture
+22.06	Battery Stores
+22.07	Bespoke Clothing
+22.08	Brewing Supplies
+22.09	Bridal
+22.10	Cannabis Dispensaries
+22.11	Mobile Phone Accessories
+22.12	Chinese Bazaar
+22.13	Computers
+22.14	Concept Shops
+22.15	Cosmetics & Beauty Supply
+22.16	Customized Merchandise
+22.17	Department Stores
+22.18	Discount Store
+22.19	Drugstores
+22.20	Duty-Free Shops
+22.21	Electronics
+22.22	Farming Equipment
+22.23	Fashion
+22.23.01	Accessories
+22.23.02	Ceremonial Clothing
+22.23.03	Children's Clothing
+22.23.04	Clothing Rental
+22.23.05	Department Stores
+22.23.06	Formal Wear
+22.23.07	Fur Clothing
+22.23.08	Hats
+22.23.09	Kimonos
+22.23.10	Leather Goods
+22.23.11	Lingerie
+22.23.12	Maternity Wear
+22.23.13	Men's Clothing
+22.23.14	Plus Size Fashion
+22.23.15	Shoe Stores
+22.23.16	Sleepwear
+22.23.17	Sports Wear
+22.23.17.01	Dance Wear
+22.23.18	Stockings
+22.23.19	Surf Shop
+22.23.20	Swimwear
+22.23.21	Traditional Clothing
+22.23.22	Used, Vintage & Consignment
+22.23.23	Women's Clothing
+22.24	Fireworks
+22.25	Fitness/Exercise Equipment
+22.26	Flea Markets
+22.27	Flowers & Gifts
+22.27.01	Florists
+22.27.02	Gift Shops
+22.27.03	Cards & Stationery
+22.28	Art Galleries
+22.29	Gold Buyers
+22.30	Guns & Ammo
+22.31	Head Shops
+22.32	High Fidelity Audio Equipment
+22.33	Hobby Shops
+22.34	Home & Garden
+22.34.01	Appliances
+22.34.02	Candle Stores
+22.34.03	Christmas Trees
+22.34.04	Furniture Stores
+22.34.05	Nurseries & Gardening
+22.34.05.01	Hydroponics
+22.34.06	Grilling Equipment
+22.34.07	Hardware Stores
+22.34.08	Holiday Decorations
+22.34.09	Home Decor
+22.34.10	Hot Tub & Pool
+22.34.11	Kitchen & Bath
+22.34.12	Linens
+22.34.13	Materiale elettrico
+22.34.14	Mattresses
+22.34.15	Outdoor Furniture Stores
+22.34.16	Paint Stores
+22.34.17	Playsets
+22.34.18	Pumpkin Patches
+22.34.19	Rugs
+22.34.20	Tableware
+22.35	Horse Equipment Shops
+22.36	Jewelry
+22.37	Kiosk
+22.38	Knitting Supplies
+22.39	Livestock Feed & Supply
+22.40	Luggage
+22.41	Market Stalls
+22.42	Books, Mags, Music & Video
+22.42.01	Bookstores
+22.42.02	Comic Books
+22.42.03	Newspapers & Magazines
+22.42.04	Music & DVDs
+22.42.05	Videos & Video Game Rental
+22.42.06	Video Game Stores
+22.42.07	Vinyl Records
+22.43	Medical Supplies
+22.44	Military Surplus
+22.45	Mobile Phones
+22.46	Motorcycle Gear
+22.47	Musical Instruments & Teachers
+22.48	Office Equipment
+22.49	Eyewear & Opticians
+22.50	Outlet Stores
+22.51	Packing Supplies
+22.52	Pawn Shops
+22.53	Perfume
+22.54	Personal Shopping
+22.55	Photography Stores & Services
+22.56	Pool & Billiards
+22.57	Pop-up Shops
+22.58	Props
+22.59	Public Markets
+22.60	Religious Items
+22.61	Safe Stores
+22.62	Safety Equipment
+22.63	Scandinavian Design
+22.64	Shopping Centers
+22.65	Souvenir Shops
+22.66	Spiritual Shop
+22.67	Sporting Goods
+22.67.01	Bikes
+22.67.02	Dive Shops
+22.67.03	Golf Equipment
+22.67.04	Hunting & Fishing Supplies
+22.67.05	Outdoor Gear
+22.67.06	Skate Shops
+22.67.07	Ski & Snowboard Shops
+22.67.08	Sports Wear
+22.67.08.01	Dance Wear
+22.68	Tabletop Games
+22.69	Teacher Supplies
+22.70	Thrift Stores
+22.71	Tickets
+22.72	Tobacco Shops
+22.73	Toy Stores
+22.74	Trophy Shops
+22.75	Uniforms
+22.76	Used Bookstore
+22.77	Vape Shops
+22.78	Vitamins & Supplements
+22.79	Watches
+22.80	Wholesale Stores
+22.81	Wigs

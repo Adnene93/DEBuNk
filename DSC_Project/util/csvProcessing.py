@@ -4,11 +4,12 @@ Created on 24 nov. 2016
 @author: Adnene
 '''
 import csv
+import sys
 import timeit
 from gc import collect
 #import pandas
 #from numba import jit
-
+csv.field_size_limit(sys.maxint)
 def readCSVwithHeaderOld(source,selectedHeader=None):
     results=[]
     header=[]

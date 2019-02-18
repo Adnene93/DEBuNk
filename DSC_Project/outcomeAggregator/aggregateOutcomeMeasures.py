@@ -102,7 +102,7 @@ def aggeragte_standard(vectors_list,outcome_tuple_structure):
 
 
 def aggeragte_standard_incremental_initialize(outcome_tuple_structure):
-    return tuple(outcome_tuple_structure)
+    return tuple(0. for _ in outcome_tuple_structure)#tuple(outcome_tuple_structure) 
 
 def aggeragte_standard_incremental(user_vector,outcome_tuple): 
     len_outcome_tuple_structure=len(outcome_tuple)

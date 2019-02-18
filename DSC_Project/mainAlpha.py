@@ -195,7 +195,7 @@ def main_1(debug):
 		threshold_nb_users_2=1
 		quality_threshold=1.0
 		ponderation_attribute='boites'
-
+		
 	if True:
 		parser = argparse.ArgumentParser(description='DSC-XPs')
 		parser.add_argument('file', metavar='ConfigurationFile', type=str,  help='the input configuration file')

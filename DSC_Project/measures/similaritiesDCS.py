@@ -80,6 +80,8 @@ MAAD_SIM_PATTERNS={
     7:{1:1/3.,2:1/3.,4:1/3.,3:2/3.,5:2/3.,6:2/3.,7:1.}  #vote 0+1+2
 }
 
+
+
 def similarity_vector_MAAD(votes_ids,user1_votes_outcome,user2_votes_outcome,user1,user2):
     nbvotes=0;similarity=0.;range3=range(1,3)
     

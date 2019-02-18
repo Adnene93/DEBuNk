@@ -1,0 +1,41 @@
+{
+	"objects_file":"./Data/items.csv",
+	"individuals_file":"./Data/users.csv",
+	"reviews_file":"./Data/reviews.csv",
+	"delimiter":"\t",
+
+	"nb_objects":5000,
+	"nb_individuals":5000,
+
+	"arrayHeader":["genres"],
+	"numericHeader":["Rating","releaseDate"],
+	"vector_of_outcome":["Rating"],
+	"ponderation_attribute":null,
+	"description_attributes_objects":[["genres", "themes"],["releaseDate","numeric"]],
+	"description_attributes_individuals":[["occupation", "simple"],["gender", "simple"],["ageGroup", "simple"]],
+	"others_descs_indiv":[["ageGroup", "simple"],["gender", "simple"]],
+	"threshold_objects":8,
+	"threshold_individuals":50,
+	"threshold_quality":0.2,
+	
+
+	"aggregation_measure":"AVGRATINGS_SIMPLE",
+	"similarity_measure":"AVG_YELP",
+	"quality_measure":"DISAGR_SUMDIFF",
+	"algorithm":"DSC+CLOSED+UB2",
+	"timebudget":3600,
+	
+
+	"objects_scope":[
+	],
+	"individuals_1_scope":[
+	],
+	"individuals_2_scope":[
+	],
+
+	"no_generality_rem":false,
+	"no_sigma_quality_rem":false,
+	"results_destination":".//results.csv"
+
+	
+}

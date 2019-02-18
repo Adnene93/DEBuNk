@@ -1,0 +1,984 @@
+EP_ID	NAME_FULL	COUNTRY	NATIONAL_PARTY	GROUPE_ID	GENDER	BIRTHDATE	GEOSIZE	POP16	POP16_PERCENTAGE	GDP_BILLIONS	LANGUAGES	POLITICAL_SYS	NB_SEATS_IN_EU	CURRENCY	SCHENGEN_MEMBER	SCHENGEN_MEMBER_SINCE	EU_MEMBER_SINCE
+0008403	Charles GOERENS	Luxembourg	Parti démocratique	ALDE	M	1952-02-06 00:00:00	2586	576249	0.1	54	['3 French', '2 German']	parliamentary constitutional monarchy	6	Euro	Yes	1995	1958
+0010237	Jean-Marie LE PEN	France	Front national	NI	M	1928-06-20 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0010373	Reimer BÖGE	Germany	Christlich Demokratische Union Deutschlands	PPE	M	1951-12-18 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0010383	Karl-Heinz FLORENZ	Germany	Christlich Demokratische Union Deutschlands	PPE	M	1947-10-22 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0010553	Godelieve QUISTHOUDT-ROWOHL	Germany	Christlich Demokratische Union Deutschlands	PPE	F	1947-06-18 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0011646	Bruno GOLLNISCH	France	Front national	NI	M	1950-01-28 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0011792	Michèle ALLIOT-MARIE	France	Union pour un Mouvement Populaire	PPE	F	1946-09-10 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0011793	Michèle ALLIOT-MARIE	France	Les Républicains	PPE	F	1946-09-10 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0011853	Viviane REDING	Luxembourg	Parti chrétien social luxembourgeois	PPE	F	1951-04-27 00:00:00	2586	576249	0.1	54	['3 French', '2 German']	parliamentary constitutional monarchy	6	Euro	Yes	1995	1958
+0012045	Alain LAMASSOURE	France	Union pour un Mouvement Populaire	PPE	M	1944-02-10 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0012046	Alain LAMASSOURE	France	Les Républicains	PPE	M	1944-02-10 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0012047	Alain LAMASSOURE	France	Indépendant	PPE	M	1944-02-10 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0012633	Elmar BROK	Germany	Christlich Demokratische Union Deutschlands	PPE	M	1946-05-14 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0013186	James NICHOLSON	United Kingdom	Ulster Unionist Party	ECR	M	1945-01-29 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0013513	Miguel ARIAS CAÑETE	Spain	Partido Popular	PPE	M	1950-02-24 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+0014035	David MARTIN	United Kingdom	Labour Party	S&D	M	1954-08-26 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0014734	Gérard DEPREZ	Belgium	Mouvement Réformateur	ALDE	M	1943-08-13 00:00:00	30528	11311117	1.7	422	['4 Dutch', '3 French', '2 German']	federal parliamentary constitutional monarchy	21	Euro	Yes	1995	1958
+0016542	Emmanouil GLEZOS	Greece	Coalition of the Radical Left	GUE/NGL	M	1922-08-28 00:00:00	131957	10750000	2.1	176	['7 Greek']	parliamentary republic	21	Euro	Yes	2000	1981
+0018495	Sylvia-Yvonne KAUFMANN	Germany	Sozialdemokratische Partei Deutschlands	S&D	F	1955-01-23 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0018523	Dieter-Lebrecht KOCH	Germany	Christlich Demokratische Union Deutschlands	PPE	M	1953-01-07 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0018542	Constanze KREHL	Germany	Sozialdemokratische Partei Deutschlands	S&D	F	1956-10-14 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0018926	Carlos COELHO	Portugal	Partido Social Democrata	PPE	M	1960-05-20 00:00:00	92226	10341330	2	185	['17 Portuguese']	semi-presidential republic	21	Euro	Yes	1995	1986
+0019092	Bernd LANGE	Germany	Sozialdemokratische Partei Deutschlands	S&D	M	1955-11-14 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0019112	Martin SCHULZ	Germany	Sozialdemokratische Partei Deutschlands	S&D	M	1955-12-20 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0019132	Evelyne GEBHARDT	Germany	Sozialdemokratische Partei Deutschlands	S&D	F	1954-01-19 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0019173	Markus FERBER	Germany	Christlich-Soziale Union in Bayern e.V.	PPE	M	1965-01-15 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0019223	Thomas MANN	Germany	Christlich Demokratische Union Deutschlands	PPE	M	1946-01-28 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0019273	Peter LIESE	Germany	Christlich Demokratische Union Deutschlands	PPE	M	1965-05-20 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0019283	Werner LANGEN	Germany	Christlich Demokratische Union Deutschlands	PPE	M	1949-11-27 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0019463	Annemie NEYTS-UYTTEBROECK	Belgium	Open Vlaamse Liberalen en Democraten	ALDE		1944-06-17 00:00:00	30528	11311117	1.7	422	['4 Dutch', '3 French', '2 German']	federal parliamentary constitutional monarchy	21	Euro	Yes	1995	1958
+0019852	Pervenche BERÈS	France	Parti socialiste	S&D	F	1957-03-10 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0020023	José Ignacio SALAFRANCA SÁNCHEZ-NEYRA	Spain	Partido Popular	PPE	M	1955-05-31 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+0020256	Françoise GROSSETÊTE	France	Union pour un Mouvement Populaire	PPE	F	1946-05-17 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0020257	Françoise GROSSETÊTE	France	Les Républicains	PPE	F	1946-05-17 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0020542	Heidi HAUTALA	Finland	Vihreä liitto	Verts/ALE	F	1955-11-14 00:00:00	338440	5487308	1.1	214	['10 Finnish', '22 Swedish']	parliamentary republic	13	Euro	Yes	2001	1995
+0020732	Richard HOWITT	United Kingdom	Labour Party	S&D	M	1961-04-05 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0021192	Olli REHN	Finland	Suomen Keskusta	ALDE	M	1962-03-31 00:00:00	338440	5487308	1.1	214	['10 Finnish', '22 Swedish']	parliamentary republic	13	Euro	Yes	2001	1995
+0021282	Paavo VÄYRYNEN	Finland	Suomen Keskusta	ALDE	M	1946-09-02 00:00:00	338440	5487308	1.1	214	['10 Finnish', '22 Swedish']	parliamentary republic	13	Euro	Yes	2001	1995
+0021875	Antonio TAJANI	Italy	Forza Italia	PPE	M	1953-08-04 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0022784	Paul RÜBIG	Austria	Österreichische Volkspartei	PPE	M	1953-05-06 00:00:00	83879	8690076	2.2	349	['2 German']	federal parliamentary republic	18	Euro	Yes	2007	1995
+0023092	Richard CORBETT	United Kingdom	Labour Party	S&D	M	1955-01-06 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0023233	Rainer WIELAND	Germany	Christlich Demokratische Union Deutschlands	PPE	M	1957-02-19 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0023272	Linda McAVAN	United Kingdom	Labour Party	S&D	F	1962-12-02 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0023382	Ian HUDGHTON	United Kingdom	Scottish National Party	Verts/ALE	M	1951-09-19 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0023413	Michael GAHLER	Germany	Christlich Demokratische Union Deutschlands	PPE	M	1960-04-22 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0042463	Othmar KARAS	Austria	Österreichische Volkspartei	PPE	M	1957-12-24 00:00:00	83879	8690076	2.2	349	['2 German']	federal parliamentary republic	18	Euro	Yes	2007	1995
+0042532	Frédérique RIES	Belgium	Mouvement Réformateur	ALDE	F	1959-05-14 00:00:00	30528	11311117	1.7	422	['4 Dutch', '3 French', '2 German']	federal parliamentary constitutional monarchy	21	Euro	Yes	1995	1958
+0042622	Jo LEINEN	Germany	Sozialdemokratische Partei Deutschlands	S&D	M	1948-04-06 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0042672	Udo BULLMANN	Germany	Sozialdemokratische Partei Deutschlands	S&D	M	1956-06-08 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0042703	Marit PAULSEN	Sweden	Liberalerna	ALDE	F	1939-11-24 00:00:00	438574	9851017	1.9	462	['22 Swedish']	parliamentary constitutional monarchy	20	SEK	Yes	2001	1995
+0042822	Renate SOMMER	Germany	Christlich Demokratische Union Deutschlands	PPE	F	1958-09-10 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0042892	Angelika NIEBLER	Germany	Christlich-Soziale Union in Bayern e.V.	PPE	F	1963-02-18 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0043192	Pilar AYUSO	Spain	Partido Popular	PPE	F	1942-06-16 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+0043342	Elena VALENCIANO	Spain	Partido Socialista Obrero Español	S&D	F	1960-09-18 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+0043353	Marielle de SARNEZ	France	Mouvement Démocrate	ALDE	F	1951-03-27 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0043384	Thierry CORNILLET	France	Parti Radical	ALDE	M	1951-07-23 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0043454	Tokia SAÏFI	France	Union pour un Mouvement Populaire	PPE	F	1959-07-11 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0043455	Tokia SAÏFI	France	Les Républicains	PPE	F	1959-07-11 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0044322	Claude TURMES	Luxembourg	Déi Gréng - Les Verts	Verts/ALE	M	1960-11-26 00:00:00	2586	576249	0.1	54	['3 French', '2 German']	parliamentary constitutional monarchy	6	Euro	Yes	1995	1958
+0044365	Gianni PITTELLA	Italy	Partito Democratico	S&D	M	1958-11-19 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0044652	Raffaele FITTO	Italy	Forza Italia	ECR	M	1969-08-28 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0044653	Raffaele FITTO	Italy	Forza Italia	PPE	M	1969-08-28 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0044654	Raffaele FITTO	Italy	Conservatori e Riformisti	ECR	M	1969-08-28 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0045076	Bas BELDER	Netherlands	Staatkundig Gereformeerde Partij	ECR	M	1946-10-25 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+0045132	Geoffrey VAN ORDEN	United Kingdom	Conservative Party	ECR	M	1945-04-10 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0045167	Roger HELMER	United Kingdom	United Kingdom Independence Party	EFDD	M	1944-01-25 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0045192	Claude MORAES	United Kingdom	Labour Party	S&D	M		248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0045212	Charles TANNOCK	United Kingdom	Conservative Party	ECR	M	1957-09-25 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0045254	Nigel FARAGE	United Kingdom	United Kingdom Independence Party	EFDD	M	1964-04-03 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0045311	Jean LAMBERT	United Kingdom	Green Party	Verts/ALE	F	1950-06-01 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0045332	Neena GILL	United Kingdom	Labour Party	S&D	F		248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0045422	Timothy KIRKHOPE	United Kingdom	Conservative Party	ECR	M	1945-04-29 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0045452	Catherine STIHLER	United Kingdom	Labour Party	S&D	F	1973-07-30 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0045502	Jill EVANS	United Kingdom	Plaid Cymru - Party of Wales	Verts/ALE	F	1959-05-08 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0045532	Jacqueline FOSTER	United Kingdom	Conservative Party	ECR	F		248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0045554	Daniel HANNAN	United Kingdom	Conservative Party	ECR	M	1971-09-01 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0045562	Nirj DEVA	United Kingdom	Conservative Party	ECR	M	1948-05-11 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0047515	Bart STAES	Belgium	Groen	Verts/ALE	M	1958-08-07 00:00:00	30528	11311117	1.7	422	['4 Dutch', '3 French', '2 German']	federal parliamentary constitutional monarchy	21	Euro	Yes	1995	1958
+0055654	Brice HORTEFEUX	France	Union pour un Mouvement Populaire	PPE	M	1958-05-11 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0055655	Brice HORTEFEUX	France	Les Républicains	PPE	M	1958-05-11 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0057292	Kathleen VAN BREMPT	Belgium	Socialistische Partij.Anders	S&D	F	1969-11-18 00:00:00	30528	11311117	1.7	422	['4 Dutch', '3 French', '2 German']	federal parliamentary constitutional monarchy	21	Euro	Yes	1995	1958
+0058462	Mary HONEYBALL	United Kingdom	Labour Party	S&D	F	1952-11-12 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0213311	Sylvie GODDYN	France	Front national	ENF	F	1964-06-24 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0213312	Sylvie GODDYN	France	Front national	NI	F	1964-06-24 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+02181710	Mario BORGHEZIO	Italy	Lega Nord	NI	M	1947-12-03 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0218179	Mario BORGHEZIO	Italy	Lega Nord	ENF	M	1947-12-03 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0219182	Manuel dos SANTOS	Portugal	Partido Socialista	S&D	M	1943-12-05 00:00:00	92226	10341330	2	185	['17 Portuguese']	semi-presidential republic	21	Euro	Yes	1995	1986
+0224182	Esther HERRANZ GARCÍA	Spain	Partido Popular	PPE	F	1969-07-03 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+0236933	Alojz PETERLE	Slovenia	Nova Slovenija – Krščanski demokrati	PPE	M	1948-07-05 00:00:00	20273	2064188	0.4	40	['20 Slovenian']	parliamentary republic	8	Euro	Yes	2007	2004
+0236991	Kateřina KONEČNÁ	Czech Republic	Komunistická strana Čech a Moravy	GUE/NGL	F	1981-01-20 00:00:00	78868	10553 843	2.1	174	['Czech']	parliamentary republic	21	CZK	Yes	2007	2004
+0237041	Jiří MAŠTÁLKA	Czech Republic	Komunistická strana Čech a Moravy	GUE/NGL	M	1956-01-03 00:00:00	78868	10553 843	2.1	174	['Czech']	parliamentary republic	21	CZK	Yes	2007	2004
+0237061	Miloslav RANSDORF	Czech Republic	Komunistická strana Čech a Moravy	GUE/NGL	M	1953-02-15 00:00:00	78868	10553 843	2.1	174	['Czech']	parliamentary republic	21	CZK	Yes	2007	2004
+0237122	Jan ZAHRADIL	Czech Republic	Občanská demokratická strana	ECR	M	1963-03-20 00:00:00	78868	10553 843	2.1	174	['Czech']	parliamentary republic	21	CZK	Yes	2007	2004
+0237683	Bogusław LIBERADZKI	Poland	Sojusz Lewicy Demokratycznej	S&D	M	1948-09-12 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0237812	Janusz LEWANDOWSKI	Poland	Platforma Obywatelska	PPE	M	1951-06-13 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0237844	Janusz WOJCIECHOWSKI	Poland	Prawo i Sprawiedliwość	ECR	M	1954-12-06 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0237852	Andrzej GRZYB	Poland	Polskie Stronnictwo Ludowe	PPE	M	1956-08-23 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0237872	Czesław Adam SIEKIERSKI	Poland	Polskie Stronnictwo Ludowe	PPE	M	1952-10-08 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0237911	Kazimierz Michał UJAZDOWSKI	Poland	Prawo i Sprawiedliwość	ECR	M	1964-07-28 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0237912	Kazimierz Michał UJAZDOWSKI	Poland	Independent	ECR	M	1964-07-28 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0238162	András GYÜRK	Hungary	Fidesz-Magyar Polgári Szövetség-Keresztény Demokrata Néppárt	PPE	M	1972-12-02 00:00:00	93011	9830485	1.9	112	['11 Hungarian']	parliamentary republic	21	HUF	Yes	2007	2004
+0238212	József SZÁJER	Hungary	Fidesz-Magyar Polgári Szövetség-Keresztény Demokrata Néppárt	PPE	M	1961-09-07 00:00:00	93011	9830485	1.9	112	['11 Hungarian']	parliamentary republic	21	HUF	Yes	2007	2004
+0238682	Monika BEŇOVÁ	Slovakia	SMER-Sociálna demokracia	S&D	F	1968-08-15 00:00:00	49035	5426252	1.1	81	['19 Slovak']	parliamentary republic	13	Euro	Yes	2007	2004
+0238942	Anna ZÁBORSKÁ	Slovakia	Kresťanskodemokratické hnutie	PPE	F	1948-06-07 00:00:00	49035	5426252	1.1	81	['19 Slovak']	parliamentary republic	13	Euro	Yes	2007	2004
+0245051	Emmanuel MAUREL	France	Parti socialiste	S&D	M	1973-05-10 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0245941	Anne SANDER	France	Union pour un Mouvement Populaire	PPE	F	1973-10-01 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0245942	Anne SANDER	France	Les Républicains	PPE	F	1973-10-01 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0249221	Pascal ARIMONT	Belgium	Christlich Soziale Partei	PPE	M	1974-09-25 00:00:00	30528	11311117	1.7	422	['4 Dutch', '3 French', '2 German']	federal parliamentary constitutional monarchy	21	Euro	Yes	1995	1958
+0257041	Eleni THEOCHAROUS	Cyprus	Democratic Rally	PPE	F	1953-06-24 00:00:00	9251	848319	0.2	18	['7 Greek']	presidential republic	6	Euro	No	-	2004
+0257042	Eleni THEOCHAROUS	Cyprus	Independent	ECR	F	1953-06-24 00:00:00	9251	848319	0.2	18	['7 Greek']	presidential republic	6	Euro	No	-	2004
+0257043	Eleni THEOCHAROUS	Cyprus	Independent	PPE	F	1953-06-24 00:00:00	9251	848319	0.2	18	['7 Greek']	presidential republic	6	Euro	No	-	2004
+0261461	Florent MARCELLESI	Spain	EQUO	Verts/ALE	M	1979-04-10 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+0268372	Lefteris CHRISTOFOROU	Cyprus	Democratic Rally	PPE	M	1963-08-31 00:00:00	9251	848319	0.2	18	['7 Greek']	presidential republic	6	Euro	No	-	2004
+0268513	Nikolaos CHOUNTIS	Greece	Popular Unity	GUE/NGL	M	1953-09-17 00:00:00	131957	10750000	2.1	176	['7 Greek']	parliamentary republic	21	Euro	Yes	2000	1981
+0281152	Mairead McGUINNESS	Ireland	Fine Gael Party	PPE	F	1959-06-13 00:00:00	69797	4724720	0.9	266	[]	parliamentary republic	11	Euro	No	-	1973
+0281162	Marian HARKIN	Ireland	Independent	ALDE	F	1953-11-26 00:00:00	69797	4724720	0.9	266	[]	parliamentary republic	11	Euro	No	-	1973
+0281222	David CASA	Malta	Partit Nazzjonalista	PPE	M	1968-11-16 00:00:00	315	434403	0.1	10	['Maltese', '1 English']	parliamentary republic	6	Euro	Yes	2007	2004
+0281243	Gunnar HÖKMARK	Sweden	Moderaterna	PPE	M	1952-09-19 00:00:00	438574	9851017	1.9	462	['22 Swedish']	parliamentary constitutional monarchy	20	SEK	Yes	2001	1995
+0281263	Christofer FJELLNER	Sweden	Moderaterna	PPE	M	1976-12-13 00:00:00	438574	9851017	1.9	462	['22 Swedish']	parliamentary constitutional monarchy	20	SEK	Yes	2001	1995
+0281312	Anna HEDH	Sweden	Arbetarepartiet- Socialdemokraterna	S&D	F	1967-03-18 00:00:00	438574	9851017	1.9	462	['22 Swedish']	parliamentary constitutional monarchy	20	SEK	Yes	2001	1995
+0281322	Richard ASHWORTH	United Kingdom	Conservative Party	ECR	M	1947-09-17 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0281352	György SCHÖPFLIN	Hungary	Fidesz-Magyar Polgári Szövetség-Keresztény Demokrata Néppárt	PPE	M	1939-11-24 00:00:00	93011	9830485	1.9	112	['11 Hungarian']	parliamentary republic	21	HUF	Yes	2007	2004
+0281412	Lívia JÁRÓKA	Hungary	Fidesz-Magyar Polgári Szövetség-Keresztény Demokrata Néppárt	PPE	F	1974-10-06 00:00:00	93011	9830485	1.9	112	['11 Hungarian']	parliamentary republic	21	HUF	Yes	2007	2004
+0281502	Kinga GÁL	Hungary	Fidesz-Magyar Polgári Szövetség-Keresztény Demokrata Néppárt	PPE	F	1970-09-06 00:00:00	93011	9830485	1.9	112	['11 Hungarian']	parliamentary republic	21	HUF	Yes	2007	2004
+0281542	Ole CHRISTENSEN	Denmark	Socialdemokratiet	S&D	M	1955-05-07 00:00:00	42924	5707251	1.1	277	['8 Danish']	parliamentary constitutional monarchy	13	DKK	Yes	2001	1973
+0281611	Margrete AUKEN	Denmark	Socialistisk Folkeparti	Verts/ALE	F	1945-01-06 00:00:00	42924	5707251	1.1	277	['8 Danish']	parliamentary constitutional monarchy	13	DKK	Yes	2001	1973
+0281652	Lambert van NISTELROOIJ	Netherlands	Christen Democratisch Appèl	PPE	M	1953-03-05 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+0281662	Vincent PEILLON	France	Parti socialiste	S&D	M	1960-07-07 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0281782	Miroslav MIKOLÁŠIK	Slovakia	Kresťanskodemokratické hnutie	PPE	M	1952-09-11 00:00:00	49035	5426252	1.1	81	['19 Slovak']	parliamentary republic	13	Euro	Yes	2007	2004
+0281924	Vladimír MAŇKA	Slovakia	SMER-Sociálna demokracia	S&D	M	1959-09-19 00:00:00	49035	5426252	1.1	81	['19 Slovak']	parliamentary republic	13	Euro	Yes	2007	2004
+0282065	Jean-Marie CAVADA	France	Nouveau Centre-UDI	ALDE	M	1940-02-24 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0282066	Jean-Marie CAVADA	France	Nous Citoyens	ALDE	M	1940-02-24 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0282067	Jean-Marie CAVADA	France	-	ALDE	M	1940-02-24 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0282068	Jean-Marie CAVADA	France	Génération Citoyens	ALDE	M	1940-02-24 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0282082	Nathalie GRIESBECK	France	Mouvement Démocrate	ALDE	F	1956-05-24 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0282104	Marine LE PEN	France	Front national	ENF	F	1968-08-05 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0282105	Marine LE PEN	France	Front national	NI	F	1968-08-05 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0282192	Daniel CASPARY	Germany	Christlich Demokratische Union Deutschlands	PPE	M	1976-04-04 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0282202	Ingeborg GRÄSSLE	Germany	Christlich Demokratische Union Deutschlands	PPE	F	1961-03-02 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0282232	Andreas SCHWAB	Germany	Christlich Demokratische Union Deutschlands	PPE	M	1973-04-09 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0282242	Markus PIEPER	Germany	Christlich Demokratische Union Deutschlands	PPE	M	1963-05-15 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0282252	Herbert REUL	Germany	Christlich Demokratische Union Deutschlands	PPE	M	1952-08-31 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0282262	Christian EHLER	Germany	Christlich Demokratische Union Deutschlands	PPE	M	1963-08-17 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0282282	Albert DESS	Germany	Christlich-Soziale Union in Bayern e.V.	PPE	M	1947-04-17 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0282292	Manfred WEBER	Germany	Christlich-Soziale Union in Bayern e.V.	PPE	M	1972-07-14 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0282331	Rebecca HARMS	Germany	Bündnis 90/Die Grünen	Verts/ALE	F	1956-12-07 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0282381	Michael CRAMER	Germany	Bündnis 90/Die Grünen	Verts/ALE	M	1949-06-16 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0282401	Helga TRÜPEL	Germany	Bündnis 90/Die Grünen	Verts/ALE	F	1958-07-21 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0282422	Alexander Graf LAMBSDORFF	Germany	Freie Demokratische Partei	ALDE	M	1966-11-05 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0282442	Wolf KLINZ	Germany	Freie Demokratische Partei	ALDE	M	1941-09-13 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0282483	Gabriele ZIMMER	Germany	DIE LINKE.	GUE/NGL	F	1955-05-07 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0282512	Jörg LEICHTFRIED	Austria	Sozialdemokratische Partei Österreichs	S&D	M	1967-06-18 00:00:00	83879	8690076	2.2	349	['2 German']	federal parliamentary republic	18	Euro	Yes	2007	1995
+0282572	Ivo BELET	Belgium	Christen-Democratisch & Vlaams	PPE	M	1959-06-07 00:00:00	30528	11311117	1.7	422	['4 Dutch', '3 French', '2 German']	federal parliamentary constitutional monarchy	21	Euro	Yes	1995	1958
+0282661	Sophia in 't VELD	Netherlands	Democraten 66	ALDE	F	1963-09-13 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+0282692	Jerzy BUZEK	Poland	Platforma Obywatelska	PPE	M	1940-07-03 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0282763	Laima Liucija ANDRIKIENĖ	Lithuania	Tėvynės sąjunga-Lietuvos krikščionys demokratai	PPE	F	1958-01-01 00:00:00	65286	2888558	0.6	39	['15 Lithuanian']	parliamentary republic	11	Euro	Yes	2007	2004
+0282842	Barbara KUDRYCKA	Poland	Platforma Obywatelska	PPE	F	1956-01-22 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0282882	Jan OLBRYCHT	Poland	Platforma Obywatelska	PPE	M	1952-09-21 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0282922	Inés AYALA SENDER	Spain	Partido Socialista Obrero Español	S&D	F	1957-03-28 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+0282973	Jacek SARYUSZ-WOLSKI	Poland	Platforma Obywatelska	NI	M	1948-09-19 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0282974	Jacek SARYUSZ-WOLSKI	Poland	Platforma Obywatelska	PPE	M	1948-09-19 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0282982	Iratxe GARCÍA PÉREZ	Spain	Partido Socialista Obrero Español	S&D	F	1974-10-07 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+0283012	Tadeusz ZWIEFKA	Poland	Platforma Obywatelska	PPE	M	1954-12-28 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0283062	Ana GOMES	Portugal	Partido Socialista	S&D	F	1954-02-09 00:00:00	92226	10341330	2	185	['17 Portuguese']	semi-presidential republic	21	Euro	Yes	1995	1986
+0283072	Francisco ASSIS	Portugal	Partido Socialista	S&D	M	1965-01-08 00:00:00	92226	10341330	2	185	['17 Portuguese']	semi-presidential republic	21	Euro	Yes	1995	1986
+0283082	Elisa FERREIRA	Portugal	Partido Socialista	S&D	F	1955-10-17 00:00:00	92226	10341330	2	185	['17 Portuguese']	semi-presidential republic	21	Euro	Yes	1995	1986
+0283141	Anneli JÄÄTTEENMÄKI	Finland	Suomen Keskusta	ALDE	F	1955-02-11 00:00:00	338440	5487308	1.1	214	['10 Finnish', '22 Swedish']	parliamentary republic	13	Euro	Yes	2001	1995
+0283161	Hannu TAKKULA	Finland	Suomen Keskusta	ALDE	M	1963-11-20 00:00:00	338440	5487308	1.1	214	['10 Finnish', '22 Swedish']	parliamentary republic	13	Euro	Yes	2001	1995
+0283311	Jaromír KOHLÍČEK	Czech Republic	Komunistická strana Čech a Moravy	GUE/NGL	M	1953-02-23 00:00:00	78868	10553 843	2.1	174	['Czech']	parliamentary republic	21	CZK	Yes	2007	2004
+0283343	Urszula KRUPA	Poland	Independent	ECR	F	1949-10-20 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0283404	Patrizia TOIA	Italy	Partito Democratico	S&D	F	1950-03-17 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0283415	Mirosław PIOTROWSKI	Poland	Niezależny	ECR	M	1966-01-09 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0283463	Mercedes BRESSO	Italy	Partito Democratico	S&D	F	1944-07-12 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0283532	Anna Elżbieta FOTYGA	Poland	Prawo i Sprawiedliwość	ECR	F	1957-01-12 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0283654	Pier Antonio PANZERI	Italy	Partito Democratico	S&D	M	1955-06-06 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0283655	Pier Antonio PANZERI	Italy	Articolo UNO – Movimento Democratico e Progressista	S&D	M	1955-06-06 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0283725	Ryszard CZARNECKI	Poland	Prawo i Sprawiedliwość	ECR	M	1963-01-25 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0283773	Lidia Joanna GERINGER de OEDENBERG	Poland	Bezpartyjna	S&D	F	1957-09-12 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0283792	Adam GIEREK	Poland	Unia Pracy	S&D	M	1938-04-17 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0283893	Zbigniew KUŹMIUK	Poland	Prawo i Sprawiedliwość	ECR	M	1956-09-19 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0283902	Pilar del CASTILLO VERA	Spain	Partido Popular	PPE	F	1952-07-31 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+0283932	Luis de GRANDES PASCUAL	Spain	Partido Popular	PPE	M	1945-01-27 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+0283943	Dariusz ROSATI	Poland	Platforma Obywatelska	PPE	M	1946-08-08 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0283972	Agustín DÍAZ DE MERA GARCÍA CONSUEGRA	Spain	Partido Popular	PPE	M	1947-09-27 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+0283982	Carlos ITURGAIZ	Spain	Partido Popular	PPE	M	1965-10-20 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+0283992	Antonio LÓPEZ-ISTÚRIZ WHITE	Spain	Partido Popular	PPE	M	1970-04-01 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+0284002	Francisco José MILLÁN MON	Spain	Partido Popular	PPE	M	1955-03-08 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+0284045	Matteo SALVINI	Italy	Lega Nord	ENF	M	1973-03-09 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0284046	Matteo SALVINI	Italy	Lega Nord	NI	M	1973-03-09 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0284243	Tunne KELAM	Estonia	Erakond Isamaa ja Res Publica Liit	PPE	M	1936-07-10 00:00:00	45227	1315944	0.3	21	['9 Estonian']	parliamentary republic	6	Euro	Yes	2007	2004
+0284294	Alessandra MUSSOLINI	Italy	Forza Italia	PPE	F	1962-12-30 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0284295	Alessandra MUSSOLINI	Italy	Forza Italia	NI	F	1962-12-30 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0284296	Alessandra MUSSOLINI	Italy	Forza Italia	PPE	F	1962-12-30 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0284512	Lorenzo CESA	Italy	Unione di Centro	PPE	M	1951-08-16 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0284814	Sajjad KARIM	United Kingdom	Conservative Party	ECR	M	1970-07-11 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0284973	Gerard BATTEN	United Kingdom	United Kingdom Independence Party	EFDD	M	1954-03-27 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0285081	Alyn SMITH	United Kingdom	Scottish National Party	Verts/ALE	M	1973-09-15 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0285862	Dimitrios PAPADIMOULIS	Greece	Coalition of the Radical Left	GUE/NGL	M	1955-03-21 00:00:00	131957	10750000	2.1	176	['7 Greek']	parliamentary republic	21	Euro	Yes	2000	1981
+0286153	Roberts ZĪLE	Latvia	"Nacionālā apvienība ""Visu Latvijai!""-""Tēvzemei un Brīvībai/LNNK"""	ECR	M	1958-06-20 00:00:00	64573	1968957	0.4	25	['14 Latvian']	parliamentary republic	8	Euro	Yes	2007	2004
+0286175	Inese VAIDERE	Latvia	"Partija ""VIENOTĪBA"""	PPE	F	1952-09-03 00:00:00	64573	1968957	0.4	25	['14 Latvian']	parliamentary republic	8	Euro	Yes	2007	2004
+0286182	Valdis DOMBROVSKIS	Latvia	"Partija ""VIENOTĪBA"""	PPE	M	1971-08-05 00:00:00	64573	1968957	0.4	25	['14 Latvian']	parliamentary republic	8	Euro	Yes	2007	2004
+0286193	Tatjana ŽDANOKA	Latvia	Latvijas Krievu savienība	Verts/ALE	F	1950-05-08 00:00:00	64573	1968957	0.4	25	['14 Latvian']	parliamentary republic	8	Euro	Yes	2007	2004
+0295792	Marc TARABELLA	Belgium	Parti Socialiste	S&D	M	1963-03-11 00:00:00	30528	11311117	1.7	422	['4 Dutch', '3 French', '2 German']	federal parliamentary constitutional monarchy	21	Euro	Yes	1995	1958
+0301901	Louis ALIOT	France	Front national	ENF	M	1969-09-04 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0301902	Louis ALIOT	France	Front national	NI	M	1969-09-04 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0304822	Younous OMARJEE	France	L'union pour les Outremer	GUE/NGL	M	1969-09-30 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0335692	Syed KAMALL	United Kingdom	Conservative Party	ECR	M	1967-02-15 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0339823	Marian-Jean MARINESCU	Romania	Partidul Democrat-Liberal	PPE	M	1952-08-11 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0339824	Marian-Jean MARINESCU	Romania	Partidul Naţional Liberal	PPE	M	1952-08-11 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0339842	Ioan Mircea PAŞCU	Romania	Partidul Social Democrat	S&D	M	1949-02-17 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0339892	Daciana Octavia SÂRBU	Romania	Partidul Social Democrat	S&D	F	1977-01-15 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0339972	Corina CREȚU	Romania	Partidul Social Democrat	S&D	F	1967-06-24 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0342491	Filiz HYUSMENOVA	Bulgaria	Movement for Rights and Freedoms	ALDE	F	1966-06-10 00:00:00	110370	7153784	1.4	47	['5 Bulgarian']	parliamentary republic	17	BGN	No	-	2007
+0342501	Nedzhmi ALI	Bulgaria	Movement for Rights and Freedoms	ALDE	M	1972-07-16 00:00:00	110370	7153784	1.4	47	['5 Bulgarian']	parliamentary republic	17	BGN	No	-	2007
+0347282	Matthias GROOTE	Germany	Sozialdemokratische Partei Deutschlands	S&D	M	1973-10-21 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0351351	Daniel DALTON	United Kingdom	Conservative Party	ECR	M	1974-01-31 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0357432	Dame Glenis WILLMOTT	United Kingdom	Labour Party	S&D	F	1951-03-04 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0363924	Aldo PATRICIELLO	Italy	Forza Italia	PPE	M	1957-09-27 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0372291	Kati PIRI	Netherlands	Partij van de Arbeid	S&D	F	1979-04-08 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+0373122	Christel SCHALDEMOSE	Denmark	Socialdemokratiet	S&D	F	1967-08-04 00:00:00	42924	5707251	1.1	277	['8 Danish']	parliamentary constitutional monarchy	13	DKK	Yes	2001	1973
+0373242	Adina-Ioana VĂLEAN	Romania	Partidul Naţional Liberal	PPE	F	1968-02-16 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0374483	Eduard-Raul HELLVIG	Romania	Partidul Naţional Liberal	PPE	M	1974-10-27 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0383982	Esther de LANGE	Netherlands	Christen Democratisch Appèl	PPE	F	1975-02-19 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+0384202	Cristian-Silviu BUŞOI	Romania	Partidul Naţional Liberal	PPE	M	1978-03-01 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0385111	Georg MAYER	Austria	Freiheitliche Partei Österreichs	ENF	M	1973-10-12 00:00:00	83879	8690076	2.2	349	['2 German']	federal parliamentary republic	18	Euro	Yes	2007	1995
+0385112	Georg MAYER	Austria	Freiheitliche Partei Österreichs	NI	M	1973-10-12 00:00:00	83879	8690076	2.2	349	['2 German']	federal parliamentary republic	18	Euro	Yes	2007	1995
+0385962	Elisabeth MORIN-CHARTIER	France	Union pour un Mouvement Populaire	PPE	F	1947-10-10 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0385963	Elisabeth MORIN-CHARTIER	France	Les Républicains	PPE	F	1947-10-10 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0386012	Vladimir URUTCHEV	Bulgaria	Citizens for European Development of Bulgaria	PPE	M	1954-10-01 00:00:00	110370	7153784	1.4	47	['5 Bulgarian']	parliamentary republic	17	BGN	No	-	2007
+0386053	Iliana IOTOVA	Bulgaria	Bulgarian Socialist Party	S&D	F	1964-10-24 00:00:00	110370	7153784	1.4	47	['5 Bulgarian']	parliamentary republic	17	BGN	No	-	2007
+0397112	Victor BOŞTINARU	Romania	Partidul Social Democrat	S&D	M	1952-05-17 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0397131	Renate WEBER	Romania	Partidul Naţional Liberal	ALDE	F	1955-08-03 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0397133	Renate WEBER	Romania	Independent	ALDE	F	1955-08-03 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0397172	Ramona Nicole MĂNESCU	Romania	Partidul Naţional Liberal	PPE	F	1972-12-06 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0397214	Theodor Dumitru STOLOJAN	Romania	Partidul Democrat-Liberal	PPE	M	1943-10-24 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0397215	Theodor Dumitru STOLOJAN	Romania	Partidul Naţional Liberal	PPE	M	1943-10-24 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0397243	Csaba SÓGOR	Romania	Uniunea Democrată Maghiară din România	PPE	M	1964-05-12 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0397252	Iuliu WINKLER	Romania	Uniunea Democrată Maghiară din România	PPE	M	1964-03-14 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0397265	László TŐKÉS	Hungary	Fidesz-Magyar Polgári Szövetség-Keresztény Demokrata Néppárt	PPE	M	1952-04-01 00:00:00	93011	9830485	1.9	112	['11 Hungarian']	parliamentary republic	21	HUF	Yes	2007	2004
+0402241	Andi CRISTEA	Romania	Partidul Social Democrat	S&D	M	1982-01-05 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0405992	Sirpa PIETIKÄINEN	Finland	Kansallinen Kokoomus	PPE	F	1959-04-19 00:00:00	338440	5487308	1.1	214	['10 Finnish', '22 Swedish']	parliamentary republic	13	Euro	Yes	2001	1995
+0587583	Elisabetta GARDINI	Italy	Forza Italia	PPE	F	1956-06-03 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0587891	Jan HUITEMA	Netherlands	Volkspartij voor Vrijheid en Democratie	ALDE	M	1984-07-05 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+0727751	Rachida DATI	France	Union pour un Mouvement Populaire	PPE	F	1965-11-27 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0727752	Rachida DATI	France	Les Républicains	PPE	F	1965-11-27 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0727791	Nadine MORANO	France	Union pour un Mouvement Populaire	PPE	F	1963-11-06 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0727792	Nadine MORANO	France	Les Républicains	PPE	F	1963-11-06 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0841751	Petr MACH	Czech Republic	Strana svobodných občanů	EFDD	M	1975-05-06 00:00:00	78868	10553 843	2.1	174	['Czech']	parliamentary republic	21	CZK	Yes	2007	2004
+0888821	Victor NEGRESCU	Romania	Partidul Social Democrat	S&D	M	1985-08-17 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0901101	Carolina PUNSET	Spain	Ciudadanos – Partido de la Ciudadanía	ALDE	F	1971-01-05 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+0936242	Ulrike RODUST	Germany	Sozialdemokratische Partei Deutschlands	S&D	F	1949-06-04 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0942822	Jean-Paul DENANOT	France	Parti socialiste	S&D	M	1944-04-24 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0950741	Jeroen LENAERS	Netherlands	Christen Democratisch Appèl	PPE	M	1984-04-29 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+0952812	Viorica DĂNCILĂ	Romania	Partidul Social Democrat	S&D	F	1963-12-16 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0962721	Pavel SVOBODA	Czech Republic	Křesťanská a demokratická unie - Československá strana lidová	PPE	M	1962-04-09 00:00:00	78868	10553 843	2.1	174	['Czech']	parliamentary republic	21	CZK	Yes	2007	2004
+0966034	Nessa CHILDERS	Ireland	Independent	S&D	F	1956-10-09 00:00:00	69797	4724720	0.9	266	[]	parliamentary republic	11	Euro	No	-	1973
+0966461	Helmut SCHOLZ	Germany	DIE LINKE.	GUE/NGL	M	1954-06-21 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0966481	Philippe LAMBERTS	Belgium	Ecologistes Confédérés pour l'Organisation de Luttes Originales	Verts/ALE	M	1963-03-14 00:00:00	30528	11311117	1.7	422	['4 Dutch', '3 French', '2 German']	federal parliamentary constitutional monarchy	21	Euro	Yes	1995	1958
+0966511	Eduard KUKAN	Slovakia	Slovenská demokratická a kresťanská únia - Demokratická strana	PPE	M	1939-12-26 00:00:00	49035	5426252	1.1	81	['19 Slovak']	parliamentary republic	13	Euro	Yes	2007	2004
+0966512	Eduard KUKAN	Slovakia	Independent	PPE	M	1939-12-26 00:00:00	49035	5426252	1.1	81	['19 Slovak']	parliamentary republic	13	Euro	Yes	2007	2004
+0966551	Monika SMOLKOVÁ	Slovakia	SMER-Sociálna demokracia	S&D	F	1956-10-06 00:00:00	49035	5426252	1.1	81	['19 Slovak']	parliamentary republic	13	Euro	Yes	2007	2004
+0966561	Boris ZALA	Slovakia	SMER-Sociálna demokracia	S&D	M	1954-12-09 00:00:00	49035	5426252	1.1	81	['19 Slovak']	parliamentary republic	13	Euro	Yes	2007	2004
+0966611	Krisztina MORVAI	Hungary	Jobbik Magyarországért Mozgalom	NI	F	1963-06-22 00:00:00	93011	9830485	1.9	112	['11 Hungarian']	parliamentary republic	21	HUF	Yes	2007	2004
+0966632	Morten MESSERSCHMIDT	Denmark	Dansk Folkeparti	ECR	M	1980-11-13 00:00:00	42924	5707251	1.1	277	['8 Danish']	parliamentary constitutional monarchy	13	DKK	Yes	2001	1973
+0966681	Seán KELLY	Ireland	Fine Gael Party	PPE	M	1952-04-26 00:00:00	69797	4724720	0.9	266	[]	parliamentary republic	11	Euro	No	-	1973
+0966701	Louis MICHEL	Belgium	Mouvement Réformateur	ALDE	M	1947-09-02 00:00:00	30528	11311117	1.7	422	['4 Dutch', '3 French', '2 German']	federal parliamentary constitutional monarchy	21	Euro	Yes	1995	1958
+0966721	Marita ULVSKOG	Sweden	Arbetarepartiet- Socialdemokraterna	S&D	F	1951-09-04 00:00:00	438574	9851017	1.9	462	['22 Swedish']	parliamentary constitutional monarchy	20	SEK	Yes	2001	1995
+0966731	Olle LUDVIGSSON	Sweden	Arbetarepartiet- Socialdemokraterna	S&D	M	1948-10-28 00:00:00	438574	9851017	1.9	462	['22 Swedish']	parliamentary constitutional monarchy	20	SEK	Yes	2001	1995
+0966742	Anna Maria CORAZZA BILDT	Sweden	Moderaterna	PPE	F	1963-03-10 00:00:00	438574	9851017	1.9	462	['22 Swedish']	parliamentary constitutional monarchy	20	SEK	Yes	2001	1995
+0966761	Christian ENGSTRÖM	Sweden	Piratpartiet	Verts/ALE	M	1960-02-09 00:00:00	438574	9851017	1.9	462	['22 Swedish']	parliamentary constitutional monarchy	20	SEK	Yes	2001	1995
+0966772	Cecilia WIKSTRÖM	Sweden	Liberalerna	ALDE	F	1965-10-17 00:00:00	438574	9851017	1.9	462	['22 Swedish']	parliamentary constitutional monarchy	20	SEK	Yes	2001	1995
+0966801	Zigmantas BALČYTIS	Lithuania	Lietuvos socialdemokratų partija	S&D	M	1953-11-16 00:00:00	65286	2888558	0.6	39	['15 Lithuanian']	parliamentary republic	11	Euro	Yes	2007	2004
+0966811	Vilija BLINKEVIČIŪTĖ	Lithuania	Lietuvos socialdemokratų partija	S&D	F	1960-03-03 00:00:00	65286	2888558	0.6	39	['15 Lithuanian']	parliamentary republic	11	Euro	Yes	2007	2004
+0966841	Liisa JAAKONSAARI	Finland	Suomen Sosialidemokraattinen Puolue/Finlands Socialdemokratiska Parti	S&D	F	1945-09-02 00:00:00	338440	5487308	1.1	214	['10 Finnish', '22 Swedish']	parliamentary republic	13	Euro	Yes	2001	1995
+0966942	Rolandas PAKSAS	Lithuania	Partija Tvarka ir teisingumas	EFDD	M	1956-06-10 00:00:00	65286	2888558	0.6	39	['15 Lithuanian']	parliamentary republic	11	Euro	Yes	2007	2004
+0966962	Algirdas SAUDARGAS	Lithuania	Tėvynės sąjunga-Lietuvos krikščionys demokratai	PPE	M	1948-04-17 00:00:00	65286	2888558	0.6	39	['15 Lithuanian']	parliamentary republic	11	Euro	Yes	2007	2004
+0966972	Valdemar TOMAŠEVSKI	Lithuania	Lietuvos lenkų rinkimų akcija – Krikščioniškų šeimų sąjunga	ECR	M	1965-03-03 00:00:00	65286	2888558	0.6	39	['15 Lithuanian']	parliamentary republic	11	Euro	Yes	2007	2004
+0966981	Viktor USPASKICH	Lithuania	Darbo partija	ALDE	M	1959-07-24 00:00:00	65286	2888558	0.6	39	['15 Lithuanian']	parliamentary republic	11	Euro	Yes	2007	2004
+0967051	Bendt BENDTSEN	Denmark	Det Konservative Folkeparti	PPE	M	1954-03-25 00:00:00	42924	5707251	1.1	277	['8 Danish']	parliamentary constitutional monarchy	13	DKK	Yes	2001	1973
+0967061	João FERREIRA	Portugal	Partido Comunista Português	GUE/NGL	M	1978-11-20 00:00:00	92226	10341330	2	185	['17 Portuguese']	semi-presidential republic	21	Euro	Yes	1995	1986
+0967091	Morten LØKKEGAARD	Denmark	Venstre, Danmarks Liberale Parti	ALDE	M	1964-12-20 00:00:00	42924	5707251	1.1	277	['8 Danish']	parliamentary constitutional monarchy	13	DKK	Yes	2001	1973
+0967101	Jens ROHDE	Denmark	Venstre, Danmarks Liberale Parti	ALDE	M	1970-04-18 00:00:00	42924	5707251	1.1	277	['8 Danish']	parliamentary constitutional monarchy	13	DKK	Yes	2001	1973
+0967102	Jens ROHDE	Denmark	Det Radikale Venstre	ALDE	M	1970-04-18 00:00:00	42924	5707251	1.1	277	['8 Danish']	parliamentary constitutional monarchy	13	DKK	Yes	2001	1973
+0967131	Evžen TOŠENOVSKÝ	Czech Republic	Občanská demokratická strana	ECR	M	1956-02-26 00:00:00	78868	10553 843	2.1	174	['Czech']	parliamentary republic	21	CZK	Yes	2007	2004
+0967151	Pavel POC	Czech Republic	Česká strana sociálně demokratická	S&D	M	1964-05-26 00:00:00	78868	10553 843	2.1	174	['Czech']	parliamentary republic	21	CZK	Yes	2007	2004
+0967181	Olga SEHNALOVÁ	Czech Republic	Česká strana sociálně demokratická	S&D	F	1968-10-25 00:00:00	78868	10553 843	2.1	174	['Czech']	parliamentary republic	21	CZK	Yes	2007	2004
+0967251	Bas EICKHOUT	Netherlands	GroenLinks	Verts/ALE	M	1976-10-08 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+0967281	Barbara LOCHBIHLER	Germany	Bündnis 90/Die Grünen	Verts/ALE	F	1959-05-20 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0967291	Santiago FISAS AYXELÀ	Spain	Partido Popular	PPE	M	1948-08-29 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+0967301	Sven GIEGOLD	Germany	Bündnis 90/Die Grünen	Verts/ALE	M	1969-11-17 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0967341	Ska KELLER	Germany	Bündnis 90/Die Grünen	Verts/ALE	F	1981-11-22 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0967352	Patrick LE HYARIC	France	Front de Gauche	GUE/NGL	M	1957-02-04 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0967361	Jan Philipp ALBRECHT	Germany	Bündnis 90/Die Grünen	Verts/ALE	M	1982-12-20 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0967391	Reinhard BÜTIKOFER	Germany	Bündnis 90/Die Grünen	Verts/ALE	M	1953-01-26 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0967401	Yannick JADOT	France	Europe Écologie	Verts/ALE	M	1967-07-27 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0967422	Jean-Luc MÉLENCHON	France	Front de Gauche	GUE/NGL	M	1951-08-19 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0967431	Michèle RIVASI	France	Europe Écologie	Verts/ALE	F	1953-02-09 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0967441	José BOVÉ	France	Europe Écologie	Verts/ALE	M	1953-06-11 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0967471	Arnaud DANJEAN	France	Union pour un Mouvement Populaire	PPE	M	1971-02-11 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0967472	Arnaud DANJEAN	France	Les Républicains	PPE	M	1971-02-11 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0967481	Dennis de JONG	Netherlands	Socialistische Partij	GUE/NGL	M	1955-05-22 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+0967511	Nick GRIFFIN	United Kingdom	British National Party	NI	M	1959-03-01 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0967521	Martin HÄUSLING	Germany	Bündnis 90/Die Grünen	Verts/ALE	M	1961-03-26 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0967541	Wim van de CAMP	Netherlands	Christen Democratisch Appèl	PPE	M	1953-07-27 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+0967561	Sabine VERHEYEN	Germany	Christlich Demokratische Union Deutschlands	PPE	F	1964-10-24 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0967611	Axel VOSS	Germany	Christlich Demokratische Union Deutschlands	PPE	M	1963-04-07 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0967621	Joachim ZELLER	Germany	Christlich Demokratische Union Deutschlands	PPE	M	1952-07-01 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0967631	Pablo ZALBA BIDEGAIN	Spain	Partido Popular	PPE	M	1975-01-28 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+0967641	Hermann WINKLER	Germany	Christlich Demokratische Union Deutschlands	PPE	M	1963-04-22 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0967651	Verónica LOPE FONTAGNÉ	Spain	Partido Popular	PPE	F	1952-02-01 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+0967671	Werner KUHN	Germany	Christlich Demokratische Union Deutschlands	PPE	M	1955-05-19 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0967681	Enrique GUERRERO SALOM	Spain	Partido Socialista Obrero Español	S&D	M	1948-08-28 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+0967711	Jarosław KALINOWSKI	Poland	Polskie Stronnictwo Ludowe	PPE	M	1962-04-12 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0967721	Peter JAHR	Germany	Christlich Demokratische Union Deutschlands	PPE	M	1959-04-24 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0967741	Jarosław WAŁĘSA	Poland	Platforma Obywatelska	PPE	M	1976-09-13 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0967752	Lara COMI	Italy	Forza Italia	PPE	F	1983-02-18 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0967761	Róża Gräfin von THUN UND HOHENSTEIN	Poland	Platforma Obywatelska	PPE	F	1954-04-13 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0967791	Danuta Maria HÜBNER	Poland	Platforma Obywatelska	PPE	F	1948-04-08 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0967801	Monika HOHLMEIER	Germany	Christlich-Soziale Union in Bayern e.V.	PPE	F	1962-07-02 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0967811	Danuta JAZŁOWIECKA	Poland	Platforma Obywatelska	PPE	F	1957-05-19 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0967842	Janusz ZEMKE	Poland	Sojusz Lewicy Demokratycznej - Unia Pracy	S&D	M	1949-02-24 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0967871	Herbert DORFMANN	Italy	Südtiroler Volkspartei	PPE	M	1969-03-04 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0967901	Marek Józef GRÓBARCZYK	Poland	Prawo i Sprawiedliwość	ECR	M	1968-03-13 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0967911	Elżbieta Katarzyna ŁUKACIJEWSKA	Poland	Platforma Obywatelska	PPE	F	1966-11-25 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0967961	Ryszard Antoni LEGUTKO	Poland	Prawo i Sprawiedliwość	ECR	M	1949-12-24 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0968011	Tomasz Piotr PORĘBA	Poland	Prawo i Sprawiedliwość	ECR	M	1973-03-31 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+0968052	Paul NUTTALL	United Kingdom	United Kingdom Independence Party	EFDD	M	1976-11-30 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0968061	Teresa JIMÉNEZ-BECERRIL BARRIO	Spain	Partido Popular	PPE	F	1961-07-24 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+0968092	Peter van DALEN	Netherlands	ChristenUnie	ECR	M	1958-09-03 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+0968111	Rosa ESTARÀS FERRAGUT	Spain	Partido Popular	PPE	F	1965-10-21 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+0968121	Juan Fernando LÓPEZ AGUILAR	Spain	Partido Socialista Obrero Español	S&D	M	1961-06-10 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+0968123	Juan Fernando LÓPEZ AGUILAR	Spain	Partido Socialista Obrero Español	S&D	M	1961-06-10 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+0968132	Barbara MATERA	Italy	Forza Italia	PPE	F	1981-12-09 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0968151	Judith SARGENTINI	Netherlands	GroenLinks	Verts/ALE	F	1974-03-13 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+0968163	Giovanni LA VIA	Italy	Unione di Centro	PPE	M	1963-06-28 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0968164	Giovanni LA VIA	Italy	Alternativa Popolare	PPE	M	1963-06-28 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0968201	Marisa MATIAS	Portugal	Bloco de Esquerda	GUE/NGL	F	1976-02-20 00:00:00	92226	10341330	2	185	['17 Portuguese']	semi-presidential republic	21	Euro	Yes	1995	1986
+0968241	Monica MACOVEI	Romania	Partidul Democrat-Liberal	PPE	F	1959-02-04 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0968242	Monica MACOVEI	Romania	Independent	ECR	F	1959-02-04 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0968243	Monica MACOVEI	Romania	Independent	PPE	F	1959-02-04 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0968251	Norica NICOLAI	Romania	Partidul Naţional Liberal	ALDE	F	1958-01-27 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0968253	Norica NICOLAI	Romania	Independent	ALDE	F	1958-01-27 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0968254	Norica NICOLAI	Romania	ALDE Romania	ALDE	F	1958-01-27 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0968261	Tamás DEUTSCH	Hungary	Fidesz-Magyar Polgári Szövetség-Keresztény Demokrata Néppárt	PPE	M	1966-07-27 00:00:00	93011	9830485	1.9	112	['11 Hungarian']	parliamentary republic	21	HUF	Yes	2007	2004
+0968291	Ádám KÓSA	Hungary	Fidesz-Magyar Polgári Szövetség-Keresztény Demokrata Néppárt	PPE	M	1975-07-01 00:00:00	93011	9830485	1.9	112	['11 Hungarian']	parliamentary republic	21	HUF	Yes	2007	2004
+0968311	Jutta STEINRUCK	Germany	Sozialdemokratische Partei Deutschlands	S&D	F	1962-09-01 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0968331	Jens GEIER	Germany	Sozialdemokratische Partei Deutschlands	S&D	M	1961-06-22 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0968351	Traian UNGUREANU	Romania	Partidul Democrat-Liberal	PPE	M	1958-03-01 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0968352	Traian UNGUREANU	Romania	Partidul Naţional Liberal	PPE	M	1958-03-01 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0968361	Peter SIMON	Germany	Sozialdemokratische Partei Deutschlands	S&D	M	1967-04-04 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0968371	Petra KAMMEREVERT	Germany	Sozialdemokratische Partei Deutschlands	S&D	F	1966-06-01 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0968383	Cristian Dan PREDA	Romania	Partidul Mișcarea Populară	PPE	M	1966-10-26 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0968384	Cristian Dan PREDA	Romania	Independent	PPE	M	1966-10-26 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0968391	Kerstin WESTPHAL	Germany	Sozialdemokratische Partei Deutschlands	S&D	F	1962-09-11 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0968401	Knut FLECKENSTEIN	Germany	Sozialdemokratische Partei Deutschlands	S&D	M	1953-12-20 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0968421	Ismail ERTUG	Germany	Sozialdemokratische Partei Deutschlands	S&D	M	1975-12-05 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0968441	Norbert NEUSER	Germany	Sozialdemokratische Partei Deutschlands	S&D	M	1949-03-22 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0968472	Claudiu Ciprian TĂNĂSESCU	Romania	Partidul Social Democrat	S&D	M	1965-07-19 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0968481	Mariya GABRIEL	Bulgaria	Citizens for European Development of Bulgaria	PPE	F	1979-05-20 00:00:00	110370	7153784	1.4	47	['5 Bulgarian']	parliamentary republic	17	BGN	No	-	2007
+0968491	Alain CADEC	France	Union pour un Mouvement Populaire	PPE	M	1953-06-21 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0968492	Alain CADEC	France	Les Républicains	PPE	M	1953-06-21 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0968511	Thomas HÄNDEL	Germany	DIE LINKE.	GUE/NGL	M	1953-08-27 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0968521	Cornelia ERNST	Germany	DIE LINKE.	GUE/NGL	F	1956-11-30 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0968541	Sabine LÖSING	Germany	DIE LINKE.	GUE/NGL	F	1955-11-30 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0968571	Cătălin Sorin IVAN	Romania	Partidul Social Democrat	S&D	M	1978-12-23 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+0968582	Marie-Christine VERGIAT	France	Front de Gauche	GUE/NGL	F	1956-09-23 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0968641	David-Maria SASSOLI	Italy	Partito Democratico	S&D	M	1956-05-30 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0968681	Karima DELLI	France	Europe Écologie	Verts/ALE	F	1979-03-04 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0968701	Gesine MEISSNER	Germany	Freie Demokratische Partei	ALDE	F	1952-02-22 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0968711	Michael THEURER	Germany	Freie Demokratische Partei	ALDE	M	1967-01-12 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0968721	Nadja HIRSCH	Germany	Freie Demokratische Partei	ALDE	F	1978-07-13 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0968761	Frank ENGEL	Luxembourg	Parti chrétien social luxembourgeois	PPE	M	1975-05-10 00:00:00	2586	576249	0.1	54	['3 French', '2 German']	parliamentary constitutional monarchy	6	Euro	Yes	1995	1958
+0968771	Zoltán BALCZÓ	Hungary	Jobbik Magyarországért Mozgalom	NI	M	1948-03-24 00:00:00	93011	9830485	1.9	112	['11 Hungarian']	parliamentary republic	21	HUF	Yes	2007	2004
+0968801	Andrea COZZOLINO	Italy	Partito Democratico	S&D	M	1962-08-03 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0968821	Elisabeth KÖSTINGER	Austria	Österreichische Volkspartei	PPE	F	1978-11-22 00:00:00	83879	8690076	2.2	349	['2 German']	federal parliamentary republic	18	Euro	Yes	2007	1995
+0968831	Eva JOLY	France	Europe Écologie	Verts/ALE	F	1943-12-05 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0968841	Philippe JUVIN	France	Union pour un Mouvement Populaire	PPE	M	1964-02-01 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0968842	Philippe JUVIN	France	Les Républicains	PPE	M	1964-02-01 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0968853	Dominique RIQUET	France	Parti Radical - UDI	ALDE	M	1946-09-18 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0968911	Paolo DE CASTRO	Italy	Partito Democratico	S&D	M	1958-02-02 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0968921	Roberto GUALTIERI	Italy	Partito Democratico	S&D	M	1966-07-19 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0968972	John Stuart AGNEW	United Kingdom	United Kingdom Independence Party	EFDD	M	1949-08-30 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0968991	José Manuel FERNANDES	Portugal	Partido Social Democrata	PPE	M	1967-07-26 00:00:00	92226	10341330	2	185	['17 Portuguese']	semi-presidential republic	21	Euro	Yes	1995	1986
+0969013	Krišjānis KARIŅŠ	Latvia	"Partija ""VIENOTĪBA"""	PPE	M	1964-12-13 00:00:00	64573	1968957	0.4	25	['14 Latvian']	parliamentary republic	8	Euro	Yes	2007	2004
+0969031	Paulo RANGEL	Portugal	Partido Social Democrata	PPE	M	1968-02-18 00:00:00	92226	10341330	2	185	['17 Portuguese']	semi-presidential republic	21	Euro	Yes	1995	1986
+0969071	Takis HADJIGEORGIOU	Cyprus	Progressive Party of Working People - Left - New Forces	GUE/NGL	M	1956-12-11 00:00:00	9251	848319	0.2	18	['7 Greek']	presidential republic	6	Euro	No	-	2004
+0969111	Tanja FAJON	Slovenia	Socialni demokrati	S&D	F	1971-05-09 00:00:00	20273	2064188	0.4	40	['20 Slovenian']	parliamentary republic	8	Euro	Yes	2007	2004
+0969123	David CAMPBELL BANNERMAN	United Kingdom	Conservative Party	ECR	M	1960-05-28 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0969141	Anne DELVAUX	Belgium	Centre Démocrate Humaniste	PPE	F	1970-10-20 00:00:00	30528	11311117	1.7	422	['4 Dutch', '3 French', '2 German']	federal parliamentary constitutional monarchy	21	Euro	Yes	1995	1958
+0969151	Sergio Gaetano COFFERATI	Italy	Partito Democratico	S&D	M	1948-01-30 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0969152	Sergio Gaetano COFFERATI	Italy	-	S&D	M	1948-01-30 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0969171	Silvia COSTA	Italy	Partito Democratico	S&D	F	1949-06-12 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0969181	Derek VAUGHAN	United Kingdom	Labour Party	S&D	M	1961-05-02 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0969191	Emma McCLARKIN	United Kingdom	Conservative Party	ECR	F	1978-10-09 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0969201	Kay SWINBURNE	United Kingdom	Conservative Party	ECR	F	1967-06-08 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0969221	Izaskun BILBAO BARANDICA	Spain	Partido Nacionalista Vasco	ALDE	F	1961-03-27 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+0969311	Maurice PONGA	France	Union pour un Mouvement Populaire	PPE	M	1947-06-05 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0969312	Maurice PONGA	France	Les Républicains	PPE	M	1947-06-05 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0969321	Birgit SIPPEL	Germany	Sozialdemokratische Partei Deutschlands	S&D	F	1960-01-29 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0969331	Milan ZVER	Slovenia	Slovenska demokratska stranka	PPE	M	1962-05-25 00:00:00	20273	2064188	0.4	40	['20 Slovenian']	parliamentary republic	8	Euro	Yes	2007	2004
+0969343	Sandra KALNIETE	Latvia	"Partija ""VIENOTĪBA"""	PPE	F	1952-12-22 00:00:00	64573	1968957	0.4	25	['14 Latvian']	parliamentary republic	8	Euro	Yes	2007	2004
+0969361	Gabriel MATO	Spain	Partido Popular	PPE	M	1961-04-29 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+0969371	Johannes Cornelis van BAALEN	Netherlands	Volkspartij voor Vrijheid en Democratie	ALDE	M	1960-06-17 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+0969401	Gerben-Jan GERBRANDY	Netherlands	Democraten 66	ALDE	M	1967-06-28 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+0969451	Marietje SCHAAKE	Netherlands	Democraten 66	ALDE	F	1978-10-28 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+0969481	Gilles PARGNEAUX	France	Parti socialiste	S&D	M	1957-03-24 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0969491	Vicky FORD	United Kingdom	Conservative Party	ECR	F	1967-09-21 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0969512	Diane DODDS	United Kingdom	Democratic Unionist Party	NI	F	1958-08-16 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0969521	Sylvie GUILLAUME	France	Parti socialiste	S&D	F	1962-06-11 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0969552	Catherine BEARDER	United Kingdom	Liberal Democrats	ALDE	F	1949-01-14 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0969561	Julie GIRLING	United Kingdom	Conservative Party	ECR	F	1956-12-21 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0969571	Ashley FOX	United Kingdom	Conservative Party	ECR	M	1969-11-15 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0969582	William (The Earl of) DARTMOUTH	United Kingdom	United Kingdom Independence Party	EFDD	M	1949-09-23 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+0969781	Nuno MELO	Portugal	Partido Popular	PPE	M	1966-03-18 00:00:00	92226	10341330	2	185	['17 Portuguese']	semi-presidential republic	21	Euro	Yes	1995	1986
+0969812	Franz OBERMAYR	Austria	Freiheitliche Partei Österreichs	ENF	M	1952-05-25 00:00:00	83879	8690076	2.2	349	['2 German']	federal parliamentary republic	18	Euro	Yes	2007	1995
+0969813	Franz OBERMAYR	Austria	Freiheitliche Partei Österreichs	NI	M	1952-05-25 00:00:00	83879	8690076	2.2	349	['2 German']	federal parliamentary republic	18	Euro	Yes	2007	1995
+0969911	Eider GARDIAZABAL RUBIAL	Spain	Partido Socialista Obrero Español	S&D	F	1975-07-12 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+0969932	Lorenzo FONTANA	Italy	Lega Nord	ENF	M	1980-04-10 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0969933	Lorenzo FONTANA	Italy	Lega Nord	NI	M	1980-04-10 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0969971	Burkhard BALZ	Germany	Christlich Demokratische Union Deutschlands	PPE	M	1969-07-24 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+0969981	Evelyn REGNER	Austria	Sozialdemokratische Partei Österreichs	S&D	F	1966-01-24 00:00:00	83879	8690076	2.2	349	['2 German']	federal parliamentary republic	18	Euro	Yes	2007	1995
+0970141	Karin KADENBACH	Austria	Sozialdemokratische Partei Österreichs	S&D	F	1958-04-19 00:00:00	83879	8690076	2.2	349	['2 German']	federal parliamentary republic	18	Euro	Yes	2007	1995
+0970171	Ulrike LUNACEK	Austria	Die Grünen - Die Grüne Alternative	Verts/ALE	F	1957-05-26 00:00:00	83879	8690076	2.2	349	['2 German']	federal parliamentary republic	18	Euro	Yes	2007	1995
+0970192	Ivo VAJGL	Slovenia	DeSUS - Demokratična Stranka Upokojencev Slovenije	ALDE	M	1943-03-03 00:00:00	20273	2064188	0.4	40	['20 Slovenian']	parliamentary republic	8	Euro	Yes	2007	2004
+0970221	Robert ROCHEFORT	France	Mouvement Démocrate	ALDE	M	1955-09-19 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0970251	Ivari PADAR	Estonia	Sotsiaaldemokraatlik Erakond	S&D	M	1965-03-12 00:00:00	45227	1315944	0.3	21	['9 Estonian']	parliamentary republic	6	Euro	Yes	2007	2004
+0970581	Guy VERHOFSTADT	Belgium	Open Vlaamse Liberalen en Democraten	ALDE	M	1953-04-11 00:00:00	30528	11311117	1.7	422	['4 Dutch', '3 French', '2 German']	federal parliamentary constitutional monarchy	21	Euro	Yes	1995	1958
+0970781	Ramón JÁUREGUI ATONDO	Spain	Partido Socialista Obrero Español	S&D	M	1948-09-01 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+0971361	Indrek TARAND	Estonia	Sõltumatu	Verts/ALE	M	1964-02-03 00:00:00	45227	1315944	0.3	21	['9 Estonian']	parliamentary republic	6	Euro	Yes	2007	2004
+0971371	Sylvie GOULARD	France	Mouvement Démocrate	ALDE	F	1964-12-06 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0971372	Sylvie GOULARD	France	La République en marche	ALDE	F	1964-12-06 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0971982	Mara BIZZOTTO	Italy	Lega Nord	ENF	F	1972-06-03 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0971983	Mara BIZZOTTO	Italy	Lega Nord	NI	F	1972-06-03 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+0972034	Ramon TREMOSA i BALCELLS	Spain	Convergència Democràtica de Catalunya	ALDE	M	1965-06-30 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+0972035	Ramon TREMOSA i BALCELLS	Spain	Partit Demòcrata Europeu i Català	ALDE	M	1965-06-30 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+0972931	Georges BACH	Luxembourg	Parti chrétien social luxembourgeois	PPE	M	1955-06-12 00:00:00	2586	576249	0.1	54	['3 French', '2 German']	parliamentary constitutional monarchy	6	Euro	Yes	1995	1958
+0972961	Michel DANTIN	France	Union pour un Mouvement Populaire	PPE	M	1960-01-15 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0972962	Michel DANTIN	France	Les Républicains	PPE	M	1960-01-15 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+0975131	Vicky MAEIJER	Netherlands	Partij voor de Vrijheid	ENF	F	1986-09-07 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+0975132	Vicky MAEIJER	Netherlands	Partij voor de Vrijheid	NI	F	1986-09-07 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+0979681	Andrey KOVATCHEV	Bulgaria	Citizens for European Development of Bulgaria	PPE	M	1967-12-13 00:00:00	110370	7153784	1.4	47	['5 Bulgarian']	parliamentary republic	17	BGN	No	-	2007
+0983411	Eva MAYDELL	Bulgaria	Citizens for European Development of Bulgaria	PPE	F	1986-01-26 00:00:00	110370	7153784	1.4	47	['5 Bulgarian']	parliamentary republic	17	BGN	No	-	2007
+0996501	Tim AKER	United Kingdom	United Kingdom Independence Party	EFDD	M	1985-05-23 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1015801	Constance LE GRIP	France	Union pour un Mouvement Populaire	PPE	F	1960-11-14 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1015802	Constance LE GRIP	France	Les Républicains	PPE	F	1960-11-14 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1028861	Ildikó GÁLL-PELCZ	Hungary	Fidesz-Magyar Polgári Szövetség-Keresztény Demokrata Néppárt	PPE	F	1962-05-02 00:00:00	93011	9830485	1.9	112	['11 Hungarian']	parliamentary republic	21	HUF	Yes	2007	2004
+1028871	Béla KOVÁCS	Hungary	Jobbik Magyarországért Mozgalom	NI	M	1960-02-25 00:00:00	93011	9830485	1.9	112	['11 Hungarian']	parliamentary republic	21	HUF	Yes	2007	2004
+1029311	Keith TAYLOR	United Kingdom	Green Party	Verts/ALE	M	1953-08-01 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1032462	Auke ZIJLSTRA	Netherlands	Partij voor de Vrijheid	ENF	M	1964-11-01 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+1033811	Terry REINTKE	Germany	Bündnis 90/Die Grünen	Verts/ALE	F	1987-05-09 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1034881	Sergio GUTIÉRREZ PRIETO	Spain	Partido Socialista Obrero Español	S&D	M	1982-07-11 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1038451	Virginie ROZIÈRE	France	Parti radical de gauche	S&D	F	1976-06-18 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1062021	Julia REID	United Kingdom	United Kingdom Independence Party	EFDD	F	1952-07-16 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1070411	Heinz K. BECKER	Austria	Österreichische Volkspartei	PPE	M	1950-06-29 00:00:00	83879	8690076	2.2	349	['2 German']	federal parliamentary republic	18	Euro	Yes	2007	1995
+1072121	Andrey NOVAKOV	Bulgaria	Citizens for European Development of Bulgaria	PPE	M	1988-07-07 00:00:00	110370	7153784	1.4	47	['5 Bulgarian']	parliamentary republic	17	BGN	No	-	2007
+1073852	Sampo TERHO	Finland	Perussuomalaiset	ECR	M	1977-09-20 00:00:00	338440	5487308	1.1	214	['10 Finnish', '22 Swedish']	parliamentary republic	13	Euro	Yes	2001	1995
+1080801	Franck PROUST	France	Union pour un Mouvement Populaire	PPE	M	1963-05-02 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1080802	Franck PROUST	France	Les Républicains	PPE	M	1963-05-02 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1093371	Philippe DE BACKER	Belgium	Open Vlaamse Liberalen en Democraten	ALDE	M	1978-12-04 00:00:00	30528	11311117	1.7	422	['4 Dutch', '3 French', '2 German']	federal parliamentary constitutional monarchy	21	Euro	Yes	1995	1958
+1109772	Florian PHILIPPOT	France	Front national	ENF	M	1981-10-24 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1109773	Florian PHILIPPOT	France	Front national	NI	M	1981-10-24 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1109774	Florian PHILIPPOT	France	Les Patriotes	EFDD	M	1981-10-24 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1110111	Anthea McINTYRE	United Kingdom	Conservative Party	ECR	F	1954-06-29 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1110141	Josef WEIDENHOLZER	Austria	Sozialdemokratische Partei Österreichs	S&D	M	1950-03-06 00:00:00	83879	8690076	2.2	349	['2 German']	federal parliamentary republic	18	Euro	Yes	2007	1995
+1110241	Jens NILSSON	Sweden	Arbetarepartiet- Socialdemokraterna	S&D	M	1948-09-25 00:00:00	438574	9851017	1.9	462	['22 Swedish']	parliamentary constitutional monarchy	20	SEK	Yes	2001	1995
+1110274	Svetoslav Hristov MALINOV	Bulgaria	Democrats for Strong Bulgaria	PPE	M	1968-01-19 00:00:00	110370	7153784	1.4	47	['5 Bulgarian']	parliamentary republic	17	BGN	No	-	2007
+1115891	Inês Cristina ZUBER	Portugal	Partido Comunista Português	GUE/NGL	F	1980-03-11 00:00:00	92226	10341330	2	185	['17 Portuguese']	semi-presidential republic	21	Euro	Yes	1995	1986
+1126111	Petri SARVAMAA	Finland	Kansallinen Kokoomus	PPE	M	1960-09-15 00:00:00	338440	5487308	1.1	214	['10 Finnish', '22 Swedish']	parliamentary republic	13	Euro	Yes	2001	1995
+1127441	Tonino PICULA	Croatia	Socijaldemokratska partija Hrvatske	S&D	M	1961-08-31 00:00:00	56594	4190669	0.8	45	['6 Croatian']	parliamentary republic	11	HRK	No	-	2013
+1127481	Biljana BORZAN	Croatia	Socijaldemokratska partija Hrvatske	S&D	F	1971-11-29 00:00:00	56594	4190669	0.8	45	['6 Croatian']	parliamentary republic	11	HRK	No	-	2013
+1127531	Jozo RADOŠ	Croatia	Hrvatska narodna stranka - liberalni demokrati	ALDE	M	1956-11-03 00:00:00	56594	4190669	0.8	45	['6 Croatian']	parliamentary republic	11	HRK	No	-	2013
+1127532	Jozo RADOŠ	Croatia	Independent	ALDE	M	1956-11-03 00:00:00	56594	4190669	0.8	45	['6 Croatian']	parliamentary republic	11	HRK	No	-	2013
+1127533	Jozo RADOŠ	Croatia	Građansko-liberalni savez	ALDE	M	1956-11-03 00:00:00	56594	4190669	0.8	45	['6 Croatian']	parliamentary republic	11	HRK	No	-	2013
+1127551	Andrej PLENKOVIĆ	Croatia	Hrvatska demokratska zajednica	PPE	M	1970-04-08 00:00:00	56594	4190669	0.8	45	['6 Croatian']	parliamentary republic	11	HRK	No	-	2013
+1127881	Birgit COLLIN-LANGEN	Germany	Christlich Demokratische Union Deutschlands	PPE	F	1956-09-04 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1138921	Eric ANDRIEU	France	Parti socialiste	S&D	M	1960-04-14 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1139592	Martina ANDERSON	United Kingdom	Sinn Fein	GUE/NGL	F	1962-04-16 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1142681	Nils TORVALDS	Finland	Svenska folkpartiet	ALDE	M	1945-08-07 00:00:00	338440	5487308	1.1	214	['10 Finnish', '22 Swedish']	parliamentary republic	13	Euro	Yes	2001	1995
+1142791	Isabelle THOMAS	France	Parti socialiste	S&D	F	1961-11-26 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1174772	Mark DEMESMAEKER	Belgium	Nieuw-Vlaamse Alliantie	ECR	M	1958-09-12 00:00:00	30528	11311117	1.7	422	['4 Dutch', '3 French', '2 German']	federal parliamentary constitutional monarchy	21	Euro	Yes	1995	1958
+1174911	Anneleen VAN BOSSUYT	Belgium	Nieuw-Vlaamse Alliantie	ECR	F	1980-01-10 00:00:00	30528	11311117	1.7	422	['4 Dutch', '3 French', '2 German']	federal parliamentary constitutional monarchy	21	Euro	Yes	1995	1958
+1186581	Brian HAYES	Ireland	Fine Gael Party	PPE	M	1969-08-23 00:00:00	69797	4724720	0.9	266	[]	parliamentary republic	11	Euro	No	-	1973
+1188581	Marlene MIZZI	Malta	Partit Laburista	S&D	F	1954-12-24 00:00:00	315	434403	0.1	10	['Maltese', '1 English']	parliamentary republic	6	Euro	Yes	2007	2004
+1188591	Roberta METSOLA	Malta	Partit Nazzjonalista	PPE	F	1979-01-18 00:00:00	315	434403	0.1	10	['Maltese', '1 English']	parliamentary republic	6	Euro	Yes	2007	2004
+1194311	Ruža TOMAŠIĆ	Croatia	Hrvatska stranka prava dr. Ante Starčević	ECR	F	1958-05-10 00:00:00	56594	4190669	0.8	45	['6 Croatian']	parliamentary republic	11	HRK	No	-	2013
+1194312	Ruža TOMAŠIĆ	Croatia	Independent	ECR	F	1958-05-10 00:00:00	56594	4190669	0.8	45	['6 Croatian']	parliamentary republic	11	HRK	No	-	2013
+1194313	Ruža TOMAŠIĆ	Croatia	Hrvatska konzervativna stranka	ECR	F	1958-05-10 00:00:00	56594	4190669	0.8	45	['6 Croatian']	parliamentary republic	11	HRK	No	-	2013
+1194341	Dubravka ŠUICA	Croatia	Hrvatska demokratska zajednica	PPE	F	1957-05-20 00:00:00	56594	4190669	0.8	45	['6 Croatian']	parliamentary republic	11	HRK	No	-	2013
+1194351	Davor Ivo STIER	Croatia	Hrvatska demokratska zajednica	PPE	M	1972-01-06 00:00:00	56594	4190669	0.8	45	['6 Croatian']	parliamentary republic	11	HRK	No	-	2013
+1194361	Ivana MALETIĆ	Croatia	Hrvatska demokratska zajednica	PPE	F	1973-10-12 00:00:00	56594	4190669	0.8	45	['6 Croatian']	parliamentary republic	11	HRK	No	-	2013
+1204781	Martina MICHELS	Germany	DIE LINKE.	GUE/NGL	F	1955-12-01 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1228851	Rina Ronja KARI	Denmark	Folkebevægelsen mod EU	GUE/NGL	F	1985-02-15 00:00:00	42924	5707251	1.1	277	['8 Danish']	parliamentary constitutional monarchy	13	DKK	Yes	2001	1973
+1242871	Christine REVAULT D'ALLONNES BONNEFOY	France	Parti socialiste	S&D	F	1971-11-10 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1246881	Christos STYLIANIDES	Cyprus	Democratic Rally	PPE	M	1958-06-26 00:00:00	9251	848319	0.2	18	['7 Greek']	presidential republic	6	Euro	No	-	2004
+1246891	Neoklis SYLIKIOTIS	Cyprus	Progressive Party of Working People - Left - New Forces	GUE/NGL	M	1959-01-24 00:00:00	9251	848319	0.2	18	['7 Greek']	presidential republic	6	Euro	No	-	2004
+1246911	Costas MAVRIDES	Cyprus	Democratic Party	S&D	M	1962-05-27 00:00:00	9251	848319	0.2	18	['7 Greek']	presidential republic	6	Euro	No	-	2004
+1246921	Demetris PAPADAKIS	Cyprus	Movement for Social Democracy EDEK	S&D	M	1966-08-22 00:00:00	9251	848319	0.2	18	['7 Greek']	presidential republic	6	Euro	No	-	2004
+1246931	Pascal DURAND	France	Europe Écologie	Verts/ALE	M	1960-10-03 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1246951	Jan KELLER	Czech Republic	Česká strana sociálně demokratická	S&D	M	1955-01-23 00:00:00	78868	10553 843	2.1	174	['Czech']	parliamentary republic	21	CZK	Yes	2007	2004
+1246961	Andrus ANSIP	Estonia	Eesti Reformierakond	ALDE	M	1956-10-01 00:00:00	45227	1315944	0.3	21	['9 Estonian']	parliamentary republic	6	Euro	Yes	2007	2004
+1246971	Kaja KALLAS	Estonia	Eesti Reformierakond	ALDE	F	1977-06-18 00:00:00	45227	1315944	0.3	21	['9 Estonian']	parliamentary republic	6	Euro	Yes	2007	2004
+1246981	Marju LAURISTIN	Estonia	Sotsiaaldemokraatlik Erakond	S&D	F	1940-04-07 00:00:00	45227	1315944	0.3	21	['9 Estonian']	parliamentary republic	6	Euro	Yes	2007	2004
+1246991	Miroslav POCHE	Czech Republic	Česká strana sociálně demokratická	S&D	M	1978-06-03 00:00:00	78868	10553 843	2.1	174	['Czech']	parliamentary republic	21	CZK	Yes	2007	2004
+1247001	Yana TOOM	Estonia	Eesti Keskerakond	ALDE	F	1966-10-15 00:00:00	45227	1315944	0.3	21	['9 Estonian']	parliamentary republic	6	Euro	Yes	2007	2004
+1247011	Luděk NIEDERMAYER	Czech Republic	TOP 09 a Starostové	PPE	M	1966-03-13 00:00:00	78868	10553 843	2.1	174	['Czech']	parliamentary republic	21	CZK	Yes	2007	2004
+1247021	Jaromír ŠTĚTINA	Czech Republic	TOP 09 a Starostové	PPE	M	1943-04-06 00:00:00	78868	10553 843	2.1	174	['Czech']	parliamentary republic	21	CZK	Yes	2007	2004
+1247031	Tibor SZANYI	Hungary	Magyar Szocialista Párt	S&D	M	1956-07-13 00:00:00	93011	9830485	1.9	112	['11 Hungarian']	parliamentary republic	21	HUF	Yes	2007	2004
+1247041	Stanislav POLČÁK	Czech Republic	TOP 09 a Starostové	PPE	M	1980-02-21 00:00:00	78868	10553 843	2.1	174	['Czech']	parliamentary republic	21	CZK	Yes	2007	2004
+1247042	Stanislav POLČÁK	Czech Republic	-	PPE	M	1980-02-21 00:00:00	78868	10553 843	2.1	174	['Czech']	parliamentary republic	21	CZK	Yes	2007	2004
+1247043	Stanislav POLČÁK	Czech Republic	Starostové a nezávisli	PPE	M	1980-02-21 00:00:00	78868	10553 843	2.1	174	['Czech']	parliamentary republic	21	CZK	Yes	2007	2004
+1247051	István UJHELYI	Hungary	Magyar Szocialista Párt	S&D	M	1975-02-28 00:00:00	93011	9830485	1.9	112	['11 Hungarian']	parliamentary republic	21	HUF	Yes	2007	2004
+1247061	Pavel TELIČKA	Czech Republic	ANO 2011	ALDE	M	1965-08-24 00:00:00	78868	10553 843	2.1	174	['Czech']	parliamentary republic	21	CZK	Yes	2007	2004
+1247071	Petr JEŽEK	Czech Republic	ANO 2011	ALDE	M	1965-03-28 00:00:00	78868	10553 843	2.1	174	['Czech']	parliamentary republic	21	CZK	Yes	2007	2004
+1247081	Dita CHARANZOVÁ	Czech Republic	ANO 2011	ALDE	F	1975-04-30 00:00:00	78868	10553 843	2.1	174	['Czech']	parliamentary republic	21	CZK	Yes	2007	2004
+1247091	Martina DLABAJOVÁ	Czech Republic	ANO 2011	ALDE	F	1976-07-26 00:00:00	78868	10553 843	2.1	174	['Czech']	parliamentary republic	21	CZK	Yes	2007	2004
+1247101	Michaela ŠOJDROVÁ	Czech Republic	Křesťanská a demokratická unie - Československá strana lidová	PPE	F	1963-10-28 00:00:00	78868	10553 843	2.1	174	['Czech']	parliamentary republic	21	CZK	Yes	2007	2004
+1247111	Norbert ERDŐS	Hungary	Fidesz-Magyar Polgári Szövetség-Keresztény Demokrata Néppárt	PPE	M	1972-10-25 00:00:00	93011	9830485	1.9	112	['11 Hungarian']	parliamentary republic	21	HUF	Yes	2007	2004
+1247121	Andrea BOCSKOR	Hungary	Fidesz-Magyar Polgári Szövetség-Keresztény Demokrata Néppárt	PPE	F	1978-08-11 00:00:00	93011	9830485	1.9	112	['11 Hungarian']	parliamentary republic	21	HUF	Yes	2007	2004
+1247131	Tomáš ZDECHOVSKÝ	Czech Republic	Křesťanská a demokratická unie - Československá strana lidová	PPE	M	1979-11-02 00:00:00	78868	10553 843	2.1	174	['Czech']	parliamentary republic	21	CZK	Yes	2007	2004
+1247141	Andor DELI	Hungary	Fidesz-Magyar Polgári Szövetség-Keresztény Demokrata Néppárt	PPE	M	1977-05-02 00:00:00	93011	9830485	1.9	112	['11 Hungarian']	parliamentary republic	21	HUF	Yes	2007	2004
+1247152	György HÖLVÉNYI	Hungary	Kereszténydemokrata Néppárt	PPE	M	1962-06-13 00:00:00	93011	9830485	1.9	112	['11 Hungarian']	parliamentary republic	21	HUF	Yes	2007	2004
+1247201	Tamás MESZERICS	Hungary	Lehet Más A Politika	Verts/ALE	M	1964-12-04 00:00:00	93011	9830485	1.9	112	['11 Hungarian']	parliamentary republic	21	HUF	Yes	2007	2004
+1247211	Benedek JÁVOR	Hungary	Együtt 2014 - Párbeszéd Magyarországért	Verts/ALE	M	1972-07-02 00:00:00	93011	9830485	1.9	112	['11 Hungarian']	parliamentary republic	21	HUF	Yes	2007	2004
+1247221	Csaba MOLNÁR	Hungary	Demokratikus Koalíció	S&D	M	1975-12-04 00:00:00	93011	9830485	1.9	112	['11 Hungarian']	parliamentary republic	21	HUF	Yes	2007	2004
+1247231	Péter NIEDERMÜLLER	Hungary	Demokratikus Koalíció	S&D	M	1952-09-03 00:00:00	93011	9830485	1.9	112	['11 Hungarian']	parliamentary republic	21	HUF	Yes	2007	2004
+1247251	Louis-Joseph MANSCOUR	France	Parti socialiste	S&D	M	1945-03-20 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247261	Henna VIRKKUNEN	Finland	Kansallinen Kokoomus	PPE	F	1972-06-04 00:00:00	338440	5487308	1.1	214	['10 Finnish', '22 Swedish']	parliamentary republic	13	Euro	Yes	2001	1995
+1247271	Jussi HALLA-AHO	Finland	Perussuomalaiset	ECR	M	1971-04-27 00:00:00	338440	5487308	1.1	214	['10 Finnish', '22 Swedish']	parliamentary republic	13	Euro	Yes	2001	1995
+1247281	Marc JOULAUD	France	Union pour un Mouvement Populaire	PPE	M	1967-09-03 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247282	Marc JOULAUD	France	Les Républicains	PPE	M	1967-09-03 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247291	Renaud MUSELIER	France	Union pour un Mouvement Populaire	PPE	M	1959-05-06 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247292	Renaud MUSELIER	France	Les Républicains	PPE	M	1959-05-06 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247301	Fernando RUAS	Portugal	Partido Social Democrata	PPE	M	1949-01-15 00:00:00	92226	10341330	2	185	['17 Portuguese']	semi-presidential republic	21	Euro	Yes	1995	1986
+1247312	Jérôme LAVRILLEUX	France	-	PPE	M	1969-09-19 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247321	Angélique DELAHAYE	France	Union pour un Mouvement Populaire	PPE	F	1963-02-22 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247322	Angélique DELAHAYE	France	Les Républicains	PPE	F	1963-02-22 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247331	Sofia RIBEIRO	Portugal	Partido Social Democrata	PPE	F	1976-07-17 00:00:00	92226	10341330	2	185	['17 Portuguese']	semi-presidential republic	21	Euro	Yes	1995	1986
+1247341	Cláudia MONTEIRO DE AGUIAR	Portugal	Partido Social Democrata	PPE	F	1982-04-08 00:00:00	92226	10341330	2	185	['17 Portuguese']	semi-presidential republic	21	Euro	Yes	1995	1986
+1247351	Miapetra KUMPULA-NATRI	Finland	Suomen Sosialidemokraattinen Puolue/Finlands Socialdemokratiska Parti	S&D	F	1972-05-19 00:00:00	338440	5487308	1.1	214	['10 Finnish', '22 Swedish']	parliamentary republic	13	Euro	Yes	2001	1995
+1247361	Merja KYLLÖNEN	Finland	Vasemmistoliitto	GUE/NGL	F	1977-01-25 00:00:00	338440	5487308	1.1	214	['10 Finnish', '22 Swedish']	parliamentary republic	13	Euro	Yes	2001	1995
+1247371	Maria João RODRIGUES	Portugal	Partido Socialista	S&D	F	1955-09-25 00:00:00	92226	10341330	2	185	['17 Portuguese']	semi-presidential republic	21	Euro	Yes	1995	1986
+1247382	Gilles LEBRETON	France	Front national/ Rassemblement Bleu Marine	ENF	M	1958-10-11 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247383	Gilles LEBRETON	France	Front national/ Rassemblement Bleu Marine	NI	M	1958-10-11 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247384	Gilles LEBRETON	France	Front national	ENF	M	1958-10-11 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247391	Carlos ZORRINHO	Portugal	Partido Socialista	S&D	M	1959-05-28 00:00:00	92226	10341330	2	185	['17 Portuguese']	semi-presidential republic	21	Euro	Yes	1995	1986
+1247401	Joëlle BERGERON	France	Sans étiquette	EFDD	F	1949-06-28 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247411	Ricardo SERRÃO SANTOS	Portugal	Partido Socialista	S&D	M	1954-10-11 00:00:00	92226	10341330	2	185	['17 Portuguese']	semi-presidential republic	21	Euro	Yes	1995	1986
+1247422	António MARINHO E PINTO	Portugal	Independente	ALDE	M	1950-09-10 00:00:00	92226	10341330	2	185	['17 Portuguese']	semi-presidential republic	21	Euro	Yes	1995	1986
+1247423	António MARINHO E PINTO	Portugal	Partido Democrático Republicano	ALDE	M	1950-09-10 00:00:00	92226	10341330	2	185	['17 Portuguese']	semi-presidential republic	21	Euro	Yes	1995	1986
+1247431	Artis PABRIKS	Latvia	"Partija ""VIENOTĪBA"""	PPE	M	1966-03-22 00:00:00	64573	1968957	0.4	25	['14 Latvian']	parliamentary republic	8	Euro	Yes	2007	2004
+1247441	Guillaume BALAS	France	Parti socialiste	S&D	M	1972-08-30 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247451	Iveta GRIGULE-PĒTERSE	Latvia	Zaļo un Zemnieku savienība	ALDE	F	1964-09-30 00:00:00	64573	1968957	0.4	25	['14 Latvian']	parliamentary republic	8	Euro	Yes	2007	2004
+1247452	Iveta GRIGULE-PĒTERSE	Latvia	Zaļo un Zemnieku savienība	NI	F	1964-09-30 00:00:00	64573	1968957	0.4	25	['14 Latvian']	parliamentary republic	8	Euro	Yes	2007	2004
+1247461	Andrejs MAMIKINS	Latvia	"""Saskaņa"" sociāldemokrātiskā partija"	S&D	M	1976-03-11 00:00:00	64573	1968957	0.4	25	['14 Latvian']	parliamentary republic	8	Euro	Yes	2007	2004
+1247471	Pedro SILVA PEREIRA	Portugal	Partido Socialista	S&D	M	1962-08-15 00:00:00	92226	10341330	2	185	['17 Portuguese']	semi-presidential republic	21	Euro	Yes	1995	1986
+1247481	Marie-Christine ARNAUTU	France	Front national	ENF	F	1952-10-19 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247482	Marie-Christine ARNAUTU	France	Front national	NI	F	1952-10-19 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247491	Marijana PETIR	Croatia	Hrvatska seljačka stranka	PPE	F	1975-10-04 00:00:00	56594	4190669	0.8	45	['6 Croatian']	parliamentary republic	11	HRK	No	-	2013
+1247502	Mireille D'ORNANO	France	Front national	ENF	F	1951-06-29 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247503	Mireille D'ORNANO	France	Front national	NI	F	1951-06-29 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247504	Mireille D'ORNANO	France	Les Patriotes	EFDD	F	1951-06-29 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247511	Dominique MARTIN	France	Front national	ENF	M	1961-10-01 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247512	Dominique MARTIN	France	Front national	NI	M	1961-10-01 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247522	Aymeric CHAUPRADE	France	Front national	ENF	M	1969-01-13 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247523	Aymeric CHAUPRADE	France	Front national	NI	M	1969-01-13 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247524	Aymeric CHAUPRADE	France	Droite Indépendante	NI	M	1969-01-13 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247525	Aymeric CHAUPRADE	France	Les Français Libres	NI	M	1969-01-13 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247531	Marie-Christine BOUTONNET	France	Front national	ENF	F	1949-02-10 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247532	Marie-Christine BOUTONNET	France	Front national	NI	F	1949-02-10 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247541	Ivan JAKOVČIĆ	Croatia	Istarski demokratski sabor - Dieta democratica istriana	ALDE	M	1957-11-15 00:00:00	56594	4190669	0.8	45	['6 Croatian']	parliamentary republic	11	HRK	No	-	2013
+1247551	Jean-Luc SCHAFFHAUSER	France	Rassemblement bleu Marine	ENF	M	1955-12-17 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247552	Jean-Luc SCHAFFHAUSER	France	Rassemblement bleu Marine	NI	M	1955-12-17 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247561	Davor ŠKRLEC	Croatia	Održivi razvoj Hrvatske	Verts/ALE	M	1963-01-01 00:00:00	56594	4190669	0.8	45	['6 Croatian']	parliamentary republic	11	HRK	No	-	2013
+1247562	Davor ŠKRLEC	Croatia	Independent	Verts/ALE	M	1963-01-01 00:00:00	56594	4190669	0.8	45	['6 Croatian']	parliamentary republic	11	HRK	No	-	2013
+1247571	Steeve BRIOIS	France	Front national	ENF	M	1972-11-28 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247572	Steeve BRIOIS	France	Front national	NI	M	1972-11-28 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247581	Mylène TROSZCZYNSKI	France	Front national	ENF	F	1972-05-16 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247582	Mylène TROSZCZYNSKI	France	Front national	NI	F	1972-05-16 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247591	Gabrielius LANDSBERGIS	Lithuania	Tėvynės sąjunga-Lietuvos krikščionys demokratai	PPE	M	1982-01-07 00:00:00	65286	2888558	0.6	39	['15 Lithuanian']	parliamentary republic	11	Euro	Yes	2007	2004
+1247601	Nicolas BAY	France	Front national	ENF	M	1977-12-21 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247602	Nicolas BAY	France	Front national	NI	M	1977-12-21 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247611	Bernard MONOT	France	Front national	ENF	M	1962-07-03 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247612	Bernard MONOT	France	Front national	NI	M	1962-07-03 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247632	Antanas GUOGA	Lithuania	Lietuvos Respublikos liberalų sąjūdis	ALDE	M	1973-12-17 00:00:00	65286	2888558	0.6	39	['15 Lithuanian']	parliamentary republic	11	Euro	Yes	2007	2004
+1247633	Antanas GUOGA	Lithuania	Independent	PPE	M	1973-12-17 00:00:00	65286	2888558	0.6	39	['15 Lithuanian']	parliamentary republic	11	Euro	Yes	2007	2004
+1247641	Giovanni TOTI	Italy	Forza Italia	PPE	M	1968-09-07 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1247651	Joëlle MÉLIN	France	Front national	ENF	F	1950-03-26 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247652	Joëlle MÉLIN	France	Front national	NI	F	1950-03-26 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247661	Petras AUŠTREVIČIUS	Lithuania	Lietuvos Respublikos liberalų sąjūdis	ALDE	M	1963-05-16 00:00:00	65286	2888558	0.6	39	['15 Lithuanian']	parliamentary republic	11	Euro	Yes	2007	2004
+1247671	Edouard FERRAND	France	Front national	ENF	M	1965-04-25 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247672	Edouard FERRAND	France	Front national	NI	M	1965-04-25 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247681	Valentinas MAZURONIS	Lithuania	Partija Tvarka ir teisingumas	ALDE	M	1953-11-18 00:00:00	65286	2888558	0.6	39	['15 Lithuanian']	parliamentary republic	11	Euro	Yes	2007	2004
+1247682	Valentinas MAZURONIS	Lithuania	Partija Tvarka ir teisingumas	EFDD	M	1953-11-18 00:00:00	65286	2888558	0.6	39	['15 Lithuanian']	parliamentary republic	11	Euro	Yes	2007	2004
+1247685	Valentinas MAZURONIS	Lithuania	Darbo partija	ALDE	M	1953-11-18 00:00:00	65286	2888558	0.6	39	['15 Lithuanian']	parliamentary republic	11	Euro	Yes	2007	2004
+1247686	Valentinas MAZURONIS	Lithuania	Independent	ALDE	M	1953-11-18 00:00:00	65286	2888558	0.6	39	['15 Lithuanian']	parliamentary republic	11	Euro	Yes	2007	2004
+1247692	Sophie MONTEL	France	Front national	ENF	F	1969-11-22 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247693	Sophie MONTEL	France	Front national	NI	F	1969-11-22 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247694	Sophie MONTEL	France	Les Patriotes	EFDD	F	1969-11-22 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247701	Jean-François JALKH	France	Front national	ENF	M	1957-05-23 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247702	Jean-François JALKH	France	Front national	NI	M	1957-05-23 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247711	Dominique BILDE	France	Front national	ENF	F	1953-08-01 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247712	Dominique BILDE	France	Front national	NI	F	1953-08-01 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247721	Alberto CIRIO	Italy	Forza Italia	PPE	M	1972-12-06 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1247731	Jean ARTHUIS	France	Union des Démocrates et Indépendants	ALDE	M	1944-10-07 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1247761	Mady DELVAUX	Luxembourg	Parti ouvrier socialiste luxembourgeois	S&D	F	1950-10-11 00:00:00	2586	576249	0.1	54	['3 French', '2 German']	parliamentary constitutional monarchy	6	Euro	Yes	1995	1958
+1247771	Tiziana BEGHIN	Italy	Movimento 5 Stelle	EFDD	F	1971-02-04 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1247781	Marco VALLI	Italy	Movimento 5 Stelle	EFDD	M	1985-06-29 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1247791	Eleonora EVI	Italy	Movimento 5 Stelle	EFDD	F	1983-11-20 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1247802	Marco ZANNI	Italy	Movimento 5 Stelle	EFDD	M	1986-07-11 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1247805	Marco ZANNI	Italy	Independent	ENF	M	1986-07-11 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1247811	Alfred SANT	Malta	Partit Laburista	S&D	M	1948-02-28 00:00:00	315	434403	0.1	10	['Maltese', '1 English']	parliamentary republic	6	Euro	Yes	2007	2004
+1247841	Dan NICA	Romania	Partidul Social Democrat	S&D	M	1960-07-02 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+1247851	Maria GRAPINI	Romania	Partidul Conservator	S&D	F	1954-11-07 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+1247852	Maria GRAPINI	Romania	Partidul Puterii Umaniste	S&D	F	1954-11-07 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+1247861	Damian DRĂGHICI	Romania	Uniunea Națională pentru Progresul României	S&D	M	1970-03-31 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+1247862	Damian DRĂGHICI	Romania	Independent	S&D	M	1970-03-31 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+1247871	Renata BRIANO	Italy	Partito Democratico	S&D	F	1964-02-23 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1247881	Luigi MORGANO	Italy	Partito Democratico	S&D	M	1951-03-15 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1247891	Sorin MOISĂ	Romania	Partidul Social Democrat	S&D	M	1976-01-07 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+1247901	Doru-Claudian FRUNZULICĂ	Romania	Uniunea Națională pentru Progresul României	S&D	M		238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+1247902	Doru-Claudian FRUNZULICĂ	Romania	Partidul Social Democrat	S&D	M		238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+1247911	Daniele VIOTTI	Italy	Partito Democratico	S&D	M	1974-03-08 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1247922	Laurenţiu REBEGA	Romania	Partidul Conservator	S&D	M	1976-02-20 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+1247923	Laurenţiu REBEGA	Romania	Independent	ENF	M	1976-02-20 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+1247931	Claudia ȚAPARDEL	Romania	Partidul Social Democrat	S&D	F	1983-12-16 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+1247941	Remo SERNAGIOTTO	Italy	Forza Italia	ECR	M	1955-09-01 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1247942	Remo SERNAGIOTTO	Italy	Forza Italia	PPE	M	1955-09-01 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1247943	Remo SERNAGIOTTO	Italy	Conservatori e Riformisti	ECR	M	1955-09-01 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1247961	David BORRELLI	Italy	Movimento 5 Stelle	EFDD	M	1971-04-28 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1247971	Marco AFFRONTE	Italy	Movimento 5 Stelle	EFDD	M	1965-05-06 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1247974	Marco AFFRONTE	Italy	Independent	Verts/ALE	M	1965-05-06 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1247991	Alessandra MORETTI	Italy	Partito Democratico	S&D		1973-06-24 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248001	Flavio ZANONATO	Italy	Partito Democratico	S&D	M	1950-07-24 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248002	Flavio ZANONATO	Italy	Articolo UNO – Movimento Democratico e Progressista	S&D	M	1950-07-24 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248011	Cécile Kashetu KYENGE	Italy	Partito Democratico	S&D	F	1964-08-28 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248021	Siegfried MUREŞAN	Romania	Partidul Mișcarea Populară	PPE	M	1981-09-20 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+1248031	Isabella DE MONTE	Italy	Partito Democratico	S&D	F	1971-06-23 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248041	Elly SCHLEIN	Italy	Partito Democratico	S&D	F	1985-05-04 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248042	Elly SCHLEIN	Italy	-	S&D	F	1985-05-04 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248051	Mircea DIACONU	Romania	Independent	ALDE	M	1949-12-24 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+1248061	David McALLISTER	Germany	Christlich Demokratische Union Deutschlands	PPE	M	1971-01-12 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248071	Jens GIESEKE	Germany	Christlich Demokratische Union Deutschlands	PPE	M	1971-05-18 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248081	Norbert LINS	Germany	Christlich Demokratische Union Deutschlands	PPE	M	1977-12-22 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248091	Sven SCHULZE	Germany	Christlich Demokratische Union Deutschlands	PPE	M	1979-07-31 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248101	Barbara SPINELLI	Italy	Lista Tsipras-L'Altra Europa	GUE/NGL	F	1946-05-31 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248102	Barbara SPINELLI	Italy	Independent	GUE/NGL	F	1946-05-31 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248111	Laura AGEA	Italy	Movimento 5 Stelle	EFDD	F	1978-02-17 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248121	Fabio Massimo CASTALDO	Italy	Movimento 5 Stelle	EFDD	M	1985-09-18 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248131	Dario TAMBURRANO	Italy	Movimento 5 Stelle	EFDD	M	1969-08-27 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248141	Simona BONAFÈ	Italy	Partito Democratico	S&D	F	1973-07-12 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248151	Arne GERICKE	Germany	Familien-Partei Deutschlands	ECR	M	1964-11-19 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248152	Arne GERICKE	Germany	Freie Wähler	ECR	M	1964-11-19 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248161	Julia REDA	Germany	Piratenpartei Deutschland	Verts/ALE	F	1986-11-30 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248171	Enrico GASBARRA	Italy	Partito Democratico	S&D	M	1962-08-12 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248181	Klaus BUCHNER	Germany	Ökologisch-Demokratische Partei	Verts/ALE	M	1941-02-06 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248191	Goffredo Maria BETTINI	Italy	Partito Democratico	S&D	M	1952-11-05 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248201	Bernd LUCKE	Germany	Alternative für Deutschland	ECR	M	1962-08-19 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248202	Bernd LUCKE	Germany	Allianz für Fortschritt und Aufbruch	ECR	M	1962-08-19 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248203	Bernd LUCKE	Germany	Liberal-Conservative Refomists	ECR	M	1962-08-19 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248211	Nicola DANTI	Italy	Partito Democratico	S&D	M	1966-09-06 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248221	Dietmar KÖSTER	Germany	Sozialdemokratische Partei Deutschlands	S&D	M	1957-01-06 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248231	Hans-Olaf HENKEL	Germany	Alternative für Deutschland	ECR	M	1940-03-14 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248233	Hans-Olaf HENKEL	Germany	Allianz für Fortschritt und Aufbruch	ECR	M	1940-03-14 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248234	Hans-Olaf HENKEL	Germany	Liberal-Conservative Refomists	ECR	M	1940-03-14 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248241	Bernd KÖLMEL	Germany	Alternative für Deutschland	ECR	M	1958-12-08 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248242	Bernd KÖLMEL	Germany	Allianz für Fortschritt und Aufbruch	ECR	M	1958-12-08 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248243	Bernd KÖLMEL	Germany	Liberal-Conservative Refomists	ECR	M	1958-12-08 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248251	Beatrix von STORCH	Germany	Alternative für Deutschland	EFDD	F	1971-05-27 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248252	Beatrix von STORCH	Germany	Alternative für Deutschland	ECR	F	1971-05-27 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248261	Martina WERNER	Germany	Sozialdemokratische Partei Deutschlands	S&D	F	1961-12-28 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248271	Joachim STARBATTY	Germany	Alternative für Deutschland	ECR	M	1940-05-09 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248273	Joachim STARBATTY	Germany	Allianz für Fortschritt und Aufbruch	ECR	M	1940-05-09 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248274	Joachim STARBATTY	Germany	Liberal-Conservative Refomists	ECR	M	1940-05-09 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248281	Fulvio MARTUSCIELLO	Italy	Forza Italia	PPE	M	1968-05-25 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248291	Ulrike TREBESIUS	Germany	Alternative für Deutschland	ECR	F	1970-04-17 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248292	Ulrike TREBESIUS	Germany	Allianz für Fortschritt und Aufbruch	ECR	F	1970-04-17 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248293	Ulrike TREBESIUS	Germany	Liberal-Conservative Refomists	ECR	F	1970-04-17 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248301	Marcus PRETZELL	Germany	Alternative für Deutschland	ENF	M	1973-07-16 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248302	Marcus PRETZELL	Germany	Alternative für Deutschland	NI	M	1973-07-16 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248303	Marcus PRETZELL	Germany	Alternative für Deutschland	ECR	M	1973-07-16 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248304	Marcus PRETZELL	Germany	Die blaue Partei	ENF	M	1973-07-16 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248311	Isabella ADINOLFI	Italy	Movimento 5 Stelle	EFDD	F	1978-03-27 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248321	Udo VOIGT	Germany	Nationaldemokratische Partei Deutschlands	NI	M	1952-04-14 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248331	Laura FERRARA	Italy	Movimento 5 Stelle	EFDD	F	1983-09-11 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248341	Martin SONNEBORN	Germany	Die PARTEI	NI	M	1965-05-15 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248351	Rosa D'AMATO	Italy	Movimento 5 Stelle	EFDD	F	1969-03-30 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248361	Maria NOICHL	Germany	Sozialdemokratische Partei Deutschlands	S&D	F	1967-01-09 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248371	Joachim SCHUSTER	Germany	Sozialdemokratische Partei Deutschlands	S&D	M	1962-10-28 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248381	Susanne MELIOR	Germany	Sozialdemokratische Partei Deutschlands	S&D	F	1958-09-01 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248391	Arne LIETZ	Germany	Sozialdemokratische Partei Deutschlands	S&D	M	1976-07-23 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248401	Jakob von WEIZSÄCKER	Germany	Sozialdemokratische Partei Deutschlands	S&D	M	1970-03-04 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248411	Iris HOFFMANN	Germany	Sozialdemokratische Partei Deutschlands	S&D	F	1963-06-29 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248421	Daniela AIUTO	Italy	Movimento 5 Stelle	EFDD	F	1975-12-14 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248431	Tomislav DONCHEV	Bulgaria	Citizens for European Development of Bulgaria	PPE	M	1973-08-06 00:00:00	110370	7153784	1.4	47	['5 Bulgarian']	parliamentary republic	17	BGN	No	-	2007
+1248441	Piernicola PEDICINI	Italy	Movimento 5 Stelle	EFDD	M	1969-05-22 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248461	Pina PICIERNO	Italy	Partito Democratico	S&D	F	1981-05-10 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248471	Elena GENTILE	Italy	Partito Democratico	S&D	F	1953-11-02 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248481	Maria HEUBUCH	Germany	Bündnis 90/Die Grünen	Verts/ALE	F	1958-12-12 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248491	Massimo PAOLUCCI	Italy	Partito Democratico	S&D	M	1959-12-13 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248492	Massimo PAOLUCCI	Italy	Articolo UNO – Movimento Democratico e Progressista	S&D	M	1959-12-13 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248501	Emil RADEV	Bulgaria	Citizens for European Development of Bulgaria	PPE	M	1971-05-26 00:00:00	110370	7153784	1.4	47	['5 Bulgarian']	parliamentary republic	17	BGN	No	-	2007
+1248511	Nicola CAPUTO	Italy	Partito Democratico	S&D	M	1966-03-04 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248521	Sergei STANISHEV	Bulgaria	Bulgarian Socialist Party	S&D	M	1966-05-05 00:00:00	110370	7153784	1.4	47	['5 Bulgarian']	parliamentary republic	17	BGN	No	-	2007
+1248531	Salvatore Domenico POGLIESE	Italy	Forza Italia	PPE	M	1972-03-03 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248541	Salvatore CICU	Italy	Forza Italia	PPE	M	1957-09-03 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248551	Georgi PIRINSKI	Bulgaria	Bulgarian Socialist Party	S&D	M	1948-09-10 00:00:00	110370	7153784	1.4	47	['5 Bulgarian']	parliamentary republic	17	BGN	No	-	2007
+1248561	Ignazio CORRAO	Italy	Movimento 5 Stelle	EFDD	M	1984-01-14 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248571	Peter KOUROUMBASHEV	Bulgaria	Bulgarian Socialist Party	S&D	M	1968-01-28 00:00:00	110370	7153784	1.4	47	['5 Bulgarian']	parliamentary republic	17	BGN	No	-	2007
+1248572	Peter KOUROUMBASHEV	Bulgaria	-	S&D	M	1968-01-28 00:00:00	110370	7153784	1.4	47	['5 Bulgarian']	parliamentary republic	17	BGN	No	-	2007
+1248581	Fabio DE MASI	Germany	DIE LINKE.	GUE/NGL	M	1980-03-07 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248591	Giulia MOI	Italy	Movimento 5 Stelle	EFDD	F	1971-05-24 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248601	Renato SORU	Italy	Partito Democratico	S&D	M	1957-08-06 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248602	Renato SORU	Italy	Partito Democratico	NI	M	1957-08-06 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248603	Renato SORU	Italy	Partito Democratico	S&D	M	1957-08-06 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248611	Caterina CHINNICI	Italy	Partito Democratico	S&D	F	1954-11-05 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248621	Ulrike MÜLLER	Germany	Freie Wähler	ALDE	F	1962-12-07 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248631	Stefan ECK	Germany	Partei Mensch Umwelt Tierschutz	GUE/NGL	M	1956-01-08 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248632	Stefan ECK	Germany	Independent	GUE/NGL	M	1956-01-08 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248641	Michela GIUFFRIDA	Italy	Partito Democratico	S&D	F	1964-01-12 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248661	Ilhan KYUCHYUK	Bulgaria	Movement for Rights and Freedoms	ALDE	M	1985-09-16 00:00:00	110370	7153784	1.4	47	['5 Bulgarian']	parliamentary republic	17	BGN	No	-	2007
+1248671	Brando BENIFEI	Italy	Partito Democratico	S&D	M	1986-01-01 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248681	Alessia Maria MOSCA	Italy	Partito Democratico	S&D	F	1975-05-23 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248691	Gianluca BUONANNO	Italy	Lega Nord	ENF	M	1966-05-15 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248692	Gianluca BUONANNO	Italy	Lega Nord	NI	M	1966-05-15 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1248701	Jeppe KOFOD	Denmark	Socialdemokratiet	S&D	M	1974-03-14 00:00:00	42924	5707251	1.1	277	['8 Danish']	parliamentary constitutional monarchy	13	DKK	Yes	2001	1973
+1248711	Nikolay BAREKOV	Bulgaria	Bulgaria without Censorship	ECR	M	1972-10-16 00:00:00	110370	7153784	1.4	47	['5 Bulgarian']	parliamentary republic	17	BGN	No	-	2007
+1248712	Nikolay BAREKOV	Bulgaria	Reload Bulgaria Party	ECR	M	1972-10-16 00:00:00	110370	7153784	1.4	47	['5 Bulgarian']	parliamentary republic	17	BGN	No	-	2007
+1248721	Morten Helveg PETERSEN	Denmark	Det Radikale Venstre	ALDE	M	1966-09-14 00:00:00	42924	5707251	1.1	277	['8 Danish']	parliamentary constitutional monarchy	13	DKK	Yes	2001	1973
+1248731	Angel DZHAMBAZKI	Bulgaria	VMRO	ECR	M	1979-03-21 00:00:00	110370	7153784	1.4	47	['5 Bulgarian']	parliamentary republic	17	BGN	No	-	2007
+1248741	Bolesław G. PIECHA	Poland	Prawo i Sprawiedliwość	ECR	M	1954-09-19 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1248751	Anders Primdahl VISTISEN	Denmark	Dansk Folkeparti	ECR	M	1987-11-12 00:00:00	42924	5707251	1.1	277	['8 Danish']	parliamentary constitutional monarchy	13	DKK	Yes	2001	1973
+1248761	Rikke KARLSSON	Denmark	Dansk Folkeparti	ECR	F	1965-04-29 00:00:00	42924	5707251	1.1	277	['8 Danish']	parliamentary constitutional monarchy	13	DKK	Yes	2001	1973
+1248762	Rikke KARLSSON	Denmark	Independent	ECR	F	1965-04-29 00:00:00	42924	5707251	1.1	277	['8 Danish']	parliamentary constitutional monarchy	13	DKK	Yes	2001	1973
+1248771	Jadwiga WIŚNIEWSKA	Poland	Prawo i Sprawiedliwość	ECR	F	1963-07-02 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1248781	Jørn DOHRMANN	Denmark	Dansk Folkeparti	ECR	M	1969-01-09 00:00:00	42924	5707251	1.1	277	['8 Danish']	parliamentary constitutional monarchy	13	DKK	Yes	2001	1973
+1248791	Janusz KORWIN-MIKKE	Poland	Kongres Nowej Prawicy	NI	M	1942-10-27 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1248792	Janusz KORWIN-MIKKE	Poland	KORWiN	NI	M	1942-10-27 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1248793	Janusz KORWIN-MIKKE	Poland	Wolność	NI	M	1942-10-27 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1248801	Ulla TØRNÆS	Denmark	Venstre, Danmarks Liberale Parti	ALDE	F	1962-09-04 00:00:00	42924	5707251	1.1	277	['8 Danish']	parliamentary constitutional monarchy	13	DKK	Yes	2001	1973
+1248811	Marek PLURA	Poland	Platforma Obywatelska	PPE	M	1970-07-18 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1248821	Dawid Bohdan JACKIEWICZ	Poland	Prawo i Sprawiedliwość	ECR	M	1973-03-18 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1248831	Krystyna ŁYBACKA	Poland	Sojusz Lewicy Demokratycznej	S&D	F	1946-02-10 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1248841	Kosma ZŁOTOWSKI	Poland	Prawo i Sprawiedliwość	ECR	M	1964-01-14 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1248861	Robert Jarosław IWASZKIEWICZ	Poland	Kongres Nowej Prawicy	EFDD	M	1962-05-17 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1248863	Robert Jarosław IWASZKIEWICZ	Poland	KORWiN	EFDD	M	1962-05-17 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1248864	Robert Jarosław IWASZKIEWICZ	Poland	Wolność	EFDD	M	1962-05-17 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1248871	Karol KARSKI	Poland	Prawo i Sprawiedliwość	ECR	M	1966-05-13 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1248881	Gabriele PREUSS	Germany	Sozialdemokratische Partei Deutschlands	S&D	F	1954-09-27 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1248891	Agnieszka KOZŁOWSKA-RAJEWICZ	Poland	Platforma Obywatelska	PPE	F	1969-12-04 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1248901	Adam SZEJNFELD	Poland	Platforma Obywatelska	PPE	M	1958-11-13 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1248911	Zdzisław KRASNODĘBSKI	Poland	Bezpartyjny	ECR	M	1953-04-11 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1248922	Marek JUREK	Poland	Prawica Rzeczypospolitej	ECR	M	1960-06-28 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1248931	Bogdan Andrzej ZDROJEWSKI	Poland	Platforma Obywatelska	PPE	M	1957-05-18 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1248941	Michał MARUSIK	Poland	Kongres Nowej Prawicy	ENF	M	1951-09-26 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1248942	Michał MARUSIK	Poland	Kongres Nowej Prawicy	NI	M	1951-09-26 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1248951	Krzysztof HETMAN	Poland	Polskie Stronnictwo Ludowe	PPE	M	1974-06-27 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1248961	Michał BONI	Poland	Platforma Obywatelska	PPE	M	1954-06-10 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1248971	Stanisław OŻÓG	Poland	Prawo i Sprawiedliwość	ECR	M	1953-05-27 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1248981	Julia PITERA	Poland	Platforma Obywatelska	PPE	F	1953-05-26 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1248991	Andrzej DUDA	Poland	Prawo i Sprawiedliwość	ECR	M	1972-05-16 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1249001	Beata GOSIEWSKA	Poland	Prawo i Sprawiedliwość	ECR	F	1971-03-06 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1249011	Jana ŽITŇANSKÁ	Slovakia	NOVA	ECR	F	1974-05-14 00:00:00	49035	5426252	1.1	81	['19 Slovak']	parliamentary republic	13	Euro	Yes	2007	2004
+1249021	Stanisław ŻÓŁTEK	Poland	Kongres Nowej Prawicy	ENF	M	1956-05-07 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1249022	Stanisław ŻÓŁTEK	Poland	Kongres Nowej Prawicy	NI	M	1956-05-07 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1249032	Bogdan Brunon WENTA	Poland	Platforma Obywatelska	PPE	M	1961-11-19 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1249261	József NAGY	Slovakia	MOST - HÍD	PPE	M	1968-03-11 00:00:00	49035	5426252	1.1	81	['19 Slovak']	parliamentary republic	13	Euro	Yes	2007	2004
+1249271	Branislav ŠKRIPEK	Slovakia	OBYČAJNÍ ĽUDIA	ECR	M	1970-08-30 00:00:00	49035	5426252	1.1	81	['19 Slovak']	parliamentary republic	13	Euro	Yes	2007	2004
+1249281	Richard SULÍK	Slovakia	Sloboda a Solidarita	ECR	M	1968-01-12 00:00:00	49035	5426252	1.1	81	['19 Slovak']	parliamentary republic	13	Euro	Yes	2007	2004
+1249291	Ivan ŠTEFANEC	Slovakia	Slovenská demokratická a kresťanská únia - Demokratická strana	PPE	M	1961-09-30 00:00:00	49035	5426252	1.1	81	['19 Slovak']	parliamentary republic	13	Euro	Yes	2007	2004
+1249292	Ivan ŠTEFANEC	Slovakia	Independent	PPE	M	1961-09-30 00:00:00	49035	5426252	1.1	81	['19 Slovak']	parliamentary republic	13	Euro	Yes	2007	2004
+1249293	Ivan ŠTEFANEC	Slovakia	Kresťanskodemokratické hnutie	PPE	M	1961-09-30 00:00:00	49035	5426252	1.1	81	['19 Slovak']	parliamentary republic	13	Euro	Yes	2007	2004
+1249301	Pál CSÁKY	Slovakia	Strana mad'arskej komunity- Magyar Közösség Pártja	PPE	M	1956-03-21 00:00:00	49035	5426252	1.1	81	['19 Slovak']	parliamentary republic	13	Euro	Yes	2007	2004
+1249321	Josep-Maria TERRICABRAS	Spain	Esquerra Republicana de Catalunya	Verts/ALE	M	1946-07-12 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1249331	Ernest MARAGALL	Spain	Nova Esquerra Catalana	Verts/ALE	M	1943-01-05 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1249341	Monika VANA	Austria	Die Grünen - Die Grüne Alternative	Verts/ALE	F	1969-09-14 00:00:00	83879	8690076	2.2	349	['2 German']	federal parliamentary republic	18	Euro	Yes	2007	1995
+1249351	Michel REIMON	Austria	Die Grünen - Die Grüne Alternative	Verts/ALE	M	1971-07-11 00:00:00	83879	8690076	2.2	349	['2 German']	federal parliamentary republic	18	Euro	Yes	2007	1995
+1249361	Maria ARENA	Belgium	Parti Socialiste	S&D	F	1966-12-17 00:00:00	30528	11311117	1.7	422	['4 Dutch', '3 French', '2 German']	federal parliamentary constitutional monarchy	21	Euro	Yes	1995	1958
+1249371	Peter ERIKSSON	Sweden	Miljöpartiet de gröna	Verts/ALE	M	1958-08-03 00:00:00	438574	9851017	1.9	462	['22 Swedish']	parliamentary constitutional monarchy	20	SEK	Yes	2001	1995
+1249381	Janice ATKINSON	United Kingdom	United Kingdom Independence Party	ENF	F	1962-08-31 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249382	Janice ATKINSON	United Kingdom	United Kingdom Independence Party	EFDD	F	1962-08-31 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249385	Janice ATKINSON	United Kingdom	-	ENF	F	1962-08-31 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249391	Diane JAMES	United Kingdom	United Kingdom Independence Party	EFDD	F	1959-11-20 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249394	Diane JAMES	United Kingdom	-	NI	F	1959-11-20 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249401	Patrick O'FLYNN	United Kingdom	United Kingdom Independence Party	EFDD	M	1965-08-29 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249411	Raymond FINCH	United Kingdom	United Kingdom Independence Party	EFDD	M	1963-06-02 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249421	Molly SCOTT CATO	United Kingdom	Green Party	Verts/ALE	F	1963-05-21 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249431	Andrew LEWER	United Kingdom	Conservative Party	ECR	M	1971-07-18 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249441	Clare MOODY	United Kingdom	Labour Party	S&D	F	1965-10-30 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249451	Margot PARKER	United Kingdom	United Kingdom Independence Party	EFDD	F	1943-07-24 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249471	Edouard MARTIN	France	Parti socialiste	S&D	M	1963-06-15 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1249481	Siôn SIMON	United Kingdom	Labour Party	S&D	M	1968-12-23 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249491	Lucy ANDERSON	United Kingdom	Labour Party	S&D	F		248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249501	Jill SEYMOUR	United Kingdom	United Kingdom Independence Party	EFDD	F	1958-05-08 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249511	Bill ETHERIDGE	United Kingdom	United Kingdom Independence Party	EFDD	M	1970-03-18 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249521	Seb DANCE	United Kingdom	Labour Party	S&D	M	1981-12-01 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249531	Jude KIRTON-DARLING	United Kingdom	Labour Party	S&D	F	1977-06-02 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249541	Paul BRANNEN	United Kingdom	Labour Party	S&D	M	1962-09-13 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249551	Jane COLLINS	United Kingdom	United Kingdom Independence Party	EFDD	F	1962-02-17 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249562	Amjad BASHIR	United Kingdom	United Kingdom Independence Party	EFDD	M	1952-09-17 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249565	Amjad BASHIR	United Kingdom	Conservative Party	ECR	M	1952-09-17 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249571	Mike HOOKEM	United Kingdom	United Kingdom Independence Party	EFDD	M	1953-10-09 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249581	Jonathan ARNOTT	United Kingdom	United Kingdom Independence Party	EFDD	M	1981-01-12 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249601	Ian DUNCAN	United Kingdom	Conservative Party	ECR	M		248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249611	Theresa GRIFFIN	United Kingdom	Labour Party	S&D	F	1962-12-11 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249621	Afzal KHAN	United Kingdom	Labour Party	S&D	M	1958-04-05 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249631	Julie WARD	United Kingdom	Labour Party	S&D	F	1957-03-07 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249641	Louise BOURS	United Kingdom	United Kingdom Independence Party	EFDD	F	1968-12-23 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249651	Nathan GILL	United Kingdom	United Kingdom Independence Party	EFDD	M	1973-07-06 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249661	Steven WOOLFE	United Kingdom	United Kingdom Independence Party	EFDD	M	1967-10-06 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249664	Steven WOOLFE	United Kingdom	Independent	NI	M	1967-10-06 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249671	David COBURN	United Kingdom	United Kingdom Independence Party	EFDD	M	1959-02-11 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249681	Therese COMODINI CACHIA	Malta	Partit Nazzjonalista	PPE	F	1973-02-23 00:00:00	315	434403	0.1	10	['Maltese', '1 English']	parliamentary republic	6	Euro	Yes	2007	2004
+1249691	Anneliese DODDS	United Kingdom	Labour Party	S&D	F	1978-03-16 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249701	Miriam DALLI	Malta	Partit Laburista	S&D	F	1976-05-19 00:00:00	315	434403	0.1	10	['Maltese', '1 English']	parliamentary republic	6	Euro	Yes	2007	2004
+1249711	James CARVER	United Kingdom	United Kingdom Independence Party	EFDD	M	1969-08-15 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1249721	Ernest URTASUN	Spain	Iniciativa per Catalunya Verds	Verts/ALE	M	1982-01-27 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1249731	Gerolf ANNEMANS	Belgium	Vlaams Belang	ENF	M	1958-11-08 00:00:00	30528	11311117	1.7	422	['4 Dutch', '3 French', '2 German']	federal parliamentary constitutional monarchy	21	Euro	Yes	1995	1958
+1249732	Gerolf ANNEMANS	Belgium	Vlaams Belang	NI	M	1958-11-08 00:00:00	30528	11311117	1.7	422	['4 Dutch', '3 French', '2 German']	federal parliamentary constitutional monarchy	21	Euro	Yes	1995	1958
+1249841	Lynn BOYLAN	Ireland	Sinn Féin	GUE/NGL	F	1976-11-29 00:00:00	69797	4724720	0.9	266	[]	parliamentary republic	11	Euro	No	-	1973
+1249851	Luke Ming FLANAGAN	Ireland	Independent	GUE/NGL	M	1972-01-22 00:00:00	69797	4724720	0.9	266	[]	parliamentary republic	11	Euro	No	-	1973
+1249861	Matt CARTHY	Ireland	Sinn Féin	GUE/NGL	M	1977-07-19 00:00:00	69797	4724720	0.9	266	[]	parliamentary republic	11	Euro	No	-	1973
+1249871	Liadh NÍ RIADA	Ireland	Sinn Féin	GUE/NGL	F	1966-11-28 00:00:00	69797	4724720	0.9	266	[]	parliamentary republic	11	Euro	No	-	1973
+1249881	Deirdre CLUNE	Ireland	Fine Gael Party	PPE	F	1959-06-01 00:00:00	69797	4724720	0.9	266	[]	parliamentary republic	11	Euro	No	-	1973
+1249891	Fredrick FEDERLEY	Sweden	Centerpartiet	ALDE	M	1978-05-06 00:00:00	438574	9851017	1.9	462	['22 Swedish']	parliamentary constitutional monarchy	20	SEK	Yes	2001	1995
+1249901	Lars ADAKTUSSON	Sweden	Kristdemokraterna	PPE	M	1955-08-06 00:00:00	438574	9851017	1.9	462	['22 Swedish']	parliamentary constitutional monarchy	20	SEK	Yes	2001	1995
+1249911	Jytte GUTELAND	Sweden	Arbetarepartiet- Socialdemokraterna	S&D	F	1979-09-16 00:00:00	438574	9851017	1.9	462	['22 Swedish']	parliamentary constitutional monarchy	20	SEK	Yes	2001	1995
+1249921	Malin BJÖRK	Sweden	Vänsterpartiet	GUE/NGL	F	1972-05-22 00:00:00	438574	9851017	1.9	462	['22 Swedish']	parliamentary constitutional monarchy	20	SEK	Yes	2001	1995
+1249931	Bodil VALERO	Sweden	Miljöpartiet de gröna	Verts/ALE	F	1958-05-14 00:00:00	438574	9851017	1.9	462	['22 Swedish']	parliamentary constitutional monarchy	20	SEK	Yes	2001	1995
+1249941	Max ANDERSSON	Sweden	Miljöpartiet de gröna	Verts/ALE	M	1973-10-26 00:00:00	438574	9851017	1.9	462	['22 Swedish']	parliamentary constitutional monarchy	20	SEK	Yes	2001	1995
+1249951	Kristina WINBERG	Sweden	Sverigedemokraterna	EFDD	F	1965-05-27 00:00:00	438574	9851017	1.9	462	['22 Swedish']	parliamentary constitutional monarchy	20	SEK	Yes	2001	1995
+1249961	Peter LUNDGREN	Sweden	Sverigedemokraterna	EFDD	M	1963-02-02 00:00:00	438574	9851017	1.9	462	['22 Swedish']	parliamentary constitutional monarchy	20	SEK	Yes	2001	1995
+1249971	Soraya POST	Sweden	Feministiskt initiativ	S&D	F	1956-10-15 00:00:00	438574	9851017	1.9	462	['22 Swedish']	parliamentary constitutional monarchy	20	SEK	Yes	2001	1995
+1250011	Harald VILIMSKY	Austria	Freiheitliche Partei Österreichs	ENF	M	1966-07-22 00:00:00	83879	8690076	2.2	349	['2 German']	federal parliamentary republic	18	Euro	Yes	2007	1995
+1250012	Harald VILIMSKY	Austria	Freiheitliche Partei Österreichs	NI	M	1966-07-22 00:00:00	83879	8690076	2.2	349	['2 German']	federal parliamentary republic	18	Euro	Yes	2007	1995
+1250021	Hugues BAYET	Belgium	Parti Socialiste	S&D	M	1975-04-12 00:00:00	30528	11311117	1.7	422	['4 Dutch', '3 French', '2 German']	federal parliamentary constitutional monarchy	21	Euro	Yes	1995	1958
+1250031	Igor ŠOLTES	Slovenia	Verjamem! Lista dr. Igorja Šoltesa	Verts/ALE	M	1964-08-22 00:00:00	20273	2064188	0.4	40	['20 Slovenian']	parliamentary republic	8	Euro	Yes	2007	2004
+1250032	Igor ŠOLTES	Slovenia	Lista dr. Igorja Šoltesa	Verts/ALE	M	1964-08-22 00:00:00	20273	2064188	0.4	40	['20 Slovenian']	parliamentary republic	8	Euro	Yes	2007	2004
+1250041	Franc BOGOVIČ	Slovenia	Slovenska ljudska stranka	PPE	M	1963-02-02 00:00:00	20273	2064188	0.4	40	['20 Slovenian']	parliamentary republic	8	Euro	Yes	2007	2004
+1250051	Javier NART	Spain	Ciudadanos – Partido de la Ciudadanía	ALDE	M	1947-08-19 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1250061	Francesc GAMBÚS	Spain	Unió Democràtica de Catalunya	PPE	M	1974-05-21 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1250062	Francesc GAMBÚS	Spain	-	PPE	M	1974-05-21 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1250121	Daniel BUDA	Romania	Partidul Democrat-Liberal	PPE	M	1970-01-11 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+1250122	Daniel BUDA	Romania	Partidul Naţional Liberal	PPE	M	1970-01-11 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+1250131	Momchil NEKOV	Bulgaria	Bulgarian Socialist Party	S&D	M	1986-05-13 00:00:00	110370	7153784	1.4	47	['5 Bulgarian']	parliamentary republic	17	BGN	No	-	2007
+1250161	Claudia SCHMIDT	Austria	Österreichische Volkspartei	PPE	F	1963-04-26 00:00:00	83879	8690076	2.2	349	['2 German']	federal parliamentary republic	18	Euro	Yes	2007	1995
+1250181	Eugen FREUND	Austria	Sozialdemokratische Partei Österreichs	S&D	M	1951-04-15 00:00:00	83879	8690076	2.2	349	['2 German']	federal parliamentary republic	18	Euro	Yes	2007	1995
+1250191	Cora van NIEUWENHUIZEN	Netherlands	Volkspartij voor Vrijheid en Democratie	ALDE	F	1963-06-12 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+1250201	Paul TANG	Netherlands	Partij van de Arbeid	S&D	M	1967-04-23 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+1250211	Agnes JONGERIUS	Netherlands	Partij van de Arbeid	S&D	F	1960-11-04 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+1250221	Matthijs van MILTENBURG	Netherlands	Democraten 66	ALDE	M	1972-04-02 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+1250231	Anja HAZEKAMP	Netherlands	Partij voor de Dieren	GUE/NGL	F	1968-01-21 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+1250241	Barbara KAPPEL	Austria	Freiheitliche Partei Österreichs	ENF	F	1965-02-16 00:00:00	83879	8690076	2.2	349	['2 German']	federal parliamentary republic	18	Euro	Yes	2007	1995
+1250242	Barbara KAPPEL	Austria	Freiheitliche Partei Österreichs	NI	F	1965-02-16 00:00:00	83879	8690076	2.2	349	['2 German']	federal parliamentary republic	18	Euro	Yes	2007	1995
+1250251	Marcel de GRAAFF	Netherlands	Partij voor de Vrijheid	ENF	M	1962-04-07 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+1250252	Marcel de GRAAFF	Netherlands	Partij voor de Vrijheid	NI	M	1962-04-07 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+1250261	Angelika MLINAR	Austria	NEOS – Das Neue Österreich	ALDE	F	1970-06-29 00:00:00	83879	8690076	2.2	349	['2 German']	federal parliamentary republic	18	Euro	Yes	2007	1995
+1250271	Esteban GONZÁLEZ PONS	Spain	Partido Popular	PPE	M	1964-08-21 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1250281	Olaf STUGER	Netherlands	Partij voor de Vrijheid	ENF	M	1969-05-03 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+1250282	Olaf STUGER	Netherlands	Partij voor de Vrijheid	NI	M	1969-05-03 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+1250291	Hans JANSEN	Netherlands	Partij voor de Vrijheid	NI	M	1942-11-17 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+1250301	Annie SCHREIJER-PIERIK	Netherlands	Christen Democratisch Appèl	PPE	F	1953-02-17 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+1250311	Pablo IGLESIAS	Spain	PODEMOS	GUE/NGL	M	1978-10-17 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1250321	Ramón Luis VALCÁRCEL SISO	Spain	Partido Popular	PPE	M	1954-11-16 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1250331	Teresa RODRIGUEZ-RUBIO	Spain	PODEMOS	GUE/NGL	F	1981-09-18 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1250351	Lola SÁNCHEZ CALDENTEY	Spain	PODEMOS	GUE/NGL	F	1978-03-17 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1250361	Pablo ECHENIQUE	Spain	PODEMOS	GUE/NGL	M	1978-08-28 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1250371	Anne-Marie MINEUR	Netherlands	Socialistische Partij	GUE/NGL	F	1967-05-14 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+1250381	Maite PAGAZAURTUNDÚA RUIZ	Spain	Unión, Progreso y Democracia	ALDE	F	1965-02-11 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1250391	Fernando MAURA BARANDIARÁN	Spain	Unión, Progreso y Democracia	ALDE	M	1955-04-30 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1250392	Fernando MAURA BARANDIARÁN	Spain	Delegación Ciudadanos Europeos	ALDE	M	1955-04-30 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1250401	Beatriz BECERRA BASTERRECHEA	Spain	Unión, Progreso y Democracia	ALDE	F	1966-11-14 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1250402	Beatriz BECERRA BASTERRECHEA	Spain	-	ALDE	F	1966-11-14 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1250403	Beatriz BECERRA BASTERRECHEA	Spain	Independiente	ALDE	F	1966-11-14 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1250411	Soledad CABEZÓN RUIZ	Spain	Partido Socialista Obrero Español	S&D	F	1973-09-01 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1250421	Javi LÓPEZ	Spain	Partit dels Socialistes de Catalunya	S&D	M	1985-11-11 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1250431	Inmaculada RODRÍGUEZ-PIÑERO FERNÁNDEZ	Spain	Partido Socialista Obrero Español	S&D	F	1958-01-07 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1250441	José BLANCO LÓPEZ	Spain	Partido Socialista Obrero Español	S&D	M	1962-02-06 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1250451	Clara Eugenia AGUILERA GARCÍA	Spain	Partido Socialista Obrero Español	S&D	F	1964-01-03 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1250461	Jonás FERNÁNDEZ	Spain	Partido Socialista Obrero Español	S&D	M	1979-01-08 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1250471	Paloma LÓPEZ BERMEJO	Spain	Izquierda Unida	GUE/NGL	F	1962-02-20 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1250481	Marina ALBIOL GUZMÁN	Spain	Izquierda Unida	GUE/NGL	F	1982-12-15 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1250491	Maria Lidia SENRA RODRÍGUEZ	Spain	Alternativa galega de esquerda en Europa	GUE/NGL	F	1958-06-14 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1250501	Ángela VALLINA	Spain	Izquierda Unida	GUE/NGL	F	1959-07-06 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1250511	Josu JUARISTI ABAUNZ	Spain	EH BILDU	GUE/NGL	M	1964-03-04 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1250521	Juan Carlos GIRAUTA VIDAL	Spain	Ciudadanos – Partido de la Ciudadanía	ALDE	M	1961-03-12 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1250531	Jordi Vicent SEBASTIA TALAVERA	Spain	COMPROMIS	Verts/ALE	M	1966-11-23 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1250611	Kostas CHRYSOGONOS	Greece	Coalition of the Radical Left	GUE/NGL	M	1961-06-27 00:00:00	131957	10750000	2.1	176	['7 Greek']	parliamentary republic	21	Euro	Yes	2000	1981
+1250621	Georgios KATROUGKALOS	Greece	Coalition of the Radical Left	GUE/NGL		1963-03-27 00:00:00	131957	10750000	2.1	176	['7 Greek']	parliamentary republic	21	Euro	Yes	2000	1981
+1250631	Georgios KYRTSOS	Greece	Nea Demokratia	PPE	M	1952-06-04 00:00:00	131957	10750000	2.1	176	['7 Greek']	parliamentary republic	21	Euro	Yes	2000	1981
+1250641	Maria SPYRAKI	Greece	Nea Demokratia	PPE	F	1965-09-11 00:00:00	131957	10750000	2.1	176	['7 Greek']	parliamentary republic	21	Euro	Yes	2000	1981
+1250651	Elissavet VOZEMBERG-VRIONIDI	Greece	Nea Demokratia	PPE	F	1956-09-14 00:00:00	131957	10750000	2.1	176	['7 Greek']	parliamentary republic	21	Euro	Yes	2000	1981
+1250671	Theodoros ZAGORAKIS	Greece	Nea Demokratia	PPE	M	1971-10-27 00:00:00	131957	10750000	2.1	176	['7 Greek']	parliamentary republic	21	Euro	Yes	2000	1981
+1250681	Manolis KEFALOGIANNIS	Greece	Nea Demokratia	PPE	M	1959-05-24 00:00:00	131957	10750000	2.1	176	['7 Greek']	parliamentary republic	21	Euro	Yes	2000	1981
+1250691	Notis MARIAS	Greece	Independent Greeks	ECR	M	1957-04-05 00:00:00	131957	10750000	2.1	176	['7 Greek']	parliamentary republic	21	Euro	Yes	2000	1981
+1250692	Notis MARIAS	Greece	Independent	ECR	M	1957-04-05 00:00:00	131957	10750000	2.1	176	['7 Greek']	parliamentary republic	21	Euro	Yes	2000	1981
+1250693	Notis MARIAS	Greece	Greece-The Alternative Road	ECR	M	1957-04-05 00:00:00	131957	10750000	2.1	176	['7 Greek']	parliamentary republic	21	Euro	Yes	2000	1981
+1250701	Lampros FOUNTOULIS	Greece	Popular Association – Golden Dawn	NI	M	1961-01-23 00:00:00	131957	10750000	2.1	176	['7 Greek']	parliamentary republic	21	Euro	Yes	2000	1981
+1250711	Georgios EPITIDEIOS	Greece	Popular Association – Golden Dawn	NI	M	1953-03-02 00:00:00	131957	10750000	2.1	176	['7 Greek']	parliamentary republic	21	Euro	Yes	2000	1981
+1250721	Eleftherios SYNADINOS	Greece	Popular Association – Golden Dawn	NI	M	1955-07-06 00:00:00	131957	10750000	2.1	176	['7 Greek']	parliamentary republic	21	Euro	Yes	2000	1981
+1250901	Sotirios ZARIANOPOULOS	Greece	Communist Party of Greece	NI	M	1961-02-16 00:00:00	131957	10750000	2.1	176	['7 Greek']	parliamentary republic	21	Euro	Yes	2000	1981
+1250911	Sofia SAKORAFA	Greece	Coalition of the Radical Left	GUE/NGL	F	1957-04-29 00:00:00	131957	10750000	2.1	176	['7 Greek']	parliamentary republic	21	Euro	Yes	2000	1981
+1250912	Sofia SAKORAFA	Greece	Independent	GUE/NGL	F	1957-04-29 00:00:00	131957	10750000	2.1	176	['7 Greek']	parliamentary republic	21	Euro	Yes	2000	1981
+1250921	Kostadinka KUNEVA	Greece	Coalition of the Radical Left	GUE/NGL	F	1964-09-28 00:00:00	131957	10750000	2.1	176	['7 Greek']	parliamentary republic	21	Euro	Yes	2000	1981
+1250931	Konstantinos PAPADAKIS	Greece	Communist Party of Greece	NI	M	1975-04-18 00:00:00	131957	10750000	2.1	176	['7 Greek']	parliamentary republic	21	Euro	Yes	2000	1981
+1250991	Liliana RODRIGUES	Portugal	Partido Socialista	S&D	F	1973-04-13 00:00:00	92226	10341330	2	185	['17 Portuguese']	semi-presidential republic	21	Euro	Yes	1995	1986
+1251001	Miguel VIEGAS	Portugal	Partido Comunista Português	GUE/NGL	M	1969-06-27 00:00:00	92226	10341330	2	185	['17 Portuguese']	semi-presidential republic	21	Euro	Yes	1995	1986
+1251011	José Inácio FARIA	Portugal	Partido da Terra	PPE	M	1962-03-13 00:00:00	92226	10341330	2	185	['17 Portuguese']	semi-presidential republic	21	Euro	Yes	1995	1986
+1251012	José Inácio FARIA	Portugal	Partido da Terra	ALDE	M	1962-03-13 00:00:00	92226	10341330	2	185	['17 Portuguese']	semi-presidential republic	21	Euro	Yes	1995	1986
+1251031	Patricija ŠULIN	Slovenia	Slovenska demokratska stranka	PPE	F	1965-11-25 00:00:00	20273	2064188	0.4	40	['20 Slovenian']	parliamentary republic	8	Euro	Yes	2007	2004
+1251041	Romana TOMC	Slovenia	Slovenska demokratska stranka	PPE	F	1965-11-02 00:00:00	20273	2064188	0.4	40	['20 Slovenian']	parliamentary republic	8	Euro	Yes	2007	2004
+1251051	Helga STEVENS	Belgium	Nieuw-Vlaamse Alliantie	ECR	F	1968-08-09 00:00:00	30528	11311117	1.7	422	['4 Dutch', '3 French', '2 German']	federal parliamentary constitutional monarchy	21	Euro	Yes	1995	1958
+1251071	Claude ROLIN	Belgium	Centre Démocrate Humaniste	PPE	M	1957-05-26 00:00:00	30528	11311117	1.7	422	['4 Dutch', '3 French', '2 German']	federal parliamentary constitutional monarchy	21	Euro	Yes	1995	1958
+1251081	Louis IDE	Belgium	Nieuw-Vlaamse Alliantie	ECR		1973-07-03 00:00:00	30528	11311117	1.7	422	['4 Dutch', '3 French', '2 German']	federal parliamentary constitutional monarchy	21	Euro	Yes	1995	1958
+1251091	Eva KAILI	Greece	Panhellenic Socialist Movement - Olive Tree	S&D	F	1978-10-26 00:00:00	131957	10750000	2.1	176	['7 Greek']	parliamentary republic	21	Euro	Yes	2000	1981
+1251101	Nikos ANDROULAKIS	Greece	Panhellenic Socialist Movement - Olive Tree	S&D	M	1979-02-07 00:00:00	131957	10750000	2.1	176	['7 Greek']	parliamentary republic	21	Euro	Yes	2000	1981
+1251121	Giorgos GRAMMATIKAKIS	Greece	The River	S&D	M	1939-05-21 00:00:00	131957	10750000	2.1	176	['7 Greek']	parliamentary republic	21	Euro	Yes	2000	1981
+1251131	Miltiadis KYRKOS	Greece	The River	S&D	M	1959-04-01 00:00:00	131957	10750000	2.1	176	['7 Greek']	parliamentary republic	21	Euro	Yes	2000	1981
+1251281	Iskra MIHAYLOVA	Bulgaria	Movement for Rights and Freedoms	ALDE	F	1957-09-07 00:00:00	110370	7153784	1.4	47	['5 Bulgarian']	parliamentary republic	17	BGN	No	-	2007
+1251921	Curzio MALTESE	Italy	Lista Tsipras-L'Altra Europa	GUE/NGL	M	1959-03-30 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1251931	Eleonora FORENZA	Italy	Lista Tsipras-L'Altra Europa	GUE/NGL	F	1976-11-10 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1252141	Bronis ROPĖ	Lithuania	Lietuvos valstiečių ir žaliųjų sąjunga	Verts/ALE	M	1955-04-14 00:00:00	65286	2888558	0.6	39	['15 Lithuanian']	parliamentary republic	11	Euro	Yes	2007	2004
+1252371	Marco ZULLO	Italy	Movimento 5 Stelle	EFDD	M	1978-10-29 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1256701	Massimiliano SALINI	Italy	Unione di Centro	PPE	M	1973-03-11 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1256702	Massimiliano SALINI	Italy	Forza Italia	PPE	M	1973-03-11 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1256841	Philippe LOISEAU	France	Front national	ENF	M	1957-11-24 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1256842	Philippe LOISEAU	France	Front national	NI	M	1957-11-24 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1257061	Jiří POSPÍŠIL	Czech Republic	TOP 09 a Starostové	PPE	M	1975-11-24 00:00:00	78868	10553 843	2.1	174	['Czech']	parliamentary republic	21	CZK	Yes	2007	2004
+1259971	Javier COUSO PERMUY	Spain	Izquierda Unida	GUE/NGL	M	1968-11-08 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1273301	Tania GONZÁLEZ PEÑAS	Spain	PODEMOS	GUE/NGL	F	1982-10-18 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1285881	Linnéa ENGSTRÖM	Sweden	Miljöpartiet de gröna	Verts/ALE	F	1981-04-02 00:00:00	438574	9851017	1.9	462	['22 Swedish']	parliamentary constitutional monarchy	20	SEK	Yes	2001	1995
+1287171	Sander LOONES	Belgium	Nieuw-Vlaamse Alliantie	ECR	M	1979-01-26 00:00:00	30528	11311117	1.7	422	['4 Dutch', '3 French', '2 German']	federal parliamentary constitutional monarchy	21	Euro	Yes	1995	1958
+1290731	Urmas PAET	Estonia	Eesti Reformierakond	ALDE	M	1974-04-20 00:00:00	45227	1315944	0.3	21	['9 Estonian']	parliamentary republic	6	Euro	Yes	2007	2004
+1291641	Tom VANDENKENDELAERE	Belgium	Christen-Democratisch & Vlaams	PPE	M	1984-09-02 00:00:00	30528	11311117	1.7	422	['4 Dutch', '3 French', '2 German']	federal parliamentary constitutional monarchy	21	Euro	Yes	1995	1958
+1292561	Emilian PAVEL	Romania	Partidul Social Democrat	S&D	M	1983-10-25 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+1294071	Enrique CALVET CHAMBON	Spain	Unión, Progreso y Democracia	ALDE	M	1950-10-28 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1294072	Enrique CALVET CHAMBON	Spain	Independiente	ALDE	M	1950-10-28 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1301001	Hilde VAUTMANS	Belgium	Open Vlaamse Liberalen en Democraten	ALDE	F	1972-05-02 00:00:00	30528	11311117	1.7	422	['4 Dutch', '3 French', '2 German']	federal parliamentary constitutional monarchy	21	Euro	Yes	1995	1958
+1308331	Stelios KOULOGLOU	Greece	Coalition of the Radical Left	GUE/NGL	M	1953-02-27 00:00:00	131957	10750000	2.1	176	['7 Greek']	parliamentary republic	21	Euro	Yes	2000	1981
+1310511	Damiano ZOFFOLI	Italy	Partito Democratico	S&D	M	1960-07-17 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1315071	Miguel URBÁN CRESPO	Spain	PODEMOS	GUE/NGL	M	1980-03-26 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1317491	Estefanía TORRES MARTÍNEZ	Spain	PODEMOS	GUE/NGL	F	1982-04-27 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1317501	Mihai ŢURCANU	Romania	Partidul Naţional Liberal	PPE	M	1975-11-02 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+1323661	Pirkko RUOHONEN-LERNER	Finland	Perussuomalaiset	ECR	F	1957-02-06 00:00:00	338440	5487308	1.1	214	['10 Finnish', '22 Swedish']	parliamentary republic	13	Euro	Yes	2001	1995
+1329251	Edward CZESAK	Poland	Prawo i Sprawiedliwość	ECR	M	1951-02-22 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1333161	Karoline GRASWANDER-HAINZ	Austria	Sozialdemokratische Partei Österreichs	S&D	F	1974-02-02 00:00:00	83879	8690076	2.2	349	['2 German']	federal parliamentary republic	18	Euro	Yes	2007	1995
+1333261	Stefano MAULLU	Italy	Forza Italia	PPE	M	1962-03-15 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1342431	Jasenko SELIMOVIC	Sweden	Liberalerna	ALDE	M	1968-04-17 00:00:00	438574	9851017	1.9	462	['22 Swedish']	parliamentary constitutional monarchy	20	SEK	Yes	2001	1995
+1354901	Xabier BENITO ZILUAGA	Spain	PODEMOS	GUE/NGL	M	1988-05-23 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1354911	María Teresa GIMÉNEZ BARBAT	Spain	Unión, Progreso y Democracia	ALDE	F	1955-06-04 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1354912	María Teresa GIMÉNEZ BARBAT	Spain	-	ALDE	F	1955-06-04 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1355401	Czesław HOC	Poland	Prawo i Sprawiedliwość	ECR	M	1954-02-22 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1355411	Sławomir KŁOSOWSKI	Poland	Prawo i Sprawiedliwość	ECR	M	1964-02-21 00:00:00	312679	37967209	7.4	424	['16 Polish']	parliamentary republic	51	PLN	Yes	2007	2004
+1362361	João PIMENTA LOPES	Portugal	Partido Comunista Português	GUE/NGL	M	1980-04-12 00:00:00	92226	10341330	2	185	['17 Portuguese']	semi-presidential republic	21	Euro	Yes	1995	1986
+1830221	Lieve WIERINCK	Belgium	Open Vlaamse Liberalen en Democraten	ALDE	F	1957-07-03 00:00:00	30528	11311117	1.7	422	['4 Dutch', '3 French', '2 German']	federal parliamentary constitutional monarchy	21	Euro	Yes	1995	1958
+1833381	Jakop DALUNDE	Sweden	Miljöpartiet de gröna	Verts/ALE	M	1984-02-02 00:00:00	438574	9851017	1.9	462	['22 Swedish']	parliamentary constitutional monarchy	20	SEK	Yes	2001	1995
+1837931	Angelo CIOCCA	Italy	Lega Nord	ENF	M	1975-06-28 00:00:00	302073	60665551	11.9	1672	['13 Italian']	parliamentary republic	73	Euro	Yes	1997	1958
+1853401	Ivica TOLIĆ	Croatia	Hrvatska demokratska zajednica	PPE	M	1968-09-01 00:00:00	56594	4190669	0.8	45	['6 Croatian']	parliamentary republic	11	HRK	No	-	2013
+1853411	Željana ZOVKO	Croatia	Hrvatska demokratska zajednica	PPE	F	1970-03-25 00:00:00	56594	4190669	0.8	45	['6 Croatian']	parliamentary republic	11	HRK	No	-	2013
+1856191	Tiemo WÖLKEN	Germany	Sozialdemokratische Partei Deutschlands	S&D	M	1985-12-05 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1856281	John PROCTER	United Kingdom	Conservative Party	ECR	M		248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1856371	Alex MAYER	United Kingdom	Labour Party	S&D	F	1981-06-02 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1859741	Jordi SOLÉ	Spain	Esquerra Republicana de Catalunya	Verts/ALE	M	1976-10-26 00:00:00	505944	46445828	9.1	1114	['21 Spanish']	parliamentary constitutional monarchy	54	Euro	Yes	1995	1986
+1868841	Arndt KOHN	Germany	Sozialdemokratische Partei Deutschlands	S&D	M	1980-09-03 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1882541	Patricia LALONDE	France	Union des Démocrates et Indépendants	ALDE	F	1952-08-28 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1884451	André ELISSEN	Netherlands	Partij voor de Vrijheid	ENF	M	1960-02-12 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958
+1886221	Rupert MATTHEWS	United Kingdom	Conservative Party	ECR	M	1961-12-05 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1886231	John FLACK	United Kingdom	Conservative Party	ECR	M	1957-01-03 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1886241	Wajid KHAN	United Kingdom	Labour Party	S&D	M	1979-10-15 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1886361	John HOWARTH	United Kingdom	Labour Party	S&D	M	1958-10-31 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1887181	Christelle LECHEVALIER	France	Front national	ENF	F	1968-09-27 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1887211	Marie-Pierre VIEU	France	Front de Gauche	GUE/NGL	F	1967-02-01 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1887331	Jonathan BULLOCK	United Kingdom	United Kingdom Independence Party	EFDD	M	1963-03-03 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1889061	Francis ZAMMIT DIMECH	Malta	Partit Nazzjonalista	PPE	M	1954-10-23 00:00:00	315	434403	0.1	10	['Maltese', '1 English']	parliamentary republic	6	Euro	Yes	2007	2004
+1889451	Dennis RADTKE	Germany	Christlich Demokratische Union Deutschlands	PPE	M	1979-04-29 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1890651	France JAMET	France	Front national	ENF	F	1961-02-05 00:00:00	633187	66759950	13.1	2225	['3 French']	semi-presidential republic	74	Euro	Yes	1995	1958
+1893911	Baroness Nosheena MOBARIK	United Kingdom	Conservative Party	ECR	F	1957-10-16 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1894901	Răzvan POPA	Romania	Partidul Social Democrat	S&D	M	1978-01-20 00:00:00	238397	19710000	3.81	170	['18 Romanian']	semi-presidential republic	32	RON	No	-	2007
+1895071	Jiří PAYNE	Czech Republic	Strana svobodných občanů	EFDD	M	1956-07-07 00:00:00	78868	10553 843	2.1	174	['Czech']	parliamentary republic	21	CZK	Yes	2007	2004
+1895251	Asim ADEMOV	Bulgaria	Citizens for European Development of Bulgaria	PPE	M	1968-12-03 00:00:00	110370	7153784	1.4	47	['5 Bulgarian']	parliamentary republic	17	BGN	No	-	2007
+1900991	Rory PALMER	United Kingdom	Labour Party	S&D	M	1981-11-19 00:00:00	248528	65382556	12.8	2367	['1 English']	parliamentary constitutional monarchy	73	GBP	No	-	1973
+1904641	Thomas WAITZ	Austria	Die Grünen - Die Grüne Alternative	Verts/ALE	M	1973-05-16 00:00:00	83879	8690076	2.2	349	['2 German']	federal parliamentary republic	18	Euro	Yes	2007	1995
+1905171	Martin SCHIRDEWAN	Germany	DIE LINKE.	GUE/NGL	M	1975-07-12 00:00:00	357376	82175684	16.1	3134	['2 German']	federal parliamentary republic	96	Euro	Yes	1995	1958
+1905191	Caroline NAGTEGAAL	Netherlands	Volkspartij voor Vrijheid en Democratie	ALDE	F	1980-06-01 00:00:00	41542	16979120	3.3	697	['4 Dutch']	parliamentary constitutional monarchy	26	Euro	Yes	1995	1958

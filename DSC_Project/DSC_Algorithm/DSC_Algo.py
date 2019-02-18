@@ -12,6 +12,7 @@ from sys import stdout
 from collections import deque
 from operator import iand,ior
 #import numpy as np
+from numpy.random import choice
 from bisect import bisect_left
 from math import log
 from bisect import bisect
@@ -965,7 +966,7 @@ json_config={
 }
 '''
 
-def DSC_input_config(json_config_input,heatmap_for_matrix=False,verbose=False):
+def DSC_input_config(json_config_input,heatmap_for_matrix=False,verbose=False,edf=False,first_run=False): #empirical distribution
 
 	json_config={
 		"objects_file":json_config_input.get('objects_file'),
@@ -1001,7 +1002,7 @@ def DSC_input_config(json_config_input,heatmap_for_matrix=False,verbose=False):
 		"algorithm":json_config_input.get('algorithm','DSC+CLOSED+UB2'),# X could be : DSC, DSC+CLOSED, DSC+CLOSED+UB1, DSC+CLOSED+UB2, DSC+RandomWalk
 		"timebudget":json_config_input.get('timebudget',3600),
 
-
+		"contexts_scope":(json_config_input.get('contexts_scope',[])),
 		"objects_scope":(json_config_input.get('objects_scope',[])),
 		"individuals_1_scope":(json_config_input.get('individuals_1_scope',[])),
 		"individuals_2_scope":(json_config_input.get('individuals_2_scope',[])),
@@ -1010,7 +1011,11 @@ def DSC_input_config(json_config_input,heatmap_for_matrix=False,verbose=False):
 		"nb_random_walks":json_config_input.get('nb_random_walks',30),
 
 		"results_destination":json_config_input.get('results_destination',None),
-        "detailed_results_destination":json_config_input.get('detailed_results_destination',None)
+        "detailed_results_destination":json_config_input.get('detailed_results_destination',None),
+
+
+        "no_generality":json_config_input.get('no_generality',False),
+		"no_sigma_quality":json_config_input.get('no_sigma_quality',False),
 	}
 
 	nb_items_entities=json_config['nb_items_entities']
@@ -1071,13 +1076,13 @@ def DSC_input_config(json_config_input,heatmap_for_matrix=False,verbose=False):
 	#raw_input('...')
 	for returned in DSC_Entry_Point(json_config['objects_file'],json_config['individuals_file'],json_config['reviews_file'],
 		numeric_attrs=json_config['numericHeader'],array_attrs=json_config['arrayHeader'],outcome_attrs=json_config['vector_of_outcome'],method_aggregation_outcome=json_config['aggregation_measure'],
-		itemsScope=json_config['objects_scope'],users_1_Scope=json_config['individuals_1_scope'],users_2_Scope=json_config['individuals_2_scope'],delimiter=json_config['delimiter'],
+		itemsScope=json_config['objects_scope'],contexts_scope=json_config['contexts_scope'],users_1_Scope=json_config['individuals_1_scope'],users_2_Scope=json_config['individuals_2_scope'],delimiter=json_config['delimiter'],
 		description_attributes_items=description_attributes_objects,description_attributes_users=description_attributes_individuals,
 		comparaison_measure=json_config['similarity_measure'],qualityMeasure=json_config['quality_measure'],nb_items=json_config['nb_objects'],nb_individuals=json_config['nb_individuals'],
 		threshold_comparaison=json_config['threshold_objects'],threshold_nb_users_1=json_config['threshold_individuals'],threshold_nb_users_2=json_config['threshold_individuals'],
 		quality_threshold=json_config['threshold_quality'],ponderation_attribute=json_config['ponderation_attribute'],
 		bound_type=bound_type,pruning=pruning,closed=closed,
-		do_heuristic_contexts=do_heuristic_contexts,do_heuristic_peers=do_heuristic_peers,timebudget=json_config['timebudget'],results_destination=json_config['results_destination'], detailed_results_destination=json_config['detailed_results_destination'],attributes_to_consider=attributes_to_consider,heatmap_for_matrix=heatmap_for_matrix,algorithm=algorithm,nb_items_entities=nb_items_entities,nb_items_individuals=nb_items_individuals,symmetry=json_config['symmetry'],nb_random_walks=json_config['nb_random_walks'],hmt_to_itemset=json_config['hmt_to_itemset'],verbose=verbose):
+		do_heuristic_contexts=do_heuristic_contexts,do_heuristic_peers=do_heuristic_peers,timebudget=json_config['timebudget'],results_destination=json_config['results_destination'], detailed_results_destination=json_config['detailed_results_destination'],attributes_to_consider=attributes_to_consider,heatmap_for_matrix=heatmap_for_matrix,algorithm=algorithm,nb_items_entities=nb_items_entities,nb_items_individuals=nb_items_individuals,symmetry=json_config['symmetry'],nb_random_walks=json_config['nb_random_walks'],hmt_to_itemset=json_config['hmt_to_itemset'],no_generality=json_config['no_generality'],no_sigma_quality=json_config['no_sigma_quality'],verbose=verbose,edf=edf,first_run=first_run):
 
 
 
@@ -1236,10 +1241,10 @@ def DSC_input_config_alpha(json_config_input,heatmap_for_matrix=False,verbose=Fa
 
 
 
-def DSC_Entry_Point(itemsFile,usersFile,reviewsFile,numeric_attrs=[],array_attrs=None,outcome_attrs=None,method_aggregation_outcome='VECTOR_VALUES',itemsScope=[],users_1_Scope=[],users_2_Scope=[],delimiter='\t',
+def DSC_Entry_Point(itemsFile,usersFile,reviewsFile,numeric_attrs=[],array_attrs=None,outcome_attrs=None,method_aggregation_outcome='VECTOR_VALUES',itemsScope=[],contexts_scope=[],users_1_Scope=[],users_2_Scope=[],delimiter='\t',
 	description_attributes_items=[],description_attributes_users=[],
 	comparaison_measure='MAAD',qualityMeasure='DISAGR_SUMDIFF',nb_items=float('inf'),nb_individuals=float('inf'),threshold_comparaison=30,threshold_nb_users_1=10,threshold_nb_users_2=10,quality_threshold=0.3,
-	ponderation_attribute=None,bound_type=1,pruning=True,closed=True,do_heuristic_contexts=False,do_heuristic_peers=False,timebudget=1000,results_destination='.//results.csv',detailed_results_destination='./DetailedResults',attributes_to_consider=None,heatmap_for_matrix=False,algorithm='DSC+CLOSED+UB2',nb_items_entities=float('inf'),nb_items_individuals=float('inf'),symmetry=True,nb_random_walks=30,hmt_to_itemset=False,debug=False,verbose=False):
+	ponderation_attribute=None,bound_type=1,pruning=True,closed=True,do_heuristic_contexts=False,do_heuristic_peers=False,timebudget=1000,results_destination='.//results.csv',detailed_results_destination='./DetailedResults',attributes_to_consider=None,heatmap_for_matrix=False,algorithm='DSC+CLOSED+UB2',nb_items_entities=float('inf'),nb_items_individuals=float('inf'),symmetry=True,nb_random_walks=30,hmt_to_itemset=False,debug=False,verbose=False,no_generality=False,no_sigma_quality=False,edf=False,first_run=False):
 	if debug:
 		data=[
 			{'attr1':'a','attr2':1},
@@ -1279,8 +1284,8 @@ def DSC_Entry_Point(itemsFile,usersFile,reviewsFile,numeric_attrs=[],array_attrs
 
 	DATASET_STATISTIC_COMPUTING=False
 	inited=time()
-	items_metadata,users_metadata,all_users_to_items_outcomes,outcomes_considered,items_id_attribute,users_id_attribute,considered_items_sorted,considered_users_1_sorted,considered_users_2_sorted,nb_outcome_considered,vector_of_action =\
-		process_outcome_dataset(itemsFile,usersFile,reviewsFile,numeric_attrs=numeric_attrs,array_attrs=array_attrs,outcome_attrs=outcome_attrs,method_aggregation_outcome=method_aggregation_outcome,itemsScope=itemsScope,users_1_Scope=users_1_Scope,users_2_Scope=users_2_Scope,nb_items=nb_items,nb_individuals=nb_individuals,attributes_to_consider=attributes_to_consider,nb_items_entities=nb_items_entities,nb_items_individuals=nb_items_individuals,hmt_to_itemset=hmt_to_itemset,delimiter=delimiter)
+	items_metadata,users_metadata,all_users_to_items_outcomes,outcomes_considered,items_id_attribute,users_id_attribute,considered_items_sorted,considered_users_1_sorted,considered_users_2_sorted,nb_outcome_considered,vector_of_action,to_consider_ids_in_contexts_scope =\
+		process_outcome_dataset(itemsFile,usersFile,reviewsFile,numeric_attrs=numeric_attrs,array_attrs=array_attrs,outcome_attrs=outcome_attrs,method_aggregation_outcome=method_aggregation_outcome,itemsScope=itemsScope,contexts_scope=contexts_scope,users_1_Scope=users_1_Scope,users_2_Scope=users_2_Scope,nb_items=nb_items,nb_individuals=nb_individuals,attributes_to_consider=attributes_to_consider,nb_items_entities=nb_items_entities,nb_items_individuals=nb_items_individuals,hmt_to_itemset=hmt_to_itemset,delimiter=delimiter)
 
 	# print vector_of_action
 	# raw_input('.....')
@@ -1437,7 +1442,9 @@ def DSC_Entry_Point(itemsFile,usersFile,reviewsFile,numeric_attrs=[],array_attrs
 	if do_heuristic_peers:
 		TOCALL=DSC_AnyTimeRandomWalk
 
-
+	nb_attrs_objects_in_itemset_from_outcomes=process_outcome_dataset.STATS["nb_items_entities"]
+	nb_attrs_users_in_itemset_from_outcomes=process_outcome_dataset.STATS["nb_items_individuals"]
+	
 	TOCALL.stats={
 		'quality_measure':qualityMeasure,
 		'comparaison_measure':comparaison_measure,
@@ -1447,9 +1454,9 @@ def DSC_Entry_Point(itemsFile,usersFile,reviewsFile,numeric_attrs=[],array_attrs
 		'attrs_users':[(x['name'],x['type']) for x in description_attributes_users],
 
 		'nb_attrs_objects':len(types_attributes_items),
-		'nb_attrs_objects_in_itemset':0,
+		'nb_attrs_objects_in_itemset':nb_attrs_objects_in_itemset_from_outcomes,
 		'nb_attrs_users':len(types_attributes_users),
-		'nb_attrs_users_in_itemset':0,
+		'nb_attrs_users_in_itemset':nb_attrs_users_in_itemset_from_outcomes,
 
 		'quality_threshold':quality_threshold,
 		'threshold_objects':threshold_comparaison,
@@ -1474,11 +1481,14 @@ def DSC_Entry_Point(itemsFile,usersFile,reviewsFile,numeric_attrs=[],array_attrs
 
 		'timespent_init':time()-inited,
 		'timespent':0,
-		'timespent_total':0
+		'timespent_total':0,
+
+		'nb_random_walks':nb_random_walks,
 
 
 
 	}
+
 
 	if verbose:# and not do_heuristic_peers:
 		enum=enumerator_complex_cbo_init_new_config(considered_users_1_sorted, description_attributes_users,{},verbose=False,threshold=threshold_nb_users_1,closed=closed,bfs=False,do_heuristic=False)
@@ -1502,8 +1512,9 @@ def DSC_Entry_Point(itemsFile,usersFile,reviewsFile,numeric_attrs=[],array_attrs
 
 	for interesting_patterns in TOCALL(items_metadata,users_metadata,considered_items_sorted,considered_users_1_sorted,considered_users_2_sorted,all_users_to_items_outcomes,
 		items_id_attribute,users_id_attribute,description_attributes_items=description_attributes_items,description_attributes_users=description_attributes_users,method_aggregation_outcome=method_aggregation_outcome,
-		comparaison_measure=comparaison_measure,qualityMeasure=qualityMeasure,threshold_comparaison=threshold_comparaison,threshold_nb_users_1=threshold_nb_users_1,threshold_nb_users_2=threshold_nb_users_2,quality_threshold=quality_threshold,
-		ponderation_attribute=ponderation_attribute,bound_type=bound_type,pruning=pruning,closed=closed,do_heuristic_contexts=do_heuristic_contexts,do_heuristic_peers=do_heuristic_peers,timebudget=timebudget,heatmap_for_matrix=heatmap_for_matrix,algorithm=algorithm,consider_order_between_desc_of_couples=symmetry,nb_random_walks=nb_random_walks,verbose=verbose):
+		contexts_scope=to_consider_ids_in_contexts_scope,comparaison_measure=comparaison_measure,qualityMeasure=qualityMeasure,threshold_comparaison=threshold_comparaison,threshold_nb_users_1=threshold_nb_users_1,threshold_nb_users_2=threshold_nb_users_2,quality_threshold=quality_threshold,
+		ponderation_attribute=ponderation_attribute,bound_type=bound_type,pruning=pruning,closed=closed,do_heuristic_contexts=do_heuristic_contexts,do_heuristic_peers=do_heuristic_peers,timebudget=timebudget,heatmap_for_matrix=heatmap_for_matrix,algorithm=algorithm,consider_order_between_desc_of_couples=symmetry,nb_random_walks=nb_random_walks,verbose=verbose,
+		no_generality=no_generality,no_sigma_quality=no_sigma_quality):
 
 
 
@@ -1519,7 +1530,7 @@ def DSC_Entry_Point(itemsFile,usersFile,reviewsFile,numeric_attrs=[],array_attrs
 			DSC_Entry_Point.outcomeTrack=TOCALL.outcomeTrack
 		write_results_in_file=True if results_destination is not None else False
 		if write_results_in_file:
-			yield DSC_exiting_point(interesting_patterns,all_users_to_items_outcomes,items_metadata,users_metadata,items_id_attribute,users_id_attribute,results_destination, detailed_results_destination,types_attributes_items,types_attributes_users,TOCALL.stats['attrs_objects'],TOCALL.stats['attrs_users'],vector_of_action,write_results_in_file)
+			yield DSC_exiting_point(interesting_patterns,all_users_to_items_outcomes,items_metadata,users_metadata,items_id_attribute,users_id_attribute,results_destination, detailed_results_destination,types_attributes_items,types_attributes_users,TOCALL.stats['attrs_objects'],TOCALL.stats['attrs_users'],vector_of_action,write_results_in_file,TOCALL.stats,edf,first_run)
 		else:
 			yield DSC_Entry_Point.stats
 
@@ -1564,10 +1575,31 @@ def from_string_to_date(str_date,dateformat="%d/%m/%y"):
 def from_date_to_string(dateObj,dateformat="%Y-%m-%d"):
 	return datetime.strftime(dateObj, dateformat)
 
+def histograms(qualities,starting_point=0.,width=0.01,lim_max=1.):
+	nb_histograms=int(lim_max/width)
+	x_axis_ticks=[];possible_intervals=[];all_data_points=[]
+	nb_hists=[]
+	for i in range(-2,nb_histograms):
+		x_axis_ticks.append(i*width)
+		all_data_points.append([])
+		nb_hists.append(0)
+		possible_intervals.append([i*width,(i+1)*width])
+	for q in qualities:
+		nb_hists[bisect_left(x_axis_ticks,q)-1]+=1
+		all_data_points[bisect_left(x_axis_ticks,q)-1].append(q)
 
-def DSC_exiting_point(interesting_patterns,all_users_to_items_outcomes,items_metadata,users_metadata,items_id_attribute,users_id_attribute,file_destination, detailed_results_destination,types_attributes_items,types_attributes_users,description_attributes_items,description_attributes_users,vector_of_action,write_results_in_file=True):
+	sum_nb_hists=float(sum(nb_hists))
+	nb_hists_freq=[x/sum_nb_hists for x in nb_hists]
+	print sum_nb_hists
+
+	for i in range(len(nb_hists)):
+		print possible_intervals[i], ' : ', nb_hists[i]#, '  - ', all_data_points[i]
+	#raw_input('next')
+	return x_axis_ticks,nb_hists_freq
+def DSC_exiting_point(interesting_patterns,all_users_to_items_outcomes,items_metadata,users_metadata,items_id_attribute,users_id_attribute,file_destination, detailed_results_destination,types_attributes_items,types_attributes_users,description_attributes_items,description_attributes_users,vector_of_action,write_results_in_file=True,all_stats={},edf=False,first_run=False):
 	sorted_interesting_patterns=sorted(interesting_patterns,key = lambda x:x[0][0],reverse=True)
 	k=1
+	PRINT_IN_DETAILED_FORMAT=False
 	already_seen=None
 	to_write=[]
 	to_write_for_GAT=[]
@@ -1576,425 +1608,510 @@ def DSC_exiting_point(interesting_patterns,all_users_to_items_outcomes,items_met
 	COMPUTE_REF=False
 	#TAKE_INTO_ACCOUNT_INFOS=False
 	DRAW_FIGURES=False
-	type_of_data="EPD"#"OPENMEDIC"
-	#MOVIELENS  #YELP  #OPENMEDIC
+
+	COMPUTE_NUMBER_OF_OUTCOMES=False
+	type_of_data="EPD"#"EPD"#"OPENMEDIC"
+	#MOVIELENS  #YELP  #OPENMEDIC #"EPD"
 
 
-	if WRITE_MORE_DETAILS:
-		if not os.path.exists(detailed_results_destination):
-			os.makedirs(detailed_results_destination)
-		else:
-			shutil.rmtree(detailed_results_destination)
-			os.makedirs(detailed_results_destination)
 
-	indice_attr_date=None
-	COMPLETLY_OPTIONAL_FOR_DATE_PRINTING=True
-	description_attributes_items_names=[x[0] for x in description_attributes_items]
-	description_attributes_users_names=[x[0] for x in description_attributes_users]
-	if COMPLETLY_OPTIONAL_FOR_DATE_PRINTING:
-		if 'VOTE_DATE' in description_attributes_items_names:
-			indice_attr_date=description_attributes_items_names.index('VOTE_DATE')
-	# print description_attributes_users
-	# print description_attributes_items
-	# raw_input('....')
+	###############FOR EMPIRICAL DISTRIBUTION############
 
+	if edf:
+		# print all_stats['RandomWalk']
+		# raw_input('....')
+		obj_to_write={
 
-	for e_u_p,e_u_label,quality,borne_max_quality,e_u_p_ext,e_u_p_ext_bitset,ref_sim,pattern_sim in sorted_interesting_patterns:
-
-		e_u_list_label=list(e_u_label)
-		if COMPLETLY_OPTIONAL_FOR_DATE_PRINTING and indice_attr_date is not None:
-			#print e_u_label[indice_attr_date]
-			#2014-10-21 12:52:08
-			dates=[from_string_to_date(items_metadata[e]['VOTE_DATE_DETAILED'],dateformat="%Y-%m-%d %H:%M:%S") for e in e_u_p_ext[0]]
-			min_date=min(dates)
-			max_date=max(dates)
-			#print from_date_to_string(min_date,"%d %B %Y"),from_date_to_string(max_date,"%d %B %Y")
-			e_u_list_label[0]=list(e_u_list_label[0])
-			if False:
-				e_u_list_label[0][indice_attr_date]=' between ' + from_date_to_string(min_date,"%d %B %Y") +  ' and ' + from_date_to_string(max_date,"%d %B %Y")+ " "
-			else:
-				e_u_list_label[0][indice_attr_date]=[from_date_to_string(min_date,"%d %B %Y"),from_date_to_string(max_date,"%d %B %Y")]
+			'algorithm':'Quick-DEBuNk' if all_stats['RandomWalk']  else 'DEBuNk', 
+			'no_generality':all_stats['no_generality'],
+			'no_sigma_quality':all_stats['no_sigma_quality'],
+			'edf':[('%.4f' % x) for x in all_stats['ALL_OBSERVED_QUALITIES']],
+			'nb_patterns_returned':len(all_stats['ALL_OBSERVED_QUALITIES']),
+			'nb_attrs_objects':(all_stats['nb_attrs_objects']),
+			'nb_attrs_users':(all_stats['nb_attrs_users']),
+			'quality_threshold':(all_stats['quality_threshold']),
+			'threshold_objects':(all_stats['threshold_objects']),
+			'threshold_nb_users_1':(all_stats['threshold_nb_users_1']),
+			'threshold_nb_users_2':(all_stats['threshold_nb_users_2'])
 			
-			#e_u_label[0][indice_attr_date]=' between ' + from_date_to_string(min_date,"%d %B %Y") +  ' and ' + from_date_to_string(max_date,"%d %B %Y")+ " "
-			e_u_list_label[0]=tuple(e_u_list_label[0])
-			e_u_label=tuple(e_u_list_label)
-		obj={
-			'ind':k,
-			'context':pattern_printer(e_u_label[0],types_attributes_items,description_attributes_items_names), #pattern_printer
-			'g1':pattern_printer(e_u_label[1],types_attributes_users,description_attributes_users_names),
-			'g2':pattern_printer(e_u_label[2],types_attributes_users,description_attributes_users_names),
-			'|subgroup(context)|':len(e_u_p_ext[0]),
-			'|subgroup(g1)|':len(e_u_p_ext[1]),
-			'|subgroup(g2)|':len(e_u_p_ext[2]),
-			'|ratings(c,g1,g2)|':sum(len(all_users_to_items_outcomes.get(u,{}).viewkeys()&e_u_p_ext[0]) for u in e_u_p_ext[1]|e_u_p_ext[2]),
-			#'|ratings(c,g1,g2)|':sum(sum([all_users_to_items_outcomes[u][e][1] for e in all_users_to_items_outcomes.get(u,{}).viewkeys()&e_u_p_ext[0]]) for u in e_u_p_ext[1]|e_u_p_ext[2]),
-			'quality':quality,#'%.2f'%quality,
-			'ref_sim':ref_sim,#'%.2f'%ref_sim,
-			'pattern_sim':pattern_sim#'%.2f'%pattern_sim
+
+
+
+
+
 		}
+		
+
+		if all_stats['RandomWalk'] and all_stats['nb_random_walks']<=1:
+			obj_to_write['algorithm']='Quick-DEBuNk-NoRW'
 
 
+		writeCSVwithHeader([obj_to_write],'./edf_current.csv',selectedHeader=['algorithm','no_generality','nb_attrs_objects','nb_attrs_users','quality_threshold','threshold_objects','threshold_nb_users_1','threshold_nb_users_2','no_sigma_quality','nb_patterns_returned','edf'],flagWriteHeader=first_run)
+		# raw_input('QUIT NOW')
+		# raw_input('QUIT NOW')
+		# raw_input('QUIT NOW')
+		# edf_unsorted=all_stats['ALL_OBSERVED_QUALITIES']
+		# edf=sorted(edf_unsorted)
+		# #raw_input('....')
+		# print 'draw'
+		# from scipy.stats import sem,t,shapiro,describe,histogram
+		# import matplotlib.pyplot as plt
+		# #c,l,largeur,e = histogram(edf, 50)
+		# width=0.01
+		# x_axis_ticks,nb_hists=histograms(edf_unsorted,width=width,lim_max=0.5)
+
+		# #c=[t/sum(c) for t in c]
+		# #xaxis_edf=[l+largeur * i for i in range(50)]
+
+		# # print c
+		# # print xaxis_edf
+		# #plt.plot(a,b,label='Line '+str(k),color=colors[color_index])
+		# #plt.bar(xaxis_edf,c,largeur, label='Hist 1',alpha=0.6,color="#FF0000")
+		# plt.bar(x_axis_ticks,nb_hists,width, label='Hist 1',alpha=0.6,color="#FF0000")
+		# #plt.plot(a,b,label='Line '+str(k)+ ' ' +str(CINormal),color=colors[color_index])
+		# plt.legend(loc='upper right', fancybox=True, framealpha=0.85,fontsize=25)
+		# plt.show()
+		# raw_input('....')
+		# raw_input('QUIT NOW')
+
+	####################################################
+	else:
+		if WRITE_MORE_DETAILS:
+			if not os.path.exists(detailed_results_destination):
+				os.makedirs(detailed_results_destination)
+			else:
+				shutil.rmtree(detailed_results_destination)
+				os.makedirs(detailed_results_destination)
+
+		indice_attr_date=None
+		COMPLETLY_OPTIONAL_FOR_DATE_PRINTING=True
+		description_attributes_items_names=[x[0] for x in description_attributes_items]
+		description_attributes_users_names=[x[0] for x in description_attributes_users]
+		if COMPLETLY_OPTIONAL_FOR_DATE_PRINTING:
+			if 'VOTE_DATE' in description_attributes_items_names:
+				indice_attr_date=description_attributes_items_names.index('VOTE_DATE')
+		# print description_attributes_users
+		# print description_attributes_items
+		# raw_input('....')
 
 
+		for e_u_p,e_u_label,quality,borne_max_quality,e_u_p_ext,e_u_p_ext_bitset,ref_sim,pattern_sim in sorted_interesting_patterns:
 
-		to_write.append(obj)
-
-
-		if CSV_RESULTS_FILE_FOR_GAT_ANTOINE:
-			dictionnaire_antoine={
-				'PROCEDURE_SUBJECT':'subject',
-				'VOTE_DATE':'date',
-				'NATIONAL_PARTY':'NP',
-				'GROUPE_ID':'EPG',
-				'GENDER':'Gender',
-				'COUNTRY':'Country',
-			}
-			obj_for_gat={
+			e_u_list_label=list(e_u_label)
+			if COMPLETLY_OPTIONAL_FOR_DATE_PRINTING and indice_attr_date is not None:
+				#print e_u_label[indice_attr_date]
+				#2014-10-21 12:52:08
+				dates=[from_string_to_date(items_metadata[e]['VOTE_DATE_DETAILED'],dateformat="%Y-%m-%d %H:%M:%S") for e in e_u_p_ext[0]]
+				min_date=min(dates)
+				max_date=max(dates)
+				#print from_date_to_string(min_date,"%d %B %Y"),from_date_to_string(max_date,"%d %B %Y")
+				e_u_list_label[0]=list(e_u_list_label[0])
+				if False:
+					e_u_list_label[0][indice_attr_date]=' between ' + from_date_to_string(min_date,"%d %B %Y") +  ' and ' + from_date_to_string(max_date,"%d %B %Y")+ " "
+				else:
+					e_u_list_label[0][indice_attr_date]=[from_date_to_string(min_date,"%d %B %Y"),from_date_to_string(max_date,"%d %B %Y")]
+				
+				#e_u_label[0][indice_attr_date]=' between ' + from_date_to_string(min_date,"%d %B %Y") +  ' and ' + from_date_to_string(max_date,"%d %B %Y")+ " "
+				e_u_list_label[0]=tuple(e_u_list_label[0])
+				e_u_label=tuple(e_u_list_label)
+			obj={
 				'ind':k,
-				'context':[pattern_printer_one([e_u_label[0][z]],[types_attributes_items[z]],[description_attributes_items_names[z]]) for z in range(len(e_u_label[0]))],#pattern_printer(e_u_label[0],types_attributes_items,description_attributes_items_names), #pattern_printer_detailed
-				'meta_context':[dictionnaire_antoine.get(z,z) for z in description_attributes_items_names],
-				'g1':[pattern_printer_one([e_u_label[1][z]],[types_attributes_users[z]],[description_attributes_users_names[z]]) for z in range(len(e_u_label[1]))],#pattern_printer(e_u_label[1],types_attributes_users,description_attributes_users_names),
-				'meta_g1':[dictionnaire_antoine.get(z,z) for z in description_attributes_users_names],
-				'g2':[pattern_printer_one([e_u_label[2][z]],[types_attributes_users[z]],[description_attributes_users_names[z]]) for z in range(len(e_u_label[2]))],#e_u_label[2],#pattern_printer(e_u_label[2],types_attributes_users,description_attributes_users_names),
-				'meta_g2':[dictionnaire_antoine.get(z,z) for z in description_attributes_users_names],
+				'context':pattern_printer_detailed(e_u_label[0],types_attributes_items,description_attributes_items_names) if PRINT_IN_DETAILED_FORMAT else pattern_printer(e_u_label[0],types_attributes_items,description_attributes_items_names), #pattern_printer_detailed
+				'g1':pattern_printer_detailed(e_u_label[1],types_attributes_users,description_attributes_users_names) if PRINT_IN_DETAILED_FORMAT else pattern_printer(e_u_label[1],types_attributes_users,description_attributes_users_names),
+				'g2':pattern_printer_detailed(e_u_label[2],types_attributes_users,description_attributes_users_names) if PRINT_IN_DETAILED_FORMAT else pattern_printer(e_u_label[2],types_attributes_users,description_attributes_users_names),
 				'|subgroup(context)|':len(e_u_p_ext[0]),
 				'|subgroup(g1)|':len(e_u_p_ext[1]),
 				'|subgroup(g2)|':len(e_u_p_ext[2]),
-				'|ratings(c,g1,g2)|':sum(len(all_users_to_items_outcomes.get(u,{}).viewkeys()&e_u_p_ext[0]) for u in e_u_p_ext[1]|e_u_p_ext[2]),
+				#'|ratings(c,g1,g2)|':0,
+				'|ratings(c,g1,g2)|':sum(len(all_users_to_items_outcomes.get(u,{}).viewkeys()&e_u_p_ext[0]) for u in e_u_p_ext[1]|e_u_p_ext[2]) if COMPUTE_NUMBER_OF_OUTCOMES else 0.,
 				#'|ratings(c,g1,g2)|':sum(sum([all_users_to_items_outcomes[u][e][1] for e in all_users_to_items_outcomes.get(u,{}).viewkeys()&e_u_p_ext[0]]) for u in e_u_p_ext[1]|e_u_p_ext[2]),
 				'quality':quality,#'%.2f'%quality,
 				'ref_sim':ref_sim,#'%.2f'%ref_sim,
 				'pattern_sim':pattern_sim#'%.2f'%pattern_sim
 			}
-			indices_to_keep=[zindex for zindex,z in enumerate(obj_for_gat['context']) if z!='*']
-			obj_for_gat['context']=[obj_for_gat['context'][z] for z in indices_to_keep]
-			obj_for_gat['meta_context']=[obj_for_gat['meta_context'][z] for z in indices_to_keep]
-
-			indices_to_keep=[zindex for zindex,z in enumerate(obj_for_gat['g1']) if z!='*']
-			obj_for_gat['g1']=[obj_for_gat['g1'][z] for z in indices_to_keep]
-			obj_for_gat['meta_g1']=[obj_for_gat['meta_g1'][z] for z in indices_to_keep]
-
-			indices_to_keep=[zindex for zindex,z in enumerate(obj_for_gat['g2']) if z!='*']
-			obj_for_gat['g2']=[obj_for_gat['g2'][z] for z in indices_to_keep]
-			obj_for_gat['meta_g2']=[obj_for_gat['meta_g2'][z] for z in indices_to_keep]
-
-			#print obj_for_gat['context'],type(obj_for_gat['context'])
-			to_write_for_GAT.append(obj_for_gat)
-		k+=1
-	writeCSVwithHeader(to_write,file_destination,selectedHeader=['ind','context','g1','g2','|subgroup(context)|','|subgroup(g1)|','|subgroup(g2)|','|ratings(c,g1,g2)|','ref_sim','pattern_sim','quality'])
-	if CSV_RESULTS_FILE_FOR_GAT_ANTOINE:
-		filename, file_extension = splitext(file_destination)
-		file_destination_for_gat=filename+'_FOR_GAT'+file_extension
-		writeCSVwithHeader(to_write_for_GAT,file_destination_for_gat,selectedHeader=['ind','meta_context','context','meta_g1','g1','meta_g2','g2','|subgroup(context)|','|subgroup(g1)|','|subgroup(g2)|','|ratings(c,g1,g2)|','ref_sim','pattern_sim','quality'])
-
-	to_write=[]
-	k=1
-	for e_u_p,e_u_label,quality,borne_max_quality,e_u_p_ext,e_u_p_ext_bitset,ref_sim,pattern_sim in sorted_interesting_patterns:
-		#print e_u_p, quality, ref_sim ,pattern_sim
-
-		obj={
-			'ind':k,
-			'context':pattern_printer_detailed(e_u_label[0],types_attributes_items,description_attributes_items_names),
-			'g1':pattern_printer_detailed(e_u_label[1],types_attributes_users,description_attributes_users_names),
-			'g2':pattern_printer_detailed(e_u_label[2],types_attributes_users,description_attributes_users_names),
-			'|subgroup(context)|':len(e_u_p_ext[0]),
-			'|subgroup(g1)|':len(e_u_p_ext[1]),
-			'|subgroup(g2)|':len(e_u_p_ext[2]),
-			'|ratings(c,g1,g2)|':sum(len(all_users_to_items_outcomes.get(u,{}).viewkeys()&e_u_p_ext[0]) for u in e_u_p_ext[1]|e_u_p_ext[2]),
-			#'|ratings(c,g1,g2)|':sum(sum([all_users_to_items_outcomes[u][e][1] for e in all_users_to_items_outcomes.get(u,{}).viewkeys()&e_u_p_ext[0]]) for u in e_u_p_ext[1]|e_u_p_ext[2]),
-			'quality':'%.2f'%quality,
-			'ref_sim':'%.2f'%ref_sim,
-			'pattern_sim':'%.2f'%pattern_sim
-		}
-		to_write.append(obj)
-		# print e_u_p
-		# print [items_metadata[e] for e in e_u_p_ext[0]]
-		# print '--------'
-
-		if WRITE_MORE_DETAILS:
 
 
 
 
 
-			if type_of_data=='EPD':
-				#print str(k) + ' additional informations saved ....'
-				#print ''
-				REF_computed=False
-				DIMENSION_CONSIDERED='COUNTRY'#GROUPE_ID
-				all_votes_id=set(items_metadata.keys())
-				outcome_tuple_structure=get_tuple_structure(all_users_to_items_outcomes)
+			to_write.append(obj)
+
+
+			if CSV_RESULTS_FILE_FOR_GAT_ANTOINE:
+				dictionnaire_antoine={
+					'PROCEDURE_SUBJECT':'subject',
+					'VOTE_DATE':'date',
+					'NATIONAL_PARTY':'NP',
+					'GROUPE_ID':'EPG',
+					'GENDER':'Gender',
+					'COUNTRY':'Country',
+				}
+				obj_for_gat={
+					'ind':k,
+					'context':[pattern_printer_one([e_u_label[0][z]],[types_attributes_items[z]],[description_attributes_items_names[z]]) for z in range(len(e_u_label[0]))],#pattern_printer(e_u_label[0],types_attributes_items,description_attributes_items_names), #pattern_printer_detailed
+					'meta_context':[dictionnaire_antoine.get(z,z) for z in description_attributes_items_names],
+					'g1':[pattern_printer_one([e_u_label[1][z]],[types_attributes_users[z]],[description_attributes_users_names[z]]) for z in range(len(e_u_label[1]))],#pattern_printer(e_u_label[1],types_attributes_users,description_attributes_users_names),
+					'meta_g1':[dictionnaire_antoine.get(z,z) for z in description_attributes_users_names],
+					'g2':[pattern_printer_one([e_u_label[2][z]],[types_attributes_users[z]],[description_attributes_users_names[z]]) for z in range(len(e_u_label[2]))],#e_u_label[2],#pattern_printer(e_u_label[2],types_attributes_users,description_attributes_users_names),
+					'meta_g2':[dictionnaire_antoine.get(z,z) for z in description_attributes_users_names],
+					'|subgroup(context)|':len(e_u_p_ext[0]),
+					'|subgroup(g1)|':len(e_u_p_ext[1]),
+					'|subgroup(g2)|':len(e_u_p_ext[2]),
+					'|ratings(c,g1,g2)|':sum(len(all_users_to_items_outcomes.get(u,{}).viewkeys()&e_u_p_ext[0]) for u in e_u_p_ext[1]|e_u_p_ext[2]),
+					#'|ratings(c,g1,g2)|':sum(sum([all_users_to_items_outcomes[u][e][1] for e in all_users_to_items_outcomes.get(u,{}).viewkeys()&e_u_p_ext[0]]) for u in e_u_p_ext[1]|e_u_p_ext[2]),
+					'quality':quality,#'%.2f'%quality,
+					'ref_sim':ref_sim,#'%.2f'%ref_sim,
+					'pattern_sim':pattern_sim#'%.2f'%pattern_sim
+				}
+				indices_to_keep=[zindex for zindex,z in enumerate(obj_for_gat['context']) if z!='*']
+				obj_for_gat['context']=[obj_for_gat['context'][z] for z in indices_to_keep]
+				obj_for_gat['meta_context']=[obj_for_gat['meta_context'][z] for z in indices_to_keep]
+
+				indices_to_keep=[zindex for zindex,z in enumerate(obj_for_gat['g1']) if z!='*']
+				obj_for_gat['g1']=[obj_for_gat['g1'][z] for z in indices_to_keep]
+				obj_for_gat['meta_g1']=[obj_for_gat['meta_g1'][z] for z in indices_to_keep]
+
+				indices_to_keep=[zindex for zindex,z in enumerate(obj_for_gat['g2']) if z!='*']
+				obj_for_gat['g2']=[obj_for_gat['g2'][z] for z in indices_to_keep]
+				obj_for_gat['meta_g2']=[obj_for_gat['meta_g2'][z] for z in indices_to_keep]
+
+				#print obj_for_gat['context'],type(obj_for_gat['context'])
+				to_write_for_GAT.append(obj_for_gat)
+			k+=1
+		writeCSVwithHeader(to_write,file_destination,selectedHeader=['ind','context','g1','g2','|subgroup(context)|','|subgroup(g1)|','|subgroup(g2)|','|ratings(c,g1,g2)|','ref_sim','pattern_sim','quality'])
+		if CSV_RESULTS_FILE_FOR_GAT_ANTOINE:
+			filename, file_extension = splitext(file_destination)
+			file_destination_for_gat=filename+'_FOR_GAT'+file_extension
+			writeCSVwithHeader(to_write_for_GAT,file_destination_for_gat,selectedHeader=['ind','meta_context','context','meta_g1','g1','meta_g2','g2','|subgroup(context)|','|subgroup(g1)|','|subgroup(g2)|','|ratings(c,g1,g2)|','ref_sim','pattern_sim','quality'])
+
+		to_write=[]
+		k=1
+		for e_u_p,e_u_label,quality,borne_max_quality,e_u_p_ext,e_u_p_ext_bitset,ref_sim,pattern_sim in sorted_interesting_patterns:
+			#print e_u_p, quality, ref_sim ,pattern_sim
+			# if k not in {2,10}:
+			# 	###TO REMOVE FUCK TIMO
+			# 	k+=1
+			# 	continue
+			# 	###TO REMOVE FUCK TIMO
+			obj={
+				'ind':k,
+				'context':pattern_printer_detailed(e_u_label[0],types_attributes_items,description_attributes_items_names),
+				'g1':pattern_printer_detailed(e_u_label[1],types_attributes_users,description_attributes_users_names),
+				'g2':pattern_printer_detailed(e_u_label[2],types_attributes_users,description_attributes_users_names),
+				'|subgroup(context)|':len(e_u_p_ext[0]),
+				'|subgroup(g1)|':len(e_u_p_ext[1]),
+				'|subgroup(g2)|':len(e_u_p_ext[2]),
+				#'|ratings(c,g1,g2)|':0,
+				'|ratings(c,g1,g2)|':sum(len(all_users_to_items_outcomes.get(u,{}).viewkeys()&e_u_p_ext[0]) for u in e_u_p_ext[1]|e_u_p_ext[2]) if COMPUTE_NUMBER_OF_OUTCOMES else 0.,
+				#'|ratings(c,g1,g2)|':sum(sum([all_users_to_items_outcomes[u][e][1] for e in all_users_to_items_outcomes.get(u,{}).viewkeys()&e_u_p_ext[0]]) for u in e_u_p_ext[1]|e_u_p_ext[2]),
+				'quality':'%.2f'%quality,
+				'ref_sim':'%.2f'%ref_sim,
+				'pattern_sim':'%.2f'%pattern_sim
+			}
+			to_write.append(obj)
+			# print e_u_p
+			# print [items_metadata[e] for e in e_u_p_ext[0]]
+			# print '--------'
+
+			if WRITE_MORE_DETAILS:
+
+
+
+
+
+				if type_of_data=='EPD':
+					#print str(k) + ' additional informations saved ....'
+					#print ''
+					REF_computed=False
+					DIMENSION_CONSIDERED='COUNTRY'#GROUPE_ID
+					all_votes_id=set(items_metadata.keys())
+					outcome_tuple_structure=get_tuple_structure(all_users_to_items_outcomes)
 
 
 
 
 
 
-				all_agg_votes=compute_aggregates_outcomes(all_votes_id,set(users_metadata.keys()),all_users_to_items_outcomes,outcome_tuple_structure,method_aggregation_outcome='VECTOR_VALUES')
+					all_agg_votes=compute_aggregates_outcomes(all_votes_id,set(users_metadata.keys()),all_users_to_items_outcomes,outcome_tuple_structure,method_aggregation_outcome='VECTOR_VALUES')
 
-				if DRAW_FIGURES:
+					if DRAW_FIGURES:
 
-					groups={}
-					for key,value in users_metadata.iteritems():
-						value[DIMENSION_CONSIDERED]=unicodedata.normalize('NFD', unicode(str(value[DIMENSION_CONSIDERED]),'iso-8859-1')).encode('ascii', 'ignore')
-					for key,value in users_metadata.iteritems():
-						if value[DIMENSION_CONSIDERED] not in groups:
-							groups[value[DIMENSION_CONSIDERED]]=set()
-						groups[value[DIMENSION_CONSIDERED]]|={key}
-					outcomes_groups={}
-					for gr,gr_set in groups.iteritems():
-						users_aggregated_to_items_outcomes=compute_aggregates_outcomes(all_votes_id,gr_set,all_users_to_items_outcomes,outcome_tuple_structure,method_aggregation_outcome='VECTOR_VALUES')
-						outcomes_groups[gr]=users_aggregated_to_items_outcomes
-					similarities_groups={}
-					for gr1 in outcomes_groups:
-						similarities_groups[gr1]={}
-						for gr2 in outcomes_groups:
-							sim,nb=similarity_vector_measure_dcs(e_u_p_ext[0],outcomes_groups[gr1],outcomes_groups[gr2],'1','2',method='MAAD')
-							similarities_groups[gr1][gr2]=sim/float(nb) if nb >0. else float('NaN')
-							#print gr1,gr2, similarities_groups[gr1][gr2]
-					if not REF_computed:
-						similarities_groups_ref={}
+						groups={}
+						for key,value in users_metadata.iteritems():
+							value[DIMENSION_CONSIDERED]=unicodedata.normalize('NFD', unicode(str(value[DIMENSION_CONSIDERED]),'iso-8859-1')).encode('ascii', 'ignore')
+						for key,value in users_metadata.iteritems():
+							if value[DIMENSION_CONSIDERED] not in groups:
+								groups[value[DIMENSION_CONSIDERED]]=set()
+							groups[value[DIMENSION_CONSIDERED]]|={key}
+						outcomes_groups={}
+						for gr,gr_set in groups.iteritems():
+							users_aggregated_to_items_outcomes=compute_aggregates_outcomes(all_votes_id,gr_set,all_users_to_items_outcomes,outcome_tuple_structure,method_aggregation_outcome='VECTOR_VALUES')
+							outcomes_groups[gr]=users_aggregated_to_items_outcomes
+						similarities_groups={}
 						for gr1 in outcomes_groups:
-							similarities_groups_ref[gr1]={}
+							similarities_groups[gr1]={}
 							for gr2 in outcomes_groups:
-								sim,nb=similarity_vector_measure_dcs(all_votes_id,outcomes_groups[gr1],outcomes_groups[gr2],'1','2',method='MAAD')
-								similarities_groups_ref[gr1][gr2]=sim/float(nb)  if nb >0. else float('NaN')
-								#print gr1,gr2, similarities_groups_ref[gr1][gr2]
+								sim,nb=similarity_vector_measure_dcs(e_u_p_ext[0],outcomes_groups[gr1],outcomes_groups[gr2],'1','2',method='MAAD')
+								similarities_groups[gr1][gr2]=sim/float(nb) if nb >0. else float('NaN')
+								#print gr1,gr2, similarities_groups[gr1][gr2]
+						if not REF_computed:
+							similarities_groups_ref={}
+							for gr1 in outcomes_groups:
+								similarities_groups_ref[gr1]={}
+								for gr2 in outcomes_groups:
+									sim,nb=similarity_vector_measure_dcs(all_votes_id,outcomes_groups[gr1],outcomes_groups[gr2],'1','2',method='MAAD')
+									similarities_groups_ref[gr1][gr2]=sim/float(nb)  if nb >0. else float('NaN')
+									#print gr1,gr2, similarities_groups_ref[gr1][gr2]
 
-						matrice_ref=transformMatricFromDictToList(similarities_groups_ref)
-					matrice_pattern=transformMatricFromDictToList(similarities_groups)
-
-
-					from heatmap.heatmap import generateHeatMap
-					#adaptMatrices
-					cp_matrice_pattern=generateHeatMap(matrice_pattern,detailed_results_destination+str(k).zfill(4)+'_pattern.jpg',vmin=0.,vmax=1.,showvalues_text=False,only_heatmap=True,organize=True)#,title=title,highlight=highlight_way)
-
-					innerMatrix,rower,header=getInnerMatrix(cp_matrice_pattern)
-					rower=[rower[r] for r in sorted(rower)]
-					header=[header[r] for r in sorted(header)]
-					rower_inv={v:key for key,v in enumerate(rower)}
-					header_inv={v:key for key,v in enumerate(header)}
-
-					innerMatrix_ref,rower_ref,header_ref=getInnerMatrix(matrice_ref)
-					rower_ref=[rower_ref[r] for r in sorted(rower_ref)]
-					header_ref=[header_ref[r] for r in sorted(header_ref)]
-					rower_ref_inv={v:key for key,v in enumerate(rower_ref)}
-					header_ref_inv={v:key for key,v in enumerate(header_ref)}
+							matrice_ref=transformMatricFromDictToList(similarities_groups_ref)
+						matrice_pattern=transformMatricFromDictToList(similarities_groups)
 
 
-					new_inner_matrix=[[innerMatrix_ref[rower_ref_inv[rowVal]][header_ref_inv[headVal]] for headVal in header] for rowVal in rower]
-					matrice_ref_new=getCompleteMatrix(new_inner_matrix,{xx:yy for xx,yy in enumerate(rower)},{xx:yy for xx,yy in enumerate(header)})
+						from heatmap.heatmap import generateHeatMap
+						#adaptMatrices
+						cp_matrice_pattern=generateHeatMap(matrice_pattern,detailed_results_destination+str(k).zfill(4)+'_pattern.jpg',vmin=0.,vmax=1.,showvalues_text=False,only_heatmap=True,organize=True)#,title=title,highlight=highlight_way)
 
-					generateHeatMap(matrice_ref_new,detailed_results_destination+str(k).zfill(4)+'_ref.jpg',vmin=0.,vmax=1.,showvalues_text=False,only_heatmap=True,organize=False)#,title=title,highlight=highlight_way)
+						innerMatrix,rower,header=getInnerMatrix(cp_matrice_pattern)
+						rower=[rower[r] for r in sorted(rower)]
+						header=[header[r] for r in sorted(header)]
+						rower_inv={v:key for key,v in enumerate(rower)}
+						header_inv={v:key for key,v in enumerate(header)}
 
-				TO_WRITE_DETAILS_U1=[]
-
-				dictionnary_of_similarities_granular={}
-				g1_agg_votes=compute_aggregates_outcomes(all_votes_id,e_u_p_ext[1],all_users_to_items_outcomes,outcome_tuple_structure,method_aggregation_outcome='VECTOR_VALUES')
-				g2_agg_votes=compute_aggregates_outcomes(all_votes_id,e_u_p_ext[2],all_users_to_items_outcomes,outcome_tuple_structure,method_aggregation_outcome='VECTOR_VALUES')
-
-				for e in e_u_p_ext[0]:
-					dictionnary_of_similarities_granular[e]=similarity_vector_measure_dcs({e},g1_agg_votes,g2_agg_votes,'1','2',method='MAAD')
-					dictionnary_of_similarities_granular[e]=dictionnary_of_similarities_granular[e][0]/float(dictionnary_of_similarities_granular[e][1]) if float(dictionnary_of_similarities_granular[e][1])>0 else '-'
-				for e in e_u_p_ext[0]:
-					d={}
-					d.update(items_metadata[e])
-					d['SIM']=dictionnary_of_similarities_granular[e]
-					if True:
-						if 'MAJORITY_VOTE' not in d:
-							d['MAJORITY_VOTE']=''
-						if 'MAJORITY_VOTE_DISTRIBUTION' not in d:
-							d['MAJORITY_VOTE_DISTRIBUTION']=''
-
-					# d['MAJORITY_VOTE']=vector_of_action[all_agg_votes[e].index(max(all_agg_votes[e]))]
-					# d['MAJORITY_VOTE_DISTRIBUTION']=list(all_agg_votes[e])[::-1]
-					#print all_agg_votes[e], vector_of_action[all_agg_votes[e].index(max(all_agg_votes[e]))]
-					#raw_input('....')
-					#d.update(users_metadata[i1])
-					TO_WRITE_DETAILS_U1.append(d)
-					#print str(vector_of_action)
+						innerMatrix_ref,rower_ref,header_ref=getInnerMatrix(matrice_ref)
+						rower_ref=[rower_ref[r] for r in sorted(rower_ref)]
+						header_ref=[header_ref[r] for r in sorted(header_ref)]
+						rower_ref_inv={v:key for key,v in enumerate(rower_ref)}
+						header_ref_inv={v:key for key,v in enumerate(header_ref)}
 
 
+						new_inner_matrix=[[innerMatrix_ref[rower_ref_inv[rowVal]][header_ref_inv[headVal]] for headVal in header] for rowVal in rower]
+						matrice_ref_new=getCompleteMatrix(new_inner_matrix,{xx:yy for xx,yy in enumerate(rower)},{xx:yy for xx,yy in enumerate(header)})
 
+						generateHeatMap(matrice_ref_new,detailed_results_destination+str(k).zfill(4)+'_ref.jpg',vmin=0.,vmax=1.,showvalues_text=False,only_heatmap=True,organize=False)#,title=title,highlight=highlight_way)
 
-				entities_file_selected_header=[items_id_attribute]+sorted([x for x in items_metadata.values()[0].keys() if x not in {items_id_attribute,'MAJORITY_VOTE','MAJORITY_VOTE_DISTRIBUTION'}])+['SIM','MAJORITY_VOTE','MAJORITY_VOTE_DISTRIBUTION']
-				users_file_selected_header=[users_id_attribute]+sorted([x for x in users_metadata.values()[0].keys() if x!=users_id_attribute])
-				writeCSVwithHeader(TO_WRITE_DETAILS_U1,detailed_results_destination+str(k).zfill(4)+'_entities'+'.csv',selectedHeader=entities_file_selected_header)
-				writeCSVwithHeader([users_metadata[i] for i in e_u_p_ext[1]],detailed_results_destination+str(k).zfill(4)+'_g1'+'.csv',selectedHeader=users_file_selected_header)
-				writeCSVwithHeader([users_metadata[i] for i in e_u_p_ext[2]],detailed_results_destination+str(k).zfill(4)+'_g2'+'.csv',selectedHeader=users_file_selected_header)
+					TO_WRITE_DETAILS_U1=[]
 
+					dictionnary_of_similarities_granular={}
+					g1_agg_votes=compute_aggregates_outcomes(all_votes_id,e_u_p_ext[1],all_users_to_items_outcomes,outcome_tuple_structure,method_aggregation_outcome='VECTOR_VALUES')
+					g2_agg_votes=compute_aggregates_outcomes(all_votes_id,e_u_p_ext[2],all_users_to_items_outcomes,outcome_tuple_structure,method_aggregation_outcome='VECTOR_VALUES')
 
+					for e in e_u_p_ext[0]:
+						dictionnary_of_similarities_granular[e]=similarity_vector_measure_dcs({e},g1_agg_votes,g2_agg_votes,'1','2',method='MAAD')
+						dictionnary_of_similarities_granular[e]=dictionnary_of_similarities_granular[e][0]/float(dictionnary_of_similarities_granular[e][1]) if float(dictionnary_of_similarities_granular[e][1])>0 else '-'
+					for e in e_u_p_ext[0]:
+						d={}
+						d.update(items_metadata[e])
+						d['SIM']=dictionnary_of_similarities_granular[e]
+						if True:
+							if 'MAJORITY_VOTE' not in d:
+								d['MAJORITY_VOTE']=''
+							if 'MAJORITY_VOTE_DISTRIBUTION' not in d:
+								d['MAJORITY_VOTE_DISTRIBUTION']=''
 
-				mapping_vector_actions={}
-				for x in range(len(vector_of_action)):
-					o=[0]*len(vector_of_action);o[x]=1
-					mapping_vector_actions[tuple(o)]=vector_of_action[x]
-
-				g1_outcomes=[{items_id_attribute:e, users_id_attribute:i,'outcome':mapping_vector_actions[all_users_to_items_outcomes[i][e]] if e in all_users_to_items_outcomes[i] else '-'} for e in e_u_p_ext[0] for i in e_u_p_ext[1] ]
-				g2_outcomes=[{items_id_attribute:e, users_id_attribute:i,'outcome':mapping_vector_actions[all_users_to_items_outcomes[i][e]] if e in all_users_to_items_outcomes[i] else '-'} for e in e_u_p_ext[0] for i in e_u_p_ext[2] ]
-
-				writeCSVwithHeader(g1_outcomes,detailed_results_destination+str(k).zfill(4)+'_g1_outcomes'+'.csv',selectedHeader=[items_id_attribute,users_id_attribute,'outcome'])
-				writeCSVwithHeader(g2_outcomes,detailed_results_destination+str(k).zfill(4)+'_g2_outcomes'+'.csv',selectedHeader=[items_id_attribute,users_id_attribute,'outcome'])
-
-
-				writeCSVwithHeader([{items_id_attribute:e, users_id_attribute:'g1','outcome '+str(vector_of_action):g1_agg_votes[e] if e in g1_agg_votes else '-'} for e in e_u_p_ext[0]],detailed_results_destination+str(k).zfill(4)+'_g1_aggregated_outcomes'+'.csv',selectedHeader=[items_id_attribute,users_id_attribute,'outcome '+str(vector_of_action)])
-				writeCSVwithHeader([{items_id_attribute:e, users_id_attribute:'g2','outcome '+str(vector_of_action):g2_agg_votes[e] if e in g2_agg_votes else '-'} for e in e_u_p_ext[0]],detailed_results_destination+str(k).zfill(4)+'_g2_aggregated_outcomes'+'.csv',selectedHeader=[items_id_attribute,users_id_attribute,'outcome '+str(vector_of_action)])
+						# d['MAJORITY_VOTE']=vector_of_action[all_agg_votes[e].index(max(all_agg_votes[e]))]
+						# d['MAJORITY_VOTE_DISTRIBUTION']=list(all_agg_votes[e])[::-1]
+						#print all_agg_votes[e], vector_of_action[all_agg_votes[e].index(max(all_agg_votes[e]))]
+						#raw_input('....')
+						#d.update(users_metadata[i1])
+						TO_WRITE_DETAILS_U1.append(d)
+						#print str(vector_of_action)
 
 
 
 
-				REF_computed=True
+					entities_file_selected_header=[items_id_attribute]+sorted([x for x in items_metadata.values()[0].keys() if x not in {items_id_attribute,'MAJORITY_VOTE','MAJORITY_VOTE_DISTRIBUTION'}])+['SIM','MAJORITY_VOTE','MAJORITY_VOTE_DISTRIBUTION']
+					users_file_selected_header=[users_id_attribute]+sorted([x for x in users_metadata.values()[0].keys() if x!=users_id_attribute])
+					writeCSVwithHeader(TO_WRITE_DETAILS_U1,detailed_results_destination+str(k).zfill(4)+'_entities'+'.csv',selectedHeader=entities_file_selected_header)
+					writeCSVwithHeader([users_metadata[i] for i in e_u_p_ext[1]],detailed_results_destination+str(k).zfill(4)+'_g1'+'.csv',selectedHeader=users_file_selected_header)
+					writeCSVwithHeader([users_metadata[i] for i in e_u_p_ext[2]],detailed_results_destination+str(k).zfill(4)+'_g2'+'.csv',selectedHeader=users_file_selected_header)
 
 
 
-
-
-			else:
-				TO_WRITE_DETAILS_U1=[]
-				TO_WRITE_AGG_U1=[]
-				BIG_V1={}
-				BIG_V1_REF={}
-				BIG_V1_POP={}
-				for e in e_u_p_ext[0]:
-					vector={}
-					for i1 in e_u_p_ext[1]:
-						try:
-							outcome=all_users_to_items_outcomes[i1][e]
-							vector[outcome[0]]=vector.get(outcome[0],0.)+1
-
-							if type_of_data=='MOVIELENS':
-								BIG_V1[outcome[0]]=BIG_V1.get(outcome[0],0.)+1
-							elif type_of_data=='YELP':
-								for note in range(5):
-									ind_note=note+1
-									BIG_V1[ind_note]=BIG_V1.get(ind_note,0.)+outcome[2][note]
-							elif type_of_data=='OPENMEDIC':
-								#BIG_V1['sizepop']=
-								BIG_V1['Context']=BIG_V1.get('Context',0.)+outcome[0]
-
-							d={'outcome':outcome}
-							d.update(items_metadata[e])
-							d.update(users_metadata[i1])
-							TO_WRITE_DETAILS_U1.append(d)
-
-
-						except Exception as excepas:
-							continue
-					TO_WRITE_AGG_U1.append({items_id_attribute:e,'outcome':[vector.get(x,0.) for x in range(1,6)]})
-
-				if COMPUTE_REF:
-					for i1 in e_u_p_ext[1]:
-						for e in all_users_to_items_outcomes[i1]:
-							outcome=all_users_to_items_outcomes[i1][e]
-							if type_of_data=='MOVIELENS':
-								BIG_V1_REF[outcome[0]]=BIG_V1_REF.get(outcome[0],0.)+1
-							elif type_of_data=='YELP':
-								for note in range(5):
-									ind_note=note+1
-									BIG_V1_REF[ind_note]=BIG_V1_REF.get(ind_note,0.)+outcome[2][note]
-							elif type_of_data=='OPENMEDIC':
-								#BIG_V1['sizepop']=
-								BIG_V1_REF['*']=BIG_V1_REF.get('*',0.)+outcome[0]
-
-						if type_of_data=='OPENMEDIC':
-							BIG_V1_POP['Population']=BIG_V1_POP.get('Population',0.) + users_metadata[i1]['sizeOfPop']
-
-
-
-
-
-
-				TO_WRITE_AGG_U1.append({items_id_attribute:'*','outcome':[BIG_V1.get(x,0.) for x in range(1,6)]})
-				writeCSVwithHeader(TO_WRITE_DETAILS_U1,detailed_results_destination+str(k).zfill(4)+'_u1'+'.csv',selectedHeader=[items_id_attribute]+[x for x in items_metadata.values()[0].keys() if x!=items_id_attribute]+[users_id_attribute]+[x for x in users_metadata.values()[0].keys() if x!=users_id_attribute]+['outcome'])
-				writeCSVwithHeader(TO_WRITE_AGG_U1,detailed_results_destination+str(k).zfill(4)+'_u1_agg'+'.csv',selectedHeader=[items_id_attribute,'outcome'])
-				if DRAW_FIGURES:
-					from plotter.perfPlotter import plot_bars_vector,plot_bars_vector_many_populations
-					vector_for_movielens=[BIG_V1.get(x,0.) for x in range(1,6)]
-					plot_bars_vector(vector_for_movielens,detailed_results_destination+str(k).zfill(4)+'_u1_agg'+'.pdf')
-
-				TO_WRITE_DETAILS_U2=[]
-				TO_WRITE_AGG_U2=[]
-				BIG_V2={}
-				BIG_V2_REF={}
-				BIG_V2_POP={}
-				for e in e_u_p_ext[0]:
-					vector={}
-					for i2 in e_u_p_ext[2]:
-						try:
-							outcome=all_users_to_items_outcomes[i2][e]
-							vector[outcome[0]]=vector.get(outcome[0],0.)+1
-							if type_of_data=='MOVIELENS':
-								BIG_V2[outcome[0]]=BIG_V2.get(outcome[0],0.)+1
-							elif type_of_data=='YELP':
-								for note in range(5):
-									ind_note=note+1
-									BIG_V2[ind_note]=BIG_V2.get(ind_note,0.)+outcome[2][note]
-							elif type_of_data=='OPENMEDIC':
-								#BIG_V1['sizepop']=
-								BIG_V2['Context']=BIG_V2.get('Context',0.)+outcome[0]
-
-							d={'outcome':outcome}
-							d.update(items_metadata[e])
-							d.update(users_metadata[i2])
-							TO_WRITE_DETAILS_U2.append(d)
-
-
-						except Exception as excepas:
-							continue
-					TO_WRITE_AGG_U2.append({items_id_attribute:e,'outcome':[vector.get(x,0.) for x in range(1,6)]})
-
-				if COMPUTE_REF:
-					for i2 in e_u_p_ext[2]:
-						for e in all_users_to_items_outcomes[i2]:
-							outcome=all_users_to_items_outcomes[i2][e]
-							if type_of_data=='MOVIELENS':
-								BIG_V2_REF[outcome[0]]=BIG_V2_REF.get(outcome[0],0.)+1
-							elif type_of_data=='YELP':
-								for note in range(5):
-									ind_note=note+1
-									BIG_V2_REF[ind_note]=BIG_V2_REF.get(ind_note,0.)+outcome[2][note]
-							elif type_of_data=='OPENMEDIC':
-								#BIG_V1['sizepop']=
-								BIG_V2_REF['*']=BIG_V2_REF.get('*',0.)+outcome[0]
-
-						if type_of_data=='OPENMEDIC':
-							BIG_V2_POP['Population']=BIG_V2_POP.get('Population',0.) + users_metadata[i2]['sizeOfPop']
-
-				if type_of_data=='OPENMEDIC':
-
-					# print obj['g1'],BIG_V1,BIG_V1_REF,BIG_V1_POP
-					# print obj['g2'],BIG_V2,BIG_V2_REF,BIG_V2_POP
-					# print obj['quality'],obj['ref_sim'],obj['pattern_sim']
-					dictus1={};dictus1.update(BIG_V1);dictus1.update(BIG_V1_REF);dictus1.update(BIG_V1_POP)
-					dictus2={};dictus2.update(BIG_V2);dictus2.update(BIG_V2_REF);dictus2.update(BIG_V2_POP)
-					dictus={pattern_printer(e_u_label[1],types_attributes_users):dictus1,pattern_printer(e_u_label[2],types_attributes_users):dictus2}
-					#dictus.update(BIG_V1)
-					if DRAW_FIGURES:
-						from plotter.perfPlotter import plot_bars_vector_many_populations_openmedic
-						plot_bars_vector_many_populations_openmedic(dictus,detailed_results_destination+str(k).zfill(4)+'_patternAndRef'+'.pdf',['Population','*','Context'])
-					#raw_input('...')
-
-				TO_WRITE_AGG_U2.append({items_id_attribute:'*','outcome':[BIG_V2.get(x,0.) for x in range(1,6)]})
-				writeCSVwithHeader(TO_WRITE_DETAILS_U2,detailed_results_destination+str(k).zfill(4)+'_u2'+'.csv',selectedHeader=[items_id_attribute]+[x for x in items_metadata.values()[0].keys() if x!=items_id_attribute]+[users_id_attribute]+[x for x in users_metadata.values()[0].keys() if x!=users_id_attribute]+['outcome'])
-				writeCSVwithHeader(TO_WRITE_AGG_U2,detailed_results_destination+str(k).zfill(4)+'_u2_agg'+'.csv',selectedHeader=[items_id_attribute,'outcome'])
-
-				if type_of_data in {'MOVIELENS','YELP'}:
-					pattern_u1_movielens=[BIG_V1.get(x,0.) for x in range(1,6)]
-					pattern_u2_movielens=[BIG_V2.get(x,0.) for x in range(1,6)]
-					ref_u1_movielens=[BIG_V1_REF.get(x,0.) for x in range(1,6)]
-					ref_u2_movielens=[BIG_V2_REF.get(x,0.) for x in range(1,6)]
-					# print BIG_V1
-					# print BIG_V1_REF
+					mapping_vector_actions={}
+					for x in range(len(vector_of_action)):
+						o=[0]*len(vector_of_action);o[x]=1
+						mapping_vector_actions[tuple(o)]=vector_of_action[x]
+					
+					# print all_users_to_items_outcomes.keys()
+					# print all_users_to_items_outcomes[all_users_to_items_outcomes.keys()[0]][all_users_to_items_outcomes[all_users_to_items_outcomes.keys()[0]].keys()[0]]
 					# raw_input('...')
+					g1_outcomes=[{items_id_attribute:e, users_id_attribute:i,'outcome':mapping_vector_actions[all_users_to_items_outcomes[i][e]] if e in all_users_to_items_outcomes[i] else '-'} for e in e_u_p_ext[0] for i in e_u_p_ext[1] if i in all_users_to_items_outcomes]
+					g2_outcomes=[{items_id_attribute:e, users_id_attribute:i,'outcome':mapping_vector_actions[all_users_to_items_outcomes[i][e]] if e in all_users_to_items_outcomes[i] else '-'} for e in e_u_p_ext[0] for i in e_u_p_ext[2] if i in all_users_to_items_outcomes]
+
+					writeCSVwithHeader(g1_outcomes,detailed_results_destination+str(k).zfill(4)+'_g1_outcomes'+'.csv',selectedHeader=[items_id_attribute,users_id_attribute,'outcome'])
+					writeCSVwithHeader(g2_outcomes,detailed_results_destination+str(k).zfill(4)+'_g2_outcomes'+'.csv',selectedHeader=[items_id_attribute,users_id_attribute,'outcome'])
+
+
+					writeCSVwithHeader([{items_id_attribute:e, users_id_attribute:'g1','outcome '+str(vector_of_action):g1_agg_votes[e] if e in g1_agg_votes else '-'} for e in e_u_p_ext[0]],detailed_results_destination+str(k).zfill(4)+'_g1_aggregated_outcomes'+'.csv',selectedHeader=[items_id_attribute,users_id_attribute,'outcome '+str(vector_of_action)])
+					writeCSVwithHeader([{items_id_attribute:e, users_id_attribute:'g2','outcome '+str(vector_of_action):g2_agg_votes[e] if e in g2_agg_votes else '-'} for e in e_u_p_ext[0]],detailed_results_destination+str(k).zfill(4)+'_g2_aggregated_outcomes'+'.csv',selectedHeader=[items_id_attribute,users_id_attribute,'outcome '+str(vector_of_action)])
+
+
+
+
+					REF_computed=True
+
+
+
+
+
+				else:
+					TO_WRITE_DETAILS_U1=[]
+					TO_WRITE_AGG_U1=[]
+					BIG_V1={}
+					BIG_V1_REF={}
+					BIG_V1_POP={}
+					for e in e_u_p_ext[0]:
+						vector={}
+						for i1 in e_u_p_ext[1]:
+							try:
+								outcome=all_users_to_items_outcomes[i1][e]
+								
+								vector[outcome[0]]=vector.get(outcome[0],0.)+1
+
+								if type_of_data=='MOVIELENS':
+									BIG_V1[outcome[0]]=BIG_V1.get(outcome[0],0.)+1
+								elif type_of_data=='YELP':
+									for note in range(5):
+										ind_note=note+1
+										BIG_V1[ind_note]=BIG_V1.get(ind_note,0.)+outcome[2][note]
+										
+								elif type_of_data=='OPENMEDIC':
+									#BIG_V1['sizepop']=
+									BIG_V1['Context']=BIG_V1.get('Context',0.)+outcome[0]
+
+								d={'outcome':outcome}
+								d.update(items_metadata[e])
+								d.update(users_metadata[i1])
+								TO_WRITE_DETAILS_U1.append(d)
+
+
+							except Exception as excepas:
+								continue
+						TO_WRITE_AGG_U1.append({items_id_attribute:e,'outcome':[vector.get(x,0.) for x in range(1,6)]})
+
+					if COMPUTE_REF:
+						for i1 in e_u_p_ext[1]:
+							for e in all_users_to_items_outcomes[i1]:
+								outcome=all_users_to_items_outcomes[i1][e]
+								
+								if type_of_data=='MOVIELENS':
+									BIG_V1_REF[outcome[0]]=BIG_V1_REF.get(outcome[0],0.)+1
+								elif type_of_data=='YELP':
+									for note in range(5):
+										ind_note=note+1
+										BIG_V1_REF[ind_note]=BIG_V1_REF.get(ind_note,0.)+outcome[2][note]
+
+								elif type_of_data=='OPENMEDIC':
+									#BIG_V1['sizepop']=
+									BIG_V1_REF['*']=BIG_V1_REF.get('*',0.)+outcome[0]
+
+							if type_of_data=='OPENMEDIC':
+								BIG_V1_POP['Population']=BIG_V1_POP.get('Population',0.) + users_metadata[i1]['sizeOfPop']
+
+
+
+
+
+
+					TO_WRITE_AGG_U1.append({items_id_attribute:'*','outcome':[BIG_V1.get(x,0.) for x in range(1,6)]})
+					writeCSVwithHeader(TO_WRITE_DETAILS_U1,detailed_results_destination+str(k).zfill(4)+'_u1'+'.csv',selectedHeader=[items_id_attribute]+[x for x in items_metadata.values()[0].keys() if x!=items_id_attribute]+[users_id_attribute]+[x for x in users_metadata.values()[0].keys() if x!=users_id_attribute]+['outcome'])
+					writeCSVwithHeader(TO_WRITE_AGG_U1,detailed_results_destination+str(k).zfill(4)+'_u1_agg'+'.csv',selectedHeader=[items_id_attribute,'outcome'])
 					if DRAW_FIGURES:
-						from plotter.perfPlotter import plot_bars_vector
-						DICT_VECTOR={pattern_printer(e_u_label[1],types_attributes_users):pattern_u1_movielens,pattern_printer(e_u_label[2],types_attributes_users):pattern_u2_movielens}
-						plot_bars_vector_many_populations(DICT_VECTOR,detailed_results_destination+str(k).zfill(4)+'_u2_agg'+'.pdf')
-						DICT_VECTOR={pattern_printer(e_u_label[1],types_attributes_users):ref_u1_movielens,pattern_printer(e_u_label[2],types_attributes_users):ref_u2_movielens}
-						plot_bars_vector_many_populations(DICT_VECTOR,detailed_results_destination+str(k).zfill(4)+'_u2_agg_referencial'+'.pdf')
-		k+=1
-	#writeCSVwithHeader(to_write,file_destination,selectedHeader=['ind','context','g1','g2','|subgroup(context)|','|subgroup(g1)|','|subgroup(g2)|','|ratings(c,g1,g2)|','ref_sim','pattern_sim','quality'])
-	#raw_input('....')
+						from plotter.perfPlotter import plot_bars_vector,plot_bars_vector_many_populations
+						vector_for_movielens=[BIG_V1.get(x,0.) for x in range(1,6)]
+						plot_bars_vector(vector_for_movielens,detailed_results_destination+str(k).zfill(4)+'_u1_agg'+'.pdf')
+
+					TO_WRITE_DETAILS_U2=[]
+					TO_WRITE_AGG_U2=[]
+					BIG_V2={}
+					BIG_V2_REF={}
+					BIG_V2_POP={}
+					for e in e_u_p_ext[0]:
+						vector={}
+						for i2 in e_u_p_ext[2]:
+							try:
+								outcome=all_users_to_items_outcomes[i2][e]
+								vector[outcome[0]]=vector.get(outcome[0],0.)+1
+								if type_of_data=='MOVIELENS':
+									BIG_V2[outcome[0]]=BIG_V2.get(outcome[0],0.)+1
+								elif type_of_data=='YELP':
+									for note in range(5):
+										ind_note=note+1
+										BIG_V2[ind_note]=BIG_V2.get(ind_note,0.)+outcome[2][note]
+								elif type_of_data=='OPENMEDIC':
+									#BIG_V1['sizepop']=
+									BIG_V2['Context']=BIG_V2.get('Context',0.)+outcome[0]
+
+								d={'outcome':outcome}
+								d.update(items_metadata[e])
+								d.update(users_metadata[i2])
+								TO_WRITE_DETAILS_U2.append(d)
+
+
+							except Exception as excepas:
+								continue
+						TO_WRITE_AGG_U2.append({items_id_attribute:e,'outcome':[vector.get(x,0.) for x in range(1,6)]})
+
+					if COMPUTE_REF:
+						for i2 in e_u_p_ext[2]:
+							for e in all_users_to_items_outcomes[i2]:
+								outcome=all_users_to_items_outcomes[i2][e]
+								if type_of_data=='MOVIELENS':
+									BIG_V2_REF[outcome[0]]=BIG_V2_REF.get(outcome[0],0.)+1
+								elif type_of_data=='YELP':
+									for note in range(5):
+										ind_note=note+1
+										BIG_V2_REF[ind_note]=BIG_V2_REF.get(ind_note,0.)+outcome[2][note]
+								elif type_of_data=='OPENMEDIC':
+									#BIG_V1['sizepop']=
+									BIG_V2_REF['*']=BIG_V2_REF.get('*',0.)+outcome[0]
+
+							if type_of_data=='OPENMEDIC':
+								BIG_V2_POP['Population']=BIG_V2_POP.get('Population',0.) + users_metadata[i2]['sizeOfPop']
+
+					if type_of_data=='OPENMEDIC':
+
+						# print obj['g1'],BIG_V1,BIG_V1_REF,BIG_V1_POP
+						# print obj['g2'],BIG_V2,BIG_V2_REF,BIG_V2_POP
+						# print obj['quality'],obj['ref_sim'],obj['pattern_sim']
+						dictus1={};dictus1.update(BIG_V1);dictus1.update(BIG_V1_REF);dictus1.update(BIG_V1_POP)
+						dictus2={};dictus2.update(BIG_V2);dictus2.update(BIG_V2_REF);dictus2.update(BIG_V2_POP)
+						dictus={pattern_printer(e_u_label[1],types_attributes_users):dictus1,pattern_printer(e_u_label[2],types_attributes_users):dictus2}
+						#dictus.update(BIG_V1)
+						if DRAW_FIGURES:
+							from plotter.perfPlotter import plot_bars_vector_many_populations_openmedic
+							if k==2:
+								title_to_write="M04A - Antigout Preparation"
+							elif k==10:
+								title_to_write="H03 - Thyroid Therapy"
+							else:
+								title_to_write=""
+							plot_bars_vector_many_populations_openmedic(dictus,detailed_results_destination+str(k).zfill(4)+'_patternAndRef'+'.pdf',['Population','*','Context'],title_for_this=title_to_write)
+
+							#2 10
+						#raw_input('...')
+
+					TO_WRITE_AGG_U2.append({items_id_attribute:'*','outcome':[BIG_V2.get(x,0.) for x in range(1,6)]})
+					writeCSVwithHeader(TO_WRITE_DETAILS_U2,detailed_results_destination+str(k).zfill(4)+'_u2'+'.csv',selectedHeader=[items_id_attribute]+[x for x in items_metadata.values()[0].keys() if x!=items_id_attribute]+[users_id_attribute]+[x for x in users_metadata.values()[0].keys() if x!=users_id_attribute]+['outcome'])
+					writeCSVwithHeader(TO_WRITE_AGG_U2,detailed_results_destination+str(k).zfill(4)+'_u2_agg'+'.csv',selectedHeader=[items_id_attribute,'outcome'])
+
+					if type_of_data in {'MOVIELENS','YELP'}:
+						pattern_u1_movielens=[BIG_V1.get(x,0.) for x in range(1,6)]
+						pattern_u2_movielens=[BIG_V2.get(x,0.) for x in range(1,6)]
+						ref_u1_movielens=[BIG_V1_REF.get(x,0.) for x in range(1,6)]
+						ref_u2_movielens=[BIG_V2_REF.get(x,0.) for x in range(1,6)]
+						# print BIG_V1
+						# print BIG_V1_REF
+						# raw_input('...')
+						if DRAW_FIGURES:
+							from plotter.perfPlotter import plot_bars_vector
+							DICT_VECTOR={pattern_printer(e_u_label[1],types_attributes_users):pattern_u1_movielens,pattern_printer(e_u_label[2],types_attributes_users):pattern_u2_movielens}
+							plot_bars_vector_many_populations(DICT_VECTOR,detailed_results_destination+str(k).zfill(4)+'_u2_agg'+'.pdf')
+							DICT_VECTOR={pattern_printer(e_u_label[1],types_attributes_users):ref_u1_movielens,pattern_printer(e_u_label[2],types_attributes_users):ref_u2_movielens}
+							plot_bars_vector_many_populations(DICT_VECTOR,detailed_results_destination+str(k).zfill(4)+'_u2_agg_referencial'+'.pdf')
+			k+=1
+		#writeCSVwithHeader(to_write,file_destination,selectedHeader=['ind','context','g1','g2','|subgroup(context)|','|subgroup(g1)|','|subgroup(g2)|','|ratings(c,g1,g2)|','ref_sim','pattern_sim','quality'])
+		#raw_input('....')
 	return [(eup_l,eup_ext,e_u_p_ext_bitset) for (eup,eup_l,qual,borne_max_quality,eup_ext,e_u_p_ext_bitset,_,_) in sorted_interesting_patterns]
 
 
@@ -2092,10 +2209,25 @@ Good luck Monday Adnene :-) (A message from Friday Adnane)
 #1016 394827.0 54.1749999523 2.28300333023 21.7640013695
 ##########
 def DSC(itemsMetadata,users_metadata,considered_items_sorted,considered_users_1_sorted,considered_users_2_sorted,all_users_to_items_outcomes,
-		items_id_attribute,users_id_attribute,description_attributes_items=[],description_attributes_users=[],method_aggregation_outcome='VECTOR_VALUES',
+		items_id_attribute,users_id_attribute,description_attributes_items=[],description_attributes_users=[],method_aggregation_outcome='VECTOR_VALUES',contexts_scope=[],
 		comparaison_measure='MAAD',qualityMeasure='DISAGR_SUMDIFF',threshold_comparaison=30,threshold_nb_users_1=10,threshold_nb_users_2=10,quality_threshold=0.3,
-		ponderation_attribute=None,bound_type=1,pruning=True,closed=True,do_heuristic_contexts=False,do_heuristic_peers=False,timebudget=1000,heatmap_for_matrix=False,algorithm='DSC+CLOSED+UB2',consider_order_between_desc_of_couples=True,nb_random_walks=30,verbose=False):
+		ponderation_attribute=None,bound_type=1,pruning=True,closed=True,do_heuristic_contexts=False,do_heuristic_peers=False,timebudget=1000,heatmap_for_matrix=False,algorithm='DSC+CLOSED+UB2',consider_order_between_desc_of_couples=True,nb_random_walks=30,verbose=False,
+		no_generality=False,no_sigma_quality=False):
+	#print (contexts_scope)
+	
+	##########FOR TESTS#########
+	if True:
+		TOPKFORCOMPARISON=DSC.TOPK
+		print 'K WANTED IS ',TOPKFORCOMPARISON
+		#raw_input('....')
+	############################
 
+
+	ALL_OBSERVED_QUALITIES=[];ALL_OBSERVED_QUALITIES_append=ALL_OBSERVED_QUALITIES.append
+	DSC.stats['ALL_OBSERVED_QUALITIES']=ALL_OBSERVED_QUALITIES
+	print 'no_generality : ',no_generality,'  ;no_sigma_quality : ',no_sigma_quality
+	if no_sigma_quality:
+		quality_threshold=10**(-6)
 	estimated_maximum_number_of_called_peers= DSC.stats.get('estimated_maximum_number_of_called_peers',1.)
 	nb_visited=[0.,0.,0.]
 	TEST_SUBSUMPTION_WITH_BISET=True
@@ -2108,6 +2240,7 @@ def DSC(itemsMetadata,users_metadata,considered_items_sorted,considered_users_1_
 	get_users_ids = partial(map,itemgetter(users_id_attribute))
 
 	v_ids_all_list=get_items_ids(considered_items_sorted)
+	v_ids_all_list_reverted={k:i for i,k in enumerate(v_ids_all_list)}
 	v_ids_all=set(v_ids_all_list)
 	u_1_ids=set(get_users_ids(considered_users_1_sorted))
 	u_2_ids=set(get_users_ids(considered_users_2_sorted))
@@ -2137,7 +2270,7 @@ def DSC(itemsMetadata,users_metadata,considered_items_sorted,considered_users_1_
 		nb_pairs+=1
 		if verbose:
 			stdout.write('%s\r' % ('Percentage Done : ' + ('%.2f'%((nb_pairs/estimated_maximum_number_of_called_peers)*100))+ '%'));stdout.flush();
-		#print u1_p,u2_p, s1,s2
+		#print u1_p,u2_p, u1_p_set_users,u2_p_set_users
 
 		# raw_input('***')
 		if (time()-started)>timebudget:break
@@ -2189,25 +2322,29 @@ def DSC(itemsMetadata,users_metadata,considered_items_sorted,considered_users_1_
 		#################################################################
 		u1_p_extent_bitset=u1_config['indices_bitset_1']
 		u2_p_extent_bitset=u2_config['indices_bitset_2']
-		indices_to_consider={k for k in range(len(v_ids_all_list)) if v_ids_all_list[k] in votes_in_which_the_two_groups_participated}
+		
+		indices_to_consider={k for k in range(len(v_ids_all_list)) if v_ids_all_list[k] in votes_in_which_the_two_groups_participated} & set(v_ids_all_list_reverted[x] for x in contexts_scope if x in v_ids_all_list_reverted)
+		#print indices_to_consider
 		indices_to_consider_bitset=encode_sup(sorted(indices_to_consider),len(v_ids_all_list))
 		config_updater={'indices':indices_to_consider,'indices_bitset':indices_to_consider_bitset,'nb_visited':nb_visited}
 		enumerator_contexts=enumerator_complex_cbo_init_new_config(considered_items_sorted, description_attributes_items, config_updater,threshold=threshold_comparaison,verbose=False,bfs=False,closed=closed,do_heuristic=do_heuristic_contexts,initValues=initConfig)
-
+		# print len(indices_to_consider)
+		# raw_input('...')
 		for e_p,e_label,e_config in enumerator_contexts:
 			if (time()-started)>timebudget:break
 			st=time()
 			#print e_p
 			e_p_ext=e_config['indices_bitset']
 			index_visited+=1
-			if TEST_SUBSUMPTION_WITH_BISET:
-				if any(ext_subsume_ext(context_already_visited_bitset,e_p_ext,types_attributes_items) for ((context_already_visited,_,_),(context_already_visited_bitset,_,_)) in u2_config['contextsVisited']):
-					e_config['flag']=False
-					continue
-			else:
-				if any(pattern_subsume_pattern(context_already_visited,e_p,types_attributes_items) for ((context_already_visited,_,_),(context_already_visited_bitset,_,_)) in u2_config['contextsVisited']):
-					e_config['flag']=False
-					continue
+			if not no_generality:
+				if TEST_SUBSUMPTION_WITH_BISET:
+					if any(ext_subsume_ext(context_already_visited_bitset,e_p_ext,types_attributes_items) for ((context_already_visited,_,_),(context_already_visited_bitset,_,_)) in u2_config['contextsVisited']):
+						e_config['flag']=False
+						continue
+				else:
+					if any(pattern_subsume_pattern(context_already_visited,e_p,types_attributes_items) for ((context_already_visited,_,_),(context_already_visited_bitset,_,_)) in u2_config['contextsVisited']):
+						e_config['flag']=False
+						continue
 
 			e_u_p=(e_p,u1_p,u2_p)
 
@@ -2238,24 +2375,25 @@ def DSC(itemsMetadata,users_metadata,considered_items_sorted,considered_users_1_
 				e_p_dominated=False
 				st=time()
 				to_delete=[];to_delete_append=to_delete.append
+				if not no_generality:
 				#################subsumption_verification#########################
-				for k in range(len(interesting_patterns)):
-					context_already_visited=interesting_patterns[k][0][0]
-					pattern_already_visited=interesting_patterns[k][0]
-					pattern_bitset_extent_already_visited=interesting_patterns[k][5]
-					pattern_extent_already_visited=interesting_patterns[k][4]
-					if TEST_SUBSUMPTION_WITH_BISET:
-						if DSC_EXT_subsume_DSC_EXT(pattern_bitset_extent_already_visited,e_u_p_extent_bitset,types_attributes_items,types_attributes_users,consider_order_between_desc_of_couples=CONSIDER_ORDER_BETWEEN_DESC_OF_COUPLES):
-							e_p_dominated=True
-							break
-						elif DSC_EXT_subsume_DSC_EXT(e_u_p_extent_bitset,pattern_bitset_extent_already_visited,types_attributes_items,types_attributes_users,consider_order_between_desc_of_couples=CONSIDER_ORDER_BETWEEN_DESC_OF_COUPLES):
-							to_delete_append(k)
-					else:
-						if DSC_Pat_subsume_DSC_Pat(pattern_already_visited,e_u_p,types_attributes_items,types_attributes_users):
-							e_p_dominated=True
-							break
-						elif DSC_Pat_subsume_DSC_Pat(e_u_p,pattern_already_visited,types_attributes_items,types_attributes_users):
-							to_delete_append(k)
+					for k in range(len(interesting_patterns)):
+						context_already_visited=interesting_patterns[k][0][0]
+						pattern_already_visited=interesting_patterns[k][0]
+						pattern_bitset_extent_already_visited=interesting_patterns[k][5]
+						pattern_extent_already_visited=interesting_patterns[k][4]
+						if TEST_SUBSUMPTION_WITH_BISET:
+							if DSC_EXT_subsume_DSC_EXT(pattern_bitset_extent_already_visited,e_u_p_extent_bitset,types_attributes_items,types_attributes_users,consider_order_between_desc_of_couples=CONSIDER_ORDER_BETWEEN_DESC_OF_COUPLES):
+								e_p_dominated=True
+								break
+							elif DSC_EXT_subsume_DSC_EXT(e_u_p_extent_bitset,pattern_bitset_extent_already_visited,types_attributes_items,types_attributes_users,consider_order_between_desc_of_couples=CONSIDER_ORDER_BETWEEN_DESC_OF_COUPLES):
+								to_delete_append(k)
+						else:
+							if DSC_Pat_subsume_DSC_Pat(pattern_already_visited,e_u_p,types_attributes_items,types_attributes_users):
+								e_p_dominated=True
+								break
+							elif DSC_Pat_subsume_DSC_Pat(e_u_p,pattern_already_visited,types_attributes_items,types_attributes_users):
+								to_delete_append(k)
 
 
 				if not e_p_dominated and len(to_delete):
@@ -2268,7 +2406,7 @@ def DSC(itemsMetadata,users_metadata,considered_items_sorted,considered_users_1_
 				if not e_p_dominated:
 					votes_context=v_ids_pattern
 					interesting_patterns_append([e_u_p,e_u_label,quality,borne_max_quality,e_u_p_extent,e_u_p_extent_bitset,reference_similarity,pattern_similarity])
-
+					ALL_OBSERVED_QUALITIES_append(quality)
 				if len(interesting_patterns)>top_k:
 					interesting_patterns=sorted(interesting_patterns,key = itemgetter(2),reverse=True)[:top_k]
 					quality_threshold=interesting_patterns[-1][3]
@@ -2331,6 +2469,28 @@ def DSC(itemsMetadata,users_metadata,considered_items_sorted,considered_users_1_
 	DSC.stats['timespent']=time()-started
 	DSC.stats['nb_attrs_objects_in_itemset']=e_config['nb_itemset']
 	DSC.stats['nb_attrs_users_in_itemset']=u2_config['nb_itemset']
+	DSC.stats['no_sigma_quality']=no_sigma_quality
+	DSC.stats['no_generality']=no_generality
+
+
+	###############################
+
+	Outcomes_covered=0
+	Outcomes_covered_distributions=[]
+	nb_samples=100
+	if TOPKFORCOMPARISON is not None:
+		for _ in range(nb_samples):
+			sss_outcomes_sss=set()
+			random_subset=choice(range(len(interesting_patterns)),TOPKFORCOMPARISON,replace=False)
+			for x in [interesting_patterns[ix] for ix in random_subset]:
+				sss_outcomes_sss|={tuple((u,e)) for u in x[4][1]|x[4][2] for e in  x[4][0] if e in all_users_to_items_outcomes[u]}
+			Outcomes_covered_distributions.append(len(sss_outcomes_sss))
+			print _,len(sss_outcomes_sss)
+		Outcomes_covered=float(sum(Outcomes_covered_distributions))/float(nb_samples)
+		DSC.stats['Outcomes_covered']=Outcomes_covered
+	else:
+		DSC.stats['Outcomes_covered']=0
+	################################
 
 	if heatmap_for_matrix:
 		DSC.outcomeTrack = enumerator_pair_of_users_optimized_dfs.outcomeTrack
@@ -2340,12 +2500,20 @@ def DSC(itemsMetadata,users_metadata,considered_items_sorted,considered_users_1_
 
 
 def DSC_AnyTimeRandomWalk(itemsMetadata,users_metadata,considered_items_sorted,considered_users_1_sorted,considered_users_2_sorted,all_users_to_items_outcomes,
-		items_id_attribute,users_id_attribute,description_attributes_items=[],description_attributes_users=[],method_aggregation_outcome='VECTOR_VALUES',
+		items_id_attribute,users_id_attribute,description_attributes_items=[],description_attributes_users=[],method_aggregation_outcome='VECTOR_VALUES',contexts_scope=[],
 		comparaison_measure='MAAD',qualityMeasure='DISAGR_SUMDIFF',threshold_comparaison=30,threshold_nb_users_1=10,threshold_nb_users_2=10,quality_threshold=0.3,
-		ponderation_attribute=None,bound_type=1,pruning=True,closed=True,do_heuristic_contexts=False,do_heuristic_peers=False,timebudget=1000,heatmap_for_matrix=False,algorithm='DSC+CLOSED+UB2',consider_order_between_desc_of_couples=True,nb_random_walks=30,verbose=False):
+		ponderation_attribute=None,bound_type=1,pruning=True,closed=True,do_heuristic_contexts=False,do_heuristic_peers=False,timebudget=1000,heatmap_for_matrix=False,algorithm='DSC+CLOSED+UB2',consider_order_between_desc_of_couples=True,nb_random_walks=30,verbose=False,
+		no_generality=False,no_sigma_quality=False):
+		
+	ALL_OBSERVED_QUALITIES=[];ALL_OBSERVED_QUALITIES_append=ALL_OBSERVED_QUALITIES.append
+	DSC_AnyTimeRandomWalk.stats['ALL_OBSERVED_QUALITIES']=ALL_OBSERVED_QUALITIES
 	nb_visited=[0.,0.,0.]
 	NB_ITER_CONTEXTS_PER_ROUND=nb_random_walks#30
 	print 'NB_ITER_CONTEXTS_PER_ROUND : ',NB_ITER_CONTEXTS_PER_ROUND
+	print 'no_generality : ',no_generality,'  ;no_sigma_quality : ',no_sigma_quality
+	if no_sigma_quality:
+		quality_threshold=10**(-6)
+
 	TEST_SUBSUMPTION_WITH_BISET=True
 	KEEP_IN_MEMORY_STUFFS=True;MRU_SIZE=10000;
 	print 'MEMORY USAGE : ', KEEP_IN_MEMORY_STUFFS
@@ -2370,6 +2538,7 @@ def DSC_AnyTimeRandomWalk(itemsMetadata,users_metadata,considered_items_sorted,c
 	get_users_ids = partial(map,itemgetter(users_id_attribute))
 
 	v_ids_all_list=get_items_ids(considered_items_sorted)
+	v_ids_all_list_reverted={k:i for i,k in enumerate(v_ids_all_list)}
 	v_ids_all=set(v_ids_all_list)
 	u_1_ids=set(get_users_ids(considered_users_1_sorted))
 	u_2_ids=set(get_users_ids(considered_users_2_sorted))
@@ -2413,6 +2582,8 @@ def DSC_AnyTimeRandomWalk(itemsMetadata,users_metadata,considered_items_sorted,c
 				DSC_AnyTimeRandomWalk.stats['timespent']=time_it_took_since_beggining
 				DSC_AnyTimeRandomWalk.stats['nb_attrs_objects_in_itemset']=e_config['nb_itemset']
 				DSC_AnyTimeRandomWalk.stats['nb_attrs_users_in_itemset']=u2_config['nb_itemset']
+				DSC_AnyTimeRandomWalk.stats['no_sigma_quality']=no_sigma_quality
+				DSC_AnyTimeRandomWalk.stats['no_generality']=no_generality
 				if heatmap_for_matrix:
 					DSC_AnyTimeRandomWalk.outcomeTrack = enumerator_pair_of_users_optimized_dfs.outcomeTrack
 				yield interesting_patterns
@@ -2483,7 +2654,7 @@ def DSC_AnyTimeRandomWalk(itemsMetadata,users_metadata,considered_items_sorted,c
 					continue
 
 
-			indices_to_consider={k for k in range(len(v_ids_all_list)) if v_ids_all_list[k] in votes_in_which_the_two_groups_participated}
+			indices_to_consider={k for k in range(len(v_ids_all_list)) if v_ids_all_list[k] in votes_in_which_the_two_groups_participated} & set(v_ids_all_list_reverted[x] for x in contexts_scope)
 
 			indices_to_consider_bitset=2**len(v_ids_all_list)-1#encode_sup(sorted(indices_to_consider),len(v_ids_all_list)) #OLD
 			#userpairssimsdetails_indices={i:max(reference_similarity-userpairssimsdetails[x[items_id_attribute]] - (quality_threshold-0.0001),0) if lower else max(userpairssimsdetails[x[items_id_attribute]]-reference_similarity - (quality_threshold-0.0001),0) for i,x in enumerate(considered_items_sorted) if x[items_id_attribute] in votes_in_which_the_two_groups_participated}
@@ -2547,6 +2718,8 @@ def DSC_AnyTimeRandomWalk(itemsMetadata,users_metadata,considered_items_sorted,c
 					DSC_AnyTimeRandomWalk.stats['timespent']=time_it_took_since_beggining
 					DSC_AnyTimeRandomWalk.stats['nb_attrs_objects_in_itemset']=e_config['nb_itemset']
 					DSC_AnyTimeRandomWalk.stats['nb_attrs_users_in_itemset']=u2_config['nb_itemset']
+					DSC_AnyTimeRandomWalk.stats['no_sigma_quality']=no_sigma_quality
+					DSC_AnyTimeRandomWalk.stats['no_generality']=no_generality
 					if heatmap_for_matrix:
 						DSC_AnyTimeRandomWalk.outcomeTrack = enumerator_pair_of_users_optimized_dfs.outcomeTrack
 					yield interesting_patterns
@@ -2586,7 +2759,8 @@ def DSC_AnyTimeRandomWalk(itemsMetadata,users_metadata,considered_items_sorted,c
 			pattern_similarity=agg_p/all_p
 			quality,borne_max_quality=compute_quality_and_upperbound(reference_matrix,pattern_matrix,threshold_comparaison,qualityMeasure)
 			# print e_p,quality
-
+			#print e_u_p,quality
+			#raw_input('......')
 			e_config['quality']=quality
 			e_config['upperbound']=borne_max_quality
 
@@ -2601,33 +2775,36 @@ def DSC_AnyTimeRandomWalk(itemsMetadata,users_metadata,considered_items_sorted,c
 				st=time()
 				to_delete=[];to_delete_append=to_delete.append
 				#################subsumption_verification#########################
-				for k in range(len(interesting_patterns)):
-					context_already_visited=interesting_patterns[k][0][0]
-					pattern_already_visited=interesting_patterns[k][0]
-					pattern_bitset_extent_already_visited=interesting_patterns[k][5]
+				if not (no_generality):
+					for k in range(len(interesting_patterns)):
+						context_already_visited=interesting_patterns[k][0][0]
+						pattern_already_visited=interesting_patterns[k][0]
+						pattern_bitset_extent_already_visited=interesting_patterns[k][5]
 
-					if TEST_SUBSUMPTION_WITH_BISET:
-						if DSC_EXT_subsume_DSC_EXT(pattern_bitset_extent_already_visited,e_u_p_extent_bitset,types_attributes_items,types_attributes_users,consider_order_between_desc_of_couples=CONSIDER_ORDER_BETWEEN_DESC_OF_COUPLES):
-							e_p_dominated=True
-							break
-						elif DSC_EXT_subsume_DSC_EXT(e_u_p_extent_bitset,pattern_bitset_extent_already_visited,types_attributes_items,types_attributes_users,consider_order_between_desc_of_couples=CONSIDER_ORDER_BETWEEN_DESC_OF_COUPLES):
-							to_delete_append(k)
-					else:
-						if DSC_Pat_subsume_DSC_Pat(pattern_already_visited,e_u_p,types_attributes_items,types_attributes_users):
-							e_p_dominated=True
-							break
-						elif DSC_Pat_subsume_DSC_Pat(e_u_p,pattern_already_visited,types_attributes_items,types_attributes_users):
-							to_delete_append(k)
+						if TEST_SUBSUMPTION_WITH_BISET:
+							if DSC_EXT_subsume_DSC_EXT(pattern_bitset_extent_already_visited,e_u_p_extent_bitset,types_attributes_items,types_attributes_users,consider_order_between_desc_of_couples=CONSIDER_ORDER_BETWEEN_DESC_OF_COUPLES):
+								e_p_dominated=True
+								break
+							elif DSC_EXT_subsume_DSC_EXT(e_u_p_extent_bitset,pattern_bitset_extent_already_visited,types_attributes_items,types_attributes_users,consider_order_between_desc_of_couples=CONSIDER_ORDER_BETWEEN_DESC_OF_COUPLES):
+								to_delete_append(k)
+						else:
+							if DSC_Pat_subsume_DSC_Pat(pattern_already_visited,e_u_p,types_attributes_items,types_attributes_users):
+								e_p_dominated=True
+								break
+							elif DSC_Pat_subsume_DSC_Pat(e_u_p,pattern_already_visited,types_attributes_items,types_attributes_users):
+								to_delete_append(k)
 
 
-				if not e_p_dominated and len(to_delete):
-					del_from_list_by_index(interesting_patterns,to_delete)
-				e_config['flag']=False
+					if not e_p_dominated and len(to_delete):
+						del_from_list_by_index(interesting_patterns,to_delete)
+					
+
+					e_config['flag']=False
 				#################subsumption_verification#########################
 				if not e_p_dominated:
 					votes_context=v_ids_pattern
 					interesting_patterns_append([e_u_p,e_u_label,quality,borne_max_quality,e_u_p_extent,e_u_p_extent_bitset,reference_similarity,pattern_similarity])
-
+					ALL_OBSERVED_QUALITIES_append(quality)
 				if len(interesting_patterns)>top_k:
 					interesting_patterns=sorted(interesting_patterns,key = itemgetter(2),reverse=True)[:top_k]
 					quality_threshold=interesting_patterns[-1][3]
@@ -2656,6 +2833,9 @@ def DSC_AnyTimeRandomWalk(itemsMetadata,users_metadata,considered_items_sorted,c
 				DSC_AnyTimeRandomWalk.stats['timespent']=time_it_took_since_beggining
 				DSC_AnyTimeRandomWalk.stats['nb_attrs_objects_in_itemset']=e_config['nb_itemset']
 				DSC_AnyTimeRandomWalk.stats['nb_attrs_users_in_itemset']=u2_config['nb_itemset']
+				DSC_AnyTimeRandomWalk.stats['no_sigma_quality']=no_sigma_quality
+				DSC_AnyTimeRandomWalk.stats['no_generality']=no_generality
+
 				if heatmap_for_matrix:
 					DSC_AnyTimeRandomWalk.outcomeTrack = enumerator_pair_of_users_optimized_dfs.outcomeTrack
 				yield interesting_patterns
@@ -2685,8 +2865,10 @@ def DSC_AnyTimeRandomWalk(itemsMetadata,users_metadata,considered_items_sorted,c
 				del mss_node['elements_to_yield']
 
 
-
-	#print len(interesting_patterns),index_visited,time()-started,subsumption_verif_time,enumeration_on_contexts_time,e_config['nb_visited'],u2_config['nb_visited']
+	print ' '
+	print ' '
+	print ' '
+	print 'INDEX VISITED : ',index_visited
 	try:
 		e_config=e_config
 	except Exception as e:
@@ -2698,6 +2880,14 @@ def DSC_AnyTimeRandomWalk(itemsMetadata,users_metadata,considered_items_sorted,c
 	DSC_AnyTimeRandomWalk.stats['timespent']=time()-started
 	DSC_AnyTimeRandomWalk.stats['nb_attrs_objects_in_itemset']=e_config['nb_itemset']
 	DSC_AnyTimeRandomWalk.stats['nb_attrs_users_in_itemset']=u2_config['nb_itemset']
+	DSC_AnyTimeRandomWalk.stats['no_sigma_quality']=no_sigma_quality
+	DSC_AnyTimeRandomWalk.stats['no_generality']=no_generality
+	#DSC_AnyTimeRandomWalk.stats['ALL_OBSERVED_QUALITIES'].sort()
+	# if no_generality or no_sigma_quality:
+	# 	print no_sigma_quality
+	# 	print no_generality
+	# 	print sorted(DSC_AnyTimeRandomWalk.stats['ALL_OBSERVED_QUALITIES'])
+	# 	raw_input('....')
 	if heatmap_for_matrix:
 		DSC_AnyTimeRandomWalk.outcomeTrack = enumerator_pair_of_users_optimized_dfs.outcomeTrack
 	yield interesting_patterns
@@ -2705,7 +2895,7 @@ def DSC_AnyTimeRandomWalk(itemsMetadata,users_metadata,considered_items_sorted,c
 
 
 def OLDYOLD_DSC_AnyTimeRandomWalk(itemsMetadata,users_metadata,considered_items_sorted,considered_users_1_sorted,considered_users_2_sorted,all_users_to_items_outcomes,
-		items_id_attribute,users_id_attribute,description_attributes_items=[],description_attributes_users=[],method_aggregation_outcome='VECTOR_VALUES',
+		items_id_attribute,users_id_attribute,description_attributes_items=[],description_attributes_users=[],method_aggregation_outcome='VECTOR_VALUES',contexts_scope=[],
 		comparaison_measure='MAAD',qualityMeasure='DISAGR_SUMDIFF',threshold_comparaison=30,threshold_nb_users_1=10,threshold_nb_users_2=10,quality_threshold=0.3,
 		ponderation_attribute=None,bound_type=1,pruning=True,closed=True,do_heuristic_contexts=False,do_heuristic_peers=False,timebudget=1000,heatmap_for_matrix=False,algorithm='DSC+CLOSED+UB2',consider_order_between_desc_of_couples=True,nb_random_walks=30,verbose=False):
 	nb_visited=[0.,0.,0.]

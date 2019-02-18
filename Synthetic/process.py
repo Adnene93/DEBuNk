@@ -2164,6 +2164,8 @@ if __name__ == '__main__':
 
 
 	parser.add_argument('--Compare',metavar='compare',nargs='*',help='Launch Comparative Experiments with State-Of-The-Art Algorithms.')
+	parser.add_argument('--VSECML',metavar='vsecml',nargs='*',help='VSECML.')
+	parser.add_argument('--VSECMLTOPK',metavar='vsecml',nargs='*',help='VSECML.')
 
 	args=parser.parse_args()
 
@@ -2228,6 +2230,373 @@ if __name__ == '__main__':
 			create_boolean_attributes_for_hmt=create_boolean_attributes_for_hmt,
 			delimiter=delimiter)
 		writeCSVwithHeader(new_behavioral_dataset,'TEST.csv',selectedHeader=header,delimiter='\t',flagWriteHeader=True)
+
+	if type(args.VSECMLTOPK) is list:
+		nb_entities=50000
+		nb_individuals=50000
+		nb_attr_entities=1
+		nb_attr_individuals=1
+		sigma_entities=40
+		sigma_individuals=10
+		sigma_quality=0.6
+		nb_dims_agg=0
+		Evaluation_results_new=True
+		TOPK=10
+		Loop_other_variables_in=[[10,50,100],[0.2,0.4,0.6],[1,2,3],[1,2,3]]#
+		selectedHeader_eval=['algorithm','topk','visited','nb_entities','nb_individuals','nb_attr_entities','nb_attr_individuals','sigma_entities','sigma_individuals','sigma_quality','nb_dims_agg','Outcomes_covered','nb_patterns','timespent']
+			
+		for TOPK,sigma_quality,nb_attr_individuals,nb_attr_entities in product(*Loop_other_variables_in):
+
+			parameters={
+				'nb_entities':nb_entities,
+				'nb_individuals':nb_individuals,
+				'nb_attr_entities':nb_attr_entities,
+				'nb_attr_individuals':nb_attr_individuals,
+				'sigma_entities':sigma_entities,
+				'sigma_individuals':sigma_individuals,
+				'sigma_quality':sigma_quality,
+				'nb_dims_agg':nb_dims_agg,
+				'topk':TOPK,
+			}
+
+			working_repo='DSC_VS_DEBUNK_TOP_K'
+
+
+		
+			
+			JSON_TO_WRITE_FOR_DEBUNK={
+				"objects_file":working_repo+"/Data/items.csv",
+				"individuals_file":working_repo+"/Data/users.csv",
+				"reviews_file":working_repo+"/Data/reviews.csv",
+				"delimiter":"\t",
+
+				"nb_objects":nb_entities,
+				"nb_individuals":nb_individuals,
+
+				"arrayHeader":["PROCEDURE_SUBJECT","LANGUAGES"],
+				"numericHeader":["VOTE_DATE","GEOSIZE","POP16","POP16_PERCENTAGE","GDP_BILLIONS","NB_SEATS_IN_EU","EU_MEMBER_SINCE"],
+				"vector_of_outcome":None,
+				"vector_of_outcome_OLD":["outcome"],
+				"ponderation_attribute":None,
+
+				"description_attributes_objects":[["PROCEDURE_SUBJECT", "themes"],["VOTE_DATE","numeric"],["COMMITTEE","simple"]][:nb_attr_entities],
+				"description_attributes_individuals":[["EU_MEMBER_SINCE", "numeric"],["CURRENCY", "simple"],["SCHENGEN_MEMBER", "simple"],["COUNTRY", "simple"],["GROUPE_ID", "simple"],["NATIONAL_PARTY", "simple"]][3:3+nb_attr_individuals],
+				
+				"threshold_objects":sigma_entities,
+				"threshold_individuals":sigma_individuals,
+				"threshold_quality":sigma_quality,
+				
+
+				"aggregation_measure":"VECTOR_VALUES",
+				"aggregation_measure_OLD":"SYMBOLIC_MAJORITY",
+				"similarity_measure":"MAAD",
+				"similarity_measure_OLD":"SAME_VOTE",
+
+
+				"quality_measure":"DISAGR_SUMDIFF",
+				"algorithm":"DSC+CLOSED+UB2",
+				"algorithm_OLD":"DSC+SamplingPeers+RandomWalk",
+				"timebudget":86400,
+				
+
+				"objects_scope":[], 
+				
+				"individuals_1_scope":[
+				],
+				"individuals_2_scope":[
+				],
+
+				"top_k": TOPK,
+				"results_destination":working_repo+"/results_synthetic_synth.csv",
+				"detailed_results_destination":working_repo+"/DETAILED/",
+				"symmetry":True
+			}
+
+
+			JSON_TO_WRITE_FOR_ECML={
+				"heatmaps": False,
+				"items_file":working_repo+"/Data/items.csv",
+				"users_file":working_repo+"/Data/users.csv",
+				"reviews_file":working_repo+"/Data/reviews.csv",
+				"delimiter":"\t",
+
+				"items_attributes":["VOTEID","PROCEDURE_SUBJECT","VOTE_DATE","COMMITTEE"],
+				"users_attributes":["EP_ID","EU_MEMBER_SINCE","CURRENCY","SCHENGEN_MEMBER","COUNTRY","GROUPE_ID","NATIONAL_PARTY"],
+				"outcome_attributes":"USER_VOTE",
+				"dataset_arrayHeader":["PROCEDURE_SUBJECT","LANGUAGES"],
+				"dataset_numberHeader":["VOTE_DATE","GEOSIZE","POP16","POP16_PERCENTAGE","GDP_BILLIONS","NB_SEATS_IN_EU","EU_MEMBER_SINCE"],
+				"vector_of_outcome":[],
+				
+
+				
+				"attr_items":[["PROCEDURE_SUBJECT", "themes"],["VOTE_DATE","numeric"],["COMMITTEE","simple"]][:nb_attr_entities],
+				"attr_users":[["EU_MEMBER_SINCE", "numeric"],["CURRENCY", "simple"],["SCHENGEN_MEMBER", "simple"],["COUNTRY", "simple"],["GROUPE_ID", "simple"],["NATIONAL_PARTY", "simple"]][3:3+nb_attr_individuals],
+				"attr_aggregates": ['COUNTRY','GROUPE_ID','NATIONAL_PARTY'][:nb_dims_agg],#,[x for x in attributes_individuals],
+				
+
+				"nb_items":nb_entities,
+				"nb_users":nb_individuals,
+
+
+				"sigma_item":sigma_entities,
+				"sigma_user":sigma_individuals,
+				"sigma_agg":sigma_individuals,
+				"sigma_quality":sigma_quality,
+				"top_k": TOPK,
+
+
+				"method_aggregation_outcome": "VECTOR_VALUES",
+				"similarity_measures": "MAAD",
+				"quality_measures": "DISAGR_SUMDIFF",
+
+
+
+				"timebudget":86400,
+				
+
+				"items_scope": [],
+				"referential_scope": [],
+				"user_1_scope": [],
+				"user_2_scope": [],
+
+				
+				"results_destination":working_repo+"/results_synthetic_synth.csv",
+				"detailed_results_destination":working_repo+"/",
+				
+
+				"cover_threshold": 2,
+				"upperbound": 2,
+				"prunning": True,
+				"only_square_matrix": False,
+				"ponderate_by_user": None,
+				"ponderate_by_item": None,
+			}
+
+			writeJSON(JSON_TO_WRITE_FOR_ECML,working_repo+"/to_test_ecml.json")
+			writeJSON(JSON_TO_WRITE_FOR_DEBUNK,working_repo+"/to_test_debunk.json")
+
+
+			timespent_debunk=time.time()
+			call(['python', '../Debunk/DSC_Project/main.py',working_repo+"/to_test_debunk.json",'-q','--performance_informations'])
+			timespent_debunk=time.time()-timespent_debunk
+			eval_debunk,h=readCSVwithHeader(working_repo+'/results_synthetic_synth_perf.csv',numberHeader=["visited","nb_patterns","Outcomes_covered"],arrayHeader=[],delimiter='\t')
+			evaluation_results=[]
+			evaluation_results.append({
+				'algorithm':'debunk',
+				'timespent':timespent_debunk,
+				'visited':eval_debunk[0]['visited'],
+				'nb_patterns':eval_debunk[0]['nb_patterns'],
+				'Outcomes_covered':eval_debunk[0]['Outcomes_covered']
+			})
+			evaluation_results[-1].update(parameters)
+			writeCSVwithHeader(evaluation_results,working_repo+'/evaluation_results.csv',selectedHeader=selectedHeader_eval,delimiter='\t',flagWriteHeader=Evaluation_results_new)
+			Evaluation_results_new=False
+
+			evaluation_results=[]
+			timespent_dsc=time.time()
+			call(['python', '../CODE/main.py','qual',working_repo+"/to_test_ecml.json"])
+			timespent_dsc=time.time()-timespent_dsc
+
+			eval_dsc,h=readCSVwithHeader(working_repo+'/to_test_ecml_perf.csv',numberHeader=["visited","nb_patterns","Outcomes_covered"],arrayHeader=[],delimiter='\t')		
+			
+			#eval_dsc[0],eval_dsc[0]
+			evaluation_results=[]
+			##PROBLEM
+			
+
+
+
+			evaluation_results.append({
+				'algorithm':'dsc',
+				'timespent':timespent_dsc,
+				'visited':eval_dsc[0]['visited'],
+				'nb_patterns':eval_dsc[0]['nb_patterns'],
+				'Outcomes_covered':eval_dsc[0]['Outcomes_covered']
+			})
+			evaluation_results[-1].update(parameters)
+			writeCSVwithHeader(evaluation_results,working_repo+'/evaluation_results.csv',selectedHeader=selectedHeader_eval,delimiter='\t',flagWriteHeader=Evaluation_results_new)
+			
+
+	if type(args.VSECML) is list:
+		nb_entities=50000
+		nb_individuals=50000
+		nb_attr_entities=1
+		nb_attr_individuals=1
+		sigma_entities=40
+		sigma_individuals=10
+		sigma_quality=0.6
+		nb_dims_agg=0
+		Evaluation_results_new=True
+		Loop_other_variables_in=[[0,1,2,3],[0.2,0.4,0.6],[1,2,3],[1,2,3]]#
+		selectedHeader_eval=['algorithm','visited','nb_entities','nb_individuals','nb_attr_entities','nb_attr_individuals','sigma_entities','sigma_individuals','sigma_quality','nb_dims_agg','nb_patterns','timespent']
+			
+		for nb_dims_agg,sigma_quality,nb_attr_individuals,nb_attr_entities in product(*Loop_other_variables_in):
+
+			parameters={
+				'nb_entities':nb_entities,
+				'nb_individuals':nb_individuals,
+				'nb_attr_entities':nb_attr_entities,
+				'nb_attr_individuals':nb_attr_individuals,
+				'sigma_entities':sigma_entities,
+				'sigma_individuals':sigma_individuals,
+				'sigma_quality':sigma_quality,
+				'nb_dims_agg':nb_dims_agg
+			}
+
+			working_repo='DSC_VS_DEBUNK'
+
+
+		
+			
+			JSON_TO_WRITE_FOR_DEBUNK={
+				"objects_file":working_repo+"/Data/items.csv",
+				"individuals_file":working_repo+"/Data/users.csv",
+				"reviews_file":working_repo+"/Data/reviews.csv",
+				"delimiter":"\t",
+
+				"nb_objects":nb_entities,
+				"nb_individuals":nb_individuals,
+
+				"arrayHeader":["PROCEDURE_SUBJECT","LANGUAGES"],
+				"numericHeader":["VOTE_DATE","GEOSIZE","POP16","POP16_PERCENTAGE","GDP_BILLIONS","NB_SEATS_IN_EU","EU_MEMBER_SINCE"],
+				"vector_of_outcome":None,
+				"vector_of_outcome_OLD":["outcome"],
+				"ponderation_attribute":None,
+
+				"description_attributes_objects":[["PROCEDURE_SUBJECT", "themes"],["VOTE_DATE","numeric"],["COMMITTEE","simple"]][:nb_attr_entities],
+				"description_attributes_individuals":[["EU_MEMBER_SINCE", "numeric"],["CURRENCY", "simple"],["SCHENGEN_MEMBER", "simple"],["COUNTRY", "simple"],["GROUPE_ID", "simple"],["NATIONAL_PARTY", "simple"]][3:3+nb_attr_individuals],
+				
+				"threshold_objects":sigma_entities,
+				"threshold_individuals":sigma_individuals,
+				"threshold_quality":sigma_quality,
+				
+
+				"aggregation_measure":"VECTOR_VALUES",
+				"aggregation_measure_OLD":"SYMBOLIC_MAJORITY",
+				"similarity_measure":"MAAD",
+				"similarity_measure_OLD":"SAME_VOTE",
+
+
+				"quality_measure":"DISAGR_SUMDIFF",
+				"algorithm":"DSC+CLOSED+UB2",
+				"algorithm_OLD":"DSC+SamplingPeers+RandomWalk",
+				"timebudget":86400,
+				
+
+				"objects_scope":[], 
+				
+				"individuals_1_scope":[
+				],
+				"individuals_2_scope":[
+				],
+
+				
+				"results_destination":working_repo+"/results_synthetic_synth.csv",
+				"detailed_results_destination":working_repo+"/DETAILED/",
+				"symmetry":True
+			}
+
+
+			JSON_TO_WRITE_FOR_ECML={
+				"heatmaps": False,
+				"items_file":working_repo+"/Data/items.csv",
+				"users_file":working_repo+"/Data/users.csv",
+				"reviews_file":working_repo+"/Data/reviews.csv",
+				"delimiter":"\t",
+
+				"items_attributes":["VOTEID","PROCEDURE_SUBJECT","VOTE_DATE","COMMITTEE"],
+				"users_attributes":["EP_ID","EU_MEMBER_SINCE","CURRENCY","SCHENGEN_MEMBER","COUNTRY","GROUPE_ID","NATIONAL_PARTY"],
+				"outcome_attributes":"USER_VOTE",
+				"dataset_arrayHeader":["PROCEDURE_SUBJECT","LANGUAGES"],
+				"dataset_numberHeader":["VOTE_DATE","GEOSIZE","POP16","POP16_PERCENTAGE","GDP_BILLIONS","NB_SEATS_IN_EU","EU_MEMBER_SINCE"],
+				"vector_of_outcome":[],
+				
+
+				
+				"attr_items":[["PROCEDURE_SUBJECT", "themes"],["VOTE_DATE","numeric"],["COMMITTEE","simple"]][:nb_attr_entities],
+				"attr_users":[["EU_MEMBER_SINCE", "numeric"],["CURRENCY", "simple"],["SCHENGEN_MEMBER", "simple"],["COUNTRY", "simple"],["GROUPE_ID", "simple"],["NATIONAL_PARTY", "simple"]][3:3+nb_attr_individuals],
+				"attr_aggregates": ['COUNTRY','GROUPE_ID','NATIONAL_PARTY'][:nb_dims_agg],#,[x for x in attributes_individuals],
+				
+
+				"nb_items":nb_entities,
+				"nb_users":nb_individuals,
+
+
+				"sigma_item":sigma_entities,
+				"sigma_user":sigma_individuals,
+				"sigma_agg":sigma_individuals,
+				"sigma_quality":sigma_quality,
+				"top_k": 1000000,
+
+
+				"method_aggregation_outcome": "VECTOR_VALUES",
+				"similarity_measures": "MAAD",
+				"quality_measures": "DISAGR_SUMDIFF",
+
+
+
+				"timebudget":86400,
+				
+
+				"items_scope": [],
+				"referential_scope": [],
+				"user_1_scope": [],
+				"user_2_scope": [],
+
+				
+				"results_destination":working_repo+"/results_synthetic_synth.csv",
+				"detailed_results_destination":working_repo+"/",
+				
+
+				"cover_threshold": 2,
+				"upperbound": 2,
+				"prunning": True,
+				"only_square_matrix": False,
+				"ponderate_by_user": None,
+				"ponderate_by_item": None,
+			}
+
+			writeJSON(JSON_TO_WRITE_FOR_ECML,working_repo+"/to_test_ecml.json")
+			writeJSON(JSON_TO_WRITE_FOR_DEBUNK,working_repo+"/to_test_debunk.json")
+
+
+			timespent_debunk=time.time()
+			call(['python', '../Debunk/DSC_Project/main.py',working_repo+"/to_test_debunk.json",'-q','--performance_informations'])
+			timespent_debunk=time.time()-timespent_debunk
+			eval_debunk,h=readCSVwithHeader(working_repo+'/results_synthetic_synth_perf.csv',numberHeader=["visited","nb_patterns"],arrayHeader=[],delimiter='\t')
+			evaluation_results=[]
+			evaluation_results.append({
+				'algorithm':'debunk',
+				'timespent':timespent_debunk,
+				'visited':eval_debunk[0]['visited'],
+				'nb_patterns':eval_debunk[0]['nb_patterns']
+			})
+			evaluation_results[-1].update(parameters)
+			writeCSVwithHeader(evaluation_results,working_repo+'/evaluation_results.csv',selectedHeader=selectedHeader_eval,delimiter='\t',flagWriteHeader=Evaluation_results_new)
+			Evaluation_results_new=False
+
+			evaluation_results=[]
+			timespent_dsc=time.time()
+			call(['python', '../CODE/main.py','qual',working_repo+"/to_test_ecml.json"])
+			timespent_dsc=time.time()-timespent_dsc
+
+			eval_dsc,h=readCSVwithHeader(working_repo+'/to_test_ecml_perf.csv',numberHeader=["visited","nb_patterns"],arrayHeader=[],delimiter='\t')		
+			
+			#eval_dsc[0],eval_dsc[0]
+			evaluation_results=[]
+			##PROBLEM
+			
+
+
+
+			evaluation_results.append({
+				'algorithm':'dsc',
+				'timespent':timespent_dsc,
+				'visited':eval_dsc[0]['visited'],
+				'nb_patterns':eval_dsc[0]['nb_patterns']
+			})
+			evaluation_results[-1].update(parameters)
+			writeCSVwithHeader(evaluation_results,working_repo+'/evaluation_results.csv',selectedHeader=selectedHeader_eval,delimiter='\t',flagWriteHeader=Evaluation_results_new)
 
 	if type(args.Compare) is list:
 		# print 'HELLO ! '

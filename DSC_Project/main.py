@@ -28,7 +28,7 @@ from os.path import basename, splitext, dirname
 import os
 from enumerator.enumerator_attribute_complex import enumerator_complex_cbo_init_new_config
 from outcomeAggregator.aggregateOutcome import compute_aggregates_outcomes
-from DSC_Algorithm.DSC_Algo import DSC_Entry_Point,similarity_between_patterns_set,similarity_between_patterns_set_by_bitset,similarity_between_patterns_set_2,DSC_input_config,pattern_printer
+from DSC_Algorithm.DSC_Algo import DSC_Entry_Point,similarity_between_patterns_set,similarity_between_patterns_set_by_bitset,similarity_between_patterns_set_2,DSC_input_config,pattern_printer,printer_hmt,DSC
 import pickle
 from util.jsonProcessing import readJSON,readJSON_stringifyUnicodes
 from util.matrixProcessing import transformMatricFromDictToList
@@ -320,7 +320,7 @@ def main_2():
 	parser.add_argument('--hmt_to_itemset',action='store_true',help='Consider all HMT To Be Itemsets') #args.hmt_to_itemset
 
 	parser.add_argument('--export_support',action='store_true',help='add a qualitiative file containing supports')
-
+	parser.add_argument('--performance_informations',action='store_true',help='add information about number of patterns visited and the number of found patterns')
 
 	parser.add_argument('--algos',metavar='algos', nargs='*',help='vary the algorithms used in experiments',type=str)
 	parser.add_argument('--sampling_algorithm',metavar='sampling_algorithm', nargs='*',help='sampling algorithm',type=str)
@@ -341,9 +341,28 @@ def main_2():
 	parser.add_argument('--fig_algos',metavar='fig_algos',nargs='*',help='select the algorithms to show in the figures',type=str)
 	parser.add_argument('--linear_scale',action='store_true',help='Log linear_scale')
 
+	parser.add_argument('--do_not_plot_bars',action='store_true',help='do not plot bars')
+	parser.add_argument('--do_not_plot_time',action='store_true',help='do not plot time')
+
+	
+
+
 	parser.add_argument('-v','--verbose',action='store_true',help='verbose execution...')
 
 	parser.add_argument('--debug',action='store_true',help='DEBUGGING ...')
+
+
+	parser.add_argument('--edf',action='store_true',help='distribution of qualities')
+	
+
+	parser.add_argument('--no_generality',action='store_true',help='no generality between patterns considered')
+	parser.add_argument('--no_sigma_quality',action='store_true',help='no sigma_quality')
+	parser.add_argument('--first_run',action='store_true',help='first_run for edf')
+
+	parser.add_argument('--results_destination',metavar='results_destination', nargs='?',help='XXX',type=str)
+
+	
+
 
 	args=parser.parse_args()
 	json_file_path=args.file
@@ -420,7 +439,7 @@ def main_2():
 				returned = next(DSC_input_config(json_config_copy,verbose=VERBOSE))
 			
 			XPs_results.append(DSC_input_config.stats)
-			writeCSVwithHeader(XPs_results,result_file_destination,selectedHeader=header_XP,flagWriteHeader=FIRST_TEST)
+			writeCSVwithHeader(XPs_results,result_file_destinaton,selectedHeader=header_XP,flagWriteHeader=FIRST_TEST)
 			FIRST_TEST=False
 			XPs_results=[]
 		
@@ -437,6 +456,10 @@ def main_2():
 
 		json_config=readJSON_stringifyUnicodes(json_file_path)
 		################################################################
+
+		json_config['top_k']=json_config['top_k'] if 'top_k' in json_config else None
+		DSC.TOPK=json_config['top_k']
+		#########################""
 		json_config['algorithm']=args.algos[0] if args.algos is not None else json_config['algorithm']
 		json_config['nb_objects']=args.nb_obj[0] if args.nb_obj is not None else json_config['nb_objects']
 		json_config['nb_individuals']=args.nb_ind[0] if args.nb_ind is not None else json_config['nb_individuals']
@@ -462,6 +485,13 @@ def main_2():
 		json_config['quality_measure']=args.quality_measure[0] if args.quality_measure is not None else json_config['quality_measure']
 		json_config['similarity_measure']=args.similarity_measure[0] if args.similarity_measure is not None else json_config['similarity_measure']
 		json_config['timebudget']=json_config['timebudget'] if args.timebudget is None else args.timebudget[0]
+
+
+
+		json_config['no_generality'] = json_config.get('no_generality',args.no_generality)
+		json_config['no_sigma_quality'] = json_config.get('no_sigma_quality',args.no_sigma_quality)
+
+		json_config['nb_random_walks']=args.nrwc if args.nrwc is not None else json_config.get('nb_random_walks',30.)
 		################################################################
 		
 		json_config['results_destination']=args.qualitative[0] if len(args.qualitative)>0 else json_config['results_destination']
@@ -469,9 +499,12 @@ def main_2():
 		VERBOSE=args.verbose
 		if VERBOSE:
 			print 'Verbose Execution ...'
-		returned = next(DSC_input_config(json_config,FIGURES_FOR_RESULTS,verbose=VERBOSE))
+		returned = next(DSC_input_config(json_config,FIGURES_FOR_RESULTS,edf=args.edf,first_run=args.first_run,verbose=VERBOSE))
 		for k,v in DSC_input_config.stats.iteritems():
+			if k=='ALL_OBSERVED_QUALITIES':
+				continue
 			print k,'\t',v
+
 
 		if args.export_support:
 			resulting_file,resulting_file_header=readCSVwithHeader(json_config['results_destination'],numberHeader=['ref_sim','pattern_sim','quality'])
@@ -502,6 +535,12 @@ def main_2():
 			
 			#print 'ahdhaheqsdaze'
 			writeCSVwithHeader(to_save,filename+'_EXTENTS'+file_extension,selectedHeader=['context','g_1','g_2','context_extent','g_1_extent','g_2_extent','sim_ref','sim_context','quality'],flagWriteHeader=True)
+		if args.performance_informations:
+			nb_patterns_visited=DSC_input_config.stats['nb_candidates_subgroups']
+			nb_patterns=DSC_input_config.stats['nb_patterns']
+			Outcomes_covered=DSC_input_config.stats.get('Outcomes_covered',0)
+			filename, file_extension = splitext(json_config['results_destination'])
+			writeCSVwithHeader([{'visited':nb_patterns_visited,'nb_patterns':nb_patterns,'Outcomes_covered':Outcomes_covered}],filename+'_perf'+file_extension,selectedHeader=['visited','nb_patterns','Outcomes_covered'],flagWriteHeader=True)
 
 		if FIGURES_FOR_RESULTS:
 			
@@ -865,15 +904,29 @@ def main_2():
 		#writeCSVwithHeader(results_rw,result_file_destination,selectedHeader=rw_header)
 
 	elif type(args.figure) is list:
-		from plotter.perfPlotter import plotPerf,plotRW
-		if not args.rwf:
-			activated=args.fig_algos if args.fig_algos is not None and len(args.fig_algos)>0 else ["DSC","DSC+CLOSED","DSC+CLOSED+UB1","DSC+CLOSED+UB2"]
-			plotPerf(json_file_path,args.x_axis_attribute,activated=activated,BAR_LOG_SCALE=not args.linear_scale,TIME_LOG_SCALE=not args.linear_scale)
+		from plotter.perfPlotter import plotPerf,plotRW,plotHistograms_edf
+		if args.edf:
+			resulting_file,resulting_file_header=readCSVwithHeader(json_file_path,numberHeader=['nb_patterns_returned'],arrayHeader=["edf"])
+			for row in resulting_file:
+				edf_distribution=[float(x) for x in row['edf']]
+				row['edf']=edf_distribution
+				#print row['algorithm'],row['no_generality'],row['no_sigma_quality'],row['nb_patterns_returned'],edf_distribution,
+			plotHistograms_edf(resulting_file,'./figure.pdf',activated=[2,3])
+			# algorithm
+			# no_generality
+			# no_sigma_quality
+			# edf
+			# nb_patterns_returned
+			#readCSVwithHeader(json_file_path,json_config['results_destination'],numberHeader=['ref_sim','pattern_sim','quality'])
 		else:
-			sampling_algorithm='DSC+RandomWalk'
-			if args.sampling_algorithm is not None and len(args.sampling_algorithm)>0:
-				sampling_algorithm=args.sampling_algorithm[0]
-			plotRW(json_file_path,args.x_axis_attribute,activated=[sampling_algorithm])
+			if not args.rwf:
+				activated=args.fig_algos if args.fig_algos is not None and len(args.fig_algos)>0 else ["DSC","DSC+CLOSED","DSC+CLOSED+UB1","DSC+CLOSED+UB2"]
+				plotPerf(json_file_path,args.x_axis_attribute,activated=activated,BAR_LOG_SCALE=not args.linear_scale,TIME_LOG_SCALE=not args.linear_scale,plot_bars = not args.do_not_plot_bars, plot_time = not args.do_not_plot_time,results_destination=args.results_destination)
+			else:
+				sampling_algorithm='DSC+RandomWalk'
+				if args.sampling_algorithm is not None and len(args.sampling_algorithm)>0:
+					sampling_algorithm=args.sampling_algorithm[0]
+				plotRW(json_file_path,args.x_axis_attribute,activated=[sampling_algorithm])
 	
 	# for k,v in DSC_Entry_Point.stats.iteritems():
 	# 	print k,' : ',v

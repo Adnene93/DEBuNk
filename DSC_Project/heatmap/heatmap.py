@@ -28,8 +28,9 @@ def show_values(pc, fmt="%d",highlight=None,fontsize=60, **kw):
             if highlight[int(y)][int(x)]:
                 ax.text(x, y, fmt % (value*100)+ ' %', ha="center", va="center", color=color,fontsize=fontsize, fontweight='bold', **kw)
 
-def generateHeatMap(dataset,destination,color='RdYlGn',vmin=None,vmax=None,organize=False,title=None,showvalues_text=False,only_heatmap=True,highlight=None):
+def generateHeatMap(dataset,destination,color='summer_r',vmin=None,vmax=None,organize=False,title=None,showvalues_text=False,only_heatmap=True,highlight=None):
     '''
+    Choosed RdYlGn
     @note : color = 'RdYlGn' or 'RdYlGn_r'
     '''
     #dataset = readCSV(source, delimiter=',')
@@ -168,7 +169,7 @@ def generateHeatMap(dataset,destination,color='RdYlGn',vmin=None,vmax=None,organ
 
     plt.xticks(rotation=90)
     plt.yticks(rotation=0)
-    #plt.colorbar(heatmap)
+    plt.colorbar(heatmap)
     ax.grid(False)
 
     ax = plt.gca()

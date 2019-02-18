@@ -18,7 +18,7 @@ def from_string_to_date(str_date,dateformat="%d/%m/%y"):
 
 
 def process_outcome_dataset(itemsfile,usersfile,outcomesfile,numeric_attrs=[],array_attrs=[],outcome_attrs=None,method_aggregation_outcome='VECTOR_VALUES',
-							itemsScope=[],users_1_Scope=[],users_2_Scope=[],nb_items=float('inf'),nb_individuals=float('inf'),attributes_to_consider=None,
+							itemsScope=[],contexts_scope=[],users_1_Scope=[],users_2_Scope=[],nb_items=float('inf'),nb_individuals=float('inf'),attributes_to_consider=None,
 							nb_items_entities=float('inf'),nb_items_individuals=float('inf'), hmt_to_itemset=False,
 							delimiter='\t'): 
 	
@@ -29,6 +29,7 @@ def process_outcome_dataset(itemsfile,usersfile,outcomesfile,numeric_attrs=[],ar
 	SMALLER_DESCRIPTION_SPACE=True
 	VERBOSE=False
 	CLARIFY=True
+	to_consider_ids_in_contexts_scope=None
 	nb_outcome_considered=0
 
 	if 'CACHE' in dir(process_outcome_dataset):
@@ -46,6 +47,8 @@ def process_outcome_dataset(itemsfile,usersfile,outcomesfile,numeric_attrs=[],ar
 		outcomes_processed,vector_of_action=outcome_representation_in_reviews(outcomes,position_attr,outcome_attrs,method_aggregation_outcome)
 		
 		considered_items=filter_pipeline_obj(items, itemsScope)[0]
+		considered_items_in_contexts_scope=filter_pipeline_obj(items, contexts_scope)[0]
+
 		users1=filter_pipeline_obj(users, users_1_Scope)[0]
 		users2=filter_pipeline_obj(users, users_2_Scope)[0]
 
@@ -53,6 +56,7 @@ def process_outcome_dataset(itemsfile,usersfile,outcomesfile,numeric_attrs=[],ar
 		get_users_ids = partial(map,itemgetter(users_id))
 
 		considered_items_ids=set(get_items_ids(considered_items))
+		to_consider_ids_in_contexts_scope=set(get_items_ids(considered_items_in_contexts_scope))
 		considered_users_1_ids=set(get_users_ids(users1))
 		considered_users_2_ids=set(get_users_ids(users2))
 		considered_users_ids=set(considered_users_1_ids)|set(considered_users_2_ids)
@@ -130,6 +134,13 @@ def process_outcome_dataset(itemsfile,usersfile,outcomesfile,numeric_attrs=[],ar
 			else:
 				nb_itemsets_all+=len(attr['domain'])
 				attr['nb_items']=len(attr['domain'])
+
+		if NB_SELECTED_ITEMSET_ENTITIES <= 1:
+			NB_SELECTED_ITEMSET_ENTITIES = int(nb_itemsets_all * NB_SELECTED_ITEMSET_ENTITIES)
+			print "NB_SELECTED_ITEMSET_ENTITIES AFTER RATIO = ", NB_SELECTED_ITEMSET_ENTITIES
+
+		nb_itemsets_all_context=NB_SELECTED_ITEMSET_ENTITIES
+
 		nb_itemsets_to_remove=max(0,nb_itemsets_all-NB_SELECTED_ITEMSET_ENTITIES)
 		if nb_itemsets_to_remove>0:
 			if VERBOSE:
@@ -193,6 +204,13 @@ def process_outcome_dataset(itemsfile,usersfile,outcomesfile,numeric_attrs=[],ar
 			else:
 				nb_itemsets_all+=len(attr['domain'])
 				attr['nb_items']=len(attr['domain'])
+
+		if NB_SELECTED_ITEMSET_INDIVIDUALS <= 1:
+			#print "nb_itemsets_all",nb_itemsets_all,NB_SELECTED_ITEMSET_INDIVIDUALS
+			NB_SELECTED_ITEMSET_INDIVIDUALS = int(nb_itemsets_all * NB_SELECTED_ITEMSET_INDIVIDUALS)
+			print "NB_SELECTED_ITEMSET_INDIVIDUALS AFTER RATIO = ", NB_SELECTED_ITEMSET_INDIVIDUALS
+
+		nb_itemsets_all_individuals=nb_itemsets_all
 		nb_itemsets_to_remove=max(0,nb_itemsets_all-NB_SELECTED_ITEMSET_INDIVIDUALS)
 		if nb_itemsets_to_remove>0:
 			if VERBOSE:
@@ -297,8 +315,9 @@ def process_outcome_dataset(itemsfile,usersfile,outcomesfile,numeric_attrs=[],ar
 
 		dict_to_ind_items={v:k for k,v in ind_to_dict_items.iteritems()}
 		considered_items_sorted=[dict([(items_id,dict_to_ind_items[x[items_id]])]+[(k,v) for k,v in x.items() if k !=  items_id]) for x in considered_items_sorted] 
-		
-		
+		#print to_consider_ids_in_contexts_scope
+		to_consider_ids_in_contexts_scope={dict_to_ind_items[x] for x in to_consider_ids_in_contexts_scope}# if x in dict_to_ind_items}
+		#print to_consider_ids_in_contexts_scope
 
 
 		ind_to_dict_users={i:x for i,x in enumerate(users_metadata)}
@@ -310,12 +329,20 @@ def process_outcome_dataset(itemsfile,usersfile,outcomesfile,numeric_attrs=[],ar
 		
 		items_metadata={row[items_id]:row for row in considered_items_sorted}
 		users_metadata={dict_to_ind_users[u]:dict([(users_id,dict_to_ind_users[x[users_id]])]+[(k,v) for k,v in x.items() if k !=  users_id]) for u,x in users_metadata.iteritems()}
-	else:
-		items_metadata={row[items_id]:row for row in considered_items_sorted}
 	# print vector_of_action
 	# raw_input('**************')
+	else:
+		items_metadata={row[items_id]:row for row in considered_items_sorted}
 	
-	return items_metadata,users_metadata,all_users_to_items_outcomes,outcomes_considered,items_id,users_id,considered_items_sorted,considered_users_1_sorted,considered_users_2_sorted,nb_outcome_considered,vector_of_action
+	process_outcome_dataset.STATS={
+		'nb_items_entities':nb_itemsets_all_context,
+		'nb_items_individuals':nb_itemsets_all_individuals
+
+	}
+	
+
+	print len(considered_users_1_sorted),len(considered_users_2_sorted),len(to_consider_ids_in_contexts_scope)
+	return items_metadata,users_metadata,all_users_to_items_outcomes,outcomes_considered,items_id,users_id,considered_items_sorted,considered_users_1_sorted,considered_users_2_sorted,nb_outcome_considered,vector_of_action,to_consider_ids_in_contexts_scope
 
 
 
